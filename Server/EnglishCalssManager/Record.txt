@@ -1,0 +1,124 @@
+優化List
+1. datagridview每頁顯示數量-功能OK
+2. 視窗大小
+3. 學生/員工離職Table
+4. 員工上班提醒/遲到/未到通知
+5. 學生遲到通知
+6. 員工上課時數//先暫停(待確認)
+7. 資料庫自動備份及自動刪除--待更換電腦測試(8/9 ref)
+8. 加log  OK
+
+10/17
+員工ID沒和ClassID勾稽--OK
+
+10/15
+新增Log功能 OK
+bug 修改：員工ID沒和ClassID勾稽
+foreach (DataRow drw in _dataTable.Rows)
+            {
+                //cbox_classID.Items.Add(drw.ItemArray[0].ToString())
+                CommandStr = string.Format("SELECT count(*) FROM EnglishClassShift.[dbo].[Table_ClassShift_{0}_{1}] WHERE EmployeeID = '{2}'", strCurY, strCurM, drw.ItemArray[0].ToString());
+                string _eid = INI.ReadValue("ClassScheduleManager", drw.ItemArray[0].ToString(), "");
+                //if (dbc.strExecuteScalar(CommandStr)=="0")
+                if (_eid != "")
+                {
+                    CommandStr = string.Format("insert into EnglishClassShift.[dbo].[Table_ClassShift_{0}_{1}]([EmployeeID]) values('{2}') ", strCurY, strCurM, drw.ItemArray[0].ToString());
+                    dbc.ExecuteNonQuery(CommandStr);
+                    InsertEmployeeClassSchedule(drw.ItemArray[0].ToString(), strCurY, strCurM);
+                }
+            }
+
+
+10/13
+新增學生離校功能 OK
+
+10/12  OK
+        private void initialTalbe()
+        {
+            baseClassScheduleManager.CreateShiftTable();
+            baseEmployeeRollcall.CreateTable();
+            baseStudentRollcall.CreateTable();
+        }
+
+
+10/11
+把排班表另外拆出系統開啟自行新增
+
+9/5
+修改學生+員工打卡版面(OK)
+修改學生出勤記錄版面，缺頁數功能
+
+9/3
+修改群組管理layout(OK)
+
+8/16
+員工排班表自動預排一年份的班別(OK)
+
+8/14
+修改班級Layout(OK)
+
+8/13
+員工通訊查詢BUG(OK)
+
+8/9
+mssql Backup Device
+http://mistech.pixnet.net/blog/post/273711839-mssql-server-2012-backup-%E5%82%99%E4%BB%BD
+自動備份教學
+https://www.youtube.com/watch?v=xvsiw93t1lM
+
+8/6
+尚缺學生頁數切換功能(OK)
+
+8/4
+尚缺頁數切換功能 OK
+
+7/26
+1. 員工基本資料Layout布局未完成(OK)
+
+7/25
+完成員工及學生的excel輸出，待後續優化項目再清點
+
+7/24
+完成學生刷卡紀錄查詢，尚缺輸出ecxel(OK)
+
+7/23
+完成員工刷卡紀錄，尚缺輸出excel(OK)
+
+7/17
+完成權限基本功能(OK)
+
+7/11
+Select temp Table 要在同一個connection才行，修改C# code--OK
+
+7/7
+推撥訊息設定 並 Mapping 學生刷卡通知(被Max篩選去了，需要再從Temp mapping 原來的Table)-->OK
+
+
+7/4
+點名次數篩選-->OK
+
+7/3
+temp table display again -->OK
+
+
+7/2
+資料庫drop temp table with same connection-->OK
+
+7/1
+需新增點名型態(PC點名/刷卡點名)的欄位-->OK
+
+0626
+message setting->OK
+
+0630
+群組管理的ID和Name合不起來-->OK
+
+
+用去重複的的方式把SdutendID篩選出來再去left outer mapping
+0623
+學生卡片點名無法by日期
+員工點名需再拆一個Class給frmMain調用
+
+
+
+

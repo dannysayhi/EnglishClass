@@ -1,0 +1,447 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A5B2162D-4867-4163-BD19-3BCDD4E63F03}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EnglishCalssManager</RootNamespace>
+    <AssemblyName>EnglishCalssManager</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PushSharp.Amazon, Version=4.0.10.0, Culture=neutral, PublicKeyToken=cf74b75eab2c0170, processorArchitecture=MSIL">
+      <HintPath>..\packages\PushSharp.4.0.10\lib\net45\PushSharp.Amazon.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PushSharp.Apple, Version=4.0.10.0, Culture=neutral, PublicKeyToken=cf74b75eab2c0170, processorArchitecture=MSIL">
+      <HintPath>..\packages\PushSharp.4.0.10\lib\net45\PushSharp.Apple.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PushSharp.Blackberry, Version=4.0.10.0, Culture=neutral, PublicKeyToken=cf74b75eab2c0170, processorArchitecture=MSIL">
+      <HintPath>..\packages\PushSharp.4.0.10\lib\net45\PushSharp.Blackberry.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PushSharp.Core, Version=4.0.10.0, Culture=neutral, PublicKeyToken=cf74b75eab2c0170, processorArchitecture=MSIL">
+      <HintPath>..\packages\PushSharp.4.0.10\lib\net45\PushSharp.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PushSharp.Firefox, Version=4.0.10.0, Culture=neutral, PublicKeyToken=cf74b75eab2c0170, processorArchitecture=MSIL">
+      <HintPath>..\packages\PushSharp.4.0.10\lib\net45\PushSharp.Firefox.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PushSharp.Google, Version=4.0.10.0, Culture=neutral, PublicKeyToken=cf74b75eab2c0170, processorArchitecture=MSIL">
+      <HintPath>..\packages\PushSharp.4.0.10\lib\net45\PushSharp.Google.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PushSharp.Windows, Version=4.0.10.0, Culture=neutral, PublicKeyToken=cf74b75eab2c0170, processorArchitecture=MSIL">
+      <HintPath>..\packages\PushSharp.4.0.10\lib\net45\PushSharp.Windows.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Http">
+      <HintPath>..\..\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Broadcast\CardNotice\CardNotice.cs" />
+    <Compile Include="Broadcast\CardNotice\frmCardNotice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Broadcast\CardNotice\frmCardNotice.Designer.cs">
+      <DependentUpon>frmCardNotice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Broadcast\HistoryMessage\frmHistoryMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Broadcast\HistoryMessage\frmHistoryMessage.Designer.cs">
+      <DependentUpon>frmHistoryMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Broadcast\ManualBroadcast\frmManualBroadcast.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Broadcast\ManualBroadcast\frmManualBroadcast.Designer.cs">
+      <DependentUpon>frmManualBroadcast.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Broadcast\MessageSetting\frmMessageSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Broadcast\MessageSetting\frmMessageSetting.Designer.cs">
+      <DependentUpon>frmMessageSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeAttence\ClassEmployeeManager\baseClassEmployeeManager.cs" />
+    <Compile Include="EmployeeAttence\ClassEmployeeManager\frmClassEmployeeManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeAttence\ClassEmployeeManager\frmClassEmployeeManager.Designer.cs">
+      <DependentUpon>frmClassEmployeeManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeAttence\ClassScheduleManager\baseClassScheduleManager.cs" />
+    <Compile Include="EmployeeAttence\ClassScheduleManager\frmClassScheduleManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeAttence\ClassScheduleManager\frmClassScheduleManager.Designer.cs">
+      <DependentUpon>frmClassScheduleManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeAttence\ClassScheduleSetting\frmClassScheduleSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeAttence\ClassScheduleSetting\frmClassScheduleSetting.Designer.cs">
+      <DependentUpon>frmClassScheduleSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeAttence\ClassScheduleSetting\frmClassScheduleUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeAttence\ClassScheduleSetting\frmClassScheduleUpdate.Designer.cs">
+      <DependentUpon>frmClassScheduleUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnglishCalssDBtestDataSet2.cs">
+      <DependentUpon>EnglishCalssDBtestDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EnglishCalssDBtestDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EnglishCalssDBtestDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EnglishCalssDBtestDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EnglishCalssDBtestDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeAttence\EnglishClassManager\EnglishClassDBtestDataSet2.cs" />
+    <Compile Include="EmployeeAttence\EnglishClassManager\EnglishClassDBtestDataSet2TableAdapters.cs" />
+    <Compile Include="Flow\FlowControl.cs" />
+    <Compile Include="Flow\Flow_Rollcall _Student.cs" />
+    <Compile Include="Rollcall\EmployeeRollcall\baseEmployeeRollcall.cs" />
+    <Compile Include="Rollcall\StudentRollcall\baseStudentRollcall.cs" />
+    <Compile Include="SystemConfig\SystemLog\frmSystemLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemConfig\SystemLog\frmSystemLog.Designer.cs">
+      <DependentUpon>frmSystemLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManager\CourseManagement\frmEmployeeCourseManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemManager\CourseManagement\frmEmployeeCourseManager.Designer.cs">
+      <DependentUpon>frmEmployeeCourseManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManager\MemberList\EmployeeBook\baseEmployeeBook.cs" />
+    <Compile Include="SystemManager\MemberList\StudentBook\baseStudentBook.cs" />
+    <Compile Include="Utility\Database\DatabaseCore.cs" />
+    <Compile Include="Utility\Database\DatabaseCoreRollcall.cs" />
+    <Compile Include="Utility\Database\DatabaseManager.cs" />
+    <Compile Include="Utility\Database\DatabaseTable.cs" />
+    <Compile Include="Utility\Database\frmParamDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utility\Database\frmParamDB.Designer.cs" />
+    <Compile Include="Utility\Database\MainDB.cs" />
+    <Compile Include="Utility\Database\ParamDB.cs" />
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\EmployeeRecord\frmEmployeeRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\EmployeeRecord\frmEmployeeRecord.Designer.cs">
+      <DependentUpon>frmEmployeeRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\StudentRecord\frmStudentRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\StudentRecord\frmStudentRecord.Designer.cs">
+      <DependentUpon>frmStudentRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rollcall\EmployeeRollcall\frmEmployeeRollcall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rollcall\EmployeeRollcall\frmEmployeeRollcall.Designer.cs">
+      <DependentUpon>frmEmployeeRollcall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rollcall\StudentRollcall\frmStudentRollcall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rollcall\StudentRollcall\frmStudentRollcall.Designer.cs">
+      <DependentUpon>frmStudentRollcall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rollcall\StudentRollcall\functionStudentRollcall.cs" />
+    <Compile Include="SystemManager\CourseManagement\frmCourseManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemManager\CourseManagement\frmCourseManagement.Designer.cs">
+      <DependentUpon>frmCourseManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManager\CourseManagement\frmStudentCourseManagerUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemManager\CourseManagement\frmStudentCourseManagerUpdate.Designer.cs">
+      <DependentUpon>frmStudentCourseManagerUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManager\MemberList\EmployeeBook\frmDepPosEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemManager\MemberList\EmployeeBook\frmDepPosEdit.Designer.cs">
+      <DependentUpon>frmDepPosEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManager\MemberList\EmployeeBook\frmEmployeeBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemManager\MemberList\EmployeeBook\frmEmployeeBook.Designer.cs">
+      <DependentUpon>frmEmployeeBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManager\MemberList\StudentBook\frmStudentBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemManager\MemberList\StudentBook\frmStudentBook.Designer.cs">
+      <DependentUpon>frmStudentBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\Account\AccountEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utility\Account\AccountEditorForm.designer.cs">
+      <DependentUpon>AccountEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\Account\AccountEditorLevelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utility\Account\AccountEditorLevelForm.Designer.cs">
+      <DependentUpon>AccountEditorLevelForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\Account\AccountInfo.cs" />
+    <Compile Include="Utility\Account\AccountInfoManager.cs" />
+    <Compile Include="Utility\Account\LogInForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utility\Account\LogInForm.designer.cs">
+      <DependentUpon>LogInForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\Encryption\AESEncryption.cs" />
+    <Compile Include="Utility\FileControl\INI.cs" />
+    <Compile Include="Utility\FileControl\JsonFileControl.cs" />
+    <Compile Include="Utility\FileControl\ParameterBase.cs" />
+    <Compile Include="Utility\FileControl\PathSort.cs" />
+    <Compile Include="Utility\FileControl\XmlFile.cs" />
+    <Compile Include="Utility\IO\CSVFile.cs" />
+    <Compile Include="Utility\IO\DirectoryEx.cs" />
+    <Compile Include="Utility\IO\IniFile.cs" />
+    <Compile Include="Utility\LogFile\Log.cs" />
+    <Compile Include="Utility\Logging\CategoryFilterMode.cs" />
+    <Compile Include="Utility\Logging\DataPathMode.cs" />
+    <Compile Include="Utility\Logging\frmMessageNotification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utility\Logging\frmMessageNotification.designer.cs">
+      <DependentUpon>frmMessageNotification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\Logging\LogClass.cs" />
+    <Compile Include="Utility\Logging\Logger.cs" />
+    <Compile Include="Utility\Logging\NotifyLog.cs" />
+    <Compile Include="Utility\Logging\Presenter\HLogger.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utility\Logging\Presenter\HLogger.Designer.cs">
+      <DependentUpon>HLogger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\Logging\Presenter\LoggerPresenter.cs" />
+    <Compile Include="Utility\Logging\TackTimeLogger.cs" />
+    <Compile Include="Utility\Logging\uctrlTackTimeTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utility\Logging\uctrlTackTimeTable.Designer.cs">
+      <DependentUpon>uctrlTackTimeTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\Threading\ActionTask.cs" />
+    <EmbeddedResource Include="Broadcast\CardNotice\frmCardNotice.resx">
+      <DependentUpon>frmCardNotice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Broadcast\HistoryMessage\frmHistoryMessage.resx">
+      <DependentUpon>frmHistoryMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Broadcast\ManualBroadcast\frmManualBroadcast.resx">
+      <DependentUpon>frmManualBroadcast.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Broadcast\MessageSetting\frmMessageSetting.resx">
+      <DependentUpon>frmMessageSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeAttence\ClassEmployeeManager\frmClassEmployeeManager.resx">
+      <DependentUpon>frmClassEmployeeManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeAttence\ClassScheduleManager\frmClassScheduleManager.resx">
+      <DependentUpon>frmClassScheduleManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeAttence\ClassScheduleSetting\frmClassScheduleSetting.resx">
+      <DependentUpon>frmClassScheduleSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeAttence\ClassScheduleSetting\frmClassScheduleUpdate.resx">
+      <DependentUpon>frmClassScheduleUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemConfig\SystemLog\frmSystemLog.resx">
+      <DependentUpon>frmSystemLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManager\CourseManagement\frmEmployeeCourseManager.resx">
+      <DependentUpon>frmEmployeeCourseManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utility\Database\frmParamDB.resx" />
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Report\EmployeeRecord\frmEmployeeRecord.resx">
+      <DependentUpon>frmEmployeeRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\StudentRecord\frmStudentRecord.resx">
+      <DependentUpon>frmStudentRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rollcall\EmployeeRollcall\frmEmployeeRollcall.resx">
+      <DependentUpon>frmEmployeeRollcall.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rollcall\StudentRollcall\frmStudentRollcall.resx">
+      <DependentUpon>frmStudentRollcall.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManager\CourseManagement\frmCourseManagement.resx">
+      <DependentUpon>frmCourseManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManager\CourseManagement\frmStudentCourseManagerUpdate.resx">
+      <DependentUpon>frmStudentCourseManagerUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManager\MemberList\EmployeeBook\frmDepPosEdit.resx">
+      <DependentUpon>frmDepPosEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManager\MemberList\EmployeeBook\frmEmployeeBook.resx">
+      <DependentUpon>frmEmployeeBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManager\MemberList\StudentBook\frmStudentBook.resx">
+      <DependentUpon>frmStudentBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utility\Account\AccountEditorForm.resx">
+      <DependentUpon>AccountEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utility\Account\AccountEditorLevelForm.resx">
+      <DependentUpon>AccountEditorLevelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utility\Account\LogInForm.resx">
+      <DependentUpon>LogInForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utility\Logging\Form1.resx" />
+    <EmbeddedResource Include="Utility\Logging\frmMessageNotification.resx">
+      <DependentUpon>frmMessageNotification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utility\Logging\Presenter\HLogger.resx">
+      <DependentUpon>HLogger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utility\Logging\uctrlTackTimeTable.resx">
+      <DependentUpon>uctrlTackTimeTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="EnglishCalssDBtestDataSet2.xsc">
+      <DependentUpon>EnglishCalssDBtestDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="EnglishCalssDBtestDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EnglishCalssDBtestDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EnglishCalssDBtestDataSet2.xss">
+      <DependentUpon>EnglishCalssDBtestDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="EnglishCalssDBtestDataSet3.xsc">
+      <DependentUpon>EnglishCalssDBtestDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="EnglishCalssDBtestDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EnglishCalssDBtestDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EnglishCalssDBtestDataSet3.xss">
+      <DependentUpon>EnglishCalssDBtestDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="EmployeeAttence\Attence\" />
+    <Folder Include="EmployeeAttence\AuthorityManager\" />
+    <Folder Include="Utility\Android\" />
+    <Folder Include="Utility\Hardware\" />
+    <Folder Include="Utility\IOS\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
