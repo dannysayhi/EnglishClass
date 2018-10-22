@@ -8,6 +8,10 @@
 7. 資料庫自動備份及自動刪除--待更換電腦測試(8/9 ref)
 8. 加log  OK
 
+10/22
+SQL 密碼：0426322358
+ip : ouchunhsien.ddns.net
+
 10/17
 員工ID沒和ClassID勾稽--OK
 
