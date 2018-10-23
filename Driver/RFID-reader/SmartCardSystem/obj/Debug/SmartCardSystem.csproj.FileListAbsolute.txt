@@ -1,0 +1,23 @@
+c:\users\user\documents\visual studio 2015\Projects\SmartCardSystem\SmartCardSystem\bin\Debug\SmartCardSystem.exe.config
+c:\users\user\documents\visual studio 2015\Projects\SmartCardSystem\SmartCardSystem\bin\Debug\SmartCardSystem.exe
+c:\users\user\documents\visual studio 2015\Projects\SmartCardSystem\SmartCardSystem\bin\Debug\SmartCardSystem.pdb
+c:\users\user\documents\visual studio 2015\Projects\SmartCardSystem\SmartCardSystem\bin\Debug\pcsc-sharp.dll
+c:\users\user\documents\visual studio 2015\Projects\SmartCardSystem\SmartCardSystem\obj\Debug\SmartCardSystem.csprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2015\Projects\SmartCardSystem\SmartCardSystem\obj\Debug\SmartCardSystem.exe
+c:\users\user\documents\visual studio 2015\Projects\SmartCardSystem\SmartCardSystem\obj\Debug\SmartCardSystem.pdb
+D:\BackEnd\driver\SmartCardSystem\SmartCardSystem\bin\Debug\SmartCardSystem.exe.config
+D:\BackEnd\driver\SmartCardSystem\SmartCardSystem\obj\Debug\SmartCardSystem.exe
+D:\BackEnd\driver\SmartCardSystem\SmartCardSystem\obj\Debug\SmartCardSystem.pdb
+D:\BackEnd\driver\SmartCardSystem\SmartCardSystem\bin\Debug\SmartCardSystem.exe
+D:\BackEnd\driver\SmartCardSystem\SmartCardSystem\bin\Debug\SmartCardSystem.pdb
+D:\BackEnd\driver\SmartCardSystem\SmartCardSystem\bin\Debug\pcsc-sharp.dll
+D:\BackEnd\driver\SmartCardSystem\SmartCardSystem\obj\Debug\SmartCardSystem.csprojResolveAssemblyReference.cache
+D:\BackEnd\driver\SmartCardSystem\SmartCardSystem\bin\Debug\Newtonsoft.Json.dll
+D:\BackEnd\driver\SmartCardSystem\SmartCardSystem\bin\Debug\PushSharp.Amazon.dll
+D:\BackEnd\driver\SmartCardSystem\SmartCardSystem\bin\Debug\PushSharp.Apple.dll
+D:\BackEnd\driver\SmartCardSystem\SmartCardSystem\bin\Debug\PushSharp.Blackberry.dll
+D:\BackEnd\driver\SmartCardSystem\SmartCardSystem\bin\Debug\PushSharp.Core.dll
+D:\BackEnd\driver\SmartCardSystem\SmartCardSystem\bin\Debug\PushSharp.Firefox.dll
+D:\BackEnd\driver\SmartCardSystem\SmartCardSystem\bin\Debug\PushSharp.Google.dll
+D:\BackEnd\driver\SmartCardSystem\SmartCardSystem\bin\Debug\PushSharp.Windows.dll
+D:\BackEnd\driver\SmartCardSystem\SmartCardSystem\bin\Debug\Newtonsoft.Json.xml
