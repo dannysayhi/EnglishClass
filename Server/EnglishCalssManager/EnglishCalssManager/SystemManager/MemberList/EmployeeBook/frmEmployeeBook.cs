@@ -304,8 +304,8 @@ namespace EnglishClassManager.SystemManager.MemberList.EmployeeBook
             txt_Home.Text = dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[4].Value.ToString();
             txt_PhoneNumber.Text = dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[5].Value.ToString();
             cbox_Onjob.Text = dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[6].Value.ToString();
-            cbox_Dep.Text = dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[8].Value.ToString();
-            cbox_Pos.Text = dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[7].Value.ToString();
+            cbox_Dep.Text = dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells["Dept"].Value.ToString();
+            cbox_Pos.Text = dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells["Position"].Value.ToString();
         }
 
         public void initialText()
