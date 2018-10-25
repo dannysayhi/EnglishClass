@@ -77,7 +77,7 @@ namespace EnglishClassManager.SystemManager.MemberList.EmployeeBook
         private void btnAdd_Click(object sender, EventArgs e)
         {
             initialText();
-            if (checkReData())
+            if (checkReData()&& checkTextData())
             {
                 insertData();
                 refreshTable();
@@ -86,7 +86,7 @@ namespace EnglishClassManager.SystemManager.MemberList.EmployeeBook
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            if (checkReData())
+           // if (checkReData())
             {
                 updateData();
                 refreshTable();
@@ -139,7 +139,7 @@ namespace EnglishClassManager.SystemManager.MemberList.EmployeeBook
         {
             DataTable _dataTable = new DataTable();
             string CommandStr = string.Format("update Table_EmployeeBasic set " +
-                          " EmployeeID='{0}', CardNumber='{1}', TwName='{2}', EnName='{3}' " +
+                          " CardNumber='{1}', TwName='{2}', EnName='{3}' " +
                           ", Home='{4}',PhoneNumber='{5}',Onjob='{6}' "
                           + " where EmployeeID='{7}'"
                           , dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[0].Value.ToString(),
@@ -154,11 +154,9 @@ namespace EnglishClassManager.SystemManager.MemberList.EmployeeBook
             CommandStr = string.Format("update Table_EmployeeBook set " +
                           " EmployeeID='{0}', Position='{1}',Dept='{2}' " +
                           ",Vacation1='',Vacation2='',Vacation3='',Vacation4='',Vacation5='',Vacation6='',Vacation7=''"
-                          + " where EmployeeID='{3}'"
+                          + " where EmployeeID='{0}'"
                           , dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[0].Value.ToString(),
-                          dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[7].Value.ToString(),
-                          dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[8].Value.ToString(),
-                          dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[0].Value.ToString());
+                          cbox_Pos.Text,cbox_Dep.Text);
             _dataTable = dbc.CommandFunctionDB("Table_EmployeeBook", CommandStr);
             refreshTable();
             //_dataTable = dbc.InsertToDB("Table_StudentBasic", FieldDD, ValueDD, TypeATT);
@@ -195,6 +193,7 @@ namespace EnglishClassManager.SystemManager.MemberList.EmployeeBook
             cbox_Pos.Text = "";
             startpage = "0";
             nextpage = 20;
+            refreshTable();
     }
 
         /// <summary>
@@ -223,6 +222,7 @@ namespace EnglishClassManager.SystemManager.MemberList.EmployeeBook
                );
             _dataTable = dbc.CommandFunctionDB("Table_EmployeeBasic", CommandStr);
             dataGridView1.DataSource = _dataTable;
+            this.dataGridView1.Columns[7].Visible = false;
             lb_pageNum.Text = "第- " + ((Convert.ToInt16(startpage) / Convert.ToInt16(nextpage) + 1).ToString()) + " -頁";
         }
 
@@ -257,7 +257,7 @@ namespace EnglishClassManager.SystemManager.MemberList.EmployeeBook
         /// </summary>
         private void initailSelectCond()
         {
-            if (cbox_Onjob.Text == "N") flagOnjob = "Leave";
+            if (cbox_Onjob.Text == "N") flagOnjob = "";
             selectTwName = string.Format("and Table_EmployeeBasic{0}.TwName like '%{1}%'", flagOnjob, txt_TwName.Text);
             selectEmployeeID = string.Format("and Table_EmployeeBasic{0}.EmployeeID like '%{1}%'", flagOnjob, txt_EmployeeID.Text);
             selectCardNumbere = string.Format("and Table_EmployeeBasic{0}.CardNumber like '%{1}%'", flagOnjob, txt_CardNumber.Text);
@@ -319,6 +319,17 @@ namespace EnglishClassManager.SystemManager.MemberList.EmployeeBook
             _baseEmployeeBook.Dep = cbox_Dep.Text;
             _baseEmployeeBook.Pos = cbox_Pos.Text;
             _baseEmployeeBook.Onjob = cbox_Onjob.Text;
+        }
+
+        private bool checkTextData()
+        {
+            if (txt_CardNumber.Text == "" || txt_TwName.Text == "")
+            {
+                MessageBox.Show("卡號/名字不可空白");
+                    return false;
+            }
+            else
+                return true;
         }
     }
 }

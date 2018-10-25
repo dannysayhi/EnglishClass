@@ -45,11 +45,10 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(355, -246);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.dataGridView1.Location = new System.Drawing.Point(20, 146);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(2899, 1136);
+            this.dataGridView1.Size = new System.Drawing.Size(1306, 568);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
@@ -68,10 +67,9 @@
             // btnAdd
             // 
             this.btnAdd.Font = new System.Drawing.Font("新細明體", 14F);
-            this.btnAdd.Location = new System.Drawing.Point(2654, 110);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btnAdd.Location = new System.Drawing.Point(1225, 55);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(271, 152);
+            this.btnAdd.Size = new System.Drawing.Size(125, 76);
             this.btnAdd.TabIndex = 20;
             this.btnAdd.Text = "新增訊息";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -80,40 +78,36 @@
             // txtMsgName
             // 
             this.txtMsgName.Font = new System.Drawing.Font("新細明體", 12F);
-            this.txtMsgName.Location = new System.Drawing.Point(696, 48);
-            this.txtMsgName.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.txtMsgName.Location = new System.Drawing.Point(321, 24);
             this.txtMsgName.Name = "txtMsgName";
-            this.txtMsgName.Size = new System.Drawing.Size(234, 46);
+            this.txtMsgName.Size = new System.Drawing.Size(110, 27);
             this.txtMsgName.TabIndex = 19;
             // 
             // txtMsgID
             // 
             this.txtMsgID.Font = new System.Drawing.Font("新細明體", 12F);
-            this.txtMsgID.Location = new System.Drawing.Point(241, 48);
-            this.txtMsgID.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.txtMsgID.Location = new System.Drawing.Point(111, 24);
             this.txtMsgID.Name = "txtMsgID";
-            this.txtMsgID.Size = new System.Drawing.Size(234, 46);
+            this.txtMsgID.Size = new System.Drawing.Size(110, 27);
             this.txtMsgID.TabIndex = 18;
             // 
             // txtMsg
             // 
             this.txtMsg.Font = new System.Drawing.Font("新細明體", 12F);
-            this.txtMsg.Location = new System.Drawing.Point(241, 110);
-            this.txtMsg.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.txtMsg.Location = new System.Drawing.Point(111, 55);
             this.txtMsg.Multiline = true;
             this.txtMsg.Name = "txtMsg";
             this.txtMsg.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.txtMsg.Size = new System.Drawing.Size(2396, 148);
+            this.txtMsg.Size = new System.Drawing.Size(1108, 76);
             this.txtMsg.TabIndex = 17;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("新細明體", 12F);
-            this.label3.Location = new System.Drawing.Point(37, 110);
-            this.label3.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
+            this.label3.Location = new System.Drawing.Point(17, 55);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(175, 32);
+            this.label3.Size = new System.Drawing.Size(88, 16);
             this.label3.TabIndex = 16;
             this.label3.Text = "訊息內容：";
             // 
@@ -121,10 +115,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("新細明體", 12F);
-            this.label2.Location = new System.Drawing.Point(511, 48);
-            this.label2.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
+            this.label2.Location = new System.Drawing.Point(236, 24);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(175, 32);
+            this.label2.Size = new System.Drawing.Size(88, 16);
             this.label2.TabIndex = 15;
             this.label2.Text = "訊息名稱：";
             // 
@@ -132,19 +125,18 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("新細明體", 12F);
-            this.label1.Location = new System.Drawing.Point(37, 48);
-            this.label1.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
+            this.label1.Location = new System.Drawing.Point(17, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(175, 32);
+            this.label1.Size = new System.Drawing.Size(88, 16);
             this.label1.TabIndex = 14;
             this.label1.Text = "訊息編號：";
             // 
             // frmCardNotice
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(2564, 1399);
+            this.ClientSize = new System.Drawing.Size(1362, 741);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.txtMsgName);
             this.Controls.Add(this.txtMsgID);
@@ -153,7 +145,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.Name = "frmCardNotice";
             this.Text = "frmCardNotice";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
