@@ -1,4 +1,5 @@
-﻿using EnglishCalssManager.Rollcall.StudentRollcall;
+﻿using AOISystem.Utility.Logging;
+using EnglishCalssManager.Rollcall.StudentRollcall;
 using EnglishClassManager.Utility.Database;
 using System;
 using System.Collections.Generic;
@@ -22,6 +23,7 @@ namespace EnglishClassManager.Rollcall.StudentRollcall
         public string _studentID = "";
         public string _courseID = "";
         public int _rollcallCount = 0;
+        private string logTitle = "frmStudentRollcall：";
         public frmStudentRollcall()
         {
             InitializeComponent();
@@ -30,6 +32,7 @@ namespace EnglishClassManager.Rollcall.StudentRollcall
 
         private void frmStudentRollcall_Load(object sender, EventArgs e)
         {
+            Log.Trace(logTitle + "frmStudentRollcall_Load");
             CreateTable();
             DataTable _dataTable = new DataTable();
             string CommandStr = "Select CourseName from Table_Course";
@@ -65,6 +68,7 @@ namespace EnglishClassManager.Rollcall.StudentRollcall
 
         private void btn_ON_Click(object sender, EventArgs e)
         {
+            Log.Trace(logTitle + btn_ON.Name.ToString());
             try
             {
                 string CommandStr = " Select EnglishClassDBtest.dbo.Table_Course.CourseID "
@@ -142,12 +146,14 @@ namespace EnglishClassManager.Rollcall.StudentRollcall
             catch(Exception ex)
             {
                 MessageBox.Show(ex.ToString());
+                Log.Trace(logTitle +  btn_ON.Name.ToString()+"："+ex.ToString());
             }
             refreshTable();
         }
 
         private void btn_OFF_Click(object sender, EventArgs e)
         {
+            Log.Trace(logTitle + btn_OFF.Name.ToString());
             try
             {
                 string CommandStr = " Select EnglishClassDBtest.dbo.Table_Course.CourseID "
@@ -197,12 +203,14 @@ namespace EnglishClassManager.Rollcall.StudentRollcall
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
+                Log.Trace(logTitle + btn_OFF.Name.ToString() + "：" + ex.ToString());
             }
             refreshTable();
         }
 
         private void btn_Leave_Click(object sender, EventArgs e)
         {
+            Log.Trace(logTitle + btn_Leave.Name.ToString());
             try
             {
                 string CommandStr = " Select EnglishClassDBtest.dbo.Table_Course.CourseID "
@@ -252,6 +260,7 @@ namespace EnglishClassManager.Rollcall.StudentRollcall
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
+                Log.Trace(logTitle + btn_Leave.Name.ToString() + "：" + ex.ToString());
             }
             refreshTable();
         }

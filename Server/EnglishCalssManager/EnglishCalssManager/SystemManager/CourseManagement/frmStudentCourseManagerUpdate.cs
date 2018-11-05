@@ -1,4 +1,5 @@
-﻿using EnglishClassManager.Utility.Database;
+﻿using AOISystem.Utility.Logging;
+using EnglishClassManager.Utility.Database;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,9 +21,11 @@ namespace EnglishClassManager.SystemManager.CourseManagement
         public string courseID = "";
         private string startpage = "0";
         private int nextpage = 20;
+        private string logTitle = "frmCourseManagerUpdate";
 
         public frmCourseManagerUpdate(string cboxEplyID, string _cboxEplyName)
         {
+            Log.Trace(logTitle);
             InitializeComponent();
             initailDGview();
             DataTable _dataTable = new DataTable();
@@ -57,6 +60,7 @@ namespace EnglishClassManager.SystemManager.CourseManagement
        
         private void btn_Select_Click(object sender, EventArgs e)
         {
+            Log.Trace(logTitle + btn_Select.Name.ToString());
             refreshStudentInfo();
         }
 
@@ -67,6 +71,7 @@ namespace EnglishClassManager.SystemManager.CourseManagement
 
         private void btn_Save_Click(object sender, EventArgs e)
         {
+            Log.Trace(logTitle + btn_Save.Name.ToString());
             string CommandStr = " Select Table_Course.CourseID "
 + " From Table_Course "
 + " Where  Table_Course.CourseName = '"
@@ -97,6 +102,7 @@ namespace EnglishClassManager.SystemManager.CourseManagement
 
     private void btn_AddNewStudent_Click(object sender, EventArgs e)
         {
+            Log.Trace(logTitle + btn_AddNewStudent.Name.ToString());
             DataTable _dataTable = new DataTable();
             string CommandStr = string.Format( "if not exists(select Table_CourseManagement.CourseID, Table_CourseManagement.StudentID "
                 + " from Table_CourseManagement"
@@ -110,7 +116,8 @@ namespace EnglishClassManager.SystemManager.CourseManagement
 
         private void btn_AddCourse_Click(object sender, EventArgs e)
         {
-            string  CommandStr = string.Format("Select Max(CourseID) from Table_Course");
+            Log.Trace(logTitle + btn_AddCourse.Name.ToString());
+            string CommandStr = string.Format("Select Max(CourseID) from Table_Course");
             int CourseIDmax = Convert.ToInt32( dbc.strExecuteScalar( CommandStr));
             CommandStr = string.Format(" Select Table_EmployeeBasic.EmployeeID From Table_EmployeeBasic  Where  Table_EmployeeBasic.TwName = '{0}'", cbox_NewEmplyName.Text);
             cboxEplyID = dbc.strExecuteScalar(CommandStr).ToString();
@@ -123,6 +130,7 @@ namespace EnglishClassManager.SystemManager.CourseManagement
 
         private void btn_DeleteStudent_Click(object sender, EventArgs e)
         {
+            Log.Trace(logTitle + btn_DeleteStudent.Name.ToString());
             DataTable _dataTable = new DataTable();
             string CommandStr = string.Format("delete from Table_CourseManagement where StudentID='{0}' and CourseID='{1}'"
                        , dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells["StudentID"].Value.ToString()
@@ -236,6 +244,7 @@ namespace EnglishClassManager.SystemManager.CourseManagement
 
         private void lb_endpage_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            Log.Trace(logTitle + lb_endpage.Name.ToString());
             startpage = (Convert.ToInt16(startpage) + nextpage).ToString();
             refreshAllStudentInfo();
         }
@@ -244,6 +253,7 @@ namespace EnglishClassManager.SystemManager.CourseManagement
         {
             if (Convert.ToInt16(startpage) > 4)
             {
+                Log.Trace(logTitle + lb_startpage.Name.ToString());
                 startpage = (Convert.ToInt16(startpage) - nextpage).ToString();
                 refreshAllStudentInfo();
             }

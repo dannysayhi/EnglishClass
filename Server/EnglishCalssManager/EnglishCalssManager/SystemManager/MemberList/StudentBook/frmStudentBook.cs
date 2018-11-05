@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using EnglishClassManager.Utility.Database;
 using AOI_System.DB;
 using EnglishCalssManager.SystemManager.MemberList.StudentBook;
+using AOISystem.Utility.Logging;
 
 namespace EnglishClassManager.SystemManager.MemberList.StudentBook
 {
@@ -21,6 +22,7 @@ namespace EnglishClassManager.SystemManager.MemberList.StudentBook
         public string[] studentSelectField;
         public string startpage = "0";
         public int nextpage = 20;
+        private string logTitle = "學生通訊錄：";
 
         public frmStudentBook()
         {
@@ -29,17 +31,20 @@ namespace EnglishClassManager.SystemManager.MemberList.StudentBook
 
         private void frmStudentBook_Load(object sender, EventArgs e)
         {
+            Log.Trace(logTitle+ "frmStudentBook_Load");
             cbox_Onschool.Text = "Y";
             refreshTable(txt_StudentID.Text);
         }
 
         private void btnSelect_Click(object sender, EventArgs e)
         {
+            Log.Trace(logTitle + btnSelect.Name.ToString());
             refreshTable(txt_StudentID.Text);
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            Log.Trace(logTitle + btnAdd.Name.ToString());
             initialText();
             if (cbox_Onschool.Text == "Y")
             {
@@ -58,6 +63,7 @@ namespace EnglishClassManager.SystemManager.MemberList.StudentBook
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
+            Log.Trace(logTitle + btnUpdate.Name.ToString());
             DataTable _dataTable = new DataTable();
             initialText();
             string CommandStr = string.Format("update Table_StudentBasic set " +
@@ -96,6 +102,7 @@ namespace EnglishClassManager.SystemManager.MemberList.StudentBook
         }
         private void btnDelete_Click(object sender, EventArgs e)
         {
+            Log.Trace(logTitle + btnDelete.Name.ToString());
             if (txt_StudentID.Text == "")
             {
                 MessageBox.Show("請選擇學生");
@@ -168,12 +175,14 @@ namespace EnglishClassManager.SystemManager.MemberList.StudentBook
 
         private void lb_endpage_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            Log.Trace(logTitle + lb_endpage.Name.ToString());
             startpage = (Convert.ToInt16(startpage) + nextpage).ToString();
             refreshTable(txt_StudentID.Text);
         }
 
         private void lb_startpage_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            Log.Trace(logTitle + lb_startpage.Name.ToString());
             if (Convert.ToInt16(startpage) > 4)
             {
                 startpage = (Convert.ToInt16(startpage) - nextpage).ToString();
@@ -183,6 +192,7 @@ namespace EnglishClassManager.SystemManager.MemberList.StudentBook
 
         private void btn_clearText_Click(object sender, EventArgs e)
         {
+            Log.Trace(logTitle + btn_clearText.Name.ToString());
             txt_CardNumber.Text = "";
             txt_EnName.Text = "";
             txt_Home.Text = "";
@@ -342,6 +352,7 @@ namespace EnglishClassManager.SystemManager.MemberList.StudentBook
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Log.Trace(logTitle + button1.Name.ToString());
             string CommandStr = string.Format( "DBCC CHECKIDENT([Table_StudentBasic], RESEED, {0})",txt_CHECKIDENT.Text);
             dbc.ExecuteNonQuery(CommandStr);
             CommandStr = string.Format("DBCC CHECKIDENT([Table_StudentBook], RESEED, {0})", txt_CHECKIDENT.Text);

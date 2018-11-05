@@ -25,7 +25,7 @@ namespace EnglishCalssManager.Report.StudentRecord
         public int _rollcallCount = 0;
         private string startpage = "0";
         private int nextpage = 20;
-
+        private string logTitle = "frmStudentRecord：";
         public frmStudentRecord()
         {
             InitializeComponent();
@@ -33,6 +33,7 @@ namespace EnglishCalssManager.Report.StudentRecord
 
         private void frmStudentRecord_Load(object sender, EventArgs e)
         {
+
             DataTable _dataTable = new DataTable();
             string CommandStr = "Select CourseName from Table_Course";
             _dataTable = dbc.CommandFunctionDB("Table_Course", CommandStr);
@@ -116,6 +117,7 @@ namespace EnglishCalssManager.Report.StudentRecord
 
         private void btnSelect_Click(object sender, EventArgs e)
         {
+
             refreshTable();
         }
 

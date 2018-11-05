@@ -1,4 +1,5 @@
 ﻿using AOI_System.DB;
+using AOISystem.Utility.Logging;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -27,6 +28,7 @@ namespace EnglishClassManager.Utility.Database
         public string connectionString, queryString;
         private static SqlConnection connection_temp;
         private static SqlCommand myCommand_temp;
+        private string logTitle = "DatabaseCoreRollcall：";
         #endregion DB property 
 
         #region DB Constructor
@@ -76,6 +78,7 @@ namespace EnglishClassManager.Utility.Database
             }
             catch (Exception ex)
             {
+                Log.Trace(logTitle + ex.ToString());
                 MessageBox.Show(ex.ToString());
                 return _dataTable;
             }
@@ -105,6 +108,7 @@ namespace EnglishClassManager.Utility.Database
             }
             catch (Exception ex)
             {
+                Log.Trace(logTitle + ex.ToString());
                 MessageBox.Show(ex.ToString());
                 return strES;
             }
@@ -133,6 +137,7 @@ namespace EnglishClassManager.Utility.Database
             }
             catch (Exception ex)
             {
+                Log.Trace(logTitle + ex.ToString());
                 MessageBox.Show(ex.ToString());
             }
         }
@@ -196,6 +201,7 @@ namespace EnglishClassManager.Utility.Database
             }
             catch (Exception ex)
             {
+                Log.Trace(logTitle + ex.ToString());
                 MessageBox.Show(ex.ToString());
                 return _dataTable;
             }
@@ -241,6 +247,7 @@ namespace EnglishClassManager.Utility.Database
             }
             catch (Exception ex)
             {
+                Log.Trace(logTitle + ex.ToString());
                 MessageBox.Show(ex.ToString());
             }
         }

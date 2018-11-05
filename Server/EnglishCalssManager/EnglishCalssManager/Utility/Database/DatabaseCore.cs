@@ -1,4 +1,5 @@
 ﻿using AOI_System.DB;
+using AOISystem.Utility.Logging;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -27,6 +28,7 @@ namespace EnglishClassManager.Utility.Database
         private static SqlConnection connection_temp;
         private static SqlCommand myCommand_temp;
         public string connectionString, queryString;
+        private string logTitle = "DatabaseCore：";
         #endregion DB property 
 
         #region DB Constructor
@@ -76,7 +78,8 @@ namespace EnglishClassManager.Utility.Database
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.ToString());
+                Log.Trace(logTitle + "CommandFunctionDB：" + CommandStr);
+                Log.Trace(ex.ToString());
                 return _dataTable;
             }
         }
@@ -140,7 +143,8 @@ namespace EnglishClassManager.Utility.Database
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.ToString());
+                Log.Trace(logTitle + "CommandFunctionTempDB：" + CommandStr);
+                Log.Trace(ex.ToString());
                 return _dataTable;
             }
 
@@ -190,8 +194,8 @@ namespace EnglishClassManager.Utility.Database
             }
             catch (Exception ex)
             {
-                //MessageBox.Show("此 Student ID 不存在，請重新再試!");
-                MessageBox.Show(ex.ToString());
+                Log.Trace(logTitle + "strExecuteScalar：" + CommandStr);
+                Log.Trace(ex.ToString());
             }
             return strES;
         }
@@ -219,9 +223,8 @@ namespace EnglishClassManager.Utility.Database
             }
             catch (Exception ex)
             {
-                //strES = "此 Student ID 不存在，請重新再試!";
-                MessageBox.Show(strES);
-                //MessageBox.Show(ex.ToString());
+                Log.Trace(logTitle + "ExecuteNonQuery：" + CommandStr);
+                Log.Trace(ex.ToString());
             }
         }
 

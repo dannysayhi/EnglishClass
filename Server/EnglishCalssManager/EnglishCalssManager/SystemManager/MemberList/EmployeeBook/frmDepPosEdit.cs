@@ -1,4 +1,5 @@
-﻿using EnglishClassManager.Utility.Database;
+﻿using AOISystem.Utility.Logging;
+using EnglishClassManager.Utility.Database;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,6 +16,7 @@ namespace EnglishCalssManager.SystemManager.MemberList.EmployeeBook
     {
         public DatabaseCore dbc = DatabaseManager._databaseCore;
         public DatabaseTable dbt = DatabaseManager._databaseTable;
+        private string logTitle = "frmDepPosEdit";
         public frmDepPosEdit()
         {
             InitializeComponent();
@@ -27,6 +29,7 @@ namespace EnglishCalssManager.SystemManager.MemberList.EmployeeBook
 
         private void btn_update_Click(object sender, EventArgs e)
         {
+            Log.Trace(logTitle + btn_update.Name.ToString());
             string CommandStr = string.Format("update Table_SelectParam set "
                 + " Position = '{0}',Dept = '{1}'"
                 + " where SN = '{2}'",

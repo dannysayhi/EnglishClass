@@ -1,4 +1,5 @@
-﻿using EnglishCalssManager.EmployeeAttence.ClassScheduleManager;
+﻿using AOISystem.Utility.Logging;
+using EnglishCalssManager.EmployeeAttence.ClassScheduleManager;
 using EnglishCalssManager.SystemManager.MemberList.EmployeeBook;
 using EnglishClassManager.SystemManager.CourseManagement;
 using EnglishClassManager.Utility.Database;
@@ -32,6 +33,7 @@ namespace EnglishClassManager.SystemManager.MemberList.EmployeeBook
         public string flagOnjob = "";
         private string startpage = "0";
         private int nextpage = 20;
+        private string logTitle = "frmEmployeeBook：";
 
         public frmEmployeeBook()
         {
@@ -40,6 +42,7 @@ namespace EnglishClassManager.SystemManager.MemberList.EmployeeBook
         }
         private void frmEmployeeBook_Load(object sender, EventArgs e)
         {
+            Log.Trace(logTitle + "frmEmployeeBook_Load");
             DataTable _dataTable = new DataTable();
             string CommandStr = "Select Dept from Table_SelectParam";
             _dataTable = dbc.CommandFunctionDB("Table_SelectParam", CommandStr);
@@ -71,11 +74,13 @@ namespace EnglishClassManager.SystemManager.MemberList.EmployeeBook
 
         private void btnSelect_Click(object sender, EventArgs e)
         {
+            Log.Trace(logTitle + btnSelect.Name.ToString());
             refreshTable();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            Log.Trace(logTitle + btnAdd.Name.ToString());
             initialText();
             if (checkReData()&& checkTextData())
             {
@@ -86,7 +91,8 @@ namespace EnglishClassManager.SystemManager.MemberList.EmployeeBook
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-           // if (checkReData())
+            Log.Trace(logTitle + btnUpdate.Name.ToString());
+            // if (checkReData())
             {
                 updateData();
                 refreshTable();
@@ -111,6 +117,7 @@ namespace EnglishClassManager.SystemManager.MemberList.EmployeeBook
 
         private void lb_startpage_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            Log.Trace(logTitle + lb_startpage.Name.ToString());
             if (Convert.ToInt16(startpage) > 4)
             {
                 startpage = (Convert.ToInt16(startpage) - nextpage).ToString();
@@ -120,6 +127,7 @@ namespace EnglishClassManager.SystemManager.MemberList.EmployeeBook
 
         private void lb_endpage_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            Log.Trace(logTitle + lb_endpage.Name.ToString());
             startpage = (Convert.ToInt16(startpage) + nextpage).ToString();
             refreshTable();
         }
@@ -164,6 +172,7 @@ namespace EnglishClassManager.SystemManager.MemberList.EmployeeBook
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+            Log.Trace(logTitle + btnDelete.Name.ToString());
             DataTable _dataTable = new DataTable();
             string CommandStr = string.Format("delete from Table_EmployeeBasic where EmployeeID='{0}' and CardNumber='{1}'"
                        , dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[0].Value.ToString()

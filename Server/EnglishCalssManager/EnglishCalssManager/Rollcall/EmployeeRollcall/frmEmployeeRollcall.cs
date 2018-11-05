@@ -1,4 +1,5 @@
-﻿using EnglishCalssManager.Rollcall.EmployeeRollcall;
+﻿using AOISystem.Utility.Logging;
+using EnglishCalssManager.Rollcall.EmployeeRollcall;
 using EnglishClassManager.Utility.Database;
 using System;
 using System.Collections.Generic;
@@ -22,6 +23,7 @@ namespace EnglishClassManager.Rollcall.EmployeeRollcall
         public string datelong = DateTime.Now.ToString("yyyyMMdd");
         public string dateshort = DateTime.Now.ToString("yyyy_MM");
         private string _classSelect = "*";
+        private string logTitle = "frmEmployeeRollcall：";
 
         public frmEmployeeRollcall()
         {
@@ -60,11 +62,13 @@ namespace EnglishClassManager.Rollcall.EmployeeRollcall
                 {
                     if (ckb_WorkStart.Checked)
                     {
+                        Log.Trace(logTitle + "funcRollStart");
                         string _workS = dataGridView1.Rows[_dataCurRowIndex].Cells["ClassStart"].Value.ToString(); //_dataTable.Rows[0][3];
                         funcRollStart(_employeeID, _workS); 
                     }
                     else if (ckb_WorkEnd.Checked && dataGridView1.Rows[e.RowIndex].Cells["RollcallStart"].Value != null && dataGridView1.Rows[e.RowIndex].Cells["RollCallState"].Value != "請假")
                     {
+                        Log.Trace(logTitle + "funcRollEnd");
                         string _workE = dataGridView1.Rows[_dataCurRowIndex].Cells["ClassEnd"].Value.ToString(); //_dataTable.Rows[0][3];
                         funcRollEnd(_employeeID, _workE);
                     }
@@ -74,6 +78,7 @@ namespace EnglishClassManager.Rollcall.EmployeeRollcall
                 {
                     if(dataGridView1.Rows[e.RowIndex].Cells["RollcallStart"].Value == "")
                     {
+                        Log.Trace(logTitle + "funcRollLeave");
                         funcRollLeave(_employeeID);
                         refreshTable();
                     }

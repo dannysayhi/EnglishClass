@@ -58,7 +58,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(253, 63);
+            this.btnDelete.Location = new System.Drawing.Point(281, 63);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 23);
             this.btnDelete.TabIndex = 37;
@@ -78,9 +78,9 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(172, 63);
+            this.btnUpdate.Location = new System.Drawing.Point(178, 63);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdate.Size = new System.Drawing.Size(95, 23);
             this.btnUpdate.TabIndex = 35;
             this.btnUpdate.Text = "學生群組修改";
             this.btnUpdate.UseVisualStyleBackColor = true;
@@ -98,7 +98,7 @@
             // 
             // btn_refresh
             // 
-            this.btn_refresh.Location = new System.Drawing.Point(334, 63);
+            this.btn_refresh.Location = new System.Drawing.Point(362, 63);
             this.btn_refresh.Name = "btn_refresh";
             this.btn_refresh.Size = new System.Drawing.Size(75, 23);
             this.btn_refresh.TabIndex = 38;
@@ -108,7 +108,7 @@
             // 
             // btn_EmployeeCourse
             // 
-            this.btn_EmployeeCourse.Location = new System.Drawing.Point(415, 63);
+            this.btn_EmployeeCourse.Location = new System.Drawing.Point(443, 63);
             this.btn_EmployeeCourse.Name = "btn_EmployeeCourse";
             this.btn_EmployeeCourse.Size = new System.Drawing.Size(75, 23);
             this.btn_EmployeeCourse.TabIndex = 39;
