@@ -53,7 +53,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(12, 104);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(604, 572);
+            this.dataGridView1.Size = new System.Drawing.Size(735, 572);
             this.dataGridView1.TabIndex = 1;
             // 
             // btnDelete
@@ -123,7 +123,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(639, 701);
+            this.ClientSize = new System.Drawing.Size(776, 701);
             this.Controls.Add(this.btn_EmployeeCourse);
             this.Controls.Add(this.btn_refresh);
             this.Controls.Add(this.btnDelete);

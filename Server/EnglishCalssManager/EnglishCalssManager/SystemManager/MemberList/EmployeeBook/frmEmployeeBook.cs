@@ -332,6 +332,16 @@ namespace EnglishClassManager.SystemManager.MemberList.EmployeeBook
 
         private bool checkTextData()
         {
+            System.Text.RegularExpressions.Regex reg = new System.Text.RegularExpressions.Regex(@"^(100|[1-9][0-9]|[1-9])[A-B]$");
+            if (reg.IsMatch(txt_TwName.Text.ToUpper()))
+            {
+                MessageBox.Show("OK!");
+            }
+            else
+            {
+                MessageBox.Show("格式錯誤,請重新輸入");
+            }
+
             if (txt_CardNumber.Text == "" || txt_TwName.Text == "")
             {
                 MessageBox.Show("卡號/名字不可空白");
@@ -339,6 +349,11 @@ namespace EnglishClassManager.SystemManager.MemberList.EmployeeBook
             }
             else
                 return true;
+        }
+
+        private void btn_ReadCard_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

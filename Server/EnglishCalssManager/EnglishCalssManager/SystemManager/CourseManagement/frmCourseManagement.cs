@@ -90,12 +90,15 @@ namespace EnglishClassManager.SystemManager.CourseManagement
               string CommandStr = "  Select Table_CourseManagement.CourseID,"
     + " Table_Course.CourseName ,"
     + " Table_CourseManagement.StudentID, "
-    + "  Table_Course.EmployeeID  "
+    + " Table_StudentBasic.TwName,"
+    + "  Table_Course.EmployeeID,  "
+    + " Table_EmployeeBasic.TwName"
     + "  From Table_CourseManagement "
     + " left outer join Table_Course "
     + "  on Table_Course.CourseID=Table_CourseManagement.CourseID  "
     + "  left outer join Table_EmployeeBasic "
     + "  on Table_Course.EmployeeID=Table_EmployeeBasic.EmployeeID "
+    + "  left outer join Table_StudentBasic  on Table_StudentBasic.StudentID=Table_CourseManagement.StudentID    "
     + "Where  Table_Course.CourseName like '%"
     + selCond
     + "%' ";

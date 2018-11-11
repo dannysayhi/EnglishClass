@@ -203,6 +203,9 @@ namespace EnglishClassManager
                 MessageBox.Show(textBox1.Text + "第" + _getCount + "次簽到成功！");
             }
 
+            //家長接送通知
+
+
             /*string _getCount = functionStudentRollcall.getCount(functionStudentRollcall.getDate, textBox1.Text);
 
             if (_getCount != "")

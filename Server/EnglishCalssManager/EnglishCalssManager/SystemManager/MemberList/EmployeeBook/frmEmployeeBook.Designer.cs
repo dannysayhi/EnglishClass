@@ -59,6 +59,7 @@
             this.btn_clearText = new System.Windows.Forms.Button();
             this.lb_startpage = new System.Windows.Forms.LinkLabel();
             this.lb_endpage = new System.Windows.Forms.LinkLabel();
+            this.btn_ReadCard = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
@@ -66,7 +67,7 @@
             // 
             // btn_CourseManager
             // 
-            this.btn_CourseManager.Location = new System.Drawing.Point(327, 113);
+            this.btn_CourseManager.Location = new System.Drawing.Point(408, 113);
             this.btn_CourseManager.Name = "btn_CourseManager";
             this.btn_CourseManager.Size = new System.Drawing.Size(75, 23);
             this.btn_CourseManager.TabIndex = 0;
@@ -193,7 +194,7 @@
             // 
             // groupBox2
             // 
-            this.tableLayoutPanel1.SetColumnSpan(this.groupBox2, 9);
+            this.tableLayoutPanel1.SetColumnSpan(this.groupBox2, 10);
             this.groupBox2.Controls.Add(this.btn_DepPosEdit);
             this.groupBox2.Controls.Add(this.cbox_Pos);
             this.groupBox2.Controls.Add(this.label2);
@@ -268,12 +269,12 @@
             // 
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tableLayoutPanel1.SetColumnSpan(this.dataGridView1, 9);
+            this.tableLayoutPanel1.SetColumnSpan(this.dataGridView1, 10);
             this.dataGridView1.Location = new System.Drawing.Point(3, 152);
             this.dataGridView1.Name = "dataGridView1";
             this.tableLayoutPanel1.SetRowSpan(this.dataGridView1, 4);
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1335, 571);
+            this.dataGridView1.Size = new System.Drawing.Size(1332, 571);
             this.dataGridView1.TabIndex = 33;
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             this.dataGridView1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dataGridView1_MouseClick);
@@ -324,7 +325,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.tableLayoutPanel1.ColumnCount = 9;
+            this.tableLayoutPanel1.ColumnCount = 10;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
@@ -334,17 +335,19 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.Controls.Add(this.btnSelect, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.btn_CourseManager, 4, 1);
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.Controls.Add(this.btnDelete, 3, 1);
-            this.tableLayoutPanel1.Controls.Add(this.btnAdd, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.btnUpdate, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.groupBox2, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.lb_pageNum, 7, 1);
-            this.tableLayoutPanel1.Controls.Add(this.btn_clearText, 5, 1);
-            this.tableLayoutPanel1.Controls.Add(this.lb_startpage, 6, 1);
-            this.tableLayoutPanel1.Controls.Add(this.lb_endpage, 8, 1);
             this.tableLayoutPanel1.Controls.Add(this.dataGridView1, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.btnAdd, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.btnSelect, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.lb_endpage, 9, 1);
+            this.tableLayoutPanel1.Controls.Add(this.lb_pageNum, 8, 1);
+            this.tableLayoutPanel1.Controls.Add(this.lb_startpage, 7, 1);
+            this.tableLayoutPanel1.Controls.Add(this.btn_clearText, 6, 1);
+            this.tableLayoutPanel1.Controls.Add(this.btn_CourseManager, 5, 1);
+            this.tableLayoutPanel1.Controls.Add(this.btn_ReadCard, 4, 1);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 12);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
@@ -361,8 +364,7 @@
             // lb_pageNum
             // 
             this.lb_pageNum.AutoSize = true;
-            this.lb_pageNum.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lb_pageNum.Location = new System.Drawing.Point(554, 127);
+            this.lb_pageNum.Location = new System.Drawing.Point(635, 110);
             this.lb_pageNum.Name = "lb_pageNum";
             this.lb_pageNum.Size = new System.Drawing.Size(32, 12);
             this.lb_pageNum.TabIndex = 37;
@@ -371,7 +373,7 @@
             // 
             // btn_clearText
             // 
-            this.btn_clearText.Location = new System.Drawing.Point(408, 113);
+            this.btn_clearText.Location = new System.Drawing.Point(489, 113);
             this.btn_clearText.Name = "btn_clearText";
             this.btn_clearText.Size = new System.Drawing.Size(75, 23);
             this.btn_clearText.TabIndex = 38;
@@ -382,10 +384,9 @@
             // lb_startpage
             // 
             this.lb_startpage.AutoSize = true;
-            this.lb_startpage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lb_startpage.Location = new System.Drawing.Point(489, 110);
+            this.lb_startpage.Location = new System.Drawing.Point(570, 110);
             this.lb_startpage.Name = "lb_startpage";
-            this.lb_startpage.Size = new System.Drawing.Size(59, 29);
+            this.lb_startpage.Size = new System.Drawing.Size(59, 12);
             this.lb_startpage.TabIndex = 35;
             this.lb_startpage.TabStop = true;
             this.lb_startpage.Text = "<<     20     ";
@@ -394,13 +395,23 @@
             // lb_endpage
             // 
             this.lb_endpage.AutoSize = true;
-            this.lb_endpage.Location = new System.Drawing.Point(592, 110);
+            this.lb_endpage.Location = new System.Drawing.Point(673, 110);
             this.lb_endpage.Name = "lb_endpage";
             this.lb_endpage.Size = new System.Drawing.Size(56, 12);
             this.lb_endpage.TabIndex = 36;
             this.lb_endpage.TabStop = true;
             this.lb_endpage.Text = "    20     >>";
             this.lb_endpage.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lb_endpage_LinkClicked);
+            // 
+            // btn_ReadCard
+            // 
+            this.btn_ReadCard.Location = new System.Drawing.Point(327, 113);
+            this.btn_ReadCard.Name = "btn_ReadCard";
+            this.btn_ReadCard.Size = new System.Drawing.Size(75, 23);
+            this.btn_ReadCard.TabIndex = 39;
+            this.btn_ReadCard.Text = "卡號讀取";
+            this.btn_ReadCard.UseVisualStyleBackColor = true;
+            this.btn_ReadCard.Click += new System.EventHandler(this.btn_ReadCard_Click);
             // 
             // frmEmployeeBook
             // 
@@ -454,5 +465,6 @@
         private System.Windows.Forms.LinkLabel lb_pageNum;
         private System.Windows.Forms.Button btn_clearText;
         private System.Windows.Forms.Button btn_DepPosEdit;
+        private System.Windows.Forms.Button btn_ReadCard;
     }
 }

@@ -66,6 +66,8 @@
             this.btnLogOut = new System.Windows.Forms.Button();
             this.labAccountName = new System.Windows.Forms.Label();
             this.labAccountLevel = new System.Windows.Forms.Label();
+            this.txt_PickStudentNotic = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -80,7 +82,7 @@
             this.系統紀錄ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(831, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1036, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -154,7 +156,7 @@
             // 員工班別管理ToolStripMenuItem
             // 
             this.員工班別管理ToolStripMenuItem.Name = "員工班別管理ToolStripMenuItem";
-            this.員工班別管理ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.員工班別管理ToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.員工班別管理ToolStripMenuItem.Text = "員工班別管理";
             this.員工班別管理ToolStripMenuItem.Visible = false;
             this.員工班別管理ToolStripMenuItem.Click += new System.EventHandler(this.員工班別管理ToolStripMenuItem_Click);
@@ -210,14 +212,14 @@
             // 手動推播ToolStripMenuItem
             // 
             this.手動推播ToolStripMenuItem.Name = "手動推播ToolStripMenuItem";
-            this.手動推播ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.手動推播ToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.手動推播ToolStripMenuItem.Text = "手動推播";
             this.手動推播ToolStripMenuItem.Click += new System.EventHandler(this.手動推播ToolStripMenuItem_Click);
             // 
             // 刷卡通知ToolStripMenuItem
             // 
             this.刷卡通知ToolStripMenuItem.Name = "刷卡通知ToolStripMenuItem";
-            this.刷卡通知ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.刷卡通知ToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.刷卡通知ToolStripMenuItem.Text = "刷卡通知";
             this.刷卡通知ToolStripMenuItem.Visible = false;
             this.刷卡通知ToolStripMenuItem.Click += new System.EventHandler(this.刷卡通知ToolStripMenuItem_Click);
@@ -228,7 +230,7 @@
             this.推播訊息設定ToolStripMenuItem,
             this.刷卡通知設定ToolStripMenuItem});
             this.訊息預設ToolStripMenuItem.Name = "訊息預設ToolStripMenuItem";
-            this.訊息預設ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.訊息預設ToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.訊息預設ToolStripMenuItem.Text = "訊息預設";
             this.訊息預設ToolStripMenuItem.Click += new System.EventHandler(this.訊息預設ToolStripMenuItem_Click);
             // 
@@ -249,7 +251,7 @@
             // 歷史訊息紀錄ToolStripMenuItem
             // 
             this.歷史訊息紀錄ToolStripMenuItem.Name = "歷史訊息紀錄ToolStripMenuItem";
-            this.歷史訊息紀錄ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.歷史訊息紀錄ToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.歷史訊息紀錄ToolStripMenuItem.Text = "歷史訊息紀錄";
             this.歷史訊息紀錄ToolStripMenuItem.Click += new System.EventHandler(this.歷史訊息紀錄ToolStripMenuItem_Click);
             // 
@@ -265,14 +267,14 @@
             // 學生出勤紀錄ToolStripMenuItem
             // 
             this.學生出勤紀錄ToolStripMenuItem.Name = "學生出勤紀錄ToolStripMenuItem";
-            this.學生出勤紀錄ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.學生出勤紀錄ToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.學生出勤紀錄ToolStripMenuItem.Text = "學生出勤紀錄";
             this.學生出勤紀錄ToolStripMenuItem.Click += new System.EventHandler(this.學生出勤紀錄ToolStripMenuItem_Click);
             // 
             // 員工出勤紀錄ToolStripMenuItem
             // 
             this.員工出勤紀錄ToolStripMenuItem.Name = "員工出勤紀錄ToolStripMenuItem";
-            this.員工出勤紀錄ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.員工出勤紀錄ToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.員工出勤紀錄ToolStripMenuItem.Text = "員工出勤紀錄";
             this.員工出勤紀錄ToolStripMenuItem.Click += new System.EventHandler(this.員工出勤紀錄ToolStripMenuItem_Click);
             // 
@@ -309,7 +311,7 @@
             // 
             // btn_test
             // 
-            this.btn_test.Location = new System.Drawing.Point(748, 25);
+            this.btn_test.Location = new System.Drawing.Point(952, 30);
             this.btn_test.Name = "btn_test";
             this.btn_test.Size = new System.Drawing.Size(75, 23);
             this.btn_test.TabIndex = 2;
@@ -323,20 +325,20 @@
             this.label1.Font = new System.Drawing.Font("微軟正黑體", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label1.Location = new System.Drawing.Point(12, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 40);
+            this.label1.Size = new System.Drawing.Size(177, 40);
             this.label1.TabIndex = 3;
-            this.label1.Text = "label1";
+            this.label1.Text = "現在時間：";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(587, 25);
+            this.textBox1.Location = new System.Drawing.Point(791, 30);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(155, 22);
             this.textBox1.TabIndex = 4;
             // 
             // btnLogIn
             // 
-            this.btnLogIn.Location = new System.Drawing.Point(587, 109);
+            this.btnLogIn.Location = new System.Drawing.Point(791, 114);
             this.btnLogIn.Name = "btnLogIn";
             this.btnLogIn.Size = new System.Drawing.Size(75, 23);
             this.btnLogIn.TabIndex = 5;
@@ -346,7 +348,7 @@
             // 
             // btnAccountEditor
             // 
-            this.btnAccountEditor.Location = new System.Drawing.Point(587, 175);
+            this.btnAccountEditor.Location = new System.Drawing.Point(791, 180);
             this.btnAccountEditor.Name = "btnAccountEditor";
             this.btnAccountEditor.Size = new System.Drawing.Size(75, 23);
             this.btnAccountEditor.TabIndex = 6;
@@ -356,7 +358,7 @@
             // 
             // btnLogOut
             // 
-            this.btnLogOut.Location = new System.Drawing.Point(587, 146);
+            this.btnLogOut.Location = new System.Drawing.Point(791, 151);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(75, 23);
             this.btnLogOut.TabIndex = 7;
@@ -367,7 +369,7 @@
             // labAccountName
             // 
             this.labAccountName.AutoSize = true;
-            this.labAccountName.Location = new System.Drawing.Point(587, 57);
+            this.labAccountName.Location = new System.Drawing.Point(791, 62);
             this.labAccountName.Name = "labAccountName";
             this.labAccountName.Size = new System.Drawing.Size(137, 12);
             this.labAccountName.TabIndex = 8;
@@ -376,17 +378,37 @@
             // labAccountLevel
             // 
             this.labAccountLevel.AutoSize = true;
-            this.labAccountLevel.Location = new System.Drawing.Point(587, 86);
+            this.labAccountLevel.Location = new System.Drawing.Point(791, 91);
             this.labAccountLevel.Name = "labAccountLevel";
             this.labAccountLevel.Size = new System.Drawing.Size(137, 12);
             this.labAccountLevel.TabIndex = 9;
             this.labAccountLevel.Text = "______________________";
             // 
+            // txt_PickStudentNotic
+            // 
+            this.txt_PickStudentNotic.Location = new System.Drawing.Point(18, 130);
+            this.txt_PickStudentNotic.Multiline = true;
+            this.txt_PickStudentNotic.Name = "txt_PickStudentNotic";
+            this.txt_PickStudentNotic.Size = new System.Drawing.Size(743, 413);
+            this.txt_PickStudentNotic.TabIndex = 10;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("微軟正黑體", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label2.Location = new System.Drawing.Point(11, 86);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(209, 40);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "家長接送通知";
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(831, 354);
+            this.ClientSize = new System.Drawing.Size(1036, 554);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txt_PickStudentNotic);
             this.Controls.Add(this.labAccountLevel);
             this.Controls.Add(this.labAccountName);
             this.Controls.Add(this.btnLogOut);
@@ -449,6 +471,8 @@
         private System.Windows.Forms.ToolStripMenuItem 系統紀錄ToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem 員工班別管理ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 歷史訊息紀錄ToolStripMenuItem;
+        private System.Windows.Forms.TextBox txt_PickStudentNotic;
+        private System.Windows.Forms.Label label2;
     }
 }
 

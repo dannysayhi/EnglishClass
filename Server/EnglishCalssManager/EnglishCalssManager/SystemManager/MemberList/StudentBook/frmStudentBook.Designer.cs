@@ -34,6 +34,8 @@
             this.btnSelect = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txt_CHECKIDENT = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.cbox_Onschool = new System.Windows.Forms.ComboBox();
             this.cbox_Senior = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -70,8 +72,6 @@
             this.lb_pageNum = new System.Windows.Forms.LinkLabel();
             this.lb_startpage = new System.Windows.Forms.LinkLabel();
             this.lb_endpage = new System.Windows.Forms.LinkLabel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.txt_CHECKIDENT = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -170,6 +170,23 @@
             this.groupBox2.TabIndex = 28;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "學生資料";
+            // 
+            // txt_CHECKIDENT
+            // 
+            this.txt_CHECKIDENT.Location = new System.Drawing.Point(1152, 79);
+            this.txt_CHECKIDENT.Name = "txt_CHECKIDENT";
+            this.txt_CHECKIDENT.Size = new System.Drawing.Size(55, 22);
+            this.txt_CHECKIDENT.TabIndex = 54;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(1213, 78);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(111, 23);
+            this.button1.TabIndex = 53;
+            this.button1.Text = "btn_CHECKIDENT";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // cbox_Onschool
             // 
@@ -428,7 +445,6 @@
             this.txt_StudentID.Name = "txt_StudentID";
             this.txt_StudentID.Size = new System.Drawing.Size(112, 22);
             this.txt_StudentID.TabIndex = 17;
-            this.txt_StudentID.ReadOnly=false;
             // 
             // btn_ReadCard
             // 
@@ -455,7 +471,6 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.Controls.Add(this.groupBox2, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btn_ReadCard, 4, 1);
             this.tableLayoutPanel1.Controls.Add(this.btnSelect, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.btnAdd, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.btnDelete, 3, 1);
@@ -465,6 +480,7 @@
             this.tableLayoutPanel1.Controls.Add(this.lb_startpage, 6, 1);
             this.tableLayoutPanel1.Controls.Add(this.lb_endpage, 8, 1);
             this.tableLayoutPanel1.Controls.Add(this.dataGridView1, 9, 3);
+            this.tableLayoutPanel1.Controls.Add(this.btn_ReadCard, 4, 1);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(2, 8);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
@@ -522,23 +538,6 @@
             this.lb_endpage.TabStop = true;
             this.lb_endpage.Text = "    20     >>";
             this.lb_endpage.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lb_endpage_LinkClicked);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(1213, 78);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(111, 23);
-            this.button1.TabIndex = 53;
-            this.button1.Text = "btn_CHECKIDENT";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // txt_CHECKIDENT
-            // 
-            this.txt_CHECKIDENT.Location = new System.Drawing.Point(1152, 79);
-            this.txt_CHECKIDENT.Name = "txt_CHECKIDENT";
-            this.txt_CHECKIDENT.Size = new System.Drawing.Size(55, 22);
-            this.txt_CHECKIDENT.TabIndex = 54;
             // 
             // frmStudentBook
             // 

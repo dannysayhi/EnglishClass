@@ -1,4 +1,5 @@
-﻿using EnglishClassManager.Utility.Database;
+﻿using AOISystem.Utility.Logging;
+using EnglishClassManager.Utility.Database;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,6 +16,7 @@ namespace EnglishCalssManager.Broadcast.CardNotice
     {
         public DatabaseCore dbc = DatabaseManager._databaseCore;
         public DatabaseTable dbt = DatabaseManager._databaseTable;
+        private string logTitle = "frmCardNotice：";
         public frmCardNotice()
         {
             InitializeComponent();
@@ -46,6 +48,7 @@ namespace EnglishCalssManager.Broadcast.CardNotice
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            Log.Trace(logTitle + btnAdd.Name.ToString());
             DataTable _dataTable = new DataTable();
 
             string CommandStr = string.Format("select count(*) from EnglishClassDBtest.dbo.Table_CardNoticeSet where EnglishClassDBtest.dbo.Table_CardNoticeSet.numCardMsg='{0}'", txtMsgID.Text);
@@ -100,6 +103,7 @@ namespace EnglishCalssManager.Broadcast.CardNotice
 
         private void dgEditmsg(int _rowIndex)
         {
+            Log.Trace(logTitle + "Edit msg");
             //update
             string CommandStr = string.Format(
            "Update Table_CardNoticeSet"
@@ -111,6 +115,7 @@ namespace EnglishCalssManager.Broadcast.CardNotice
 
         private void dgDelmsg(int _rowIndex)
         {
+            Log.Trace(logTitle + "Del msg");
             string CommandStr = string.Format(
           "Delete from Table_CardNoticeSet"
           + " Where numCardMsg='{0}'"

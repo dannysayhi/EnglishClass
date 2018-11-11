@@ -336,7 +336,7 @@ namespace EnglishClassManager.Rollcall.StudentRollcall
            // _dataTable = dbcR.CommandFunctionTempDB("Table_CourseManagement", CommandStr, _dataTable, true);
 
             dataGridView1.DataSource = _dataTable;
-            this.dataGridView1.Columns[3].DefaultCellStyle.Format = "yyyy-MM-dd hh:mm:ss";
+            this.dataGridView1.Columns[4].DefaultCellStyle.Format = "yyyy-MM-dd hh:mm:ss";
             //createTempTable();
             closeTempTable();
 
