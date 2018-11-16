@@ -133,6 +133,12 @@
     <Compile Include="EmployeeAttence\ClassScheduleSetting\frmClassScheduleSetting.Designer.cs">
       <DependentUpon>frmClassScheduleSetting.cs</DependentUpon>
     </Compile>
+    <Compile Include="EmployeeAttence\ClassScheduleSetting\frmClassScheduleSettingNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeAttence\ClassScheduleSetting\frmClassScheduleSettingNew.Designer.cs">
+      <DependentUpon>frmClassScheduleSettingNew.cs</DependentUpon>
+    </Compile>
     <Compile Include="EmployeeAttence\ClassScheduleSetting\frmClassScheduleUpdate.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -321,6 +327,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EmployeeAttence\ClassScheduleSetting\frmClassScheduleSetting.resx">
       <DependentUpon>frmClassScheduleSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeAttence\ClassScheduleSetting\frmClassScheduleSettingNew.resx">
+      <DependentUpon>frmClassScheduleSettingNew.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EmployeeAttence\ClassScheduleSetting\frmClassScheduleUpdate.resx">
       <DependentUpon>frmClassScheduleUpdate.cs</DependentUpon>

@@ -7,6 +7,7 @@ using EnglishCalssManager.Broadcast.ManualBroadcast;
 using EnglishCalssManager.Broadcast.MessageSetting;
 using EnglishCalssManager.EmployeeAttence.ClassEmployeeManager;
 using EnglishCalssManager.EmployeeAttence.ClassScheduleManager;
+using EnglishCalssManager.EmployeeAttence.ClassScheduleSetting;
 using EnglishCalssManager.Report.EmployeeRecord;
 using EnglishCalssManager.Report.StudentRecord;
 using EnglishCalssManager.Rollcall.EmployeeRollcall;
@@ -271,8 +272,11 @@ namespace EnglishClassManager
 
         private void 班別設定ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmClassScheduleSetting _frmClassScheduleSetting = new frmClassScheduleSetting();
-            _frmClassScheduleSetting.ShowDialog();
+            frmClassScheduleSettingNew _frmClassScheduleSettingNew = new frmClassScheduleSettingNew();
+            _frmClassScheduleSettingNew.ShowDialog();
+
+           // frmClassScheduleSetting _frmClassScheduleSetting = new frmClassScheduleSetting();
+           //_frmClassScheduleSetting.ShowDialog();
         }
 
         private void 權限管理ToolStripMenuItem_Click(object sender, EventArgs e)
