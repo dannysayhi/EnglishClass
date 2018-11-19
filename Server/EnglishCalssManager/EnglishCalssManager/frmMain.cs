@@ -13,6 +13,7 @@ using EnglishCalssManager.Report.StudentRecord;
 using EnglishCalssManager.Rollcall.EmployeeRollcall;
 using EnglishCalssManager.Rollcall.StudentRollcall;
 using EnglishCalssManager.SystemConfig.SystemLog;
+using EnglishCalssManager.Utility.Database;
 using EnglishClassManager.EmployeeAttence.ClassScheduleManager;
 using EnglishClassManager.EmployeeAttence.ClassScheduleSetting;
 using EnglishClassManager.Rollcall.EmployeeRollcall;
@@ -359,6 +360,12 @@ namespace EnglishClassManager
             _frmHistoryMessage.ShowDialog();
         }
 
+        private void 資料庫管理ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmDBconfig _frmDBconfig = new frmDBconfig();
+            _frmDBconfig.Show();
+        }
+
 
         #endregion ToolStripMenuItem
 
@@ -392,7 +399,9 @@ namespace EnglishClassManager
         {
             baseClassScheduleManager.initialTable();
             baseEmployeeRollcall.CreateTable();
+            baseEmployeeRollcall.DelTable();
             baseStudentRollcall.CreateTable();
+            baseStudentRollcall.DelTable();
         }
 
         #region Account Method
@@ -493,5 +502,7 @@ namespace EnglishClassManager
             e.Cancel = true; //關閉視窗時取消
             _frmSystemLog.Hide(); //隱藏式窗,下次再show出
         }
+
+    
     }
 }

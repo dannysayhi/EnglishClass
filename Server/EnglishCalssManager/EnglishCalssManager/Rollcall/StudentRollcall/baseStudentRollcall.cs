@@ -32,5 +32,20 @@ namespace EnglishCalssManager.Rollcall.StudentRollcall
                 dbcR.ExecuteNonQuery(CommandStr);
             }
         }
+        public static void DelTable()
+        {
+            string datelong_del_start = "";
+            string CommandStr = "";
+            for (int i = 0; i < 50; i++)
+            {
+                CommandStr = string.Format(" select count(*) from sysobjects where name='Table_StudentRollcall_{0}' "
+               , date);
+                if (dbcR.strExecuteScalar(CommandStr) != "0")
+                {
+                    CommandStr = string.Format(" DROP TABLE EnglishClassDBtestRollcall.[dbo].[Table_StudentRollcall_{0}]", datelong_del_start);
+                    dbcR.ExecuteNonQuery(CommandStr);
+                }
+            }
+        }
     }
 }

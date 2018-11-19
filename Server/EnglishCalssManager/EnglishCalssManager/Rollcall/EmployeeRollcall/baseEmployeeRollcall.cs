@@ -79,5 +79,21 @@ namespace EnglishCalssManager.Rollcall.EmployeeRollcall
                 }
             }
         }
+        public static void DelTable()
+        {
+            string datelong_del_start = "";
+            string CommandStr = "";
+            for (int i = 0; i < 50; i++)
+            {
+                datelong_del_start = DateTime.Now.AddDays(-200 - i).ToString("yyyyMMdd");
+                CommandStr = string.Format(" select count(*) from sysobjects where name='Table_EmployeeRollcall_{0}' "
+               , datelong_del_start);
+                if (dbcR.strExecuteScalar(CommandStr) != "0")
+                {
+                    CommandStr = string.Format(" DROP TABLE EnglishClassDBtestRollcall.[dbo].[Table_EmployeeRollcall_{0}]", datelong_del_start);
+                    dbcR.ExecuteNonQuery(CommandStr);
+                }
+            }
+        }
     }
 }

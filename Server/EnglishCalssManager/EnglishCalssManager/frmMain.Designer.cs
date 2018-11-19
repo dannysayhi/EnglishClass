@@ -68,6 +68,7 @@
             this.labAccountLevel = new System.Windows.Forms.Label();
             this.txt_PickStudentNotic = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.資料庫管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -281,7 +282,8 @@
             // 系統紀錄ToolStripMenuItem
             // 
             this.系統紀錄ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.系統紀錄ToolStripMenuItem1});
+            this.系統紀錄ToolStripMenuItem1,
+            this.資料庫管理ToolStripMenuItem});
             this.系統紀錄ToolStripMenuItem.Name = "系統紀錄ToolStripMenuItem";
             this.系統紀錄ToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
             this.系統紀錄ToolStripMenuItem.Text = "系統設定";
@@ -289,7 +291,7 @@
             // 系統紀錄ToolStripMenuItem1
             // 
             this.系統紀錄ToolStripMenuItem1.Name = "系統紀錄ToolStripMenuItem1";
-            this.系統紀錄ToolStripMenuItem1.Size = new System.Drawing.Size(122, 22);
+            this.系統紀錄ToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.系統紀錄ToolStripMenuItem1.Text = "系統紀錄";
             this.系統紀錄ToolStripMenuItem1.Click += new System.EventHandler(this.系統紀錄ToolStripMenuItem1_Click);
             // 
@@ -402,6 +404,13 @@
             this.label2.TabIndex = 11;
             this.label2.Text = "家長接送通知";
             // 
+            // 資料庫管理ToolStripMenuItem
+            // 
+            this.資料庫管理ToolStripMenuItem.Name = "資料庫管理ToolStripMenuItem";
+            this.資料庫管理ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.資料庫管理ToolStripMenuItem.Text = "資料庫管理";
+            this.資料庫管理ToolStripMenuItem.Click += new System.EventHandler(this.資料庫管理ToolStripMenuItem_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -473,6 +482,7 @@
         private System.Windows.Forms.ToolStripMenuItem 歷史訊息紀錄ToolStripMenuItem;
         private System.Windows.Forms.TextBox txt_PickStudentNotic;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ToolStripMenuItem 資料庫管理ToolStripMenuItem;
     }
 }
 

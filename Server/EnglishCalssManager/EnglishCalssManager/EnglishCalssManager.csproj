@@ -182,6 +182,12 @@
     <Compile Include="Utility\Database\DatabaseCoreRollcall.cs" />
     <Compile Include="Utility\Database\DatabaseManager.cs" />
     <Compile Include="Utility\Database\DatabaseTable.cs" />
+    <Compile Include="Utility\Database\frmDBconfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utility\Database\frmDBconfig.Designer.cs">
+      <DependentUpon>frmDBconfig.cs</DependentUpon>
+    </Compile>
     <Compile Include="Utility\Database\frmParamDB.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -339,6 +345,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SystemManager\CourseManagement\frmEmployeeCourseManager.resx">
       <DependentUpon>frmEmployeeCourseManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utility\Database\frmDBconfig.resx">
+      <DependentUpon>frmDBconfig.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Utility\Database\frmParamDB.resx" />
     <EmbeddedResource Include="frmMain.resx">
