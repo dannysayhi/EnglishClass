@@ -312,6 +312,15 @@
     <Compile Include="Utility\Logging\uctrlTackTimeTable.Designer.cs">
       <DependentUpon>uctrlTackTimeTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Utility\RecipeControl\frmRecipe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utility\RecipeControl\frmRecipe.Designer.cs">
+      <DependentUpon>frmRecipe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\RecipeControl\RecipeInfo.cs" />
+    <Compile Include="Utility\RecipeControl\RecipeManager.cs" />
+    <Compile Include="Utility\RecipeControl\Recipe_Functions.cs" />
     <Compile Include="Utility\Threading\ActionTask.cs" />
     <EmbeddedResource Include="Broadcast\CardNotice\frmCardNotice.resx">
       <DependentUpon>frmCardNotice.cs</DependentUpon>
@@ -407,6 +416,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Utility\Logging\uctrlTackTimeTable.resx">
       <DependentUpon>uctrlTackTimeTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utility\RecipeControl\frmRecipe.resx">
+      <DependentUpon>frmRecipe.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="EnglishCalssDBtestDataSet2.xsc">
       <DependentUpon>EnglishCalssDBtestDataSet2.xsd</DependentUpon>

@@ -30,6 +30,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -48,7 +49,11 @@ namespace EnglishClassManager
         public System.Windows.Forms.ToolStripMenuItem[] _T = new System.Windows.Forms.ToolStripMenuItem[23];
         private Hashtable _TH;
         private string[] _Ts = new string[23];
-        
+        private int _dbinitialcount = 0;
+        private DateTime _dttest;
+        //一定要声明成局部变量以保持对Timer的引用，否则会被垃圾收集器回收！
+        private System.Threading.Timer timer;
+
         //private string funcStudRCdate = functionStudentRollcall.getDate;
 
         public frmMain()
@@ -71,9 +76,28 @@ namespace EnglishClassManager
             dbt = DatabaseManager._databaseTable;
             dbcR = DatabaseManager._databaseCoreRollcall;
             initialComp();
-            initialTalbe();
+
+            //宣告timer要做什麼事.要做什麼事呢?要做_do的事
+            TimerCallback callback = new TimerCallback(_do);
+            //1.function 2.開關  3.等多久再開始  4.隔多久反覆執行
+            timer = new System.Threading.Timer(callback, null, 0, 600000);
+
+
             //ControlsVisible(false, false, false, false, false, false);
             ControlsVisible(true, true, true, true, true, true);
+        }
+        private void _do(object state)
+        {
+            this.BeginInvoke(new setLable2(setLabel2));
+            initialTalbe();
+        }
+        delegate void setLable2();
+        private void setLabel2()
+        {
+            _dbinitialcount++;
+            //label1.Text = _dttest.ToString();
+            Log.Trace("DB initial count："+ _dbinitialcount.ToString());
+            lb_DBinitialCount.Text = lb_DBinitialCount.Text + _dbinitialcount.ToString();
         }
 
         // 登入觸發
@@ -178,6 +202,10 @@ namespace EnglishClassManager
                 label1.Text = "現在時間： " + DateTime.Now.ToString("yyyyMM/dd HH:mm:ss");
                 scanStudRC();
             }
+        }
+        private void DBinitial_Tick(object sender, EventArgs e)
+        {
+
         }
 
         private void ckb_Systimer_CheckedChanged(object sender, EventArgs e)
@@ -397,11 +425,13 @@ namespace EnglishClassManager
 
         private void initialTalbe()
         {
+
             baseClassScheduleManager.initialTable();
             baseEmployeeRollcall.CreateTable();
             baseEmployeeRollcall.DelTable();
             baseStudentRollcall.CreateTable();
             baseStudentRollcall.DelTable();
+            _dttest = DateTime.Now;
         }
 
         #region Account Method
@@ -502,7 +532,5 @@ namespace EnglishClassManager
             e.Cancel = true; //關閉視窗時取消
             _frmSystemLog.Hide(); //隱藏式窗,下次再show出
         }
-
-    
     }
 }

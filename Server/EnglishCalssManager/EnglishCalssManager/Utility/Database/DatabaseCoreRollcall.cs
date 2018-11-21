@@ -133,6 +133,7 @@ namespace EnglishClassManager.Utility.Database
                     myCommand.ExecuteNonQuery();
                     connection.Close();
                     connection.Dispose();
+                    //Log.Trace(logTitle + CommandStr);
                 }
             }
             catch (Exception ex)

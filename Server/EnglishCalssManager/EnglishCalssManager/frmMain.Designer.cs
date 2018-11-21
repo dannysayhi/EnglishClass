@@ -56,6 +56,7 @@
             this.員工出勤紀錄ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.系統紀錄ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.系統紀錄ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.資料庫管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Systimer = new System.Windows.Forms.Timer(this.components);
             this.ckb_Systimer = new System.Windows.Forms.CheckBox();
             this.btn_test = new System.Windows.Forms.Button();
@@ -68,7 +69,8 @@
             this.labAccountLevel = new System.Windows.Forms.Label();
             this.txt_PickStudentNotic = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.資料庫管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.DBinitial = new System.Windows.Forms.Timer(this.components);
+            this.lb_DBinitialCount = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -291,9 +293,16 @@
             // 系統紀錄ToolStripMenuItem1
             // 
             this.系統紀錄ToolStripMenuItem1.Name = "系統紀錄ToolStripMenuItem1";
-            this.系統紀錄ToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.系統紀錄ToolStripMenuItem1.Size = new System.Drawing.Size(134, 22);
             this.系統紀錄ToolStripMenuItem1.Text = "系統紀錄";
             this.系統紀錄ToolStripMenuItem1.Click += new System.EventHandler(this.系統紀錄ToolStripMenuItem1_Click);
+            // 
+            // 資料庫管理ToolStripMenuItem
+            // 
+            this.資料庫管理ToolStripMenuItem.Name = "資料庫管理ToolStripMenuItem";
+            this.資料庫管理ToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.資料庫管理ToolStripMenuItem.Text = "資料庫管理";
+            this.資料庫管理ToolStripMenuItem.Click += new System.EventHandler(this.資料庫管理ToolStripMenuItem_Click);
             // 
             // Systimer
             // 
@@ -404,18 +413,27 @@
             this.label2.TabIndex = 11;
             this.label2.Text = "家長接送通知";
             // 
-            // 資料庫管理ToolStripMenuItem
+            // DBinitial
             // 
-            this.資料庫管理ToolStripMenuItem.Name = "資料庫管理ToolStripMenuItem";
-            this.資料庫管理ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.資料庫管理ToolStripMenuItem.Text = "資料庫管理";
-            this.資料庫管理ToolStripMenuItem.Click += new System.EventHandler(this.資料庫管理ToolStripMenuItem_Click);
+            this.DBinitial.Enabled = true;
+            this.DBinitial.Interval = 3000;
+            this.DBinitial.Tick += new System.EventHandler(this.DBinitial_Tick);
+            // 
+            // lb_DBinitialCount
+            // 
+            this.lb_DBinitialCount.AutoSize = true;
+            this.lb_DBinitialCount.Location = new System.Drawing.Point(262, 108);
+            this.lb_DBinitialCount.Name = "lb_DBinitialCount";
+            this.lb_DBinitialCount.Size = new System.Drawing.Size(94, 12);
+            this.lb_DBinitialCount.TabIndex = 12;
+            this.lb_DBinitialCount.Text = "DB initial Count：";
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1036, 554);
+            this.Controls.Add(this.lb_DBinitialCount);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txt_PickStudentNotic);
             this.Controls.Add(this.labAccountLevel);
@@ -483,6 +501,8 @@
         private System.Windows.Forms.TextBox txt_PickStudentNotic;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ToolStripMenuItem 資料庫管理ToolStripMenuItem;
+        private System.Windows.Forms.Timer DBinitial;
+        private System.Windows.Forms.Label lb_DBinitialCount;
     }
 }
 

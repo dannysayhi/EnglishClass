@@ -3,6 +3,7 @@ using System.Windows.Forms;
 using System.IO;
 using Newtonsoft.Json;
 using System.Collections;
+using System.Reflection;
 
 namespace _4RobotSystem.PCaGUtility.FileControl
 {
@@ -12,7 +13,10 @@ namespace _4RobotSystem.PCaGUtility.FileControl
         private static string strFileName = "Json";
         private static string strFileNamePath= "";
         private static StreamWriter fsWriter;
-        //
+        /// <summary>
+        /// 設定JSON檔案
+        /// </summary>
+        /// <param name="_strFileName"></param>
         public static void SetJsonFile(string _strFileName)
         {
             if (!_strFileName.Equals(""))
@@ -33,6 +37,7 @@ namespace _4RobotSystem.PCaGUtility.FileControl
             {
             }
         }
+        
         /// <summary>
         /// 檢查Log File Exist
         /// </summary>

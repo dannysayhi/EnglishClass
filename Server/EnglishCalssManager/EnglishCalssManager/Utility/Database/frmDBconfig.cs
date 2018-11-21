@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
 using System.ComponentModel;
+using _4RobotSystem.RecipeTemp;
 
 namespace EnglishCalssManager.Utility.Database
 {
@@ -42,6 +43,12 @@ namespace EnglishCalssManager.Utility.Database
         private void btn_connectTest_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_Recipefrm_Click(object sender, EventArgs e)
+        {
+            frmRecipe _frmRecipe = new frmRecipe();
+            _frmRecipe.Show();
         }
     }
 

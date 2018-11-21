@@ -2747,3 +2747,4 @@ C:\Users\user\ocaip-devenv\new_repo\EnglishClass\Server\EnglishCalssManager\Engl
 C:\Users\user\ocaip-devenv\new_repo\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\obj\Debug\EnglishCalssManager.csproj.GenerateResource.Cache
 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\obj\Debug\EnglishCalssManager.EmployeeAttence.ClassScheduleSetting.frmClassScheduleSettingNew.resources
 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\obj\Debug\EnglishCalssManager.Utility.Database.frmDBconfig.resources
+D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\obj\Debug\_4RobotSystem.RecipeTemp.frmRecipe.resources

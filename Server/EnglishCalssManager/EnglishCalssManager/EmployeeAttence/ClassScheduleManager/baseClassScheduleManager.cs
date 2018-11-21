@@ -273,6 +273,7 @@ namespace EnglishCalssManager.EmployeeAttence.ClassScheduleManager
             string DayofWeek = "";
             CurYear = Convert.ToInt32(strYear);
             CurMonth = Convert.ToInt32(strMounth);
+
             dt = new DateTime(CurYear, CurMonth, Convert.ToInt32(_date.Substring(1)));
             CurDay = dt.DayOfWeek.ToString("d");//tmp2 = 4 
 
