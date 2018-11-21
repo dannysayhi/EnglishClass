@@ -4983,3 +4983,7 @@ Error Number:102,State:1,Class:15
 2018.11.21 12:01:33.953 | TRC | 0 | 1 | frmStudentRollcall：btn_ON
 2018.11.21 12:01:36.217 | TRC | 0 | 1 | frmStudentRollcall：btn_ON
 2018.11.21 12:01:43.637 | TRC | 0 | 1 | frmStudentRollcall：frmStudentRollcall_Load
+2018.11.21 13:36:49.826 | TRC | 0 | 0 | start log
+2018.11.21 13:36:51.788 | TRC | 0 | 1 | DB initial count：1
+2018.11.21 13:40:24.876 | TRC | 0 | 0 | start log
+2018.11.21 13:40:28.208 | TRC | 0 | 1 | DB initial count：1

@@ -50,7 +50,7 @@ namespace EnglishClassManager
         private Hashtable _TH;
         private string[] _Ts = new string[23];
         private int _dbinitialcount = 0;
-        private DateTime _dttest;
+
         //一定要声明成局部变量以保持对Timer的引用，否则会被垃圾收集器回收！
         private System.Threading.Timer timer;
 
@@ -95,7 +95,6 @@ namespace EnglishClassManager
         private void setLabel2()
         {
             _dbinitialcount++;
-            //label1.Text = _dttest.ToString();
             Log.Trace("DB initial count："+ _dbinitialcount.ToString());
             lb_DBinitialCount.Text = lb_DBinitialCount.Text + _dbinitialcount.ToString();
         }
@@ -425,13 +424,11 @@ namespace EnglishClassManager
 
         private void initialTalbe()
         {
-
             baseClassScheduleManager.initialTable();
             baseEmployeeRollcall.CreateTable();
             baseEmployeeRollcall.DelTable();
             baseStudentRollcall.CreateTable();
             baseStudentRollcall.DelTable();
-            _dttest = DateTime.Now;
         }
 
         #region Account Method
