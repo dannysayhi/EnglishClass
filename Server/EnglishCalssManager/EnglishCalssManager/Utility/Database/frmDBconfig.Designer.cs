@@ -30,6 +30,7 @@
         {
             this.btn_connectTest = new System.Windows.Forms.Button();
             this.cbox_ConnectStr = new System.Windows.Forms.ComboBox();
+            this.propertyGrid1 = new System.Windows.Forms.PropertyGrid();
             this.SuspendLayout();
             // 
             // btn_connectTest
@@ -40,6 +41,7 @@
             this.btn_connectTest.TabIndex = 0;
             this.btn_connectTest.Text = "連線測試";
             this.btn_connectTest.UseVisualStyleBackColor = true;
+            this.btn_connectTest.Click += new System.EventHandler(this.btn_connectTest_Click);
             // 
             // cbox_ConnectStr
             // 
@@ -49,11 +51,19 @@
             this.cbox_ConnectStr.Size = new System.Drawing.Size(717, 20);
             this.cbox_ConnectStr.TabIndex = 1;
             // 
+            // propertyGrid1
+            // 
+            this.propertyGrid1.Location = new System.Drawing.Point(12, 54);
+            this.propertyGrid1.Name = "propertyGrid1";
+            this.propertyGrid1.Size = new System.Drawing.Size(870, 384);
+            this.propertyGrid1.TabIndex = 2;
+            // 
             // frmDBconfig
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(926, 463);
+            this.Controls.Add(this.propertyGrid1);
             this.Controls.Add(this.cbox_ConnectStr);
             this.Controls.Add(this.btn_connectTest);
             this.Name = "frmDBconfig";
@@ -67,5 +77,6 @@
 
         private System.Windows.Forms.Button btn_connectTest;
         private System.Windows.Forms.ComboBox cbox_ConnectStr;
+        private System.Windows.Forms.PropertyGrid propertyGrid1;
     }
 }

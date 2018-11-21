@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
+using System.ComponentModel;
 
 namespace EnglishCalssManager.Utility.Database
 {
@@ -18,10 +19,14 @@ namespace EnglishCalssManager.Utility.Database
             InitializeComponent();
         }
 
+        public baseinfo _bif = new baseinfo();
+
         private void frmDBconfig_Load(object sender, EventArgs e)
         {
-
+            propertyGrid1.SelectedObject=_bif;
         }
+
+     
 
         /// Read xml file and bind it to comboBox
         /// 
@@ -34,5 +39,15 @@ namespace EnglishCalssManager.Utility.Database
             cbox_ConnectStr.DataSource = _objdataset.Tables[0];
         }
 
+        private void btn_connectTest_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+
+    public class baseinfo
+    {
+        [Browsable(true), Category("濾波設定"), Description("高斯濾波")]
+        public bool IsGaussFilter { set; get; }
     }
 }
