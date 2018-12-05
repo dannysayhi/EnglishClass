@@ -1,0 +1,238 @@
+2018.12.05 22:38:26.919 | TRC | 0 | 0 | start log
+2018.12.05 22:38:27.613 | TRC | 0 | 1 | DB initial count：1
+2018.12.05 22:44:51.773 | TRC | 0 | 0 | start log
+2018.12.05 22:44:52.085 | TRC | 0 | 1 | DB initial count：1
+2018.12.05 22:46:56.603 | TRC | 0 | 0 | start log
+2018.12.05 22:46:57.444 | TRC | 0 | 1 | DB initial count：1
+2018.12.05 22:49:06.927 | TRC | 0 | 0 | start log
+2018.12.05 22:49:07.726 | TRC | 0 | 1 | DB initial count：1
+2018.12.05 22:50:34.987 | TRC | 0 | 0 | start log
+2018.12.05 22:50:35.364 | TRC | 0 | 1 | DB initial count：1
+2018.12.05 22:50:38.451 | TRC | 0 | 1 | DatabaseCore：CommandFunctionDB：Insert into EnglishClassShift.[dbo].[Table_ClassShift_2019_06] Values(97,'3','3','休','3','3','休','3','3','3','休','3','3','休','3','3','3','休','3','3','休','3','3','3','休','3','3','休','3',)
+2018.12.05 22:50:38.478 | TRC | 0 | 1 | System.Data.SqlClient.SqlException (0x80131904): 接近 ')' 之處的語法不正確。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   於 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   於 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   於 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   於 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   於 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   於 EnglishClassManager.Utility.Database.DatabaseCore.CommandFunctionDB(String dbTable, String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCore.cs: 行 72
+ClientConnectionId:6287dd9c-94d9-4985-a330-ca76e7a9c3b2
+Error Number:102,State:1,Class:15
+2018.12.05 22:50:38.601 | TRC | 0 | 1 | DatabaseCore：CommandFunctionDB：Insert into EnglishClassShift.[dbo].[Table_ClassShift_2019_06] Values(98,'7','7','休','7','7','休','7','7','7','休','7','7','休','7','7','7','休','7','7','休','7','7','7','休','7','7','休','7',)
+2018.12.05 22:50:38.656 | TRC | 0 | 1 | System.Data.SqlClient.SqlException (0x80131904): 接近 ')' 之處的語法不正確。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   於 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   於 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   於 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   於 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   於 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   於 EnglishClassManager.Utility.Database.DatabaseCore.CommandFunctionDB(String dbTable, String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCore.cs: 行 72
+ClientConnectionId:23e19479-922b-4435-ae57-be18b0c55fc0
+Error Number:102,State:1,Class:15
+2018.12.05 22:50:38.756 | TRC | 0 | 1 | DatabaseCore：CommandFunctionDB：Insert into EnglishClassShift.[dbo].[Table_ClassShift_2019_06] Values(99,'6','6','休','6','6','休','6','6','6','休','6','6','休','6','6','6','休','6','6','休','6','6','6','休','6','6','休','6',)
+2018.12.05 22:50:38.767 | TRC | 0 | 1 | System.Data.SqlClient.SqlException (0x80131904): 接近 ')' 之處的語法不正確。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   於 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   於 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   於 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   於 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   於 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   於 EnglishClassManager.Utility.Database.DatabaseCore.CommandFunctionDB(String dbTable, String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCore.cs: 行 72
+ClientConnectionId:64e39de9-eb56-4ba2-8a56-3f3ee1685f01
+Error Number:102,State:1,Class:15
+2018.12.05 22:50:39.701 | TRC | 0 | 2 | DatabaseCore：CommandFunctionDB：Insert into EnglishClassShift.[dbo].[Table_ClassShift_2019_08] Values(98,'7','7','休','7','7','7','休','7','7','休','7','7','7','休','7','7','休','7','7','7','休','7','7','休','7','7','7','休','7','7',)
+2018.12.05 22:50:39.759 | TRC | 0 | 2 | System.Data.SqlClient.SqlException (0x80131904): 接近 ')' 之處的語法不正確。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   於 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   於 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   於 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   於 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   於 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   於 EnglishClassManager.Utility.Database.DatabaseCore.CommandFunctionDB(String dbTable, String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCore.cs: 行 72
+ClientConnectionId:164ab320-1960-443e-a5fe-bf4ae4e296b8
+Error Number:102,State:1,Class:15
+2018.12.05 22:50:39.931 | TRC | 0 | 2 | DatabaseCore：CommandFunctionDB：Insert into EnglishClassShift.[dbo].[Table_ClassShift_2019_05] Values(91,'休','3','3','休','3','3','3','休','3','3','休','3','3','3','休','3','3','休','3','3','3','休','3','3','休','3','3','3','休','3',)
+2018.12.05 22:50:39.973 | TRC | 0 | 2 | System.Data.SqlClient.SqlException (0x80131904): 接近 ')' 之處的語法不正確。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   於 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   於 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   於 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   於 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   於 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   於 EnglishClassManager.Utility.Database.DatabaseCore.CommandFunctionDB(String dbTable, String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCore.cs: 行 72
+ClientConnectionId:5b470817-1c19-4bc3-b8ea-6b7b218eb325
+Error Number:102,State:1,Class:15
+2018.12.05 22:50:41.282 | TRC | 0 | 2 | DatabaseCore：CommandFunctionDB：Insert into EnglishClassShift.[dbo].[Table_ClassShift_2019_11] Values(99,'6','休','6','6','休','6','6','6','休','6','6','休','6','6','6','休','6','6','休','6','6','6','休','6','休','6','6','6','休',)
+2018.12.05 22:50:41.323 | TRC | 0 | 2 | System.Data.SqlClient.SqlException (0x80131904): 接近 ')' 之處的語法不正確。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   於 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   於 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   於 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   於 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   於 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   於 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   於 EnglishClassManager.Utility.Database.DatabaseCore.CommandFunctionDB(String dbTable, String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCore.cs: 行 72
+ClientConnectionId:64e39de9-eb56-4ba2-8a56-3f3ee1685f01
+Error Number:102,State:1,Class:15
+2018.12.05 22:53:43.777 | TRC | 0 | 0 | start log
+2018.12.05 22:53:44.332 | TRC | 0 | 1 | DB initial count：1
+2018.12.05 22:55:42.834 | TRC | 0 | 0 | start log
+2018.12.05 22:55:43.268 | TRC | 0 | 1 | DB initial count：1
+2018.12.05 22:56:17.655 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
+2018.12.05 22:58:27.447 | TRC | 0 | 0 | start log
+2018.12.05 22:58:27.784 | TRC | 0 | 1 | DB initial count：1
+2018.12.05 23:06:05.979 | TRC | 0 | 0 | start log
+2018.12.05 23:06:06.644 | TRC | 0 | 1 | DB initial count：1
+2018.12.05 23:06:56.288 | TRC | 0 | 0 | start log
+2018.12.05 23:06:56.515 | TRC | 0 | 1 | DB initial count：1
+2018.12.05 23:08:13.818 | TRC | 0 | 0 | start log
+2018.12.05 23:08:14.174 | TRC | 0 | 1 | DB initial count：1
+2018.12.05 23:12:15.645 | TRC | 0 | 0 | start log
+2018.12.05 23:12:16.140 | TRC | 0 | 1 | DB initial count：1
+2018.12.05 23:16:55.243 | TRC | 0 | 0 | start log
+2018.12.05 23:16:55.761 | TRC | 0 | 1 | DB initial count：1
+2018.12.05 23:18:13.814 | TRC | 0 | 0 | start log
+2018.12.05 23:18:14.134 | TRC | 0 | 1 | DB initial count：1
+2018.12.05 23:18:52.041 | TRC | 0 | 0 | start log
+2018.12.05 23:18:52.382 | TRC | 0 | 1 | DB initial count：1
+2018.12.05 23:19:13.314 | TRC | 0 | 0 | start log
+2018.12.05 23:19:13.652 | TRC | 0 | 1 | DB initial count：1
+2018.12.05 23:19:14.898 | TRC | 0 | 1 | frmStudentRollcall：frmStudentRollcall_Load
+2018.12.05 23:20:52.668 | TRC | 0 | 0 | start log
+2018.12.05 23:20:53.115 | TRC | 0 | 1 | DB initial count：1
+2018.12.05 23:23:19.676 | TRC | 0 | 0 | start log
+2018.12.05 23:23:20.321 | TRC | 0 | 1 | DB initial count：1
+2018.12.05 23:24:32.504 | TRC | 0 | 0 | start log
+2018.12.05 23:24:33.151 | TRC | 0 | 1 | DB initial count：1
+2018.12.05 23:26:03.668 | TRC | 0 | 0 | start log
+2018.12.05 23:26:04.044 | TRC | 0 | 1 | DB initial count：1
+2018.12.05 23:26:13.464 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
+2018.12.05 23:27:29.414 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2018.12.05 23:27:34.888 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2018.12.05 23:27:38.758 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2018.12.05 23:27:41.720 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2018.12.05 23:29:59.552 | TRC | 0 | 0 | start log
+2018.12.05 23:30:00.322 | TRC | 0 | 1 | DB initial count：1
+2018.12.05 23:30:01.997 | TRC | 0 | 1 | frmStudentRollcall：frmStudentRollcall_Load
+2018.12.05 23:30:21.299 | TRC | 0 | 0 | start log
+2018.12.05 23:30:21.673 | TRC | 0 | 1 | DB initial count：1
+2018.12.05 23:30:27.363 | TRC | 0 | 1 | frmStudentRollcall：frmStudentRollcall_Load
+2018.12.05 23:34:47.235 | TRC | 0 | 0 | start log
+2018.12.05 23:34:47.719 | TRC | 0 | 1 | DB initial count：1
+2018.12.05 23:34:50.467 | TRC | 0 | 1 | frmStudentRollcall：frmStudentRollcall_Load
+2018.12.05 23:35:29.294 | TRC | 0 | 0 | start log
+2018.12.05 23:35:29.703 | TRC | 0 | 1 | DB initial count：1
+2018.12.05 23:35:32.243 | TRC | 0 | 1 | frmStudentRollcall：frmStudentRollcall_Load
+2018.12.05 23:36:10.631 | TRC | 0 | 0 | start log
+2018.12.05 23:36:11.187 | TRC | 0 | 1 | DB initial count：1
+2018.12.05 23:36:13.096 | TRC | 0 | 1 | frmStudentRollcall：frmStudentRollcall_Load
+2018.12.05 23:36:44.087 | TRC | 0 | 0 | start log
+2018.12.05 23:36:44.671 | TRC | 0 | 1 | DB initial count：1
+2018.12.05 23:36:46.044 | TRC | 0 | 1 | frmStudentRollcall：frmStudentRollcall_Load
+2018.12.05 23:36:53.766 | TRC | 0 | 0 | start log
+2018.12.05 23:36:54.055 | TRC | 0 | 1 | DB initial count：1
+2018.12.05 23:36:56.975 | TRC | 0 | 1 | frmStudentRollcall：frmStudentRollcall_Load
+2018.12.05 23:37:26.020 | TRC | 0 | 0 | start log
+2018.12.05 23:37:26.742 | TRC | 0 | 1 | DB initial count：1
+2018.12.05 23:37:31.571 | TRC | 0 | 1 | frmStudentRollcall：frmStudentRollcall_Load
+2018.12.05 23:38:05.594 | TRC | 0 | 0 | start log
+2018.12.05 23:38:05.871 | TRC | 0 | 1 | DB initial count：1
+2018.12.05 23:38:10.198 | TRC | 0 | 1 | frmStudentRollcall：frmStudentRollcall_Load
+2018.12.05 23:38:56.305 | TRC | 0 | 0 | start log
+2018.12.05 23:38:56.621 | TRC | 0 | 1 | DB initial count：1
+2018.12.05 23:38:58.022 | TRC | 0 | 1 | frmStudentRollcall：frmStudentRollcall_Load
+2018.12.05 23:39:23.899 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2018.12.05 23:39:39.077 | TRC | 0 | 0 | start log
+2018.12.05 23:39:39.291 | TRC | 0 | 1 | DB initial count：1
+2018.12.05 23:39:44.253 | TRC | 0 | 1 | frmStudentRollcall：frmStudentRollcall_Load
+2018.12.05 23:39:47.043 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2018.12.05 23:39:49.177 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2018.12.05 23:39:51.208 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2018.12.05 23:39:54.673 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2018.12.05 23:39:57.335 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2018.12.05 23:42:45.942 | TRC | 0 | 0 | start log
+2018.12.05 23:42:46.601 | TRC | 0 | 1 | DB initial count：1
+2018.12.05 23:42:48.605 | TRC | 0 | 1 | frmStudentRollcall：frmStudentRollcall_Load
+2018.12.05 23:46:45.362 | TRC | 0 | 0 | start log
+2018.12.05 23:46:46.174 | TRC | 0 | 1 | DB initial count：1
+2018.12.05 23:46:49.224 | TRC | 0 | 1 | frmStudentRollcall：frmStudentRollcall_Load
+2018.12.05 23:50:37.527 | TRC | 0 | 0 | start log
+2018.12.05 23:50:37.970 | TRC | 0 | 1 | DB initial count：1
+2018.12.05 23:50:39.777 | TRC | 0 | 1 | frmStudentRollcall：frmStudentRollcall_Load
+2018.12.05 23:51:00.139 | TRC | 0 | 0 | start log
+2018.12.05 23:51:00.420 | TRC | 0 | 1 | DB initial count：1
+2018.12.05 23:51:01.994 | TRC | 0 | 1 | frmStudentRollcall：frmStudentRollcall_Load
+2018.12.05 23:51:41.566 | TRC | 0 | 0 | start log
+2018.12.05 23:51:41.867 | TRC | 0 | 1 | DB initial count：1
+2018.12.05 23:51:43.698 | TRC | 0 | 1 | frmStudentRollcall：frmStudentRollcall_Load
+2018.12.05 23:52:13.963 | TRC | 0 | 0 | start log
+2018.12.05 23:52:14.237 | TRC | 0 | 1 | DB initial count：1
+2018.12.05 23:52:16.653 | TRC | 0 | 1 | frmStudentRollcall：frmStudentRollcall_Load
+2018.12.05 23:52:34.987 | TRC | 0 | 0 | start log
+2018.12.05 23:52:35.246 | TRC | 0 | 1 | DB initial count：1
+2018.12.05 23:52:36.520 | TRC | 0 | 1 | frmStudentRollcall：frmStudentRollcall_Load
+2018.12.05 23:56:52.013 | TRC | 0 | 0 | start log
+2018.12.05 23:56:52.589 | TRC | 0 | 1 | DB initial count：1
+2018.12.05 23:56:56.384 | TRC | 0 | 1 | frmStudentRollcall：frmStudentRollcall_Load
+2018.12.05 23:57:17.314 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2018.12.05 23:57:40.470 | TRC | 0 | 0 | frmStudentRollcall：btn_ON

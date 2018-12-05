@@ -65,10 +65,18 @@ namespace EnglishCalssManager.Broadcast.ManualBroadcast
 
         private void dgSend(int _rowIndex, int _columnsIndex)
         {
-            string MsgName = dataGridView1.Rows[_rowIndex].Cells["MsgName"].Value.ToString();
-            string Msg = dataGridView1.Rows[_rowIndex].Cells["Msg"].Value.ToString();
-            Msg = Msg.Replace(@"""", "");
-            CardNotice.CardNotice.SendNotificationFromFirebaseCloud(MsgName, Msg);
+
+            foreach(DataGridViewRow row in dataGridView2.Rows)
+            {
+                if (row.Cells[1].Value!=null && (Boolean)row.Cells[0].Value==true)
+                {
+                    string MsgName = dataGridView1.Rows[_rowIndex].Cells["MsgName"].Value.ToString();
+                    string Msg = dataGridView1.Rows[_rowIndex].Cells["Msg"].Value.ToString();
+                    Msg = Msg.Replace(@"""", "");
+                    CardNotice.CardNotice.SendNotificationFromFirebaseCloud(MsgName, Msg);
+                }
+            }
+
             /*  Send online*/
             //SendPushNotification("aa0e8521ac7f3aba7d81a0bbe28007db9ccbbcab8e86deb17434ab4cd2e223e6",
             //    Msg);
@@ -99,11 +107,18 @@ namespace EnglishCalssManager.Broadcast.ManualBroadcast
             string CommandStr = "Select ClassID from Table_ClassSchedule";
             _dataTable = dbc.CommandFunctionDB("Table_ClassSchedule", CommandStr);
             cbox_ClassID.Items.Add("*");
+            int i = 0;
             foreach (DataRow drw in _dataTable.Rows)
             {
                 cbox_ClassID.Items.Add(drw.ItemArray[0].ToString());
+                this.dataGridView2.Rows.Insert(i, false, drw.ItemArray[0].ToString());
+                i++;
             }
             cbox_ClassID.Text = cbox_ClassID.Items[0].ToString();
+
+            //dataGridView2.DataSource = _dataTable;
+           
+
         }
 
         private void dgBtn()

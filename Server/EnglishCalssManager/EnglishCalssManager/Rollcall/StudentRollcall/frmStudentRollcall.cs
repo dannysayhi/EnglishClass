@@ -336,6 +336,22 @@ namespace EnglishClassManager.Rollcall.StudentRollcall
            // _dataTable = dbcR.CommandFunctionTempDB("Table_CourseManagement", CommandStr, _dataTable, true);
 
             dataGridView1.DataSource = _dataTable;
+            DataGridViewColumn column3 = dataGridView1.Columns[3];
+            column3.Visible = false;
+            DataGridViewColumn column4 = dataGridView1.Columns[4];
+            column4.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                if (row.Cells[3].Value != null)
+                {
+                    if (row.Cells[3].Value.ToString() == "")
+                    {
+                        row.Cells[1].Style.BackColor = Color.Red;
+                    }
+                }
+            }
+
+
             this.dataGridView1.Columns[4].DefaultCellStyle.Format = "yyyy-MM-dd hh:mm:ss";
             //createTempTable();
             closeTempTable();
