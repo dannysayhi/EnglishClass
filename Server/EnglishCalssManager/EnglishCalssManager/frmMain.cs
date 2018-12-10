@@ -33,6 +33,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SmartCardSystem;
 
 namespace EnglishClassManager
 {
@@ -52,7 +53,9 @@ namespace EnglishClassManager
         private int _dbinitialcount = 0;
 
         //一定要声明成局部变量以保持对Timer的引用，否则会被垃圾收集器回收！
-        private System.Threading.Timer timer;
+         private System.Threading.Timer timer_do;
+        //一定要声明成局部变量以保持对Timer的引用，否则会被垃圾收集器回收！
+        private System.Threading.Timer timer_smartCardReader;
 
         //private string funcStudRCdate = functionStudentRollcall.getDate;
 
@@ -80,12 +83,20 @@ namespace EnglishClassManager
             //宣告timer要做什麼事.要做什麼事呢?要做_do的事
             TimerCallback callback = new TimerCallback(_do);
             //1.function 2.開關  3.等多久再開始  4.隔多久反覆執行
-            timer = new System.Threading.Timer(callback, null, 0, 600000);
+            timer_do = new System.Threading.Timer(callback, null, 0, 600000);
+
+
+            //宣告timer要做什麼事.要做什麼事呢?要做_do的事
+            TimerCallback callbackSmartCardReader = new TimerCallback(_doSmartCardReader);
+            //1.function 2.開關  3.等多久再開始  4.隔多久反覆執行
+            timer_smartCardReader = new System.Threading.Timer(callbackSmartCardReader, null, 0, 500);
 
 
             //ControlsVisible(false, false, false, false, false, false);
             ControlsVisible(true, true, true, true, true, true);
         }
+        #region threading DB initail
+
         private void _do(object state)
         {
             this.BeginInvoke(new setLable2(setLabel2));
@@ -98,6 +109,23 @@ namespace EnglishClassManager
             Log.Trace("DB initial count："+ _dbinitialcount.ToString());
             lb_DBinitialCount.Text = lb_DBinitialCount.Text + _dbinitialcount.ToString();
         }
+        #endregion threading DB initail
+
+        #region threading SmartCardReader
+
+        private void _doSmartCardReader(object state)
+        {
+            this.BeginInvoke(new setLable3(setLabel3));
+            SmartCardReader.funSmartCardReader();
+        }
+        delegate void setLable3();
+        private void setLabel3()
+        {
+            //_dbinitialcount++;
+            //Log.Trace("DB initial count：" + _dbinitialcount.ToString());
+            //lb_DBinitialCount.Text = lb_DBinitialCount.Text + _dbinitialcount.ToString();
+        }
+        #endregion threading SmartCardReader
 
         // 登入觸發
         private void AccountInfoManager_AccountInfoLogInOutCallback(string name, AccountLevel level)
@@ -227,7 +255,7 @@ namespace EnglishClassManager
             if (_is_update == "1")
             {
                 string _getCount = functionStudentRollcall.getCount(functionStudentRollcall.getDate, textBox1.Text);
-                functionStudentRollcall.changeUpdate("20180902", textBox1.Text, "0");
+                functionStudentRollcall.changeUpdate(functionStudentRollcall.getDate, textBox1.Text, "0");
                 CardNotice.SendNotificationFromFirebaseCloud("刷卡通知", textBox1.Text + "第" + _getCount + "次簽到成功！");
                 MessageBox.Show(textBox1.Text + "第" + _getCount + "次簽到成功！");
             }

@@ -42,6 +42,10 @@
       <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="pcsc-sharp, Version=3.1.0.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\pcsc-sharp.dll</HintPath>
+    </Reference>
     <Reference Include="PushSharp.Amazon, Version=4.0.10.0, Culture=neutral, PublicKeyToken=cf74b75eab2c0170, processorArchitecture=MSIL">
       <HintPath>..\packages\PushSharp.4.0.10\lib\net45\PushSharp.Amazon.dll</HintPath>
       <Private>True</Private>
@@ -164,6 +168,7 @@
     <Compile Include="Flow\Flow_Rollcall _Student.cs" />
     <Compile Include="Rollcall\EmployeeRollcall\baseEmployeeRollcall.cs" />
     <Compile Include="Rollcall\StudentRollcall\baseStudentRollcall.cs" />
+    <Compile Include="SmartCardReader\SmartCardReader.cs" />
     <Compile Include="SystemConfig\SystemLog\frmSystemLog.cs">
       <SubType>Form</SubType>
     </Compile>

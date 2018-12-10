@@ -24,3 +24,7 @@ D:\BackEnd\driver\SmartCardSystem\SmartCardSystem\bin\Debug\Newtonsoft.Json.xml
 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Driver\RFID-reader\SmartCardSystem\bin\Debug\SmartCardSystem.exe.config
 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Driver\RFID-reader\SmartCardSystem\obj\Debug\SmartCardSystem.exe
 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Driver\RFID-reader\SmartCardSystem\obj\Debug\SmartCardSystem.pdb
+D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Driver\RFID-reader\SmartCardSystem\bin\Debug\SmartCardSystem.exe
+D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Driver\RFID-reader\SmartCardSystem\bin\Debug\SmartCardSystem.pdb
+D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Driver\RFID-reader\SmartCardSystem\bin\Debug\Newtonsoft.Json.xml
+D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Driver\RFID-reader\SmartCardSystem\obj\Debug\SmartCardSystem.csprojResolveAssemblyReference.cache
