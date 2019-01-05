@@ -113,12 +113,12 @@ namespace EnglishCalssManager.EmployeeAttence.ClassScheduleSetting
                           ", ClassEndH='{4}',ClassEndM='{5}',NoteTime='{6}',SUN='{7}',MON='{8}',TUE='{9}',WED='{10}',THU='{11}',FRI='{12}', SAT='{13}'"
                           + " where ClassID='{14}'"
                           , txt_ClassID.Text,
-                          dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[1].Value.ToString(),
-                          dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[2].Value.ToString(),
-                          dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[3].Value.ToString(),
-                          dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[4].Value.ToString(),
-                          dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[5].Value.ToString(),
-                          dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[6].Value.ToString(),
+                          cbox_ClassName.Text,
+                          cbox_ClassStartH.Text,
+                          cbox_ClassStartM.Text,
+                          cbox_ClassEndH.Text,
+                          cbox_ClassEndM.Text,
+                          cbox_NoteTime.Text,
                           chkbox_SUN.Checked, chkbox_MON.Checked, chkbox_TUE.Checked, chkbox_WED.Checked, chkbox_THU.Checked, chkbox_FRI.Checked, chkbox_SAT.Checked,
                           updateClassID);
             _dataTable = dbc.CommandFunctionDB("Table_ClassSchedule", CommandStr);
@@ -127,11 +127,31 @@ namespace EnglishCalssManager.EmployeeAttence.ClassScheduleSetting
 
         private void btn_Del_Click(object sender, EventArgs e)
         {
-            DataTable _dataTable = new DataTable();
-            string CommandStr = string.Format("Delete from Table_ClassSchedule Where ClassID='{0}'",
-                 txt_ClassID.Text);
-            _dataTable = dbc.CommandFunctionDB("Table_ClassSchedule", CommandStr);
-            refreshTable();
+            DialogResult dialogResult = MessageBox.Show("確定刪除？", "確定刪除此班別？", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                DataTable _dataTable = new DataTable();
+                string CommandStr = string.Format("Delete from Table_ClassSchedule Where ClassID='{0}'",
+                     txt_ClassID.Text);
+                _dataTable = dbc.CommandFunctionDB("Table_ClassSchedule", CommandStr);
+                refreshTable();
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+            }
+        }
+
+        private void cbox_ClassName_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(cbox_ClassName.Text=="工讀")
+            {
+                cbox_NoteTime.Text = "";
+                cbox_NoteTime.Enabled = false;
+            }
+            else
+            {
+                cbox_NoteTime.Enabled = true;
+            }
         }
     }
 }

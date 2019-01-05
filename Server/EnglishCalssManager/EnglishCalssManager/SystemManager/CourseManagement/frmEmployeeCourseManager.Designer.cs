@@ -220,15 +220,6 @@
             this.btn_DeleteStudent.Text = "移除員工";
             this.btn_DeleteStudent.UseVisualStyleBackColor = true;
             // 
-            // btn_AddNewStudent
-            // 
-            this.btn_AddNewStudent.Location = new System.Drawing.Point(378, 12);
-            this.btn_AddNewStudent.Name = "btn_AddNewStudent";
-            this.btn_AddNewStudent.Size = new System.Drawing.Size(75, 23);
-            this.btn_AddNewStudent.TabIndex = 33;
-            this.btn_AddNewStudent.Text = "新增員工";
-            this.btn_AddNewStudent.UseVisualStyleBackColor = true;
-            // 
             // btn_SelectAllStudent
             // 
             this.btn_SelectAllStudent.Location = new System.Drawing.Point(297, 13);

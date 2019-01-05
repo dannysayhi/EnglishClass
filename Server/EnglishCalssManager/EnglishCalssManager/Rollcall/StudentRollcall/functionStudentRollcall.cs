@@ -112,10 +112,17 @@ namespace EnglishCalssManager.Rollcall.StudentRollcall
                 CommandStr = string.Format("select Max( EnglishClassDBtest.dbo.Table_CardNoticeSet.numCardMsg) from EnglishClassDBtest.dbo.Table_CardNoticeSet ");
                 CardTitle = DatabaseManager._databaseCore.strExecuteScalar(CommandStr);
             }
+            bool _bgetCount = true;
+            if (_getCount == "未到"|| _getCount == "請假")
+            {
+                _bgetCount = false;
+                CardTitle = "";
+            }
+
             string _getCount2 = _getCount;
             if (_getCount2 != "")
             {
-                if (CardTitle == "")
+                if (CardTitle == ""&& _bgetCount==true)
                 {
                     do
                     {

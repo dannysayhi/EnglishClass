@@ -167,6 +167,9 @@ namespace EnglishClassManager.SystemManager.MemberList.StudentBook
                 + " And Table_StudentBasic.TwName like '%"
                 + txt_TwName.Text.ToString()
                 + "%' "
+                + " And Table_StudentBasic.CardNumber like '%"
+                + txt_CardNumber.Text.ToString()
+                + "%' "
                 + " And Table_StudentBasic.Onschool like '%"
                 + cbox_Onschool.Text.ToString()
                 + "%' "
@@ -380,6 +383,29 @@ namespace EnglishClassManager.SystemManager.MemberList.StudentBook
                 MessageBox.Show("學生卡號重覆！");
                 bReData = false;
             }
+
+            string ReTwName = "";
+            CommandStr = string.Format("Select Count(*) from Table_StudentBasic where Table_StudentBasic.TwName='{0}' ", txt_TwName.Text);
+            ReTwName = dbc.strExecuteScalar(CommandStr);
+            //CommandStr = string.Format("Select Count(*) from Table_EmployeeBasic where Table_EmployeeBasic.EmployeeID='{0}' ", txt_EmployeeID.Text);
+            //ReEmployeeID = dbc.strExecuteScalar(CommandStr);
+            if (ReTwName != "0")
+            {
+                DialogResult dialogResult = MessageBox.Show("學生姓名重複，確認是否新增？", "Some Title", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    //do something
+                    bReData = true;
+                }
+                else if (dialogResult == DialogResult.No)
+                {
+                    //do something else
+                    bReData = false;
+                }
+
+                
+            }
+
             //if (ReEmployeeID != "0")
             //{
             //    MessageBox.Show("員工編號重覆！");

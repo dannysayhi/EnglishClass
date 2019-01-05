@@ -104,12 +104,20 @@ namespace EnglishClassManager.SystemManager.CourseManagement
         {
             Log.Trace(logTitle + btn_AddNewStudent.Name.ToString());
             DataTable _dataTable = new DataTable();
-            string CommandStr = string.Format( "if not exists(select Table_CourseManagement.CourseID, Table_CourseManagement.StudentID "
-                + " from Table_CourseManagement"
-                + " where Table_CourseManagement.CourseID='{0}' and Table_CourseManagement.StudentID='{1}' )"
-                + " insert into Table_CourseManagement values('{2}', '{3}') ", courseID, dataGridView2.Rows[dataGridView2.CurrentCell.RowIndex].Cells["StudentID"].Value.ToString(),
-                courseID, dataGridView2.Rows[dataGridView2.CurrentCell.RowIndex].Cells["StudentID"].Value.ToString());
-            _dataTable = dbc.CommandFunctionDB("Table_StudentBasic", CommandStr);
+
+            foreach (DataGridViewCell oneCell in dataGridView2.SelectedCells)
+            {
+                if (oneCell.Selected)
+                {
+                   // MessageBox.Show(oneCell.RowIndex.ToString());
+                    string CommandStr = string.Format("if not exists(select Table_CourseManagement.CourseID, Table_CourseManagement.StudentID "
+                                              + " from Table_CourseManagement"
+                                              + " where Table_CourseManagement.CourseID='{0}' and Table_CourseManagement.StudentID='{1}' )"
+                                              + " insert into Table_CourseManagement values('{2}', '{3}') ", courseID, dataGridView2.Rows[oneCell.RowIndex].Cells["StudentID"].Value.ToString(),
+                                              courseID, dataGridView2.Rows[oneCell.RowIndex].Cells["StudentID"].Value.ToString());
+                    _dataTable = dbc.CommandFunctionDB("Table_StudentBasic", CommandStr);
+                }
+            }
             refreshTable();
             //dataGridView1.DataSource = _dataTable;
         }
@@ -131,12 +139,20 @@ namespace EnglishClassManager.SystemManager.CourseManagement
         private void btn_DeleteStudent_Click(object sender, EventArgs e)
         {
             Log.Trace(logTitle + btn_DeleteStudent.Name.ToString());
-            DataTable _dataTable = new DataTable();
-            string CommandStr = string.Format("delete from Table_CourseManagement where StudentID='{0}' and CourseID='{1}'"
-                       , dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells["StudentID"].Value.ToString()
-                       , dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells["CourseID"].Value.ToString());
-            _dataTable = dbc.CommandFunctionDB("Table_StudentBasic", CommandStr);
-            refreshTable();
+            try
+            {
+                DataTable _dataTable = new DataTable();
+                string CommandStr = string.Format("delete from Table_CourseManagement where StudentID='{0}' and CourseID='{1}'"
+                           , dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells["StudentID"].Value.ToString()
+                           , dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells["CourseID"].Value.ToString());
+                _dataTable = dbc.CommandFunctionDB("Table_StudentBasic", CommandStr);
+                refreshTable();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("請點選要刪除的學生");
+            }
+           
         }
 
         public void refreshTable()
@@ -258,5 +274,17 @@ namespace EnglishClassManager.SystemManager.CourseManagement
                 refreshAllStudentInfo();
             }
         }
+
+        private bool checkDataExist()
+        {
+            bool _bChk = false;
+            object obj = dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells["StudentID"].Value;
+            if(obj!=null)
+            {
+               _bChk=true;
+            }
+            return _bChk;
+        }
+
     }
 }

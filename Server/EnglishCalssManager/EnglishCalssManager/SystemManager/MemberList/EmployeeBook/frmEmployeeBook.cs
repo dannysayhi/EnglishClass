@@ -151,11 +151,11 @@ namespace EnglishClassManager.SystemManager.MemberList.EmployeeBook
                           ", Home='{4}',PhoneNumber='{5}',Onjob='{6}' "
                           + " where EmployeeID='{7}'"
                           , dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[0].Value.ToString(),
-                          dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[1].Value.ToString(),
-                          dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[2].Value.ToString(),
-                          dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[3].Value.ToString(),
-                          dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[4].Value.ToString(),
-                          dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[5].Value.ToString(),
+                          txt_CardNumber.Text,
+                          txt_TwName.Text,
+                          txt_EnName.Text,
+                          txt_Home.Text,
+                          txt_PhoneNumber.Text,
                           cbox_Onjob.Text,
                           dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[0].Value.ToString());
             _dataTable = dbc.CommandFunctionDB("Table_EmployeeBasic", CommandStr);

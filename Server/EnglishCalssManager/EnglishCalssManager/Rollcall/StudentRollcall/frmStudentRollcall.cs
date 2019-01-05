@@ -71,7 +71,11 @@ namespace EnglishClassManager.Rollcall.StudentRollcall
             Log.Trace(logTitle + btn_ON.Name.ToString());
             try
             {
-                string CommandStr = " Select EnglishClassDBtest.dbo.Table_Course.CourseID "
+                foreach (DataGridViewCell oneCell in dataGridView1.SelectedCells)
+                {
+                    if (oneCell.Selected)
+                    {
+                        string CommandStr = " Select EnglishClassDBtest.dbo.Table_Course.CourseID "
 + " From EnglishClassDBtest.dbo.Table_Course "
 + " Where  EnglishClassDBtest.dbo.Table_Course.CourseName = '"
 + cbox_CourseName.Text.ToString()
@@ -80,9 +84,9 @@ namespace EnglishClassManager.Rollcall.StudentRollcall
                 CommandStr = string.Format("select EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_{0}.RollcallCount "
     + " from EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_{0}"
     + " where EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_{0}.StudentID = '{1}'", date
-    , dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells["StudentID"].Value.ToString());
+    , dataGridView1.Rows[oneCell.RowIndex].Cells["StudentID"].Value.ToString());
                 _rollcallCount = 0;
-                string _getCount = functionStudentRollcall.getCount(date, dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells["StudentID"].Value.ToString());
+                string _getCount = functionStudentRollcall.getCount(date, dataGridView1.Rows[oneCell.RowIndex].Cells["StudentID"].Value.ToString());
 
                 if (_getCount != "")
                 {
@@ -98,52 +102,53 @@ namespace EnglishClassManager.Rollcall.StudentRollcall
                         , "1"
                         , "SYSDATETIME()"
                         , _courseID
-                        , dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells["StudentID"].Value.ToString()
+                        , dataGridView1.Rows[oneCell.RowIndex].Cells["StudentID"].Value.ToString()
                         );
                         dbcR.ExecuteNonQuery(CommandStr);
+                        functionStudentRollcall.studRCstart(date, dataGridView1.Rows[oneCell.RowIndex].Cells["StudentID"].Value.ToString(), "1", "M");
                         //MessageBox.Show("請假/未到");
                     }
                     else
                     {
-                        _getCount = (Convert.ToInt16(_getCount) + 1).ToString();
-                        functionStudentRollcall.studRCstart(date, dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells["StudentID"].Value.ToString(), _getCount, "M");
-                        //functionStudentRollcall.studRCagain(date, dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells["StudentID"].Value.ToString(), _getCount);
-                        //_rollcallCount = Convert.ToInt32(_getCount);
-                        //CommandStr = string.Format(
-                        //"Update EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_{0}"
-                        //+ " Set RollcallCount={1},RollcallTimes={2} "
-                        ////+ " Where EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_{0}.CourseID={3}"
-                        ////+ " and "
-                        //+ " Where EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_{0}.StudentID={4}"
-                        //, date
-                        //, (_rollcallCount + 1).ToString()
-                        //, "SYSDATETIME()"
-                        //, _courseID
-                        //, dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells["StudentID"].Value.ToString()
-                        //);
-                        //dbcR.ExecuteNonQuery(CommandStr);
-                        //MessageBox.Show("學生："+ dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells["StudentID"].Value.ToString()+ "已點過" + _rollcallCount.ToString()+"次");
+
+                        //判斷第二次點名以上的時間是否>通知區間
+                        CommandStr = string.Format("select EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_{0}.RollcallTimes "
+    + " from EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_{0}"
+    + " where EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_{0}.StudentID = '{1}'", date
+    , dataGridView1.Rows[oneCell.RowIndex].Cells["StudentID"].Value.ToString());
+
+                        string strdt1 = dbcR.strExecuteScalar(CommandStr);
+                        //MessageBox.Show(strdt1);
+                        DateTime dtRollcall = Convert.ToDateTime(strdt1);
+                        // dtRollcall = DateTime.ParseExact(dtRollcall.ToString(), "yyyy-MM-dd HH:mm:ss", null);
+                        if (new TimeSpan(DateTime.Now.Ticks - dtRollcall.Ticks).TotalMinutes >0)
+                        {
+                            _getCount = (Convert.ToInt16(_getCount) + 1).ToString();
+                            functionStudentRollcall.studRCstart(date, dataGridView1.Rows[oneCell.RowIndex].Cells["StudentID"].Value.ToString(), _getCount, "M");
+                        }
                     }
                 }
                 else
                 {
                     _getCount = "0";
                     _getCount = (Convert.ToInt16(_getCount) + 1).ToString();
-                    functionStudentRollcall.studRCstart(date, dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells["StudentID"].Value.ToString(), _getCount, "M");
+                    functionStudentRollcall.studRCstart(date, dataGridView1.Rows[oneCell.RowIndex].Cells["StudentID"].Value.ToString(), _getCount, "M");
 
-                    //CommandStr = string.Format(
-                    //    "insert into EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_{0} values('{1}', '{2}', '{3}', {4})"
-                    //    , date
-                    //    , _courseID
-                    //    , dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells["StudentID"].Value.ToString()
-                    //    , '1'
-                    //    , "SYSDATETIME()"
-                    //    );
-                    //dbcR.ExecuteNonQuery(CommandStr);
-                    //MessageBox.Show("學生：" + dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells["StudentID"].Value.ToString() + "未點過" + _rollcallCount.ToString() + "次");
+                            //CommandStr = string.Format(
+                            //    "insert into EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_{0} values('{1}', '{2}', '{3}', {4})"
+                            //    , date
+                            //    , _courseID
+                            //    , dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells["StudentID"].Value.ToString()
+                            //    , '1'
+                            //    , "SYSDATETIME()"
+                            //    );
+                            //dbcR.ExecuteNonQuery(CommandStr);
+                            //MessageBox.Show("學生：" + dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells["StudentID"].Value.ToString() + "未點過" + _rollcallCount.ToString() + "次");
+                        }
+                    }
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
                 Log.Trace(logTitle +  btn_ON.Name.ToString()+"："+ex.ToString());
@@ -169,19 +174,7 @@ namespace EnglishClassManager.Rollcall.StudentRollcall
 
                 if (dbc.strExecuteScalar(CommandStr).ToString() != "")
                 {
-                    CommandStr = string.Format(
-                    "Update EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_{0}"
-                    + " Set RollcallCount={1},RollcallTimes={2} "
-                    // + " Where EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_{0}.CourseID={3}"
-                    //+ " and"
-                    + " where EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_{0}.StudentID={4}"
-                    , date
-                    , "'未到'"
-                    , "SYSDATETIME()"
-                    , _courseID
-                    , dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells["StudentID"].Value.ToString()
-                    );
-                    dbcR.ExecuteNonQuery(CommandStr);
+                    functionStudentRollcall.studRCstart(date, dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells["StudentID"].Value.ToString(), "未到", "M");
                 }
                 else if (dbc.strExecuteScalar(CommandStr).ToString() == "")
                 {
@@ -226,19 +219,7 @@ namespace EnglishClassManager.Rollcall.StudentRollcall
 
                 if (dbc.strExecuteScalar(CommandStr).ToString() != "")
                 {
-                    CommandStr = string.Format(
-                    "Update EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_{0}"
-                    + " Set RollcallCount={1},RollcallTimes={2} "
-                    // + " Where EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_{0}.CourseID={3},"
-                    // + " and"
-                    + " where EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_{0}.StudentID={4}"
-                    , date
-                    , "'請假'"
-                    , "SYSDATETIME()"
-                    , _courseID
-                    , dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells["StudentID"].Value.ToString()
-                    );
-                    dbcR.ExecuteNonQuery(CommandStr);
+                    functionStudentRollcall.studRCstart(date, dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells["StudentID"].Value.ToString(), "請假", "M");
                 }
                 else if (dbc.strExecuteScalar(CommandStr).ToString() == "")
                 {
@@ -337,14 +318,14 @@ namespace EnglishClassManager.Rollcall.StudentRollcall
 
             dataGridView1.DataSource = _dataTable;
             DataGridViewColumn column3 = dataGridView1.Columns[3];
-            column3.Visible = false;
+            column3.Visible = true;
             DataGridViewColumn column4 = dataGridView1.Columns[4];
             column4.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
             foreach (DataGridViewRow row in dataGridView1.Rows)
             {
                 if (row.Cells[3].Value != null)
                 {
-                    if (row.Cells[3].Value.ToString() == "")
+                    if (row.Cells[3].Value.ToString() == ""|| row.Cells[3].Value.ToString() == "未到")
                     {
                         row.Cells[1].Style.BackColor = Color.Red;
                     }

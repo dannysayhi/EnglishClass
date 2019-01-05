@@ -53,7 +53,9 @@
             this.btn_Del = new System.Windows.Forms.Button();
             this.btn_update = new System.Windows.Forms.Button();
             this.btn_Add = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -75,13 +77,13 @@
             this.label2.Font = new System.Drawing.Font("新細明體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label2.Location = new System.Drawing.Point(12, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 21);
+            this.label2.Size = new System.Drawing.Size(115, 21);
             this.label2.TabIndex = 7;
-            this.label2.Text = "班別：";
+            this.label2.Text = "班別代碼：";
             // 
             // txt_ClassID
             // 
-            this.txt_ClassID.Location = new System.Drawing.Point(77, 8);
+            this.txt_ClassID.Location = new System.Drawing.Point(115, 8);
             this.txt_ClassID.Name = "txt_ClassID";
             this.txt_ClassID.Size = new System.Drawing.Size(108, 22);
             this.txt_ClassID.TabIndex = 9;
@@ -89,7 +91,7 @@
             // chkbox_MON
             // 
             this.chkbox_MON.AutoSize = true;
-            this.chkbox_MON.Location = new System.Drawing.Point(16, 90);
+            this.chkbox_MON.Location = new System.Drawing.Point(21, 14);
             this.chkbox_MON.Name = "chkbox_MON";
             this.chkbox_MON.Size = new System.Drawing.Size(60, 16);
             this.chkbox_MON.TabIndex = 10;
@@ -99,7 +101,7 @@
             // chkbox_TUE
             // 
             this.chkbox_TUE.AutoSize = true;
-            this.chkbox_TUE.Location = new System.Drawing.Point(88, 90);
+            this.chkbox_TUE.Location = new System.Drawing.Point(93, 14);
             this.chkbox_TUE.Name = "chkbox_TUE";
             this.chkbox_TUE.Size = new System.Drawing.Size(60, 16);
             this.chkbox_TUE.TabIndex = 11;
@@ -109,7 +111,7 @@
             // chkbox_THU
             // 
             this.chkbox_THU.AutoSize = true;
-            this.chkbox_THU.Location = new System.Drawing.Point(234, 90);
+            this.chkbox_THU.Location = new System.Drawing.Point(239, 14);
             this.chkbox_THU.Name = "chkbox_THU";
             this.chkbox_THU.Size = new System.Drawing.Size(60, 16);
             this.chkbox_THU.TabIndex = 13;
@@ -119,7 +121,7 @@
             // chkbox_WED
             // 
             this.chkbox_WED.AutoSize = true;
-            this.chkbox_WED.Location = new System.Drawing.Point(162, 90);
+            this.chkbox_WED.Location = new System.Drawing.Point(167, 14);
             this.chkbox_WED.Name = "chkbox_WED";
             this.chkbox_WED.Size = new System.Drawing.Size(60, 16);
             this.chkbox_WED.TabIndex = 12;
@@ -129,7 +131,7 @@
             // chkbox_SAT
             // 
             this.chkbox_SAT.AutoSize = true;
-            this.chkbox_SAT.Location = new System.Drawing.Point(380, 90);
+            this.chkbox_SAT.Location = new System.Drawing.Point(385, 14);
             this.chkbox_SAT.Name = "chkbox_SAT";
             this.chkbox_SAT.Size = new System.Drawing.Size(60, 16);
             this.chkbox_SAT.TabIndex = 15;
@@ -139,7 +141,7 @@
             // chkbox_FRI
             // 
             this.chkbox_FRI.AutoSize = true;
-            this.chkbox_FRI.Location = new System.Drawing.Point(308, 90);
+            this.chkbox_FRI.Location = new System.Drawing.Point(313, 14);
             this.chkbox_FRI.Name = "chkbox_FRI";
             this.chkbox_FRI.Size = new System.Drawing.Size(60, 16);
             this.chkbox_FRI.TabIndex = 14;
@@ -149,7 +151,7 @@
             // chkbox_SUN
             // 
             this.chkbox_SUN.AutoSize = true;
-            this.chkbox_SUN.Location = new System.Drawing.Point(454, 90);
+            this.chkbox_SUN.Location = new System.Drawing.Point(459, 14);
             this.chkbox_SUN.Name = "chkbox_SUN";
             this.chkbox_SUN.Size = new System.Drawing.Size(60, 16);
             this.chkbox_SUN.TabIndex = 16;
@@ -160,11 +162,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("新細明體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label1.Location = new System.Drawing.Point(200, 9);
+            this.label1.Location = new System.Drawing.Point(238, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(115, 21);
             this.label1.TabIndex = 17;
-            this.label1.Text = "班級名稱：";
+            this.label1.Text = "班別名稱：";
             // 
             // label3
             // 
@@ -293,7 +295,7 @@
             "40",
             "50",
             "60"});
-            this.cbox_NoteTime.Location = new System.Drawing.Point(602, 10);
+            this.cbox_NoteTime.Location = new System.Drawing.Point(640, 10);
             this.cbox_NoteTime.Name = "cbox_NoteTime";
             this.cbox_NoteTime.Size = new System.Drawing.Size(51, 20);
             this.cbox_NoteTime.TabIndex = 28;
@@ -302,7 +304,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("新細明體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label8.Location = new System.Drawing.Point(445, 9);
+            this.label8.Location = new System.Drawing.Point(483, 9);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(157, 21);
             this.label8.TabIndex = 27;
@@ -313,11 +315,13 @@
             this.cbox_ClassName.FormattingEnabled = true;
             this.cbox_ClassName.Items.AddRange(new object[] {
             "正常班",
-            "輪班"});
-            this.cbox_ClassName.Location = new System.Drawing.Point(308, 9);
+            "輪班",
+            "工讀"});
+            this.cbox_ClassName.Location = new System.Drawing.Point(346, 9);
             this.cbox_ClassName.Name = "cbox_ClassName";
             this.cbox_ClassName.Size = new System.Drawing.Size(121, 20);
             this.cbox_ClassName.TabIndex = 29;
+            this.cbox_ClassName.SelectedIndexChanged += new System.EventHandler(this.cbox_ClassName_SelectedIndexChanged);
             // 
             // btn_Del
             // 
@@ -349,11 +353,28 @@
             this.btn_Add.UseVisualStyleBackColor = true;
             this.btn_Add.Click += new System.EventHandler(this.btn_Add_Click);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.chkbox_MON);
+            this.groupBox1.Controls.Add(this.chkbox_TUE);
+            this.groupBox1.Controls.Add(this.chkbox_WED);
+            this.groupBox1.Controls.Add(this.chkbox_THU);
+            this.groupBox1.Controls.Add(this.chkbox_FRI);
+            this.groupBox1.Controls.Add(this.chkbox_SAT);
+            this.groupBox1.Controls.Add(this.chkbox_SUN);
+            this.groupBox1.Location = new System.Drawing.Point(16, 79);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(564, 35);
+            this.groupBox1.TabIndex = 33;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "休假日";
+            // 
             // frmClassScheduleSettingNew
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(855, 517);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btn_Del);
             this.Controls.Add(this.btn_update);
             this.Controls.Add(this.btn_Add);
@@ -369,13 +390,6 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.chkbox_SUN);
-            this.Controls.Add(this.chkbox_SAT);
-            this.Controls.Add(this.chkbox_FRI);
-            this.Controls.Add(this.chkbox_THU);
-            this.Controls.Add(this.chkbox_WED);
-            this.Controls.Add(this.chkbox_TUE);
-            this.Controls.Add(this.chkbox_MON);
             this.Controls.Add(this.txt_ClassID);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dataGridView1);
@@ -383,6 +397,8 @@
             this.Text = "frmClassScheduleSettingNew";
             this.Load += new System.EventHandler(this.frmClassScheduleSettingNew_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -415,5 +431,6 @@
         private System.Windows.Forms.Button btn_Del;
         private System.Windows.Forms.Button btn_update;
         private System.Windows.Forms.Button btn_Add;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

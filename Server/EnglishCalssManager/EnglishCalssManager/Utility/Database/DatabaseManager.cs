@@ -20,15 +20,16 @@ namespace EnglishClassManager.Utility.Database
             //_databaseTable = new DatabaseTable();
             //_databaseCoreRollcall = new DatabaseCoreRollcall("DESKTOP-2LEACOS\\SQLEXPRESS", "sa", "EnglishClassDBtestRollcall", "");//後面要輸入自己的資料庫密碼
 
-            //_databaseCore = new DatabaseCore("I22-3000000371", "sa", "EnglishClassDBtest", "");
-            //_databaseTable = new DatabaseTable();
-            //_databaseCoreRollcall = new DatabaseCoreRollcall("I22-3000000371", "sa", "EnglishClassDBtestRollcall", "");
+            _databaseCore = new DatabaseCore("I22-3000000371", "sa", "EnglishClassDBtest", "");
+            _databaseTable = new DatabaseTable();
+            _databaseCoreRollcall = new DatabaseCoreRollcall("I22-3000000371", "sa", "EnglishClassDBtestRollcall", "");
 
             // Public database
             //Data Source=ouchunhsien.ddns.net\SQL,1433;Initial Catalog=EnglishClassDBtest;User ID=sa;Password=***********
-            _databaseCore = new DatabaseCore("ouchunhsien.ddns.net\\SQL,1433", "sa", "EnglishClassDBtest", "0426322358");
-            _databaseTable = new DatabaseTable();
-            _databaseCoreRollcall = new DatabaseCoreRollcall("ouchunhsien.ddns.net\\SQL,1433", "sa", "EnglishClassDBtestRollcall", "0426322358");
+
+            //_databaseCore = new DatabaseCore("ouchunhsien.ddns.net\\SQL,1433", "sa", "EnglishClassDBtest", "0426322358");
+            //_databaseTable = new DatabaseTable();
+            //_databaseCoreRollcall = new DatabaseCoreRollcall("ouchunhsien.ddns.net\\SQL,1433", "sa", "EnglishClassDBtestRollcall", "0426322358");
 
         }
 

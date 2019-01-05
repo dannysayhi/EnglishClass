@@ -1,0 +1,1134 @@
+2019.01.05 11:01:24.568 | TRC | 0 | 0 | start log
+2019.01.05 11:01:25.110 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 11:01:26.755 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 上午 11:01:26'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:f9092031-a51b-4de3-92d0-6bc6e3d51a2a
+Error Number:3701,State:5,Class:11
+2019.01.05 11:01:49.875 | TRC | 0 | 0 | show Form
+2019.01.05 11:01:58.061 | TRC | 0 | 0 | hide form
+2019.01.05 11:02:00.068 | TRC | 0 | 0 | 學生通訊錄：frmStudentBook_Load
+2019.01.05 11:02:32.170 | TRC | 0 | 0 | 學生通訊錄：frmStudentBook_Load
+2019.01.05 11:02:40.675 | TRC | 0 | 0 | 學生通訊錄：btnSelect
+2019.01.05 11:02:41.462 | TRC | 0 | 0 | 學生通訊錄：btnSelect
+2019.01.05 11:02:41.800 | TRC | 0 | 0 | 學生通訊錄：btnSelect
+2019.01.05 11:02:45.527 | TRC | 0 | 0 | 學生通訊錄：btnSelect
+2019.01.05 11:02:45.732 | TRC | 0 | 0 | 學生通訊錄：btnSelect
+2019.01.05 11:02:45.924 | TRC | 0 | 0 | 學生通訊錄：btnSelect
+2019.01.05 11:02:46.123 | TRC | 0 | 0 | 學生通訊錄：btnSelect
+2019.01.05 11:02:46.328 | TRC | 0 | 0 | 學生通訊錄：btnSelect
+2019.01.05 11:02:46.540 | TRC | 0 | 0 | 學生通訊錄：btnSelect
+2019.01.05 11:02:46.746 | TRC | 0 | 0 | 學生通訊錄：btnSelect
+2019.01.05 11:03:37.471 | TRC | 0 | 0 | start log
+2019.01.05 11:03:37.601 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 11:03:38.762 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 上午 11:03:38'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:d634c5ea-cd36-4d51-b600-5095adddbdad
+Error Number:3701,State:5,Class:11
+2019.01.05 11:03:46.753 | TRC | 0 | 0 | 學生通訊錄：frmStudentBook_Load
+2019.01.05 11:03:57.549 | TRC | 0 | 0 | 學生通訊錄：btnSelect
+2019.01.05 11:04:39.495 | TRC | 0 | 0 | 學生通訊錄：btnSelect
+2019.01.05 11:22:09.452 | TRC | 0 | 0 | start log
+2019.01.05 11:22:09.815 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 11:22:27.618 | TRC | 0 | 0 | start log
+2019.01.05 11:22:27.855 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 11:22:28.994 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 上午 11:22:28'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:f6ba7efa-3b92-497a-a486-1f0daad5325d
+Error Number:3701,State:5,Class:11
+2019.01.05 11:22:32.947 | TRC | 0 | 0 | 學生通訊錄：frmStudentBook_Load
+2019.01.05 11:22:58.016 | TRC | 0 | 0 | 學生通訊錄：btnAdd
+2019.01.05 13:45:37.267 | TRC | 0 | 0 | start log
+2019.01.05 13:45:37.702 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 13:45:39.192 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 下午 01:45:39'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:bb5fc3c1-7bb6-4d5f-85a5-0566e8b75125
+Error Number:3701,State:5,Class:11
+2019.01.05 13:45:42.977 | TRC | 0 | 0 | 學生通訊錄：frmStudentBook_Load
+2019.01.05 13:46:08.444 | TRC | 0 | 0 | 學生通訊錄：btnAdd
+2019.01.05 13:46:10.851 | TRC | 0 | 0 | 學生通訊錄：btnSelect
+2019.01.05 13:46:12.325 | TRC | 0 | 0 | 學生通訊錄：btn_clearText
+2019.01.05 13:46:17.995 | TRC | 0 | 0 | 學生通訊錄：btnSelect
+2019.01.05 13:46:18.918 | TRC | 0 | 0 | 學生通訊錄：btnSelect
+2019.01.05 13:46:19.324 | TRC | 0 | 0 | 學生通訊錄：btnSelect
+2019.01.05 13:46:19.654 | TRC | 0 | 0 | 學生通訊錄：btnSelect
+2019.01.05 13:46:19.678 | TRC | 0 | 0 | 學生通訊錄：btnSelect
+2019.01.05 13:46:19.970 | TRC | 0 | 0 | 學生通訊錄：btnSelect
+2019.01.05 13:47:43.834 | TRC | 0 | 0 | start log
+2019.01.05 13:47:44.077 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 13:47:46.088 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 下午 01:47:45'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:c37d4cde-85c9-411d-916e-a2c4af683f4f
+Error Number:3701,State:5,Class:11
+2019.01.05 13:47:49.497 | TRC | 0 | 0 | 學生通訊錄：frmStudentBook_Load
+2019.01.05 13:47:57.957 | TRC | 0 | 0 | 學生通訊錄：btnSelect
+2019.01.05 13:48:01.345 | TRC | 0 | 0 | 學生通訊錄：btn_clearText
+2019.01.05 13:48:15.268 | TRC | 0 | 0 | 學生通訊錄：btnAdd
+2019.01.05 13:50:23.971 | TRC | 0 | 0 | start log
+2019.01.05 13:50:24.141 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 13:50:25.824 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 下午 01:50:25'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:4364f9c8-6d62-41c2-b338-601f89218c3b
+Error Number:3701,State:5,Class:11
+2019.01.05 13:50:29.739 | TRC | 0 | 0 | frmEmployeeBook：frmEmployeeBook_Load
+2019.01.05 13:50:35.388 | TRC | 0 | 0 | frmCourseManagerUpdate
+2019.01.05 13:52:15.258 | TRC | 0 | 0 | start log
+2019.01.05 13:52:15.650 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 13:52:17.075 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 下午 01:52:16'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:d19efbad-72cd-4037-b326-21aabcaeab41
+Error Number:3701,State:5,Class:11
+2019.01.05 13:52:24.073 | TRC | 0 | 0 | frmCourseManagerUpdate
+2019.01.05 13:56:35.544 | TRC | 0 | 0 | start log
+2019.01.05 13:56:35.693 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 13:56:37.027 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 下午 01:56:36'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:2f66e68a-4a7d-4c93-ad35-d5cc686d5353
+Error Number:3701,State:5,Class:11
+2019.01.05 13:56:42.816 | TRC | 0 | 0 | 學生通訊錄：frmStudentBook_Load
+2019.01.05 13:56:48.679 | TRC | 0 | 0 | frmCourseManagerUpdate
+2019.01.05 13:56:53.037 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 13:56:57.502 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 13:57:15.725 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 13:58:01.867 | TRC | 0 | 0 | start log
+2019.01.05 13:58:01.979 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 13:58:02.693 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 下午 01:58:02'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:de1a19f4-b145-4e61-980c-dede1782f061
+Error Number:3701,State:5,Class:11
+2019.01.05 13:58:07.081 | TRC | 0 | 0 | frmCourseManagerUpdate
+2019.01.05 13:58:11.587 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 14:01:49.544 | TRC | 0 | 0 | start log
+2019.01.05 14:01:49.954 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 14:01:50.693 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 下午 02:01:50'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:e7245353-ec35-4df7-bad3-ab27565acd05
+Error Number:3701,State:5,Class:11
+2019.01.05 14:01:53.618 | TRC | 0 | 0 | frmCourseManagerUpdate
+2019.01.05 14:01:56.620 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 14:03:35.883 | TRC | 0 | 0 | start log
+2019.01.05 14:03:35.983 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 14:03:37.181 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 下午 02:03:37'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:b31e3c36-7657-4fed-a471-b7426f054fc1
+Error Number:3701,State:5,Class:11
+2019.01.05 14:03:41.848 | TRC | 0 | 0 | frmCourseManagerUpdate
+2019.01.05 14:03:46.434 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 14:04:27.326 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 14:05:51.704 | TRC | 0 | 0 | start log
+2019.01.05 14:05:51.806 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 14:05:52.973 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 下午 02:05:52'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:f39cbf40-6bbe-427f-9f0b-8ce4d35aebad
+Error Number:3701,State:5,Class:11
+2019.01.05 14:05:56.896 | TRC | 0 | 0 | frmEmployeeBook：frmEmployeeBook_Load
+2019.01.05 14:06:02.398 | TRC | 0 | 0 | frmCourseManagerUpdate
+2019.01.05 14:06:22.227 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.01.05 14:06:24.009 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.01.05 14:06:29.336 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 14:06:33.559 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 14:06:34.146 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 14:06:34.699 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 14:06:43.970 | TRC | 0 | 0 | frmCourseManagerUpdate
+2019.01.05 14:06:47.429 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 14:06:50.109 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 14:06:50.664 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 14:06:50.909 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 14:06:51.084 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 14:06:51.274 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 14:06:51.548 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 14:06:53.299 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 14:06:53.562 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 14:06:53.694 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 14:06:54.029 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 14:06:55.667 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 14:06:55.918 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 14:06:56.733 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 14:06:57.012 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 14:07:03.289 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 14:07:06.450 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 14:07:07.091 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 14:07:07.282 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 14:07:07.470 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 14:07:07.637 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 14:07:07.823 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 14:07:08.015 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 14:07:08.216 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 14:07:12.415 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 14:07:14.484 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 14:07:15.056 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 14:07:15.286 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 14:07:15.422 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 14:07:19.676 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 14:07:24.202 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.01.05 14:07:25.585 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.01.05 14:07:26.131 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.01.05 14:07:26.559 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.01.05 14:07:31.224 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 14:07:35.525 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.01.05 14:07:56.288 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 14:09:23.798 | TRC | 0 | 0 | start log
+2019.01.05 14:09:24.035 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 14:09:25.799 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 下午 02:09:25'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:d6c1c9f0-791d-4f9b-9817-2d385f8d53f7
+Error Number:3701,State:5,Class:11
+2019.01.05 14:09:28.066 | TRC | 0 | 0 | frmCourseManagerUpdate
+2019.01.05 14:09:31.079 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 14:09:45.552 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.01.05 14:09:46.034 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.01.05 14:09:46.451 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.01.05 14:09:46.733 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.01.05 14:09:46.790 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.01.05 14:09:46.923 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.01.05 14:09:47.071 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.01.05 14:09:47.223 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.01.05 14:09:47.364 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.01.05 14:09:47.692 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.01.05 14:09:48.367 | TRC | 0 | 1 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.01.05 14:09:49.067 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.01.05 14:09:49.494 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.01.05 14:09:52.695 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 14:09:56.279 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 14:09:59.471 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 14:10:00.017 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 14:10:00.174 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 14:10:00.344 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 14:10:03.518 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.01.05 14:10:04.032 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.01.05 14:10:04.185 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.01.05 14:10:04.344 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.01.05 14:10:04.537 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.01.05 14:10:04.631 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.01.05 14:10:04.782 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.01.05 14:10:05.094 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.01.05 14:10:05.614 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.01.05 14:10:06.384 | TRC | 0 | 1 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.01.05 14:11:22.172 | TRC | 0 | 0 | start log
+2019.01.05 14:11:22.425 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 14:11:23.930 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 下午 02:11:23'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:24be723b-d2df-4a98-af4c-de2f226fc2dc
+Error Number:3701,State:5,Class:11
+2019.01.05 14:11:28.994 | TRC | 0 | 0 | frmCourseManagerUpdate
+2019.01.05 14:11:37.743 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.01.05 14:11:42.794 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.01.05 14:11:46.799 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.01.05 14:11:50.903 | TRC | 0 | 1 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.01.05 14:11:57.131 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.01.05 14:12:17.235 | TRC | 0 | 0 | start log
+2019.01.05 14:12:17.447 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 14:12:18.358 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 下午 02:12:18'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:917bd69a-d342-443f-8462-f496b27c41d2
+Error Number:3701,State:5,Class:11
+2019.01.05 14:12:23.383 | TRC | 0 | 0 | frmCourseManagerUpdate
+2019.01.05 14:12:26.970 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.01.05 14:12:30.618 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.01.05 14:12:34.571 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.01.05 14:12:39.512 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.01.05 14:18:26.249 | TRC | 0 | 0 | start log
+2019.01.05 14:18:26.364 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 14:18:28.184 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 下午 02:18:28'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:5cc4f1ae-4718-43d6-a87f-b4c950132b85
+Error Number:3701,State:5,Class:11
+2019.01.05 14:18:35.885 | TRC | 0 | 0 | frmCourseManagerUpdate
+2019.01.05 14:18:42.703 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.01.05 14:19:21.161 | TRC | 0 | 0 | start log
+2019.01.05 14:19:21.277 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 14:19:22.624 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 下午 02:19:22'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:afc41705-a1ca-4ed2-a7be-37230d54b36d
+Error Number:3701,State:5,Class:11
+2019.01.05 14:19:26.425 | TRC | 0 | 0 | frmCourseManagerUpdate
+2019.01.05 14:19:32.275 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.01.05 14:21:15.362 | TRC | 0 | 0 | start log
+2019.01.05 14:21:15.710 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 14:21:17.039 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 下午 02:21:16'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:0c4e1e80-0bc7-4ed1-9021-6ac11910ede1
+Error Number:3701,State:5,Class:11
+2019.01.05 14:21:21.451 | TRC | 0 | 0 | frmCourseManagerUpdate
+2019.01.05 14:21:25.251 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.01.05 14:22:18.950 | TRC | 0 | 0 | start log
+2019.01.05 14:22:19.324 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 14:22:20.646 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 下午 02:22:20'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:f0d1b06d-3022-4eb2-9c9b-5a7631bdfc80
+Error Number:3701,State:5,Class:11
+2019.01.05 14:22:24.774 | TRC | 0 | 0 | frmCourseManagerUpdate
+2019.01.05 14:22:32.111 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.01.05 14:24:37.282 | TRC | 0 | 0 | start log
+2019.01.05 14:24:37.742 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 14:24:39.385 | TRC | 0 | 2 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 下午 02:24:39'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:8206333d-e6c9-4828-83a0-7924b218a8ca
+Error Number:3701,State:5,Class:11
+2019.01.05 14:24:43.145 | TRC | 0 | 0 | frmCourseManagerUpdate
+2019.01.05 14:24:47.014 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.01.05 14:32:14.245 | TRC | 0 | 0 | start log
+2019.01.05 14:32:14.374 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 14:32:15.674 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 下午 02:32:15'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:a215542f-dc07-45ee-b499-8ded027275fc
+Error Number:3701,State:5,Class:11
+2019.01.05 14:32:19.703 | TRC | 0 | 0 | frmCourseManagerUpdate
+2019.01.05 14:32:22.921 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.01.05 14:32:25.353 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.01.05 14:32:27.564 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.01.05 14:33:06.553 | TRC | 0 | 0 | start log
+2019.01.05 14:33:06.967 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 14:33:09.312 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 下午 02:33:09'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:8999202d-47e3-4293-8a3d-0a14b6a2f840
+Error Number:3701,State:5,Class:11
+2019.01.05 14:33:12.236 | TRC | 0 | 0 | frmCourseManagerUpdate
+2019.01.05 14:33:18.856 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 14:33:24.168 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.01.05 14:33:25.685 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.01.05 14:33:30.436 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 14:33:47.901 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 14:34:00.000 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.01.05 14:34:05.159 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_Save
+2019.01.05 14:34:46.858 | TRC | 0 | 0 | frmCourseManagerUpdate
+2019.01.05 14:35:24.018 | TRC | 0 | 0 | start log
+2019.01.05 14:35:24.282 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 14:35:25.601 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 下午 02:35:25'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:b5cc357e-4dd5-44a9-9a36-b5847fd535b9
+Error Number:3701,State:5,Class:11
+2019.01.05 14:35:32.040 | TRC | 0 | 0 | frmEmployeeBook：frmEmployeeBook_Load
+2019.01.05 14:37:39.898 | TRC | 0 | 0 | start log
+2019.01.05 14:37:40.119 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 14:37:41.666 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 下午 02:37:41'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:15d23fb5-9cfe-421d-875e-0a3cec6ddade
+Error Number:3701,State:5,Class:11
+2019.01.05 14:37:50.320 | TRC | 0 | 0 | frmEmployeeBook：frmEmployeeBook_Load
+2019.01.05 14:38:14.155 | TRC | 0 | 0 | frmEmployeeBook：btnUpdate
+2019.01.05 14:38:49.700 | TRC | 0 | 0 | frmEmployeeBook：btnUpdate
+2019.01.05 15:14:50.519 | TRC | 0 | 0 | start log
+2019.01.05 15:14:50.658 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 15:14:52.220 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 下午 03:14:52'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:869b8775-2e2e-42d1-8b8a-f00740587233
+Error Number:3701,State:5,Class:11
+2019.01.05 15:14:55.625 | TRC | 0 | 0 | frmEmployeeBook：frmEmployeeBook_Load
+2019.01.05 15:15:15.232 | TRC | 0 | 0 | frmEmployeeBook：btnUpdate
+2019.01.05 15:16:36.519 | TRC | 0 | 0 | start log
+2019.01.05 15:16:36.630 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 15:16:37.798 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 下午 03:16:37'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:2b7468ed-beb8-421b-aac4-3dda95b2c9bc
+Error Number:3701,State:5,Class:11
+2019.01.05 15:24:55.354 | TRC | 0 | 0 | start log
+2019.01.05 15:24:55.514 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 15:24:57.009 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 下午 03:24:56'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:35a7aefb-9174-462f-9359-971962d3410c
+Error Number:3701,State:5,Class:11
+2019.01.05 15:25:43.461 | TRC | 0 | 0 | start log
+2019.01.05 15:25:43.598 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 15:25:44.546 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 下午 03:25:44'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:4ab3eb58-0830-4c5d-bc26-586ba1c3ba41
+Error Number:3701,State:5,Class:11
+2019.01.05 15:30:37.072 | TRC | 0 | 0 | start log
+2019.01.05 15:30:37.201 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 15:32:04.641 | TRC | 0 | 0 | start log
+2019.01.05 15:32:04.743 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 15:32:05.878 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 下午 03:32:05'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:3579c8e7-6839-4a42-a327-94e5af84121e
+Error Number:3701,State:5,Class:11
+2019.01.05 15:34:01.819 | TRC | 0 | 0 | start log
+2019.01.05 15:34:02.037 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 15:34:02.977 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 下午 03:34:02'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:ddbd4eaf-c88f-443b-a6be-06f78559f8dd
+Error Number:3701,State:5,Class:11
+2019.01.05 15:35:59.719 | TRC | 0 | 0 | start log
+2019.01.05 15:35:59.986 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 15:36:01.008 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 下午 03:36:00'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:35fdd883-6a9a-4017-828b-b58a8b8eb5ee
+Error Number:3701,State:5,Class:11
+2019.01.05 15:37:07.704 | TRC | 0 | 0 | start log
+2019.01.05 15:37:07.990 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 15:37:09.613 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 下午 03:37:09'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:e879e244-2804-45f2-b0f4-e44633881052
+Error Number:3701,State:5,Class:11
+2019.01.05 15:37:13.899 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
+2019.01.05 15:37:16.233 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 15:37:19.542 | TRC | 0 | 0 | frmStudentRollcall：btn_Leave
+2019.01.05 15:37:21.911 | TRC | 0 | 0 | frmStudentRollcall：btn_Leave
+2019.01.05 15:37:24.717 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 15:37:29.130 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 15:37:30.664 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 15:37:32.079 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 15:37:32.858 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 15:37:33.875 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 15:37:37.643 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 15:37:39.343 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 15:37:39.713 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 15:37:40.046 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 15:37:40.135 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 15:37:50.628 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
+2019.01.05 15:38:17.787 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 15:38:21.317 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 15:38:26.177 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 15:38:28.150 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 15:38:30.266 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 15:38:32.497 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 15:38:36.631 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 15:38:48.639 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 15:39:34.135 | TRC | 0 | 0 | start log
+2019.01.05 15:39:34.295 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 15:39:35.867 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 下午 03:39:35'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:4ed0ec80-fc5f-4353-b6dc-3ffd84a15ea4
+Error Number:3701,State:5,Class:11
+2019.01.05 15:39:41.482 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
+2019.01.05 15:39:46.515 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 15:43:03.528 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 15:43:54.679 | TRC | 0 | 0 | start log
+2019.01.05 15:43:54.795 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 15:43:55.845 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 下午 03:43:55'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:090dc0d4-8b18-43d3-bf3d-343ac63cffd0
+Error Number:3701,State:5,Class:11
+2019.01.05 15:44:03.297 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
+2019.01.05 15:44:09.245 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 15:44:14.543 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 15:56:46.512 | TRC | 0 | 0 | start log
+2019.01.05 15:56:46.685 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 15:56:48.184 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 下午 03:56:48'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:4573d4db-d7aa-45bb-8ad1-87e88b18cd3d
+Error Number:3701,State:5,Class:11
+2019.01.05 15:56:52.354 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
+2019.01.05 15:56:56.383 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 15:57:09.261 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 15:57:46.676 | TRC | 0 | 0 | start log
+2019.01.05 15:57:46.876 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 15:57:47.906 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 下午 03:57:47'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:449ced6e-29f1-4e6f-bafc-b63c001d0fc6
+Error Number:3701,State:5,Class:11
+2019.01.05 15:57:53.431 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
+2019.01.05 15:58:19.996 | TRC | 0 | 0 | start log
+2019.01.05 15:58:20.125 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 15:58:21.096 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 下午 03:58:20'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:89553477-05a2-4ffe-b254-b1408baa9eac
+Error Number:3701,State:5,Class:11
+2019.01.05 15:58:25.808 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
+2019.01.05 15:58:28.117 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 15:58:49.677 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
+2019.01.05 15:58:54.065 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 16:00:17.122 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 16:01:03.739 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 16:01:31.418 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 16:03:07.972 | TRC | 0 | 0 | start log
+2019.01.05 16:03:08.089 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 16:03:08.719 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 下午 04:03:08'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:300e150e-8c32-49f0-a523-bf98b2bfdade
+Error Number:3701,State:5,Class:11
+2019.01.05 16:04:21.103 | TRC | 0 | 0 | start log
+2019.01.05 16:04:21.226 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 16:04:22.159 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 下午 04:04:22'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:79bc0b0b-eae5-40ba-95e6-0deb2aaddc2f
+Error Number:3701,State:5,Class:11
+2019.01.05 16:04:25.398 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
+2019.01.05 16:05:17.697 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 16:11:39.354 | TRC | 0 | 0 | start log
+2019.01.05 16:11:39.470 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 16:11:40.154 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 下午 04:11:40'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:a4d48778-2c05-4e62-baaa-5bbc47480e14
+Error Number:3701,State:5,Class:11
+2019.01.05 16:11:44.004 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
+2019.01.05 16:11:46.426 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 16:15:53.758 | TRC | 0 | 0 | start log
+2019.01.05 16:15:53.850 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 16:15:54.711 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 下午 04:15:54'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:7b0c9ff7-bacb-4768-8416-769f7c7ddf58
+Error Number:3701,State:5,Class:11
+2019.01.05 16:16:00.969 | TRC | 0 | 1 | frmStudentRollcall：frmStudentRollcall_Load
+2019.01.05 16:29:31.848 | TRC | 0 | 0 | start log
+2019.01.05 16:29:32.114 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 16:29:34.538 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 下午 04:29:34'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:73980c4c-d5f6-4a59-8cc2-20318e57eb6b
+Error Number:3701,State:5,Class:11
+2019.01.05 16:29:36.440 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
+2019.01.05 16:29:38.316 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 16:29:45.742 | TRC | 0 | 0 | frmStudentRollcall：btn_ON：System.FormatException: 字串未被辨認為有效的 DateTime。
+   於 System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   於 System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   於 EnglishClassManager.Rollcall.StudentRollcall.frmStudentRollcall.btn_ON_Click(Object sender, EventArgs e) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Rollcall\StudentRollcall\frmStudentRollcall.cs: 行 117
+2019.01.05 16:29:49.652 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 16:33:49.479 | TRC | 0 | 0 | start log
+2019.01.05 16:33:49.865 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 16:33:51.229 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 下午 04:33:51'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:ad6e067a-a821-4225-8508-d7311642f5e2
+Error Number:3701,State:5,Class:11
+2019.01.05 16:33:57.613 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
+2019.01.05 16:34:00.247 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 16:42:37.382 | TRC | 0 | 0 | start log
+2019.01.05 16:42:37.589 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 16:42:38.414 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 16:42:38'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:cba6c3b1-89ed-4ac1-94b8-4eae0a5b20df
+Error Number:3701,State:5,Class:11
+2019.01.05 16:42:48.697 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
+2019.01.05 16:42:50.654 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 16:43:24.869 | TRC | 0 | 0 | start log
+2019.01.05 16:43:25.013 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 16:43:25.634 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 16:43:25'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:e5037cf8-d3d1-4e1d-84b6-3640c8096b81
+Error Number:3701,State:5,Class:11
+2019.01.05 16:43:28.870 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
+2019.01.05 16:43:30.804 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 16:48:32.181 | TRC | 0 | 0 | start log
+2019.01.05 16:48:32.296 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 16:48:34.000 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 16:48:33'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:4af955e5-4d72-4d55-af58-c0f2bdc9c314
+Error Number:3701,State:5,Class:11
+2019.01.05 16:48:38.936 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
+2019.01.05 16:48:41.253 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 16:48:59.597 | TRC | 0 | 0 | frmStudentRollcall：btn_ON：System.FormatException: 字串未被辨認為有效的 DateTime。
+   於 System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   於 System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   於 EnglishClassManager.Rollcall.StudentRollcall.frmStudentRollcall.btn_ON_Click(Object sender, EventArgs e) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Rollcall\StudentRollcall\frmStudentRollcall.cs: 行 119
+2019.01.05 16:50:35.608 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 16:50:55.548 | TRC | 0 | 0 | frmStudentRollcall：btn_ON：System.FormatException: 字串未被辨認為有效的 DateTime。
+   於 System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   於 System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   於 EnglishClassManager.Rollcall.StudentRollcall.frmStudentRollcall.btn_ON_Click(Object sender, EventArgs e)
+2019.01.05 16:51:38.092 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 16:52:18.540 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 16:54:22.495 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 16:56:34.615 | TRC | 0 | 0 | start log
+2019.01.05 16:56:34.797 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 16:56:36.436 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 16:56:36'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:9d3d3f3e-fc23-40ba-8026-786cc14d1879
+Error Number:3701,State:5,Class:11
+2019.01.05 16:56:38.506 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
+2019.01.05 16:56:44.021 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 16:59:59.296 | TRC | 0 | 0 | start log
+2019.01.05 16:59:59.905 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 17:00:00.881 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 17:00:00'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:8b9c80d0-178b-476b-890c-c23bd2dbd2d8
+Error Number:3701,State:5,Class:11
+2019.01.05 17:00:03.543 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
+2019.01.05 17:00:05.924 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 17:00:12.226 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 17:00:13.928 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 17:00:15.109 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 17:00:18.914 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 17:00:26.650 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 17:00:26.874 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 17:00:27.058 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 17:00:48.842 | TRC | 0 | 0 | start log
+2019.01.05 17:00:48.959 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 17:00:49.689 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 17:00:49'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:21b2b3a5-f25d-4042-9f2a-ab4ff3647f16
+Error Number:3701,State:5,Class:11
+2019.01.05 17:00:55.723 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
+2019.01.05 17:00:57.341 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 17:00:58.257 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 17:00:58.888 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 17:00:59.374 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 17:01:56.234 | TRC | 0 | 0 | frmStudentRollcall：btn_Leave
+2019.01.05 17:02:00.317 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 17:02:03.383 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 17:02:04.156 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 17:02:05.025 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 17:02:06.868 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 17:02:08.833 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 17:02:10.403 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 17:02:12.168 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 17:03:10.305 | TRC | 0 | 0 | start log
+2019.01.05 17:03:10.702 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 17:03:11.787 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 17:03:11'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:e3c5128a-8839-4f4e-96da-96a923002e32
+Error Number:3701,State:5,Class:11
+2019.01.05 17:03:18.492 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
+2019.01.05 17:03:22.129 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 17:03:46.455 | TRC | 0 | 0 | frmStudentRollcall：btn_Leave
+2019.01.05 17:05:56.908 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
+2019.01.05 17:07:09.652 | TRC | 0 | 0 | start log
+2019.01.05 17:07:09.847 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 17:07:10.685 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 17:07:10'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:23cbb08d-d27f-4962-b9fd-29c64ac11ec6
+Error Number:3701,State:5,Class:11
+2019.01.05 17:07:13.712 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
+2019.01.05 17:07:49.904 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
+2019.01.05 17:07:53.332 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 17:07:56.878 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 17:07:57.610 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 17:07:59.538 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 17:08:00.377 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 17:08:01.165 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 17:08:10.491 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 17:08:11.560 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 17:23:04.974 | TRC | 0 | 0 | start log
+2019.01.05 17:23:05.122 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 17:23:06.380 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 17:23:06'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:c4265dec-d7a3-4d54-81a9-d39866244772
+Error Number:3701,State:5,Class:11
+2019.01.05 17:23:08.479 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
+2019.01.05 17:23:23.619 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 17:23:51.052 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 17:24:37.385 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 17:25:23.466 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
+2019.01.05 17:25:38.594 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 17:25:58.694 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 17:26:02.173 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 17:26:03.832 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 17:26:05.482 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 17:28:14.367 | TRC | 0 | 0 | start log
+2019.01.05 17:28:14.487 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 17:28:15.554 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 17:28:15'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:2cf6bde3-950c-4e8e-8d3a-f2d38badc7fd
+Error Number:3701,State:5,Class:11
+2019.01.05 17:28:17.622 | TRC | 0 | 1 | frmStudentRollcall：frmStudentRollcall_Load
+2019.01.05 17:28:21.819 | TRC | 0 | 1 | frmStudentRollcall：btn_OFF
+2019.01.05 17:28:27.710 | TRC | 0 | 1 | frmStudentRollcall：btn_OFF
+2019.01.05 17:37:55.669 | TRC | 0 | 0 | start log
+2019.01.05 17:37:55.951 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 17:37:57.151 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 17:37:57'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:df5eea33-7057-46aa-a987-2a3fc6d9e9c3
+Error Number:3701,State:5,Class:11
+2019.01.05 17:37:59.390 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
+2019.01.05 17:38:02.231 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 17:38:03.073 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 17:38:03.524 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 17:38:03.893 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 17:38:04.186 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 17:38:04.316 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 17:38:04.453 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 17:38:05.337 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 17:38:05.633 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 17:38:40.568 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 17:38:42.579 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 17:38:45.161 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 17:38:48.826 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 17:38:50.029 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 17:38:52.575 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 17:39:05.959 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 17:40:14.607 | TRC | 0 | 0 | start log
+2019.01.05 17:40:14.741 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 17:40:15.814 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 17:40:15'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:5e65c11f-742f-4e07-95bc-1ac9ea0f1506
+Error Number:3701,State:5,Class:11
+2019.01.05 17:40:18.309 | TRC | 0 | 1 | frmStudentRollcall：frmStudentRollcall_Load
+2019.01.05 17:40:21.980 | TRC | 0 | 1 | frmStudentRollcall：btn_OFF
+2019.01.05 17:42:08.665 | TRC | 0 | 0 | start log
+2019.01.05 17:42:08.932 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 17:42:09.709 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 17:42:09'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:8b3dccbe-6675-42c5-8969-865f27464f49
+Error Number:3701,State:5,Class:11
+2019.01.05 17:42:11.721 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
+2019.01.05 17:42:14.820 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 17:42:26.289 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 17:42:36.803 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 17:42:40.055 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 17:42:41.650 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 17:42:43.529 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 17:42:45.577 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 17:42:47.212 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 17:42:50.270 | TRC | 0 | 0 | frmStudentRollcall：btn_Leave
+2019.01.05 17:42:59.791 | TRC | 0 | 0 | frmStudentRollcall：btn_Leave
+2019.01.05 17:43:02.065 | TRC | 0 | 0 | frmStudentRollcall：btn_Leave
+2019.01.05 17:43:10.642 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 17:43:12.775 | TRC | 0 | 0 | frmStudentRollcall：btn_Leave
+2019.01.05 17:43:21.193 | TRC | 0 | 0 | frmStudentRollcall：btn_Leave
+2019.01.05 17:47:12.709 | TRC | 0 | 0 | start log
+2019.01.05 17:47:12.802 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 17:47:13.597 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 17:47:13'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:ea3f9625-bc42-416c-bae3-6682a6543fc6
+Error Number:3701,State:5,Class:11
+2019.01.05 17:47:55.563 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
+2019.01.05 17:47:58.038 | TRC | 0 | 0 | frmStudentRollcall：btn_Leave
+2019.01.05 17:48:00.629 | TRC | 0 | 0 | frmStudentRollcall：btn_Leave
+2019.01.05 17:48:02.419 | TRC | 0 | 0 | frmStudentRollcall：btn_Leave
+2019.01.05 17:48:03.808 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 17:48:05.197 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 17:48:06.564 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 17:48:08.544 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 17:48:09.929 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 17:48:11.490 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 17:48:13.005 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 17:48:15.048 | TRC | 0 | 0 | frmStudentRollcall：btn_Leave
+2019.01.05 17:48:16.944 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 17:48:21.148 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 17:48:22.997 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 17:48:24.588 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 17:48:26.849 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 17:48:29.040 | TRC | 0 | 0 | frmStudentRollcall：btn_Leave
+2019.01.05 17:48:30.683 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 17:48:32.510 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 17:48:33.787 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 17:48:38.009 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 17:48:40.110 | TRC | 0 | 0 | frmStudentRollcall：btn_Leave
+2019.01.05 17:48:42.483 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 17:48:44.869 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 17:48:46.580 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 17:49:50.002 | TRC | 0 | 0 | start log
+2019.01.05 17:49:50.246 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 17:49:51.165 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 17:49:51'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:2f4c7002-822a-4032-9848-c4f5e8a11877
+Error Number:3701,State:5,Class:11
+2019.01.05 17:49:58.266 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
+2019.01.05 17:50:02.138 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 17:50:03.556 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 17:50:05.326 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 17:50:07.045 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 17:50:08.677 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 17:57:12.159 | TRC | 0 | 0 | start log
+2019.01.05 17:57:12.305 | TRC | 0 | 1 | DB initial count：1
+2019.01.05 17:57:12.937 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無法 卸除 資料表 'EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_2019/1/5 17:57:12'，原因是它不存在或您沒有權限。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 133
+ClientConnectionId:93a203c9-aa98-4bfb-9557-c772e1cfb0cf
+Error Number:3701,State:5,Class:11
+2019.01.05 17:57:15.572 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
+2019.01.05 17:57:21.193 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 17:57:25.544 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 17:57:28.623 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 17:57:32.671 | TRC | 0 | 0 | frmStudentRollcall：btn_OFF
+2019.01.05 17:57:36.928 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.01.05 17:58:13.371 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
