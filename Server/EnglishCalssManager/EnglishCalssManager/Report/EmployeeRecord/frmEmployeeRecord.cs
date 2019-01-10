@@ -39,7 +39,7 @@ namespace EnglishCalssManager.Report.EmployeeRecord
             }
             cbox_ClassID.Text = cbox_ClassID.Items[0].ToString();
 
-            CommandStr = "Select TwName from Table_EmployeeBasic";
+            CommandStr = "Select TwName from Table_EmployeeBasic where Onjob='Y'";
             _dataTable = dbc.CommandFunctionDB("Table_EmployeeBasic", CommandStr);
             //cbox_EmployeeName.Items.Add("*");
             foreach (DataRow drw in _dataTable.Rows)
@@ -56,14 +56,16 @@ namespace EnglishCalssManager.Report.EmployeeRecord
             dateshort = dateTimePicker1.Value.ToString("yyyy_MM");
             _classSelect = cbox_ClassID.Text;
 
-            if (cbox_ClassID.Text=="*")
-            {
-                MessageBox.Show("請選擇一個群組");
-            }
-            else
-            {
-                refreshTable();
-            }
+            refreshTable();
+
+            //if (cbox_ClassID.Text=="*")
+            //{
+            //    MessageBox.Show("請選擇一個群組");
+            //}
+            //else
+            //{
+            //    refreshTable();
+            //}
            
         }
 
@@ -71,37 +73,38 @@ namespace EnglishCalssManager.Report.EmployeeRecord
         {
             SaveFileDialog save = new SaveFileDialog();
             save.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-            save.FileName = cbox_EmployeeName.Text + " " + cbox_ClassID.Text + " 員工刷卡紀錄 " + datelong;
-            save.Filter = "*.xlsx|*.xlsx";
-            if (save.ShowDialog() != DialogResult.OK) return;
+            save.FileName = cbox_EmployeeName.Text + " " + " 員工刷卡紀錄 " + datelong;
+            save.Filter = "xlsx|*.xlsx";
+            if (save.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                // Excel 物件 
+                Excel.Application xls = null;
+                try
+                {
+                    xls = new Excel.Application();
+                    // Excel WorkBook 
+                    Excel.Workbook book = xls.Workbooks.Add();
+                    // Excel WorkBook，預設會產生一個 WorkSheet，索引從 1 開始，而非 0 
+                    // 寫法1 
+                    Excel.Worksheet Sheet = (Excel.Worksheet)book.Worksheets.Item[1];
+                    // 寫法2 
+                    //Excel.Worksheet Sheet = (Excel.Worksheet)book.Worksheets[1];
+                    // 寫法3 
+                    //Excel.Worksheet Sheet = xls.ActiveSheet;
 
-            // Excel 物件 
-            Excel.Application xls = null;
-            try
-            {
-                xls = new Excel.Application();
-                // Excel WorkBook 
-                Excel.Workbook book = xls.Workbooks.Add();
-                // Excel WorkBook，預設會產生一個 WorkSheet，索引從 1 開始，而非 0 
-                // 寫法1 
-                Excel.Worksheet Sheet = (Excel.Worksheet)book.Worksheets.Item[1];
-                // 寫法2 
-                //Excel.Worksheet Sheet = (Excel.Worksheet)book.Worksheets[1];
-                // 寫法3 
-                //Excel.Worksheet Sheet = xls.ActiveSheet;
-
-                // 把 DataGridView 資料塞進 Excel 內 
-                DataGridView2Excel(Sheet);
-                // 儲存檔案 
-                book.SaveAs(save.FileName);
-            }
-            catch (Exception)
-            {
-                throw;
-            }
-            finally
-            {
-                xls.Quit();
+                    // 把 DataGridView 資料塞進 Excel 內 
+                    DataGridView2Excel(Sheet);
+                    // 儲存檔案 
+                    book.SaveAs(save.FileName);
+                }
+                catch (Exception)
+                {
+                    throw;
+                }
+                finally
+                {
+                    xls.Quit();
+                }
             }
         }
 
@@ -113,14 +116,20 @@ namespace EnglishCalssManager.Report.EmployeeRecord
             Sheet.Cells[1, 4] = "部門"; Sheet.Cells[1, 5] = "職稱"; Sheet.Cells[1, 6] = "刷卡日期";
             Sheet.Cells[1, 7] = "狀態"; Sheet.Cells[1, 8] = "表定上班時間"; Sheet.Cells[1, 9] = "表定下班時間註";
             Sheet.Cells[1, 10] = "刷卡上班時間"; Sheet.Cells[1, 11] = "刷卡下班時間"; Sheet.Cells[1, 12] = "遲到";
-            Sheet.Cells[1, 13] = "早退"; Sheet.Cells[1, 14] = "上班時數"; 
+            Sheet.Cells[1, 13] = "早退"; Sheet.Cells[1, 14] = "上班時數"; Sheet.Cells[1, 15] = "薪資";
             for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
             {
-                for (int j = 0; j < dataGridView1.Columns.Count-3; j++)
+                for (int j = 0; j < dataGridView1.Columns.Count-2; j++)
                 {
                     string value = "";
                     if (dataGridView1[j, i].Value!=null)
                     { value = dataGridView1[j, i].Value.ToString(); }
+                    if(j==14 && dataGridView1[1, i].Value.ToString() ==cbox_ClassID.Text)
+                    {
+                        DateTime dtRollcall = Convert.ToDateTime(dataGridView1[13, i].Value.ToString());
+                        dataGridView1[14, i].Value = Convert.ToInt16(txt_Hsalary.Text) * dtRollcall.Hour;
+                        value= dataGridView1[14, i].Value.ToString();
+                    }
                    Sheet.Cells[i + 2, j + 1] = value;
                 }
             }
@@ -220,6 +229,10 @@ namespace EnglishCalssManager.Report.EmployeeRecord
                     dataGridView1.Rows[i].Cells["RollCallLate"].Value = drw.ItemArray[5].ToString().Substring(0, 8); //_dataTable.Rows[0][5];
                     dataGridView1.Rows[i].Cells["RollCallEarly"].Value = drw.ItemArray[6].ToString().Substring(0, 8); ; //_dataTable.Rows[0][6];
                     dataGridView1.Rows[i].Cells["RollcallHR"].Value = drw.ItemArray[7].ToString();// _dataTable.Rows[0][7];
+
+                    DateTime dtRollcall = Convert.ToDateTime(dataGridView1[13, i].Value.ToString());
+                    dataGridView1[14, i].Value = Convert.ToInt16(txt_Hsalary.Text) * dtRollcall.Hour;
+                   // value = dataGridView1[14, i].Value.ToString();
                 }
                 catch (Exception e)
                 {

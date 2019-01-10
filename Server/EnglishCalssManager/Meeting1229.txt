@@ -4,7 +4,7 @@
 4.Employee modify function check--OK
 5.Employee rollcall remark.--需新增DB欄位
 6.Part time no notice function, cant modify class name--OK
-7.part time employee rollcall report should be set hr salary
+7.part time employee rollcall report should be set hr salary--OK
 8.員工上下班推播+多人通知+card notice dia
 9.學生未到後，可繼續點名，並通知家長，Double Check + mulity select--OK
 10.家長重複不要發送

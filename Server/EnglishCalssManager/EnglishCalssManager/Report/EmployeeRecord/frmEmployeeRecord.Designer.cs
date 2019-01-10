@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.cbox_EmployeeName = new System.Windows.Forms.ComboBox();
@@ -40,6 +40,8 @@
             this.btnSelect = new System.Windows.Forms.Button();
             this.btn_Export = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txt_Hsalary = new System.Windows.Forms.TextBox();
             this.EmployeeID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ClassID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TwName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,6 +56,7 @@
             this.RollCallLate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RollCallEarly = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RollcallHR = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Salary = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RollCallManul = new System.Windows.Forms.DataGridViewButtonColumn();
             this.RollCallVaction = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -86,7 +89,7 @@
             this.cbox_ClassID.FormattingEnabled = true;
             this.cbox_ClassID.Location = new System.Drawing.Point(256, 87);
             this.cbox_ClassID.Name = "cbox_ClassID";
-            this.cbox_ClassID.Size = new System.Drawing.Size(200, 20);
+            this.cbox_ClassID.Size = new System.Drawing.Size(84, 20);
             this.cbox_ClassID.TabIndex = 3;
             // 
             // label1
@@ -121,13 +124,13 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(254, 72);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(29, 12);
+            this.label4.Size = new System.Drawing.Size(41, 12);
             this.label4.TabIndex = 8;
-            this.label4.Text = "群組";
+            this.label4.Text = "班別：";
             // 
             // btnSelect
             // 
-            this.btnSelect.Location = new System.Drawing.Point(488, 34);
+            this.btnSelect.Location = new System.Drawing.Point(484, 32);
             this.btnSelect.Name = "btnSelect";
             this.btnSelect.Size = new System.Drawing.Size(75, 23);
             this.btnSelect.TabIndex = 9;
@@ -137,7 +140,7 @@
             // 
             // btn_Export
             // 
-            this.btn_Export.Location = new System.Drawing.Point(488, 87);
+            this.btn_Export.Location = new System.Drawing.Point(484, 85);
             this.btn_Export.Name = "btn_Export";
             this.btn_Export.Size = new System.Drawing.Size(75, 23);
             this.btn_Export.TabIndex = 10;
@@ -163,6 +166,7 @@
             this.RollCallLate,
             this.RollCallEarly,
             this.RollcallHR,
+            this.Salary,
             this.RollCallManul,
             this.RollCallVaction});
             this.dataGridView1.Location = new System.Drawing.Point(12, 116);
@@ -170,6 +174,22 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(1338, 574);
             this.dataGridView1.TabIndex = 11;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(353, 72);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(41, 12);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "時薪：";
+            // 
+            // txt_Hsalary
+            // 
+            this.txt_Hsalary.Location = new System.Drawing.Point(355, 85);
+            this.txt_Hsalary.Name = "txt_Hsalary";
+            this.txt_Hsalary.Size = new System.Drawing.Size(100, 22);
+            this.txt_Hsalary.TabIndex = 13;
             // 
             // EmployeeID
             // 
@@ -201,8 +221,8 @@
             // 
             // RollcallDate
             // 
-            dataGridViewCellStyle2.Format = "yyyy-MM-dd";
-            this.RollcallDate.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Format = "yyyy-MM-dd";
+            this.RollcallDate.DefaultCellStyle = dataGridViewCellStyle1;
             this.RollcallDate.HeaderText = "刷卡日期";
             this.RollcallDate.Name = "RollcallDate";
             // 
@@ -252,6 +272,12 @@
             this.RollcallHR.Name = "RollcallHR";
             this.RollcallHR.Width = 80;
             // 
+            // Salary
+            // 
+            this.Salary.HeaderText = "薪資";
+            this.Salary.Name = "Salary";
+            this.Salary.Width = 70;
+            // 
             // RollCallManul
             // 
             this.RollCallManul.HeaderText = "當日補登";
@@ -275,7 +301,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1362, 723);
+            this.ClientSize = new System.Drawing.Size(1354, 723);
+            this.Controls.Add(this.txt_Hsalary);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btn_Export);
             this.Controls.Add(this.btnSelect);
@@ -310,6 +338,8 @@
         private System.Windows.Forms.Button btnSelect;
         private System.Windows.Forms.Button btn_Export;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txt_Hsalary;
         private System.Windows.Forms.DataGridViewTextBoxColumn EmployeeID;
         private System.Windows.Forms.DataGridViewTextBoxColumn ClassID;
         private System.Windows.Forms.DataGridViewTextBoxColumn TwName;
@@ -324,6 +354,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn RollCallLate;
         private System.Windows.Forms.DataGridViewTextBoxColumn RollCallEarly;
         private System.Windows.Forms.DataGridViewTextBoxColumn RollcallHR;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Salary;
         private System.Windows.Forms.DataGridViewButtonColumn RollCallManul;
         private System.Windows.Forms.DataGridViewButtonColumn RollCallVaction;
     }
