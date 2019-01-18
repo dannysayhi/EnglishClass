@@ -9,7 +9,7 @@ using System.Text;
 
 namespace EnglishCalssManager.Broadcast.CardNotice
 {
-    class CardNotice
+   public class CardNotice
     {
         public static String SendNotificationFromFirebaseCloud(String Title, String Message)
         {

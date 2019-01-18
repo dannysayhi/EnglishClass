@@ -37,7 +37,8 @@ namespace EnglishCalssManager.Rollcall.EmployeeRollcall
                + "[RollCallLate][time](7) NULL,"
                + "[RollCallEarly][time](7) NULL,"
                + "[RollcallHR][time](7) NULL,"
-               + "[RollCallState][varchar](6) NULL"
+               + "[RollCallState][varchar](6) NULL,"
+               + "[RollCallRemark][varchar](50) NULL"
                + " ) ON[PRIMARY]"
                                , datelong);
                 dbcR.ExecuteNonQuery(CommandStr);
@@ -73,7 +74,7 @@ namespace EnglishCalssManager.Rollcall.EmployeeRollcall
                     // insert
                     CommandStr = string.Format(
                    "Insert into EnglishClassDBtestRollcall.dbo.Table_EmployeeRollcall_{0}"
-                   + " values('{1}','{2}',Default,Default,Default,Default,Default,Default,'未刷卡')"
+                   + " values('{1}','{2}',Default,Default,Default,Default,Default,Default,'未刷卡','')"
                    , datelong, drw.ItemArray[0].ToString(), drw.ItemArray[1].ToString());
                     dbcR.ExecuteNonQuery(CommandStr);
                 }

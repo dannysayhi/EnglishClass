@@ -42,7 +42,7 @@ namespace EnglishCalssManager.Rollcall.StudentRollcall
                , datelong_del_start.AddDays(-200-i).ToString("yyyyMMdd"));
                 if (dbcR.strExecuteScalar(CommandStr) != "0")
                 {
-                    CommandStr = string.Format(" DROP TABLE EnglishClassDBtestRollcall.[dbo].[Table_StudentRollcall_{0}]", datelong_del_start);
+                    CommandStr = string.Format(" DROP TABLE EnglishClassDBtestRollcall.[dbo].[Table_StudentRollcall_{0}]", datelong_del_start.AddDays(-200 - i).ToString("yyyyMMdd"));
                     dbcR.ExecuteNonQuery(CommandStr);
                 }
             }

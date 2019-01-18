@@ -1,3 +1,0 @@
-2018.12.10 22:19:09 | TRC | 12 |  | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
-2018.12.10 22:19:09 | TRC | 10 |  | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
-2018.12.10 22:19:18 | TRC | 13 |  | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)

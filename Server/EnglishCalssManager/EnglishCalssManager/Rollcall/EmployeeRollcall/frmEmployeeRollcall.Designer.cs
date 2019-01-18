@@ -46,6 +46,7 @@
             this.RollcallHR = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RollCallManul = new System.Windows.Forms.DataGridViewButtonColumn();
             this.RollCallVaction = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.RollCallRemark = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.ckb_WorkEnd = new System.Windows.Forms.CheckBox();
             this.ckb_WorkStart = new System.Windows.Forms.CheckBox();
@@ -59,6 +60,7 @@
             this.btn_Select = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.cbox_ClassID = new System.Windows.Forms.ComboBox();
+            this.chk_send = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -82,7 +84,8 @@
             this.RollCallEarly,
             this.RollcallHR,
             this.RollCallManul,
-            this.RollCallVaction});
+            this.RollCallVaction,
+            this.RollCallRemark});
             this.dataGridView1.Location = new System.Drawing.Point(12, 97);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
@@ -189,6 +192,11 @@
             this.RollCallVaction.Text = "當日請假";
             this.RollCallVaction.UseColumnTextForButtonValue = true;
             this.RollCallVaction.Width = 80;
+            // 
+            // RollCallRemark
+            // 
+            this.RollCallRemark.HeaderText = "備註";
+            this.RollCallRemark.Name = "RollCallRemark";
             // 
             // groupBox2
             // 
@@ -325,12 +333,23 @@
             this.cbox_ClassID.TabIndex = 2;
             this.cbox_ClassID.SelectedIndexChanged += new System.EventHandler(this.cbox_ClassID_SelectedIndexChanged);
             // 
+            // chk_send
+            // 
+            this.chk_send.AutoSize = true;
+            this.chk_send.Location = new System.Drawing.Point(1136, 37);
+            this.chk_send.Name = "chk_send";
+            this.chk_send.Size = new System.Drawing.Size(84, 16);
+            this.chk_send.TabIndex = 10;
+            this.chk_send.Text = "是否發送？";
+            this.chk_send.UseVisualStyleBackColor = true;
+            // 
             // frmEmployeeRollcall
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1354, 656);
+            this.Controls.Add(this.chk_send);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.dataGridView1);
             this.Name = "frmEmployeeRollcall";
@@ -341,6 +360,7 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -376,5 +396,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn RollcallHR;
         private System.Windows.Forms.DataGridViewButtonColumn RollCallManul;
         private System.Windows.Forms.DataGridViewButtonColumn RollCallVaction;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RollCallRemark;
+        private System.Windows.Forms.CheckBox chk_send;
     }
 }

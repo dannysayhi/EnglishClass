@@ -2661,7 +2661,6 @@ D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssMan
 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\obj\Debug\EnglishCalssManager.csprojResolveAssemblyReference.cache
 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\obj\Debug\EnglishCalssManager.Broadcast.CardNotice.frmCardNotice.resources
 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\obj\Debug\EnglishCalssManager.Broadcast.HistoryMessage.frmHistoryMessage.resources
-D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\obj\Debug\EnglishCalssManager.Broadcast.ManualBroadcast.frmManualBroadcast.resources
 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\obj\Debug\EnglishCalssManager.Broadcast.MessageSetting.frmMessageSetting.resources
 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\obj\Debug\EnglishCalssManager.EmployeeAttence.ClassEmployeeManager.frmClassEmployeeManager.resources
 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\obj\Debug\EnglishClassManager.EmployeeAttence.ClassScheduleManager.frmClassScheduleManager.resources
@@ -2748,3 +2747,5 @@ C:\Users\user\ocaip-devenv\new_repo\EnglishClass\Server\EnglishCalssManager\Engl
 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\obj\Debug\EnglishCalssManager.EmployeeAttence.ClassScheduleSetting.frmClassScheduleSettingNew.resources
 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\obj\Debug\EnglishCalssManager.Utility.Database.frmDBconfig.resources
 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\obj\Debug\_4RobotSystem.RecipeTemp.frmRecipe.resources
+D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\obj\Debug\EnglishCalssManager.Broadcast.ManualBroadcast.frmManualBroadcastEmployee.resources
+D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\obj\Debug\EnglishCalssManager.Broadcast.ManualBroadcast.frmManualBroadcastStudent.resources

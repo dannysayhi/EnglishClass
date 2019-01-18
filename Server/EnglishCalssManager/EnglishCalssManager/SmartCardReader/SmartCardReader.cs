@@ -3,8 +3,8 @@ using System.Text;
 using System.Threading;
 using PCSC;
 using EnglishClassManager.Utility.Database;
-using _4RobotSystem.PCaGUtility.LogFile;
 using EnglishCalssManager.Rollcall.StudentRollcall;
+using AOISystem.Utility.Logging;
 
 namespace SmartCardSystem
 {

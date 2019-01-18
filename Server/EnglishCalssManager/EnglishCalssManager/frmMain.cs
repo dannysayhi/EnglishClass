@@ -379,8 +379,7 @@ namespace EnglishClassManager
 
         private void 手動推播ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmManualBroadcast _frmManualBroadcast = new frmManualBroadcast();
-            _frmManualBroadcast.ShowDialog();
+
         }
 
         private void 刷卡通知ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -420,7 +419,17 @@ namespace EnglishClassManager
             frmDBconfig _frmDBconfig = new frmDBconfig();
             _frmDBconfig.Show();
         }
+        private void 家長ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmManualBroadcastStudent _frmManualBroadcast = new frmManualBroadcastStudent();
+            _frmManualBroadcast.ShowDialog();
+        }
 
+        private void 員工ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmManualBroadcastEmployee _frmManualemployeeBroadcast = new frmManualBroadcastEmployee();
+            _frmManualemployeeBroadcast.ShowDialog();
+        }
 
         #endregion ToolStripMenuItem
 
@@ -557,5 +566,7 @@ namespace EnglishClassManager
             e.Cancel = true; //關閉視窗時取消
             _frmSystemLog.Hide(); //隱藏式窗,下次再show出
         }
+
+       
     }
 }

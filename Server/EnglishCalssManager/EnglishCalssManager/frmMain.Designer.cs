@@ -71,6 +71,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.DBinitial = new System.Windows.Forms.Timer(this.components);
             this.lb_DBinitialCount = new System.Windows.Forms.Label();
+            this.家長ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.員工ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -214,15 +216,18 @@
             // 
             // 手動推播ToolStripMenuItem
             // 
+            this.手動推播ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.家長ToolStripMenuItem,
+            this.員工ToolStripMenuItem});
             this.手動推播ToolStripMenuItem.Name = "手動推播ToolStripMenuItem";
-            this.手動推播ToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.手動推播ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.手動推播ToolStripMenuItem.Text = "手動推播";
             this.手動推播ToolStripMenuItem.Click += new System.EventHandler(this.手動推播ToolStripMenuItem_Click);
             // 
             // 刷卡通知ToolStripMenuItem
             // 
             this.刷卡通知ToolStripMenuItem.Name = "刷卡通知ToolStripMenuItem";
-            this.刷卡通知ToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.刷卡通知ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.刷卡通知ToolStripMenuItem.Text = "刷卡通知";
             this.刷卡通知ToolStripMenuItem.Visible = false;
             this.刷卡通知ToolStripMenuItem.Click += new System.EventHandler(this.刷卡通知ToolStripMenuItem_Click);
@@ -233,7 +238,7 @@
             this.推播訊息設定ToolStripMenuItem,
             this.刷卡通知設定ToolStripMenuItem});
             this.訊息預設ToolStripMenuItem.Name = "訊息預設ToolStripMenuItem";
-            this.訊息預設ToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.訊息預設ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.訊息預設ToolStripMenuItem.Text = "訊息預設";
             this.訊息預設ToolStripMenuItem.Click += new System.EventHandler(this.訊息預設ToolStripMenuItem_Click);
             // 
@@ -254,7 +259,7 @@
             // 歷史訊息紀錄ToolStripMenuItem
             // 
             this.歷史訊息紀錄ToolStripMenuItem.Name = "歷史訊息紀錄ToolStripMenuItem";
-            this.歷史訊息紀錄ToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.歷史訊息紀錄ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.歷史訊息紀錄ToolStripMenuItem.Text = "歷史訊息紀錄";
             this.歷史訊息紀錄ToolStripMenuItem.Click += new System.EventHandler(this.歷史訊息紀錄ToolStripMenuItem_Click);
             // 
@@ -270,14 +275,14 @@
             // 學生出勤紀錄ToolStripMenuItem
             // 
             this.學生出勤紀錄ToolStripMenuItem.Name = "學生出勤紀錄ToolStripMenuItem";
-            this.學生出勤紀錄ToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.學生出勤紀錄ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.學生出勤紀錄ToolStripMenuItem.Text = "學生出勤紀錄";
             this.學生出勤紀錄ToolStripMenuItem.Click += new System.EventHandler(this.學生出勤紀錄ToolStripMenuItem_Click);
             // 
             // 員工出勤紀錄ToolStripMenuItem
             // 
             this.員工出勤紀錄ToolStripMenuItem.Name = "員工出勤紀錄ToolStripMenuItem";
-            this.員工出勤紀錄ToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.員工出勤紀錄ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.員工出勤紀錄ToolStripMenuItem.Text = "員工出勤紀錄";
             this.員工出勤紀錄ToolStripMenuItem.Click += new System.EventHandler(this.員工出勤紀錄ToolStripMenuItem_Click);
             // 
@@ -293,14 +298,14 @@
             // 系統紀錄ToolStripMenuItem1
             // 
             this.系統紀錄ToolStripMenuItem1.Name = "系統紀錄ToolStripMenuItem1";
-            this.系統紀錄ToolStripMenuItem1.Size = new System.Drawing.Size(134, 22);
+            this.系統紀錄ToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.系統紀錄ToolStripMenuItem1.Text = "系統紀錄";
             this.系統紀錄ToolStripMenuItem1.Click += new System.EventHandler(this.系統紀錄ToolStripMenuItem1_Click);
             // 
             // 資料庫管理ToolStripMenuItem
             // 
             this.資料庫管理ToolStripMenuItem.Name = "資料庫管理ToolStripMenuItem";
-            this.資料庫管理ToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.資料庫管理ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.資料庫管理ToolStripMenuItem.Text = "資料庫管理";
             this.資料庫管理ToolStripMenuItem.Click += new System.EventHandler(this.資料庫管理ToolStripMenuItem_Click);
             // 
@@ -428,6 +433,20 @@
             this.lb_DBinitialCount.TabIndex = 12;
             this.lb_DBinitialCount.Text = "DB initial Count：";
             // 
+            // 家長ToolStripMenuItem
+            // 
+            this.家長ToolStripMenuItem.Name = "家長ToolStripMenuItem";
+            this.家長ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.家長ToolStripMenuItem.Text = "家長";
+            this.家長ToolStripMenuItem.Click += new System.EventHandler(this.家長ToolStripMenuItem_Click);
+            // 
+            // 員工ToolStripMenuItem
+            // 
+            this.員工ToolStripMenuItem.Name = "員工ToolStripMenuItem";
+            this.員工ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.員工ToolStripMenuItem.Text = "員工";
+            this.員工ToolStripMenuItem.Click += new System.EventHandler(this.員工ToolStripMenuItem_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -503,6 +522,8 @@
         private System.Windows.Forms.ToolStripMenuItem 資料庫管理ToolStripMenuItem;
         private System.Windows.Forms.Timer DBinitial;
         private System.Windows.Forms.Label lb_DBinitialCount;
+        private System.Windows.Forms.ToolStripMenuItem 家長ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 員工ToolStripMenuItem;
     }
 }
 

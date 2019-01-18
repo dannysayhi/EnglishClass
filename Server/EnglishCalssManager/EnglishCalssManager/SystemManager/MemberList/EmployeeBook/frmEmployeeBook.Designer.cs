@@ -55,10 +55,10 @@
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.lb_pageNum = new System.Windows.Forms.LinkLabel();
-            this.btn_clearText = new System.Windows.Forms.Button();
-            this.lb_startpage = new System.Windows.Forms.LinkLabel();
             this.lb_endpage = new System.Windows.Forms.LinkLabel();
+            this.lb_pageNum = new System.Windows.Forms.LinkLabel();
+            this.lb_startpage = new System.Windows.Forms.LinkLabel();
+            this.btn_clearText = new System.Windows.Forms.Button();
             this.btn_ReadCard = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -274,7 +274,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.tableLayoutPanel1.SetRowSpan(this.dataGridView1, 4);
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1332, 571);
+            this.dataGridView1.Size = new System.Drawing.Size(1332, 563);
             this.dataGridView1.TabIndex = 33;
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             this.dataGridView1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dataGridView1_MouseClick);
@@ -358,8 +358,19 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1338, 726);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1330, 718);
             this.tableLayoutPanel1.TabIndex = 35;
+            // 
+            // lb_endpage
+            // 
+            this.lb_endpage.AutoSize = true;
+            this.lb_endpage.Location = new System.Drawing.Point(673, 110);
+            this.lb_endpage.Name = "lb_endpage";
+            this.lb_endpage.Size = new System.Drawing.Size(56, 12);
+            this.lb_endpage.TabIndex = 36;
+            this.lb_endpage.TabStop = true;
+            this.lb_endpage.Text = "    20     >>";
+            this.lb_endpage.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lb_endpage_LinkClicked);
             // 
             // lb_pageNum
             // 
@@ -370,16 +381,6 @@
             this.lb_pageNum.TabIndex = 37;
             this.lb_pageNum.TabStop = true;
             this.lb_pageNum.Text = "第 頁";
-            // 
-            // btn_clearText
-            // 
-            this.btn_clearText.Location = new System.Drawing.Point(489, 113);
-            this.btn_clearText.Name = "btn_clearText";
-            this.btn_clearText.Size = new System.Drawing.Size(75, 23);
-            this.btn_clearText.TabIndex = 38;
-            this.btn_clearText.Text = "清空條件";
-            this.btn_clearText.UseVisualStyleBackColor = true;
-            this.btn_clearText.Click += new System.EventHandler(this.btn_clearText_Click);
             // 
             // lb_startpage
             // 
@@ -392,16 +393,15 @@
             this.lb_startpage.Text = "<<     20     ";
             this.lb_startpage.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lb_startpage_LinkClicked);
             // 
-            // lb_endpage
+            // btn_clearText
             // 
-            this.lb_endpage.AutoSize = true;
-            this.lb_endpage.Location = new System.Drawing.Point(673, 110);
-            this.lb_endpage.Name = "lb_endpage";
-            this.lb_endpage.Size = new System.Drawing.Size(56, 12);
-            this.lb_endpage.TabIndex = 36;
-            this.lb_endpage.TabStop = true;
-            this.lb_endpage.Text = "    20     >>";
-            this.lb_endpage.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lb_endpage_LinkClicked);
+            this.btn_clearText.Location = new System.Drawing.Point(489, 113);
+            this.btn_clearText.Name = "btn_clearText";
+            this.btn_clearText.Size = new System.Drawing.Size(75, 23);
+            this.btn_clearText.TabIndex = 38;
+            this.btn_clearText.Text = "清空條件";
+            this.btn_clearText.UseVisualStyleBackColor = true;
+            this.btn_clearText.Click += new System.EventHandler(this.btn_clearText_Click);
             // 
             // btn_ReadCard
             // 
@@ -417,7 +417,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1362, 741);
+            this.ClientSize = new System.Drawing.Size(1354, 733);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "frmEmployeeBook";
             this.Text = "--員工通訊錄--";

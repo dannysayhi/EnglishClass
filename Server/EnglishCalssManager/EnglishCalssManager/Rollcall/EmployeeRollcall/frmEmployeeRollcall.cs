@@ -1,10 +1,12 @@
 ﻿using AOISystem.Utility.Logging;
+using EnglishCalssManager.Broadcast.CardNotice;
 using EnglishCalssManager.Rollcall.EmployeeRollcall;
 using EnglishClassManager.Utility.Database;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlTypes;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -49,12 +51,25 @@ namespace EnglishClassManager.Rollcall.EmployeeRollcall
         {
             // MessageBox.Show(e.ColumnIndex.ToString(),e.RowIndex.ToString());
             string CommandStr = "";
+            string _rollcallRemark = "";
+            string _rollcallS = "";
+
             int _dataCurRowIndex = dataGridView1.CurrentCell.RowIndex;
+            
+            if (dataGridView1.Rows[_dataCurRowIndex].Cells["RollCallRemark"].Value!=null)
+                _rollcallRemark = dataGridView1.Rows[_dataCurRowIndex].Cells["RollCallRemark"].Value.ToString();
+            if (dataGridView1.Rows[_dataCurRowIndex].Cells["RollcallStart"].Value != null)
+                 _rollcallS = Convert.ToDateTime(dataGridView1.Rows[_dataCurRowIndex].Cells["RollcallStart"].Value).ToString("yyyy-MM-dd HH:mm:ss"); ; //_dataTable.Rows[0][3];
+
             string _employeeID = dataGridView1.Rows[_dataCurRowIndex].Cells["EmployeeID"].Value.ToString();
+            string _employeeName = dataGridView1.Rows[_dataCurRowIndex].Cells["TwName"].Value.ToString();
             DateTime _dtrollcallDate = DateTime.Now;
             string _strrollcallDate = _dtrollcallDate.ToString("yyyy-MM-dd HH:mm:ss");
             string _latetime = "";
             string _eralytime = "";
+            string _classS = dataGridView1.Rows[_dataCurRowIndex].Cells["ClassStart"].Value.ToString(); //_dataTable.Rows[0][3];
+            string _classE = dataGridView1.Rows[_dataCurRowIndex].Cells["ClassEnd"].Value.ToString(); //_dataTable.Rows[0][3];
+
             if (e.RowIndex < dataGridView1.Rows.Count - 1)
             {
                 // MessageBox.Show(dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[0].Value.ToString());
@@ -63,14 +78,12 @@ namespace EnglishClassManager.Rollcall.EmployeeRollcall
                     if (ckb_WorkStart.Checked)
                     {
                         Log.Trace(logTitle + "funcRollStart");
-                        string _workS = dataGridView1.Rows[_dataCurRowIndex].Cells["ClassStart"].Value.ToString(); //_dataTable.Rows[0][3];
-                        funcRollStart(_employeeID, _workS); 
+                        funcRollStart(_employeeID, _classS,_employeeName, _rollcallRemark); 
                     }
                     else if (ckb_WorkEnd.Checked && dataGridView1.Rows[e.RowIndex].Cells["RollcallStart"].Value != null && dataGridView1.Rows[e.RowIndex].Cells["RollCallState"].Value != "請假")
                     {
                         Log.Trace(logTitle + "funcRollEnd");
-                        string _workE = dataGridView1.Rows[_dataCurRowIndex].Cells["ClassEnd"].Value.ToString(); //_dataTable.Rows[0][3];
-                        funcRollEnd(_employeeID, _workE);
+                        funcRollEnd(_employeeID, _classE,_classS, _rollcallS, _rollcallRemark);
                     }
                     refreshTable();
                 }
@@ -79,7 +92,7 @@ namespace EnglishClassManager.Rollcall.EmployeeRollcall
                     if(dataGridView1.Rows[e.RowIndex].Cells["RollcallStart"].Value == "")
                     {
                         Log.Trace(logTitle + "funcRollLeave");
-                        funcRollLeave(_employeeID);
+                        funcRollLeave(_employeeID, _rollcallRemark);
                         refreshTable();
                     }
                     
@@ -119,8 +132,8 @@ namespace EnglishClassManager.Rollcall.EmployeeRollcall
                 try
                 {
                     dataGridView1.Rows[i].Cells["EmployeeID"].Value = drw.ItemArray[0].ToString();// _dataTable.Rows[0][0];
-                    string _workStart = drw.ItemArray[11].ToString()+":"+ drw.ItemArray[12].ToString();
-                string _workEnd = drw.ItemArray[13].ToString() + ":" + drw.ItemArray[14].ToString();
+                    string _workStart = drw.ItemArray[12].ToString()+":"+ drw.ItemArray[13].ToString();
+                string _workEnd = drw.ItemArray[14].ToString() + ":" + drw.ItemArray[15].ToString();
                     string _rollcallStart = drw.ItemArray[3].ToString();//DateTime.Parse(drw.ItemArray[3].ToString()).ToString("HH:mm:ss");
                     string _rollcallEnd = drw.ItemArray[4].ToString();//DateTime.Parse(drw.ItemArray[4].ToString()).ToString("HH:mm:ss");
                     string _rollcallDatetime = drw.ItemArray[2].ToString();
@@ -129,9 +142,9 @@ namespace EnglishClassManager.Rollcall.EmployeeRollcall
                   // diffTimeFunction(_workStart,_workEnd,_rollcallStart,_rollcallEnd,ref _rollcallEarly,ref _rollcallLate, drw.ItemArray[0].ToString(),ref _rollcallDatetime);
                      dataGridView1.Rows.Add(drw.ItemArray[0].ToString());
                 dataGridView1.Rows[i].Cells["ClassID"].Value = drw.ItemArray[1].ToString();// _dataTable.Rows[0][0];
-                dataGridView1.Rows[i].Cells["TwName"].Value = drw.ItemArray[25].ToString(); ;// _dataTable.Rows[0][11];
-                dataGridView1.Rows[i].Cells["Dept"].Value = drw.ItemArray[32].ToString();// _dataTable.Rows[0][18];
-                dataGridView1.Rows[i].Cells["Position"].Value = drw.ItemArray[31].ToString(); //_dataTable.Rows[0][17];
+                dataGridView1.Rows[i].Cells["TwName"].Value = drw.ItemArray[26].ToString(); ;// _dataTable.Rows[0][11];
+                dataGridView1.Rows[i].Cells["Dept"].Value = drw.ItemArray[33].ToString();// _dataTable.Rows[0][18];
+                dataGridView1.Rows[i].Cells["Position"].Value = drw.ItemArray[32].ToString(); //_dataTable.Rows[0][17];
                 dataGridView1.Rows[i].Cells["ClassStart"].Value = _workStart; //_dataTable.Rows[0][17];
                 dataGridView1.Rows[i].Cells["ClassEnd"].Value = _workEnd; //_dataTable.Rows[0][17];
                 dataGridView1.Rows[i].Cells["RollcallDate"].Value = _rollcallDatetime; // _dataTable.Rows[0][2];
@@ -141,6 +154,7 @@ namespace EnglishClassManager.Rollcall.EmployeeRollcall
                 dataGridView1.Rows[i].Cells["RollCallLate"].Value = drw.ItemArray[5].ToString().Substring(0,8); //_dataTable.Rows[0][5];
                 dataGridView1.Rows[i].Cells["RollCallEarly"].Value = drw.ItemArray[6].ToString().Substring(0, 8); ; //_dataTable.Rows[0][6];
                 dataGridView1.Rows[i].Cells["RollcallHR"].Value = drw.ItemArray[7].ToString();// _dataTable.Rows[0][7];
+                dataGridView1.Rows[i].Cells["RollcallRemark"].Value = drw.ItemArray[9].ToString();// _dataTable.Rows[0][7];
                 }
                 catch (Exception e)
                 {
@@ -241,8 +255,9 @@ namespace EnglishClassManager.Rollcall.EmployeeRollcall
             ckb_WorkStart.Checked = false;
         }
 
-        public void funcRollStart(string _employeeID, string _workS)
+        public void funcRollStart(string _employeeID, string _workS, string _employeeName,string _rollcallRemark)
         {
+           // string _rollcallRemark = dataGridView1.
             string CommandStr = "";
             DateTime _dtrollcallDate = DateTime.Now;
             string _strrollcallDate = _dtrollcallDate.ToString("yyyy-MM-dd HH:mm:ss");
@@ -255,42 +270,87 @@ namespace EnglishClassManager.Rollcall.EmployeeRollcall
             }
             CommandStr = string.Format(
        "Update EnglishClassDBtestRollcall.dbo.Table_EmployeeRollcall_{0}"
-       + " Set RollcallDate='{1}',RollCallStart='{2}',RollCallState='{3}',RollCallLate='{4}'"
+       + " Set RollcallDate='{1}',RollCallStart='{2}',RollCallState='{3}',RollCallLate='{4}',RollCallRemark='{6}'"
        + " Where EnglishClassDBtestRollcall.dbo.Table_EmployeeRollcall_{0}.EmployeeID='{5}'"
-       , datelong, _strrollcallDate, _strrollcallDate, "已上班", _latetime, _employeeID);
+       , datelong, dt_workS.ToString("yyyy-MM-dd HH:mm:ss"), _strrollcallDate, "已上班", _latetime, _employeeID, _rollcallRemark);
             dbcR.ExecuteNonQuery(CommandStr);
+
+            //Send Notice
+            if (chk_send.Checked)
+               dgSend(_employeeID,_employeeName, _strrollcallDate, dt_workS.ToString());
         }
 
-        public void funcRollEnd(string _employeeID, string _workE)
+        public void funcRollEnd(string _employeeID, string _rollcallE, string _rollcallS,string _classS,string _rollcallRemark)
         {
             string CommandStr = "";
             DateTime _dtrollcallDate = DateTime.Now;
             string _strrollcallDate = _dtrollcallDate.ToString("yyyy-MM-dd HH:mm:ss");
             string _eralytime = "";
+            string _rollcallHR = "";
+            DateTime dt_rollcallE = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, Convert.ToUInt16(_rollcallE.Substring(0, 2)), Convert.ToUInt16(_rollcallE.Substring(3, 2)), 0);
+            DateTime dt_rollcallS = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, Convert.ToUInt16(_rollcallS.Substring(0, 2)), Convert.ToUInt16(_rollcallS.Substring(3, 2)), 0);
+            DateTime dt_classS = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, Convert.ToUInt16(_classS.Substring(11, 2)), Convert.ToUInt16(_classS.Substring(14, 2)), 0);
 
-            DateTime dt_workE = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, Convert.ToUInt16(_workE.Substring(0, 2)), Convert.ToUInt16(_workE.Substring(3, 2)), 0);
-            TimeSpan tWS = _dtrollcallDate - dt_workE;
-            if (dt_workE < _dtrollcallDate)
+            TimeSpan tWS = dt_rollcallE - _dtrollcallDate ;
+            //早退時間
+            if (dt_rollcallE > _dtrollcallDate)
             {
                 _eralytime = tWS.ToString();
             }
 
+            //撈出打卡上班的工作時間
+            if (dt_rollcallE < _dtrollcallDate && dt_classS > dt_rollcallS)
+            {
+                tWS = dt_rollcallE - dt_rollcallS;
+                _rollcallHR = tWS.ToString();
+            }
+
             CommandStr = string.Format(
             "Update EnglishClassDBtestRollcall.dbo.Table_EmployeeRollcall_{0}"
-           + " Set RollcallDate='{1}',RollCallEnd='{2}',RollCallState='{3}',RollCallEarly='{4}'"
-           + " Where EnglishClassDBtestRollcall.dbo.Table_EmployeeRollcall_{0}.EmployeeID='{5}'"
-           , datelong, _strrollcallDate, _strrollcallDate, "已上班", _eralytime, _employeeID);
+           + " Set RollcallDate='{1}',RollCallEnd='{2}',RollCallState='{3}',RollCallEarly='{4}',RollCallHR='{5}',RollCallRemark='{7}'"
+           + " Where EnglishClassDBtestRollcall.dbo.Table_EmployeeRollcall_{0}.EmployeeID='{6}'"
+           , datelong, _strrollcallDate, _strrollcallDate, "已上班", _eralytime, _rollcallHR, _employeeID,_rollcallRemark);
             dbcR.ExecuteNonQuery(CommandStr);
         }
 
-        public void funcRollLeave(string _employeeID)
+        public void funcRollLeave(string _employeeID,string _rollcallRemark)
         {
             string CommandStr = string.Format(
                        "Update EnglishClassDBtestRollcall.dbo.Table_EmployeeRollcall_{0}"
-                       + " Set RollcallDate='{1}',RollCallStart='{2}',RollCallState='{4}'"
+                       + " Set RollcallDate='{1}',RollCallState='{4}',RollCallRemark='{5}'"
                        + " Where EnglishClassDBtestRollcall.dbo.Table_EmployeeRollcall_{0}.EmployeeID='{3}'"
-                       , datelong, DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), _employeeID, "請假");
+                       , datelong, DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "NULL", _employeeID, "請假",_rollcallRemark);
             dbcR.ExecuteNonQuery(CommandStr);
+        }
+
+        private void dgSend(string _employeeID, string _employeeName, string _strrollcallDate, string dt_workS)
+        {
+
+            string MsgName = _employeeID+ " "+_employeeName+ " 打卡上班：" + _strrollcallDate ;
+            string Msg = _employeeID + " " + _employeeName + " 實際打卡上班：" + _strrollcallDate +"； 應上班時間："+dt_workS;
+            Msg = Msg.Replace(@"""", "");
+            CardNotice.SendNotificationFromFirebaseCloud(MsgName, Msg);
+
+            //foreach (DataGridViewRow row in dataGridView1.Rows)
+            //{
+            //    if (row.Cells[1].Value != null && (Boolean)row.Cells[0].Value == true)
+            //    {
+            //        string MsgName = dataGridView1.Rows[_rowIndex].Cells["MsgName"].Value.ToString();
+            //        string Msg = dataGridView1.Rows[_rowIndex].Cells["Msg"].Value.ToString();
+            //        Msg = Msg.Replace(@"""", "");
+            //        CardNotice.SendNotificationFromFirebaseCloud(MsgName, Msg);
+            //    }
+            //}
+
+            /*  Send online*/
+            //SendPushNotification("aa0e8521ac7f3aba7d81a0bbe28007db9ccbbcab8e86deb17434ab4cd2e223e6",
+            //    Msg);
+
+            //CardNotice.CardNotice.SendNotificationFromFirebaseCloud(MsgName, Msg);
+            //CardNotice.SendNotificationFromFirebaseCloud(MsgName, Msg);
+
+
+            /*           */
         }
 
         private void btn_OFF_Click(object sender, EventArgs e)
