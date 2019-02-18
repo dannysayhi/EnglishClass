@@ -291,6 +291,7 @@
     <Compile Include="Utility\Encryption\AESEncryption.cs" />
     <Compile Include="Utility\FileControl\INI.cs" />
     <Compile Include="Utility\FileControl\JsonFileControl.cs" />
+    <Compile Include="Utility\FileControl\pageControl.cs" />
     <Compile Include="Utility\FileControl\ParameterBase.cs" />
     <Compile Include="Utility\FileControl\PathSort.cs" />
     <Compile Include="Utility\FileControl\XmlFile.cs" />

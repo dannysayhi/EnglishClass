@@ -237,6 +237,8 @@ namespace EnglishClassManager.SystemManager.CourseManagement
                 + " FETCH NEXT " + nextpage + " ROWS ONLY";
             _dataTable = dbc.CommandFunctionDB("Table_StudentBasic", CommandStr);
             dataGridView2.DataSource = _dataTable;
+            lb_pageNum.Text = "第- " + ((Convert.ToInt16(startpage) / Convert.ToInt16(nextpage) + 1).ToString()) + " -頁";
+
         }
 
         public void refreshStudentInfo()

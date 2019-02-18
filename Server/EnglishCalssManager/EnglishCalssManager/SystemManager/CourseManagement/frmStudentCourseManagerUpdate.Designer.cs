@@ -311,7 +311,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmCourseManagerUpdate";
-            this.Text = "frmCourseManagerUpdate";
+            this.Text = "---群組管理---";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmCourseManagerUpdate_Load);
             this.groupBox1.ResumeLayout(false);

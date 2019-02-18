@@ -179,6 +179,8 @@ namespace EnglishClassManager.SystemManager.MemberList.StudentBook
                 ;
             _dataTable = dbc.CommandFunctionDB("Table_StudentBasic", CommandStr);
             dataGridView1.DataSource = _dataTable;
+            lb_pageNum.Text = "第- " + ((Convert.ToInt16(startpage) / Convert.ToInt16(nextpage) + 1).ToString()) + " -頁";
+
         }
 
         private void lb_endpage_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

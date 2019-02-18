@@ -17,9 +17,26 @@ namespace EnglishCalssManager.Broadcast.CardNotice
         public DatabaseCore dbc = DatabaseManager._databaseCore;
         public DatabaseTable dbt = DatabaseManager._databaseTable;
         private string logTitle = "frmCardNotice：";
+        private ContextMenu menu = new ContextMenu();
+        private int _indexCol;
+        private int _indexRow;
         public frmCardNotice()
         {
             InitializeComponent();
+            //於Form建構時，加入以下程式碼
+            //MenuItem miAdd = new MenuItem("新增");//宣告新的按鈕項目
+            MenuItem miEdit = new MenuItem("修改");//宣告新的按鈕項目
+            MenuItem miDel = new MenuItem("刪除");//宣告新的按鈕項目
+            MenuItem miCopy = new MenuItem("複製");//宣告新的按鈕項目
+            //miAdd.Click += new System.EventHandler(this.miAdd_Click);//連接Click事件
+            miEdit.Click += new System.EventHandler(this.miEdit_Click);//連接Click事件
+            miDel.Click += new System.EventHandler(this.miDel_Click);//連接Click事件
+            miCopy.Click += new System.EventHandler(this.miCopy_Click);//連接Click事件
+
+            //menu.MenuItems.Add(miAdd);//新增到右鍵選單menu中
+            menu.MenuItems.Add(miEdit);
+            menu.MenuItems.Add(miCopy);
+            menu.MenuItems.Add(miDel);
         }
 
         private void frmCardNotice_Load(object sender, EventArgs e)
@@ -35,15 +52,16 @@ namespace EnglishCalssManager.Broadcast.CardNotice
             string CommandStr = "Select * from Table_CardNoticeSet";
             _dataTable = dbc.CommandFunctionDB("Table_CardNoticeSet", CommandStr);
             dataGridView1.DataSource = _dataTable;
+
             this.dataGridView1.RowsDefaultCellStyle.WrapMode = DataGridViewTriState.True;//(資料內容)
             this.dataGridView1.AutoResizeColumns();
             //this.dataGridView1.DefaultCellStyle.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             //this.dataGridView1.RowsDefaultCellStyle.WrapMode = System.Windows.Forms.DataGridViewTriState.True;   
             this.dataGridView1.ColumnHeadersDefaultCellStyle.WrapMode = DataGridViewTriState.True;// (標題列)
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCellsExceptHeaders;
-            this.dataGridView1.Columns[2].Width = (dataGridView1.Width) * 65 / 100;
+            this.dataGridView1.Columns[2].Width = (dataGridView1.Width)- this.dataGridView1.Columns[0].Width- this.dataGridView1.Columns[1].Width-20;
             this.dataGridView1.Refresh();
-            dgBtn();
+            //dgBtn();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -115,12 +133,12 @@ namespace EnglishCalssManager.Broadcast.CardNotice
 
         private void dgDelmsg(int _rowIndex)
         {
-            Log.Trace(logTitle + "Del msg");
-            string CommandStr = string.Format(
-          "Delete from Table_CardNoticeSet"
-          + " Where numCardMsg='{0}'"
-          , dataGridView1.Rows[_rowIndex].Cells["numCardMsg"].Value.ToString());
-            dbc.ExecuteNonQuery(CommandStr);
+                Log.Trace(logTitle + "Del msg");
+                string CommandStr = string.Format(
+              "Delete from Table_CardNoticeSet"
+              + " Where numCardMsg='{0}'"
+              , dataGridView1.Rows[_rowIndex].Cells["numCardMsg"].Value.ToString());
+                dbc.ExecuteNonQuery(CommandStr);
         }
 
         private void dgBtn()
@@ -170,7 +188,61 @@ namespace EnglishCalssManager.Broadcast.CardNotice
             //this.dataGridView1.Columns.Insert(6, this.dgBtnDel);
 
         }
+       
+        private void miEdit_Click(object sender, System.EventArgs e)
+        {
+            if(CheckData())
+            {
+            dgEditmsg(_indexRow);
+            refreshTable();
+            }
 
-      
+        }
+
+        private void miCopy_Click(object sender, System.EventArgs e)
+        {
+            if (CheckData())
+            {
+                dgCopymsg(_indexRow, _indexCol);
+                refreshTable();
+            }
+        }
+
+        private void miDel_Click(object sender, System.EventArgs e)
+        {
+            if (CheckData())
+            {
+                dgDelmsg(_indexRow);
+                refreshTable();
+            }
+        }
+
+
+        private void dataGridView1_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                var hti = dataGridView1.HitTest(e.X, e.Y);
+                menu.Show(dataGridView1, new Point(e.X, e.Y));//顯示右鍵選單
+                _indexCol = hti.ColumnIndex;
+                _indexRow = hti.RowIndex;
+               
+                //dataGridView1.Rows[hti.RowIndex].Selected = true;
+                //MessageBox.Show(hti.ColumnIndex.ToString() + "===" + hti.RowIndex.ToString());
+            }
+        }
+
+        private bool CheckData()
+        {
+            if (_indexRow < dataGridView1.RowCount && _indexCol < dataGridView1.ColumnCount && _indexRow >= 0 && _indexCol >= 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+        }
     }
 }

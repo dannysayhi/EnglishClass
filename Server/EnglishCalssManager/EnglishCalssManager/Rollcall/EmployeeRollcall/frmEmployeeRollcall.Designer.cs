@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.EmployeeID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ClassID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -123,8 +123,8 @@
             // 
             // RollcallDate
             // 
-            dataGridViewCellStyle1.Format = "yyyy-MM-dd";
-            this.RollcallDate.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Format = "yyyy-MM-dd";
+            this.RollcallDate.DefaultCellStyle = dataGridViewCellStyle2;
             this.RollcallDate.HeaderText = "刷卡日期";
             this.RollcallDate.Name = "RollcallDate";
             // 
@@ -353,7 +353,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.dataGridView1);
             this.Name = "frmEmployeeRollcall";
-            this.Text = "frmEmployeeRollcall";
+            this.Text = "---員工點名---";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmEmployeeRollcall_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
