@@ -1,0 +1,383 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30DF9F2D21668D6600B220F5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30DF9F2C21668D6600B220F5 /* GoogleService-Info.plist */; };
+		318061BE20CA6922002847C9 /* UICollectionGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318061BD20CA6922002847C9 /* UICollectionGridViewController.swift */; };
+		318061C020CA6969002847C9 /* UICollectionGridViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318061BF20CA6969002847C9 /* UICollectionGridViewLayout.swift */; };
+		318061C220CA69A1002847C9 /* UICollectionGridViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318061C120CA69A1002847C9 /* UICollectionGridViewCell.swift */; };
+		318061C420CA69D2002847C9 /* PNHViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318061C320CA69D2002847C9 /* PNHViewController.swift */; };
+		318061C620CA6A25002847C9 /* FAIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318061C520CA6A25002847C9 /* FAIcon.swift */; };
+		31903D8020E089A400250477 /* CellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31903D7F20E089A400250477 /* CellViewController.swift */; };
+		31903D8420E08E2500250477 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31903D8320E08E2500250477 /* CustomCell.swift */; };
+		31D22B9920C81B56003498E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D22B9820C81B56003498E8 /* AppDelegate.swift */; };
+		31D22B9B20C81B56003498E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D22B9A20C81B56003498E8 /* ViewController.swift */; };
+		31D22B9E20C81B56003498E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31D22B9C20C81B56003498E8 /* Main.storyboard */; };
+		31D22BA020C81B58003498E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31D22B9F20C81B58003498E8 /* Assets.xcassets */; };
+		31D22BA320C81B58003498E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31D22BA120C81B58003498E8 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		30DF9F2921668CEC00B220F5 /* RFID.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RFID.entitlements; sourceTree = "<group>"; };
+		30DF9F2C21668D6600B220F5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		318061BD20CA6922002847C9 /* UICollectionGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionGridViewController.swift; sourceTree = "<group>"; };
+		318061BF20CA6969002847C9 /* UICollectionGridViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionGridViewLayout.swift; sourceTree = "<group>"; };
+		318061C120CA69A1002847C9 /* UICollectionGridViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionGridViewCell.swift; sourceTree = "<group>"; };
+		318061C320CA69D2002847C9 /* PNHViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PNHViewController.swift; sourceTree = "<group>"; };
+		318061C520CA6A25002847C9 /* FAIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAIcon.swift; sourceTree = "<group>"; };
+		31903D7F20E089A400250477 /* CellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewController.swift; sourceTree = "<group>"; };
+		31903D8320E08E2500250477 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		31D22B9520C81B56003498E8 /* RFID.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RFID.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		31D22B9820C81B56003498E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		31D22B9A20C81B56003498E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		31D22B9D20C81B56003498E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		31D22B9F20C81B58003498E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		31D22BA220C81B58003498E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		31D22BA420C81B58003498E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		31D22B9220C81B56003498E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		31D22B8C20C81B56003498E8 = {
+			isa = PBXGroup;
+			children = (
+				31D22B9720C81B56003498E8 /* RFID */,
+				31D22B9620C81B56003498E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		31D22B9620C81B56003498E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				31D22B9520C81B56003498E8 /* RFID.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		31D22B9720C81B56003498E8 /* RFID */ = {
+			isa = PBXGroup;
+			children = (
+				30DF9F2C21668D6600B220F5 /* GoogleService-Info.plist */,
+				30DF9F2921668CEC00B220F5 /* RFID.entitlements */,
+				31D22B9820C81B56003498E8 /* AppDelegate.swift */,
+				31D22B9A20C81B56003498E8 /* ViewController.swift */,
+				31D22B9C20C81B56003498E8 /* Main.storyboard */,
+				31D22B9F20C81B58003498E8 /* Assets.xcassets */,
+				31D22BA120C81B58003498E8 /* LaunchScreen.storyboard */,
+				31D22BA420C81B58003498E8 /* Info.plist */,
+				318061BD20CA6922002847C9 /* UICollectionGridViewController.swift */,
+				318061BF20CA6969002847C9 /* UICollectionGridViewLayout.swift */,
+				318061C120CA69A1002847C9 /* UICollectionGridViewCell.swift */,
+				318061C320CA69D2002847C9 /* PNHViewController.swift */,
+				318061C520CA6A25002847C9 /* FAIcon.swift */,
+				31903D7F20E089A400250477 /* CellViewController.swift */,
+				31903D8320E08E2500250477 /* CustomCell.swift */,
+			);
+			path = RFID;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		31D22B9420C81B56003498E8 /* RFID */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31D22BA720C81B58003498E8 /* Build configuration list for PBXNativeTarget "RFID" */;
+			buildPhases = (
+				31D22B9120C81B56003498E8 /* Sources */,
+				31D22B9220C81B56003498E8 /* Frameworks */,
+				31D22B9320C81B56003498E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RFID;
+			productName = RFID;
+			productReference = 31D22B9520C81B56003498E8 /* RFID.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		31D22B8D20C81B56003498E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = ITRI;
+				TargetAttributes = {
+					31D22B9420C81B56003498E8 = {
+						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 1000;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 31D22B9020C81B56003498E8 /* Build configuration list for PBXProject "RFID" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 31D22B8C20C81B56003498E8;
+			productRefGroup = 31D22B9620C81B56003498E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				31D22B9420C81B56003498E8 /* RFID */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		31D22B9320C81B56003498E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31D22BA320C81B58003498E8 /* LaunchScreen.storyboard in Resources */,
+				30DF9F2D21668D6600B220F5 /* GoogleService-Info.plist in Resources */,
+				31D22BA020C81B58003498E8 /* Assets.xcassets in Resources */,
+				31D22B9E20C81B56003498E8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		31D22B9120C81B56003498E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				318061C220CA69A1002847C9 /* UICollectionGridViewCell.swift in Sources */,
+				318061C020CA6969002847C9 /* UICollectionGridViewLayout.swift in Sources */,
+				31903D8020E089A400250477 /* CellViewController.swift in Sources */,
+				31D22B9B20C81B56003498E8 /* ViewController.swift in Sources */,
+				31903D8420E08E2500250477 /* CustomCell.swift in Sources */,
+				318061BE20CA6922002847C9 /* UICollectionGridViewController.swift in Sources */,
+				31D22B9920C81B56003498E8 /* AppDelegate.swift in Sources */,
+				318061C420CA69D2002847C9 /* PNHViewController.swift in Sources */,
+				318061C620CA6A25002847C9 /* FAIcon.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		31D22B9C20C81B56003498E8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				31D22B9D20C81B56003498E8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		31D22BA120C81B58003498E8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				31D22BA220C81B58003498E8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		31D22BA520C81B58003498E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		31D22BA620C81B58003498E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		31D22BA820C81B58003498E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RFID/RFID.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 79QT8VP583;
+				INFOPLIST_FILE = RFID/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = danny9427;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		31D22BA920C81B58003498E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RFID/RFID.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 79QT8VP583;
+				INFOPLIST_FILE = RFID/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = danny9427;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		31D22B9020C81B56003498E8 /* Build configuration list for PBXProject "RFID" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31D22BA520C81B58003498E8 /* Debug */,
+				31D22BA620C81B58003498E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31D22BA720C81B58003498E8 /* Build configuration list for PBXNativeTarget "RFID" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31D22BA820C81B58003498E8 /* Debug */,
+				31D22BA920C81B58003498E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 31D22B8D20C81B56003498E8 /* Project object */;
+}

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RFID/FAIcon.swift"
+            timestampString = "551589719.5683939"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "349"
+            endingLineNumber = "349"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RFID.(FAIcons in _AA549C6647EE6F7EF828AA438EA65F63).unsafeMutableAddressor : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "RFID"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wuguanwei/workspace-swift/RFID/RFID/FAIcon.swift"
+                  timestampString = "551594872.459062"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "349"
+                  endingLineNumber = "349"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "globalinit_33_AA549C6647EE6F7EF828AA438EA65F63_func2"
+                  moduleName = "RFID"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wuguanwei/workspace-swift/RFID/RFID/FAIcon.swift"
+                  timestampString = "551594872.461729"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "349"
+                  endingLineNumber = "349"
+                  offsetFromSymbolStart = "18">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
