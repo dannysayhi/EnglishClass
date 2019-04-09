@@ -2749,3 +2749,4 @@ D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssMan
 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\obj\Debug\_4RobotSystem.RecipeTemp.frmRecipe.resources
 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\obj\Debug\EnglishCalssManager.Broadcast.ManualBroadcast.frmManualBroadcastEmployee.resources
 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\obj\Debug\EnglishCalssManager.Broadcast.ManualBroadcast.frmManualBroadcastStudent.resources
+D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\obj\Debug\EnglishCalssManager.SystemManager.MemberList.StudentBook.frmMobilePwdRegist.resources

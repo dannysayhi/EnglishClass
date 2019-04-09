@@ -458,5 +458,12 @@ namespace EnglishClassManager.SystemManager.MemberList.StudentBook
             public const string Url = @"^http(s)?://([\w-]+\.)+[\w-]+(/[\w- ./?%&=]*)?$";
         }
 
+        private void btn_PwdRegist_Click(object sender, EventArgs e)
+        {
+            string _studentID = dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[0].Value.ToString();
+            string _TwName = dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[2].Value.ToString();
+            frmMobilePwdRegist _frmMobilePwdRegist = new frmMobilePwdRegist(_studentID,_TwName);
+            _frmMobilePwdRegist.ShowDialog();
+        }
     }
 }

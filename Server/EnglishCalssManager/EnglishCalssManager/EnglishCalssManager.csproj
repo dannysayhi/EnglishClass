@@ -189,6 +189,12 @@
     </Compile>
     <Compile Include="SystemManager\MemberList\EmployeeBook\baseEmployeeBook.cs" />
     <Compile Include="SystemManager\MemberList\StudentBook\baseStudentBook.cs" />
+    <Compile Include="SystemManager\MemberList\StudentBook\frmMobilePwdRegist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemManager\MemberList\StudentBook\frmMobilePwdRegist.Designer.cs">
+      <DependentUpon>frmMobilePwdRegist.cs</DependentUpon>
+    </Compile>
     <Compile Include="Utility\Database\DatabaseCore.cs" />
     <Compile Include="Utility\Database\DatabaseCoreRollcall.cs" />
     <Compile Include="Utility\Database\DatabaseManager.cs" />
@@ -369,6 +375,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SystemManager\CourseManagement\frmEmployeeCourseManager.resx">
       <DependentUpon>frmEmployeeCourseManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManager\MemberList\StudentBook\frmMobilePwdRegist.resx">
+      <DependentUpon>frmMobilePwdRegist.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Utility\Database\frmDBconfig.resx">
       <DependentUpon>frmDBconfig.cs</DependentUpon>

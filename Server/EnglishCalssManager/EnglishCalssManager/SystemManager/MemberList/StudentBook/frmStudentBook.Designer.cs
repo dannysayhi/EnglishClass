@@ -69,9 +69,10 @@
             this.btn_ReadCard = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btn_clearText = new System.Windows.Forms.Button();
+            this.lb_endpage = new System.Windows.Forms.LinkLabel();
             this.lb_pageNum = new System.Windows.Forms.LinkLabel();
             this.lb_startpage = new System.Windows.Forms.LinkLabel();
-            this.lb_endpage = new System.Windows.Forms.LinkLabel();
+            this.btn_PwdRegist = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -125,7 +126,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.tableLayoutPanel1.SetRowSpan(this.dataGridView1, 5);
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1345, 573);
+            this.dataGridView1.Size = new System.Drawing.Size(1345, 540);
             this.dataGridView1.TabIndex = 8;
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
@@ -476,11 +477,12 @@
             this.tableLayoutPanel1.Controls.Add(this.btnDelete, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.btnUpdate, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.btn_clearText, 5, 1);
-            this.tableLayoutPanel1.Controls.Add(this.lb_pageNum, 7, 1);
-            this.tableLayoutPanel1.Controls.Add(this.lb_startpage, 6, 1);
-            this.tableLayoutPanel1.Controls.Add(this.lb_endpage, 8, 1);
             this.tableLayoutPanel1.Controls.Add(this.dataGridView1, 9, 3);
             this.tableLayoutPanel1.Controls.Add(this.btn_ReadCard, 4, 1);
+            this.tableLayoutPanel1.Controls.Add(this.lb_endpage, 9, 1);
+            this.tableLayoutPanel1.Controls.Add(this.lb_pageNum, 8, 1);
+            this.tableLayoutPanel1.Controls.Add(this.lb_startpage, 7, 1);
+            this.tableLayoutPanel1.Controls.Add(this.btn_PwdRegist, 6, 1);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(2, 8);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
@@ -506,10 +508,21 @@
             this.btn_clearText.UseVisualStyleBackColor = true;
             this.btn_clearText.Click += new System.EventHandler(this.btn_clearText_Click);
             // 
+            // lb_endpage
+            // 
+            this.lb_endpage.AutoSize = true;
+            this.lb_endpage.Location = new System.Drawing.Point(673, 113);
+            this.lb_endpage.Name = "lb_endpage";
+            this.lb_endpage.Size = new System.Drawing.Size(56, 12);
+            this.lb_endpage.TabIndex = 39;
+            this.lb_endpage.TabStop = true;
+            this.lb_endpage.Text = "    20     >>";
+            this.lb_endpage.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lb_endpage_LinkClicked);
+            // 
             // lb_pageNum
             // 
             this.lb_pageNum.AutoSize = true;
-            this.lb_pageNum.Location = new System.Drawing.Point(554, 113);
+            this.lb_pageNum.Location = new System.Drawing.Point(635, 113);
             this.lb_pageNum.Name = "lb_pageNum";
             this.lb_pageNum.Size = new System.Drawing.Size(32, 12);
             this.lb_pageNum.TabIndex = 40;
@@ -520,7 +533,7 @@
             // lb_startpage
             // 
             this.lb_startpage.AutoSize = true;
-            this.lb_startpage.Location = new System.Drawing.Point(489, 113);
+            this.lb_startpage.Location = new System.Drawing.Point(570, 113);
             this.lb_startpage.Name = "lb_startpage";
             this.lb_startpage.Size = new System.Drawing.Size(59, 12);
             this.lb_startpage.TabIndex = 38;
@@ -528,22 +541,21 @@
             this.lb_startpage.Text = "<<     20     ";
             this.lb_startpage.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lb_startpage_LinkClicked);
             // 
-            // lb_endpage
+            // btn_PwdRegist
             // 
-            this.lb_endpage.AutoSize = true;
-            this.lb_endpage.Location = new System.Drawing.Point(592, 113);
-            this.lb_endpage.Name = "lb_endpage";
-            this.lb_endpage.Size = new System.Drawing.Size(56, 12);
-            this.lb_endpage.TabIndex = 39;
-            this.lb_endpage.TabStop = true;
-            this.lb_endpage.Text = "    20     >>";
-            this.lb_endpage.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lb_endpage_LinkClicked);
+            this.btn_PwdRegist.Location = new System.Drawing.Point(489, 116);
+            this.btn_PwdRegist.Name = "btn_PwdRegist";
+            this.btn_PwdRegist.Size = new System.Drawing.Size(75, 23);
+            this.btn_PwdRegist.TabIndex = 42;
+            this.btn_PwdRegist.Text = "密碼註冊";
+            this.btn_PwdRegist.UseVisualStyleBackColor = true;
+            this.btn_PwdRegist.Click += new System.EventHandler(this.btn_PwdRegist_Click);
             // 
             // frmStudentBook
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1362, 741);
+            this.ClientSize = new System.Drawing.Size(1362, 708);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "frmStudentBook";
             this.Text = "--學生通訊錄--";
@@ -603,5 +615,6 @@
         private System.Windows.Forms.Button btn_clearText;
         private System.Windows.Forms.TextBox txt_CHECKIDENT;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_PwdRegist;
     }
 }
