@@ -462,7 +462,8 @@ namespace EnglishClassManager.SystemManager.MemberList.StudentBook
         {
             string _studentID = dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[0].Value.ToString();
             string _TwName = dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[2].Value.ToString();
-            frmMobilePwdRegist _frmMobilePwdRegist = new frmMobilePwdRegist(_studentID,_TwName);
+            string _phoneNum = dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[5].Value.ToString();
+            frmMobilePwdRegist _frmMobilePwdRegist = new frmMobilePwdRegist(_studentID,_TwName,_phoneNum);
             _frmMobilePwdRegist.ShowDialog();
         }
     }
