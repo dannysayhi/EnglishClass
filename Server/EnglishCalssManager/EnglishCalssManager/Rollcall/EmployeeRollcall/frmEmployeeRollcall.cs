@@ -58,8 +58,8 @@ namespace EnglishClassManager.Rollcall.EmployeeRollcall
             
             if (dataGridView1.Rows[_dataCurRowIndex].Cells["RollCallRemark"].Value!=null)
                 _rollcallRemark = dataGridView1.Rows[_dataCurRowIndex].Cells["RollCallRemark"].Value.ToString();
-            if (dataGridView1.Rows[_dataCurRowIndex].Cells["RollcallStart"].Value != null)
-                 _rollcallS = Convert.ToDateTime(dataGridView1.Rows[_dataCurRowIndex].Cells["RollcallStart"].Value).ToString("yyyy-MM-dd HH:mm:ss"); ; //_dataTable.Rows[0][3];
+            if (dataGridView1.Rows[_dataCurRowIndex].Cells["RollcallStart"].Value != null && dataGridView1.Rows[_dataCurRowIndex].Cells["RollcallStart"].Value.ToString() != "")
+                _rollcallS = Convert.ToDateTime(dataGridView1.Rows[_dataCurRowIndex].Cells["RollcallStart"].Value).ToString("yyyy-MM-dd HH:mm:ss"); ; //_dataTable.Rows[0][3];
 
             string _employeeID = dataGridView1.Rows[_dataCurRowIndex].Cells["EmployeeID"].Value.ToString();
             string _employeeName = dataGridView1.Rows[_dataCurRowIndex].Cells["TwName"].Value.ToString();
@@ -262,22 +262,27 @@ namespace EnglishClassManager.Rollcall.EmployeeRollcall
             DateTime _dtrollcallDate = DateTime.Now;
             string _strrollcallDate = _dtrollcallDate.ToString("yyyy-MM-dd HH:mm:ss");
             string _latetime = "";
-            DateTime dt_workS = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, Convert.ToUInt16(_workS.Substring(0, 2)), Convert.ToUInt16(_workS.Substring(3, 2)), 0);
-            TimeSpan tWS = _dtrollcallDate - dt_workS;
-            if (dt_workS < _dtrollcallDate)
+            string _str_dt_workS = _strrollcallDate;
+            if (dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells["ClassID"].Value.ToString() != "休")
             {
-                _latetime = tWS.ToString();
+                DateTime dt_workS = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, Convert.ToUInt16(_workS.Substring(0, 2)), Convert.ToUInt16(_workS.Substring(3, 2)), 0);
+                TimeSpan tWS = _dtrollcallDate - dt_workS;
+                if (dt_workS < _dtrollcallDate)
+                {
+                    _latetime = tWS.ToString();
+                }
+                _str_dt_workS = dt_workS.ToString("yyyy-MM-dd HH:mm:ss");
             }
             CommandStr = string.Format(
        "Update EnglishClassDBtestRollcall.dbo.Table_EmployeeRollcall_{0}"
        + " Set RollcallDate='{1}',RollCallStart='{2}',RollCallState='{3}',RollCallLate='{4}',RollCallRemark='{6}'"
        + " Where EnglishClassDBtestRollcall.dbo.Table_EmployeeRollcall_{0}.EmployeeID='{5}'"
-       , datelong, dt_workS.ToString("yyyy-MM-dd HH:mm:ss"), _strrollcallDate, "已上班", _latetime, _employeeID, _rollcallRemark);
+       , datelong, _str_dt_workS, _strrollcallDate, "已上班", _latetime, _employeeID, _rollcallRemark);
             dbcR.ExecuteNonQuery(CommandStr);
 
             //Send Notice
             if (chk_send.Checked)
-               dgSend(_employeeID,_employeeName, _strrollcallDate, dt_workS.ToString());
+               dgSend(_employeeID,_employeeName, _strrollcallDate, _str_dt_workS.ToString());
         }
 
         public void funcRollEnd(string _employeeID, string _rollcallE, string _rollcallS,string _classS,string _rollcallRemark)
@@ -287,22 +292,18 @@ namespace EnglishClassManager.Rollcall.EmployeeRollcall
             string _strrollcallDate = _dtrollcallDate.ToString("yyyy-MM-dd HH:mm:ss");
             string _eralytime = "";
             string _rollcallHR = "";
-            DateTime dt_rollcallE = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, Convert.ToUInt16(_rollcallE.Substring(0, 2)), Convert.ToUInt16(_rollcallE.Substring(3, 2)), 0);
-            DateTime dt_rollcallS = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, Convert.ToUInt16(_rollcallS.Substring(0, 2)), Convert.ToUInt16(_rollcallS.Substring(3, 2)), 0);
-            DateTime dt_classS = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, Convert.ToUInt16(_classS.Substring(11, 2)), Convert.ToUInt16(_classS.Substring(14, 2)), 0);
-
-            TimeSpan tWS = dt_rollcallE - _dtrollcallDate ;
-            //早退時間
-            if (dt_rollcallE > _dtrollcallDate)
+            if (dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells["ClassID"].Value.ToString() != "休")
             {
-                _eralytime = tWS.ToString();
-            }
+                DateTime dt_rollcallE = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, Convert.ToUInt16(_rollcallE.Substring(0, 2)), Convert.ToUInt16(_rollcallE.Substring(3, 2)), 0);
+                DateTime dt_rollcallS = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, Convert.ToUInt16(_rollcallS.Substring(0, 2)), Convert.ToUInt16(_rollcallS.Substring(3, 2)), 0);
+                DateTime dt_classS = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, Convert.ToUInt16(_classS.Substring(11, 2)), Convert.ToUInt16(_classS.Substring(14, 2)), 0);
 
-            //撈出打卡上班的工作時間
-            if (dt_rollcallE < _dtrollcallDate && dt_classS > dt_rollcallS)
-            {
-                tWS = dt_rollcallE - dt_rollcallS;
-                _rollcallHR = tWS.ToString();
+                TimeSpan tWS = dt_rollcallE - _dtrollcallDate;
+                //早退時間
+                if (dt_rollcallE > _dtrollcallDate)
+                {
+                    _eralytime = tWS.ToString();
+                }
             }
 
             CommandStr = string.Format(
