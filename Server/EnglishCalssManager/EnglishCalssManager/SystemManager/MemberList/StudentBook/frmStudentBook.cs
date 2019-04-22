@@ -12,6 +12,7 @@ using AOI_System.DB;
 using EnglishCalssManager.SystemManager.MemberList.StudentBook;
 using AOISystem.Utility.Logging;
 using System.Text.RegularExpressions;
+using SmartCardSystem;
 
 namespace EnglishClassManager.SystemManager.MemberList.StudentBook
 {
@@ -130,7 +131,7 @@ namespace EnglishClassManager.SystemManager.MemberList.StudentBook
 
         private void btn_ReadCard_Click(object sender, EventArgs e)
         {
-
+            txt_CardNumber.Text = SmartCardReader.funSmartCardReader();
         }
 
         public void initialfrmValue()

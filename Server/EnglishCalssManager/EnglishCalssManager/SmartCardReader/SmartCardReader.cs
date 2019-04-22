@@ -5,6 +5,7 @@ using PCSC;
 using EnglishClassManager.Utility.Database;
 using EnglishCalssManager.Rollcall.StudentRollcall;
 using AOISystem.Utility.Logging;
+using System.Windows.Forms;
 
 namespace SmartCardSystem
 {
@@ -114,10 +115,19 @@ namespace SmartCardSystem
             string studentID = "";
             try {
 
-                string CommandStr = string.Format("select EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_{0}.StudentID " 
-                    + " from EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_{0} "
-                    + " where EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_{0}.CardNumber = '{1}'", date, UUID);
-                studentID = DatabaseManager._databaseCoreRollcall.strExecuteScalar(CommandStr);
+                string _get_count = getCount(functionStudentRollcall.getDate, UUID);
+                if(_get_count!="")
+                {
+                    string CommandStr = string.Format("select EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_{0}.StudentID "
+                                     + " from EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_{0} "
+                                     + " where EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_{0}.CardNumber = '{1}'", date, UUID);
+                    studentID = DatabaseManager._databaseCoreRollcall.strExecuteScalar(CommandStr);
+                }
+                else
+                {
+                    MessageBox.Show("無此卡號！");
+                }
+             
             }
             catch (Exception ex)
             {
@@ -128,8 +138,9 @@ namespace SmartCardSystem
             return studentID;
         }
 
-       public static void funSmartCardReader()
+       public static string funSmartCardReader()
         {
+            string CardNumber = "";
             try
             {
                 // Establish SCard context
@@ -146,7 +157,7 @@ namespace SmartCardSystem
 
                 // Create a reader object using the existing context
                 SCardReader reader = new SCardReader(hContext);
-                while (true) { 
+                //while (true) { 
                 // Connect to the card
                     try
                     { 
@@ -184,6 +195,7 @@ namespace SmartCardSystem
                     Console.WriteLine("UID: " + uid);
                         //for (int i = 0; i < pbRecvBuffer.Length-2; i++)
                         //    Console.Write("{0:X2} ", pbRecvBuffer[i]);
+                        CardNumber = uid;
                     string studentID = AuthUUID(functionStudentRollcall.getDate, uid);
 
                     Console.WriteLine("studentID: " + studentID);
@@ -235,7 +247,7 @@ namespace SmartCardSystem
                 catch (Exception e)
                 {
                 }
-              }
+             // }
             }
             catch (PCSCException ex)
             {
@@ -246,6 +258,7 @@ namespace SmartCardSystem
                     + ex.Message
                     + " (" + ex.SCardError.ToString() + ")");
             }
+            return CardNumber;
         }
     }
 }
