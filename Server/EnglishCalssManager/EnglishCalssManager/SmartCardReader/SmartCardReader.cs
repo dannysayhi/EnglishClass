@@ -62,7 +62,7 @@ namespace SmartCardSystem
             _rollcallCount = Convert.ToInt32(_getCount);
             string CommandStr = string.Format(
             "Update EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_{0}"
-            + " Set RollcallCount={1},RollcallTimes={2},IsUpdate={3} "
+            + " Set RollcallCount={1},RollcallTimes={2} "/*,IsUpdate={3} */
             //+ " Where EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_{0}.CourseID={3}"
             //+ " and "
             + " Where EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_{0}.StudentID={4}"
@@ -94,7 +94,7 @@ namespace SmartCardSystem
                     } while (CardTitle == "");
                 }
                 CommandStr = string.Format(
-                       "insert into EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_{0} values('{1}', '{2}', '{3}', {4}, '{5}','{6}', '{7}')"
+                       "insert into EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_{0} values('{1}', '{2}', '{3}', {4}, '{5}','{6}')"/*, '{7}'*/
                        , date
                        , " "
                        , StudentID
@@ -102,7 +102,7 @@ namespace SmartCardSystem
                        , "SYSDATETIME()"
                        , _type
                        , CardTitle
-                       , "1"
+                       //, "1"
                        );
                 DatabaseManager._databaseCore.ExecuteNonQuery(CommandStr);
             }
@@ -113,15 +113,14 @@ namespace SmartCardSystem
         {
             DatabaseManager.Initialize();
             string studentID = "";
+            string cardNum = "";
             try {
+                string CommandStr = string.Format("select EnglishClassDBtest.dbo.Table_StudentBasic.StudentID from EnglishClassDBtest.dbo.Table_StudentBasic where EnglishClassDBtest.dbo.Table_StudentBasic.CardNumber = '{0}'",UUID);
+                studentID = DatabaseManager._databaseCore.strExecuteScalar(CommandStr);
 
-                string _get_count = getCount(functionStudentRollcall.getDate, UUID);
-                if(_get_count!="")
+                if(studentID != "")
                 {
-                    string CommandStr = string.Format("select EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_{0}.StudentID "
-                                     + " from EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_{0} "
-                                     + " where EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_{0}.CardNumber = '{1}'", date, UUID);
-                    studentID = DatabaseManager._databaseCoreRollcall.strExecuteScalar(CommandStr);
+                   
                 }
                 else
                 {
@@ -204,26 +203,27 @@ namespace SmartCardSystem
                         // Send SELECT command
                         //byte[] cmd1 = new byte[] { 0x00, 0xA4, 0x04, 0x00, 0x0A, 0xA0,
                         //    0x00, 0x00, 0x00, 0x62, 0x03, 0x01, 0x0C, 0x06, 0x01 };
-                        pbRecvBuffer = new byte[256];
-                        byte[] auth_ok = new byte[] { 0xFF, 0xE1, 0x02, 0x01, 0x0C, 0xA0, 0xFC, 0x4D, 0xA0, 0xFD, 0x20, 0xA0, 0xFE, 0x10, 0xA0, 0xFF, 0x01 };
-                        err = reader.Transmit((IntPtr)pioSendPci, auth_ok, ref pbRecvBuffer);
-                        CheckErr(err);
+                        //pbRecvBuffer = new byte[256];
+                        //byte[] auth_ok = new byte[] { 0xFF, 0xE1, 0x02, 0x01, 0x0C, 0xA0, 0xFC, 0x4D, 0xA0, 0xFD, 0x20, 0xA0, 0xFE, 0x10, 0xA0, 0xFF, 0x01 };
+                        //err = reader.Transmit((IntPtr)pioSendPci, auth_ok, ref pbRecvBuffer);
+                        //CheckErr(err);
 
-                        Console.Write("response: ");
-                        for (int i = 0; i < pbRecvBuffer.Length; i++)
-                            Console.Write("{0:X2} ", pbRecvBuffer[i]);
-                        Console.WriteLine();
+                        //Console.Write("response: ");
+                        //for (int i = 0; i < pbRecvBuffer.Length; i++)
+                        //    Console.Write("{0:X2} ", pbRecvBuffer[i]);
+                        //Console.WriteLine();
                         string _get_count = getCount(functionStudentRollcall.getDate, studentID);
                             //Console.Write(getCount("20180902", "1"));
                         if (_get_count != "")
                          {
-                                studRCagain(functionStudentRollcall.getDate, studentID, _get_count);
-                                Console.Write(getCount(functionStudentRollcall.getDate, studentID).ToString());
+                             //   studRCagain(functionStudentRollcall.getDate, studentID, _get_count);
+                            studRCstart(functionStudentRollcall.getDate, studentID, (Convert.ToInt16( _get_count)+1).ToString(), "A");
+                            Console.Write(getCount(functionStudentRollcall.getDate, studentID).ToString());
 
                          }
                         else
                         {
-                                studRCstart(functionStudentRollcall.getDate, studentID, "0", "A");
+                                studRCstart(functionStudentRollcall.getDate, studentID, "1", "A");
                                 //studRCagain("20180902", "1", "0");
                         }
                             Thread.Sleep(2000);

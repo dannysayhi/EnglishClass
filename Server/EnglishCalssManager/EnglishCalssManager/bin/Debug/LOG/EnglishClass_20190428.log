@@ -1,0 +1,472 @@
+2019.04.28 13:18:01.111 | TRC | 0 | 0 | start log
+2019.04.28 13:18:02.013 | TRC | 0 | 3 | DB initial count：1
+2019.04.28 13:18:11.628 | TRC | 0 | 5 | 學生通訊錄：frmStudentBook_Load
+2019.04.28 13:19:47.432 | TRC | 0 | 0 | start log
+2019.04.28 13:19:47.824 | TRC | 0 | 2 | DB initial count：1
+2019.04.28 13:19:53.996 | TRC | 0 | 5 | 學生通訊錄：frmStudentBook_Load
+2019.04.28 13:20:21.120 | TRC | 0 | 8 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無效的資料行名稱 'CardNumber'。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   於 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   於 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   於 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.strExecuteScalar(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 103
+ClientConnectionId:f6db79bd-1b44-438d-8c2b-ab1ad21c4b20
+Error Number:207,State:1,Class:16
+2019.04.28 13:20:21.121 | TRC | 0 | 8 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無效的資料行名稱 'CardNumber'。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   於 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   於 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   於 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.strExecuteScalar(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 103
+ClientConnectionId:922130fc-2913-483b-b243-9ef08f97c2ad
+Error Number:207,State:1,Class:16
+2019.04.28 13:20:21.122 | TRC | 0 | 8 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無效的資料行名稱 'CardNumber'。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   於 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   於 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   於 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.strExecuteScalar(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 103
+ClientConnectionId:9385a3ad-38fa-4a5b-a453-4f6565e15423
+Error Number:207,State:1,Class:16
+2019.04.28 13:20:21.123 | TRC | 0 | 8 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無效的資料行名稱 'CardNumber'。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   於 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   於 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   於 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.strExecuteScalar(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 103
+ClientConnectionId:10a422de-ea13-419b-b2f4-9c616b47ecb0
+Error Number:207,State:1,Class:16
+2019.04.28 13:20:21.126 | TRC | 0 | 8 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無效的資料行名稱 'CardNumber'。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   於 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   於 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   於 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.strExecuteScalar(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 103
+ClientConnectionId:7143ae5f-78f9-46fb-b5c9-057d44c009e6
+Error Number:207,State:1,Class:16
+2019.04.28 13:20:21.129 | TRC | 0 | 8 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無效的資料行名稱 'CardNumber'。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   於 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   於 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   於 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.strExecuteScalar(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 103
+ClientConnectionId:4f536d02-ed42-445e-9667-d18892232745
+Error Number:207,State:1,Class:16
+2019.04.28 13:20:21.134 | TRC | 0 | 8 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無效的資料行名稱 'CardNumber'。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   於 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   於 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   於 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.strExecuteScalar(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 103
+ClientConnectionId:8842ed4d-e39f-4cdf-ba35-412548971a13
+Error Number:207,State:1,Class:16
+2019.04.28 13:20:21.135 | TRC | 0 | 8 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無效的資料行名稱 'CardNumber'。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   於 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   於 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   於 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.strExecuteScalar(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 103
+ClientConnectionId:bd9424ff-4454-4a92-afd1-b66627823d41
+Error Number:207,State:1,Class:16
+2019.04.28 13:20:21.387 | TRC | 0 | 9 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無效的資料行名稱 'CardNumber'。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   於 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   於 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   於 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.strExecuteScalar(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 103
+ClientConnectionId:c84c2e32-2de5-4df9-9b15-f7e494ec046d
+Error Number:207,State:1,Class:16
+2019.04.28 13:22:18.627 | TRC | 0 | 0 | start log
+2019.04.28 13:22:19.083 | TRC | 0 | 2 | DB initial count：1
+2019.04.28 13:22:26.639 | TRC | 0 | 5 | 學生通訊錄：frmStudentBook_Load
+2019.04.28 13:23:31.336 | TRC | 0 | 0 | start log
+2019.04.28 13:23:32.161 | TRC | 0 | 3 | DB initial count：1
+2019.04.28 13:23:37.216 | TRC | 0 | 4 | 學生通訊錄：frmStudentBook_Load
+2019.04.28 13:27:55.149 | TRC | 0 | 0 | start log
+2019.04.28 13:27:55.657 | TRC | 0 | 2 | DB initial count：1
+2019.04.28 13:28:01.335 | TRC | 0 | 6 | 學生通訊錄：frmStudentBook_Load
+2019.04.28 13:38:04.948 | TRC | 0 | 0 | start log
+2019.04.28 13:38:05.225 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:38:05.294 | TRC | 0 | 1 | DB initial count：1
+2019.04.28 13:38:05.512 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:38:06.010 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:38:06.538 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:38:07.013 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:38:07.620 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:38:08.040 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:38:08.071 | TRC | 0 | 1 | 學生通訊錄：frmStudentBook_Load
+2019.04.28 13:38:08.539 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:38:09.038 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:38:09.563 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:38:10.107 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:38:10.559 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:38:11.081 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:38:11.564 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:38:12.072 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:38:12.621 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:38:13.073 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:38:13.571 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:38:14.047 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:38:14.550 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:38:15.101 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:38:15.570 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:38:16.052 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:38:16.555 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:38:17.059 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:38:17.567 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:38:18.079 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:38:18.563 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:38:19.087 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:38:19.565 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:38:20.079 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:38:20.583 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:38:21.069 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:38:21.563 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:38:22.080 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:38:22.578 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:38:23.086 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:38:23.570 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:38:24.100 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:38:24.588 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:38:25.078 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:38:25.654 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:02.173 | TRC | 0 | 0 | start log
+2019.04.28 13:39:02.288 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:02.353 | TRC | 0 | 1 | DB initial count：1
+2019.04.28 13:39:02.709 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:03.229 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:03.710 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:04.231 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:04.710 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:05.234 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:05.774 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:06.229 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:06.715 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:06.718 | TRC | 0 | 0 | 學生通訊錄：frmStudentBook_Load
+2019.04.28 13:39:07.215 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:07.722 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:08.242 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:08.733 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:09.240 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:09.744 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:10.237 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:10.736 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:11.259 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:11.726 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:12.237 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:12.727 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:13.223 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:13.740 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:14.239 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:14.725 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:15.245 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:15.750 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:16.244 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:16.729 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:17.229 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:17.746 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:18.248 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:18.731 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:19.234 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:19.764 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:20.247 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:20.755 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:21.235 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:21.753 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:22.261 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:22.737 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:23.256 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:23.736 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:24.249 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:24.751 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:25.256 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:25.759 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:26.257 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:26.756 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:27.257 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:27.757 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:28.245 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:28.762 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:29.259 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:29.758 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:30.253 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:30.767 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:31.269 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:31.765 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:39:32.265 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 13:48:41.955 | TRC | 0 | 0 | start log
+2019.04.28 13:48:42.481 | TRC | 0 | 1 | DB initial count：1
+2019.04.28 13:48:45.286 | TRC | 0 | 0 | 學生通訊錄：frmStudentBook_Load
+2019.04.28 14:04:42.719 | TRC | 0 | 0 | start log
+2019.04.28 14:04:43.256 | TRC | 0 | 2 | DB initial count：1
+2019.04.28 14:04:47.115 | TRC | 0 | 0 | 學生通訊錄：frmStudentBook_Load
+2019.04.28 14:05:04.045 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無效的資料行名稱 'CardNumber'。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   於 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   於 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   於 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.strExecuteScalar(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 103
+ClientConnectionId:d0405ddb-d1ea-4086-b82e-f4ad775837aa
+Error Number:207,State:1,Class:16
+2019.04.28 19:19:21.276 | TRC | 0 | 0 | start log
+2019.04.28 19:19:21.540 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 19:19:21.673 | TRC | 0 | 1 | DB initial count：1
+2019.04.28 19:19:21.822 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 19:19:22.370 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 19:19:22.824 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 19:19:23.323 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 19:19:23.823 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 19:19:24.332 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 19:19:24.832 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 19:19:25.324 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 19:19:25.826 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 19:19:26.327 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 19:19:26.839 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 19:19:27.349 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 19:19:27.831 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 19:19:28.334 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 19:19:28.853 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 19:19:29.335 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 19:19:29.880 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 19:19:30.337 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 19:19:30.861 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 19:19:31.370 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 19:19:31.850 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 19:19:32.353 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 19:19:32.848 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 19:19:33.352 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 19:19:33.850 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 19:19:34.350 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 19:20:08.447 | TRC | 0 | 2 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無效的資料行名稱 'CardNumber'。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   於 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   於 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   於 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.strExecuteScalar(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 103
+ClientConnectionId:568c20a3-d8fa-4306-a133-a5a45eb8da08
+Error Number:207,State:1,Class:16
+2019.04.28 19:20:08.912 | TRC | 0 | 3 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無效的資料行名稱 'CardNumber'。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   於 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   於 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   於 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.strExecuteScalar(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 103
+ClientConnectionId:883a198d-8b91-4074-ba52-83199bde9484
+Error Number:207,State:1,Class:16
+2019.04.28 19:20:44.938 | TRC | 0 | 0 | start log
+2019.04.28 19:20:45.102 | TRC | 0 | 2 | DB initial count：1
+2019.04.28 19:21:01.725 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無效的資料行名稱 'CardNumber'。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   於 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   於 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   於 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.strExecuteScalar(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 103
+ClientConnectionId:ae6c4bed-40d4-4c86-b0dc-bc1066a2cd8b
+Error Number:207,State:1,Class:16
+2019.04.28 19:21:01.913 | TRC | 0 | 2 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無效的資料行名稱 'CardNumber'。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   於 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   於 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   於 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.strExecuteScalar(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 103
+ClientConnectionId:138f5b98-510e-4ce8-9955-065da091b3dd
+Error Number:207,State:1,Class:16
+2019.04.28 19:22:26.271 | TRC | 0 | 0 | start log
+2019.04.28 19:22:26.460 | TRC | 0 | 1 | DB initial count：1
+2019.04.28 19:22:49.494 | TRC | 0 | 0 | start log
+2019.04.28 19:22:49.746 | TRC | 0 | 1 | DB initial count：1
+2019.04.28 19:22:55.181 | TRC | 0 | 0 | 學生通訊錄：frmStudentBook_Load
+2019.04.28 19:23:53.677 | TRC | 0 | 0 | start log
+2019.04.28 19:23:54.167 | TRC | 0 | 1 | DB initial count：1
+2019.04.28 19:24:56.791 | TRC | 0 | 0 | start log
+2019.04.28 19:24:57.020 | TRC | 0 | 1 | DB initial count：1
+2019.04.28 19:25:38.154 | TRC | 0 | 0 | start log
+2019.04.28 19:25:38.508 | TRC | 0 | 1 | DB initial count：1
+2019.04.28 19:28:25.828 | TRC | 0 | 0 | start log
+2019.04.28 19:28:26.186 | TRC | 0 | 1 | DB initial count：1
+2019.04.28 19:29:00.157 | TRC | 0 | 1 | DatabaseCore：ExecuteNonQuery：insert into EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190428 values(' ', '15', '1', SYSDATETIME(), 'A','CardT1', '1')
+2019.04.28 19:29:00.179 | TRC | 0 | 1 | System.Data.SqlClient.SqlException (0x80131904): 資料行名稱或提供的數值數量與資料表定義不相符。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   於 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   於 EnglishClassManager.Utility.Database.DatabaseCore.ExecuteNonQuery(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCore.cs: 行 219
+ClientConnectionId:0cd46357-708e-44c9-bff9-9d3979e4d75a
+Error Number:213,State:1,Class:16
+2019.04.28 19:29:12.839 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
+2019.04.28 19:58:24.298 | TRC | 0 | 0 | start log
+2019.04.28 19:58:24.439 | TRC | 0 | 1 | DB initial count：1
+2019.04.28 19:59:05.383 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
+2019.04.28 19:59:25.995 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
+2019.04.28 20:04:42.023 | TRC | 0 | 0 | start log
+2019.04.28 20:04:42.518 | TRC | 0 | 1 | DB initial count：1
+2019.04.28 20:04:53.241 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
+2019.04.28 20:05:03.573 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
+2019.04.28 20:07:51.317 | TRC | 0 | 0 | start log
+2019.04.28 20:07:51.460 | TRC | 0 | 1 | DB initial count：1
+2019.04.28 20:15:44.185 | TRC | 0 | 0 | start log
+2019.04.28 20:15:44.349 | TRC | 0 | 1 | DB initial count：1
+2019.04.28 20:16:09.137 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
+2019.04.28 20:16:12.664 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.04.28 20:16:31.424 | TRC | 0 | 0 | start log
+2019.04.28 20:16:31.557 | TRC | 0 | 1 | DB initial count：1
+2019.04.28 20:16:36.568 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
+2019.04.28 20:16:41.534 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.04.28 20:17:44.978 | TRC | 0 | 0 | start log
+2019.04.28 20:17:45.350 | TRC | 0 | 1 | DB initial count：1
+2019.04.28 21:21:50.032 | TRC | 0 | 0 | start log
+2019.04.28 21:21:50.338 | TRC | 0 | 1 | DB initial count：1
+2019.04.28 21:22:11.718 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
+2019.04.28 21:23:16.249 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.04.28 21:23:25.330 | TRC | 0 | 0 | start log
+2019.04.28 21:23:25.475 | TRC | 0 | 1 | DB initial count：1
+2019.04.28 21:24:31.324 | TRC | 0 | 0 | start log
+2019.04.28 21:24:31.491 | TRC | 0 | 1 | DB initial count：1
+2019.04.28 21:24:38.322 | TRC | 0 | 0 | 學生通訊錄：frmStudentBook_Load
+2019.04.28 21:25:31.759 | TRC | 0 | 0 | start log
+2019.04.28 21:25:31.917 | TRC | 0 | 1 | DB initial count：1
+2019.04.28 21:25:53.746 | TRC | 0 | 0 | start log
+2019.04.28 21:25:57.225 | TRC | 0 | 1 | DB initial count：1
+2019.04.28 21:26:20.351 | TRC | 0 | 0 | start log
+2019.04.28 21:26:20.479 | TRC | 0 | 1 | DB initial count：1
+2019.04.28 21:26:24.412 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 21:26:24.881 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 21:26:25.382 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 21:26:25.897 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 21:26:26.407 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 21:26:26.894 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 21:26:27.389 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 21:26:27.893 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 21:26:28.425 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 21:26:28.932 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.04.28 21:26:43.890 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
+2019.04.28 21:27:14.851 | TRC | 0 | 0 | start log
+2019.04.28 21:27:14.990 | TRC | 0 | 1 | DB initial count：1
+2019.04.28 21:28:55.691 | TRC | 0 | 0 | start log
+2019.04.28 21:28:56.314 | TRC | 0 | 1 | DB initial count：1
+2019.04.28 21:29:32.844 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
+2019.04.28 21:29:59.008 | TRC | 0 | 0 | start log
+2019.04.28 21:29:59.200 | TRC | 0 | 1 | DB initial count：1
+2019.04.28 21:30:07.382 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
+2019.04.28 21:30:19.028 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
+2019.04.28 21:30:29.914 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
+2019.04.28 21:32:53.216 | TRC | 0 | 0 | start log
+2019.04.28 21:32:53.661 | TRC | 0 | 1 | DB initial count：1
+2019.04.28 21:32:57.860 | TRC | 0 | 0 | 學生通訊錄：frmStudentBook_Load
+2019.04.28 21:33:26.177 | TRC | 0 | 1 | frmStudentRollcall：frmStudentRollcall_Load
+2019.04.28 21:33:31.526 | TRC | 0 | 0 | 學生通訊錄：frmStudentBook_Load
+2019.04.28 21:37:28.855 | TRC | 0 | 0 | start log
+2019.04.28 21:37:28.999 | TRC | 0 | 1 | DB initial count：1
+2019.04.28 21:37:31.581 | TRC | 0 | 1 | 學生通訊錄：frmStudentBook_Load
+2019.04.28 21:37:48.988 | TRC | 0 | 0 | 學生通訊錄：btnUpdate
+2019.04.28 21:37:50.836 | TRC | 0 | 0 | 學生通訊錄：btnSelect
+2019.04.28 21:37:52.553 | TRC | 0 | 0 | 學生通訊錄：btn_clearText
+2019.04.28 21:38:21.107 | TRC | 0 | 0 | 學生通訊錄：btnUpdate
+2019.04.28 21:38:33.929 | TRC | 0 | 0 | 學生通訊錄：frmStudentBook_Load
+2019.04.28 21:38:45.009 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
+2019.04.28 21:38:58.489 | TRC | 0 | 0 | 學生通訊錄：frmStudentBook_Load
+2019.04.28 21:39:05.292 | TRC | 0 | 0 | start log
+2019.04.28 21:39:05.497 | TRC | 0 | 1 | DB initial count：1
+2019.04.28 21:39:06.988 | TRC | 0 | 1 | frmStudentRollcall：frmStudentRollcall_Load
+2019.04.28 21:39:19.448 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
