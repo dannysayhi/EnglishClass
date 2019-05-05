@@ -1,4 +1,5 @@
 ﻿using EnglishClassManager.Utility.Database;
+using EnglishCalssManager.Broadcast.CardNotice;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -99,6 +100,8 @@ namespace EnglishCalssManager.Rollcall.StudentRollcall
             , StudentID
             );
             DatabaseManager._databaseCore.ExecuteNonQuery(CommandStr);
+            //CardNotice.SendNotificationFromFirebaseCloud("點名通知", StudentID + "第" + _getCount + "點名成功！");
+
         }
         /// <summary>
         /// 第一次刷卡
@@ -129,6 +132,7 @@ namespace EnglishCalssManager.Rollcall.StudentRollcall
                         _getCount2 = (Convert.ToInt16(_getCount2) - 1).ToString();
                         CommandStr = string.Format("Select EnglishClassDBtest.dbo.Table_CardNoticeSet.CardTitle from  EnglishClassDBtest.dbo.Table_CardNoticeSet where EnglishClassDBtest.dbo.Table_CardNoticeSet.numCardMsg = '{0}'", _getCount2);
                         CardTitle = DatabaseManager._databaseCore.strExecuteScalar(CommandStr);
+                        //CardNotice.SendNotificationFromFirebaseCloud("點名通知", StudentID + "第" + _getCount2 + "點名成功！");
                     } while (CardTitle == "");
                 }
                 CommandStr = string.Format(
