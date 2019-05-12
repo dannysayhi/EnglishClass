@@ -92,7 +92,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Broadcast\CardNotice\CardNotice.cs" />
+    <Compile Include="CardNotice.cs" />
     <Compile Include="Broadcast\CardNotice\frmCardNotice.cs">
       <SubType>Form</SubType>
     </Compile>

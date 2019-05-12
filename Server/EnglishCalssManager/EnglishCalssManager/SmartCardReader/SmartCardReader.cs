@@ -6,6 +6,7 @@ using EnglishClassManager.Utility.Database;
 using EnglishCalssManager.Rollcall.StudentRollcall;
 using AOISystem.Utility.Logging;
 using System.Windows.Forms;
+using EnglishCalssManager.Broadcast.CardNotice;
 
 namespace SmartCardSystem
 {
@@ -62,7 +63,7 @@ namespace SmartCardSystem
             _rollcallCount = Convert.ToInt32(_getCount);
             string CommandStr = string.Format(
             "Update EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_{0}"
-            + " Set RollcallCount={1},RollcallTimes={2},IsUpdate={3} "
+            + " Set RollcallCount={1},RollcallTimes={2} "/*,IsUpdate={3} */
             //+ " Where EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_{0}.CourseID={3}"
             //+ " and "
             + " Where EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_{0}.StudentID={4}"
@@ -93,35 +94,67 @@ namespace SmartCardSystem
                         CardTitle = DatabaseManager._databaseCore.strExecuteScalar(CommandStr);
                     } while (CardTitle == "");
                 }
-                CommandStr = string.Format(
-                       "insert into EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_{0} values('{1}', '{2}', '{3}', {4}, '{5}','{6}', '{7}')"
-                       , date
-                       , " "
-                       , StudentID
-                       , _getCount
-                       , "SYSDATETIME()"
-                       , _type
-                       , CardTitle
-                       , "1"
-                       );
-                DatabaseManager._databaseCore.ExecuteNonQuery(CommandStr);
+
+                if (AutoCardRollCall(false,StudentID, _getCount2)) //讀卡機自動推撥
+                {
+                    CommandStr = string.Format(
+                                          "insert into EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_{0} values('{1}', '{2}', '{3}', {4}, '{5}','{6}')"/*, '{7}'*/
+                                          , date
+                                          , " "
+                                          , StudentID
+                                          , _getCount
+                                          , "SYSDATETIME()"
+                                          , _type
+                                          , CardTitle
+                                          //, "1"
+                                          );
+                    DatabaseManager._databaseCore.ExecuteNonQuery(CommandStr);
+                }
+                else
+                {
+                    MessageBox.Show("點名失敗！");
+                }
             }
 
+        }
+        /// <summary>
+        /// 讀卡機自動推撥
+        /// </summary>
+        /// <param name="_boolAutoCard"></param>
+        /// <param name="studentID"></param>
+        /// <param name="getCount"></param>
+        /// <returns></returns>
+        public static bool AutoCardRollCall(bool _boolAutoCard,string studentID,string getCount)
+        {
+            try
+            {
+                string TwName = "";
+                string CommandStr = string.Format("Select EnglishClassDBtest.dbo.Table_StudentBasic.TwName from EnglishClassDBtest.dbo.Table_StudentBasic where EnglishClassDBtest.dbo.Table_StudentBasic.StudentID='{0}'", studentID);
+                TwName = DatabaseManager._databaseCore.strExecuteScalar(CommandStr);
+                string msg = CardNotice.SendNotificationFromFirebaseCloud("點名通知", TwName + "第" + getCount + "次點名成功！").ToString();
+                MessageBox.Show(TwName + "第" + getCount + "次點名成功！", "點名通知");
+                _boolAutoCard = true;
+            }
+            catch (Exception ex)
+            {
+                _boolAutoCard = false;
+                Log.Trace(ex.ToString());
+            }
+            return _boolAutoCard;
         }
 
         public static string AuthUUID(string date, string UUID)
         {
             DatabaseManager.Initialize();
             string studentID = "";
+            string cardNum = "";
             try {
+                string CommandStr = string.Format("select EnglishClassDBtest.dbo.Table_StudentBasic.StudentID from EnglishClassDBtest.dbo.Table_StudentBasic where EnglishClassDBtest.dbo.Table_StudentBasic.CardNumber = '{0}'",UUID);
+                studentID = DatabaseManager._databaseCore.strExecuteScalar(CommandStr);
 
-                string _get_count = getCount(functionStudentRollcall.getDate, UUID);
-                if(_get_count!="")
+                if(studentID != "")
                 {
-                    string CommandStr = string.Format("select EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_{0}.StudentID "
-                                     + " from EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_{0} "
-                                     + " where EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_{0}.CardNumber = '{1}'", date, UUID);
-                    studentID = DatabaseManager._databaseCoreRollcall.strExecuteScalar(CommandStr);
+                   
                 }
                 else
                 {
@@ -204,29 +237,30 @@ namespace SmartCardSystem
                         // Send SELECT command
                         //byte[] cmd1 = new byte[] { 0x00, 0xA4, 0x04, 0x00, 0x0A, 0xA0,
                         //    0x00, 0x00, 0x00, 0x62, 0x03, 0x01, 0x0C, 0x06, 0x01 };
-                        pbRecvBuffer = new byte[256];
-                        byte[] auth_ok = new byte[] { 0xFF, 0xE1, 0x02, 0x01, 0x0C, 0xA0, 0xFC, 0x4D, 0xA0, 0xFD, 0x20, 0xA0, 0xFE, 0x10, 0xA0, 0xFF, 0x01 };
-                        err = reader.Transmit((IntPtr)pioSendPci, auth_ok, ref pbRecvBuffer);
-                        CheckErr(err);
+                        //pbRecvBuffer = new byte[256];
+                        //byte[] auth_ok = new byte[] { 0xFF, 0xE1, 0x02, 0x01, 0x0C, 0xA0, 0xFC, 0x4D, 0xA0, 0xFD, 0x20, 0xA0, 0xFE, 0x10, 0xA0, 0xFF, 0x01 };
+                        //err = reader.Transmit((IntPtr)pioSendPci, auth_ok, ref pbRecvBuffer);
+                        //CheckErr(err);
 
-                        Console.Write("response: ");
-                        for (int i = 0; i < pbRecvBuffer.Length; i++)
-                            Console.Write("{0:X2} ", pbRecvBuffer[i]);
-                        Console.WriteLine();
+                        //Console.Write("response: ");
+                        //for (int i = 0; i < pbRecvBuffer.Length; i++)
+                        //    Console.Write("{0:X2} ", pbRecvBuffer[i]);
+                        //Console.WriteLine();
                         string _get_count = getCount(functionStudentRollcall.getDate, studentID);
                             //Console.Write(getCount("20180902", "1"));
                         if (_get_count != "")
                          {
-                                studRCagain(functionStudentRollcall.getDate, studentID, _get_count);
-                                Console.Write(getCount(functionStudentRollcall.getDate, studentID).ToString());
+                             //   studRCagain(functionStudentRollcall.getDate, studentID, _get_count);
+                            studRCstart(functionStudentRollcall.getDate, studentID, (Convert.ToInt16( _get_count)+1).ToString(), "A");
+                            Console.Write(getCount(functionStudentRollcall.getDate, studentID).ToString());
 
                          }
                         else
                         {
-                                studRCstart(functionStudentRollcall.getDate, studentID, "0", "A");
+                                studRCstart(functionStudentRollcall.getDate, studentID, "1", "A");
                                 //studRCagain("20180902", "1", "0");
                         }
-                            Thread.Sleep(2000);
+                        Thread.Sleep(2000);
                         }
                   else { 
                         pbRecvBuffer = new byte[256];
