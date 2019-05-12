@@ -4913,3 +4913,37 @@ Error Number:245,State:1,Class:16
 2019.05.12 17:33:59.670 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
 2019.05.12 18:00:29.095 | TRC | 0 | 0 | start log
 2019.05.12 18:00:29.421 | TRC | 0 | 1 | DB initial count：1
+2019.05.12 18:08:24.588 | TRC | 0 | 0 | start log
+2019.05.12 18:08:24.867 | TRC | 0 | 1 | DB initial count：1
+2019.05.12 18:09:09.193 | TRC | 0 | 0 | start log
+2019.05.12 18:09:09.340 | TRC | 0 | 1 | DB initial count：1
+2019.05.12 18:09:11.948 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
+2019.05.12 18:09:23.661 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
+2019.05.12 18:11:53.106 | TRC | 0 | 0 | start log
+2019.05.12 18:11:53.481 | TRC | 0 | 1 | DB initial count：1
+2019.05.12 18:12:34.216 | TRC | 0 | 0 | start log
+2019.05.12 18:12:34.456 | TRC | 0 | 1 | DB initial count：1
+2019.05.12 18:12:37.918 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
+2019.05.12 18:14:51.544 | TRC | 0 | 0 | start log
+2019.05.12 18:14:51.769 | TRC | 0 | 1 | DB initial count：1
+2019.05.12 18:14:56.605 | TRC | 0 | 1 | frmStudentRollcall：frmStudentRollcall_Load
+2019.05.12 18:14:58.568 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.05.12 18:15:03.125 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.05.12 18:15:13.149 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.05.12 18:15:21.188 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.05.12 18:18:08.995 | TRC | 0 | 0 | start log
+2019.05.12 18:18:09.114 | TRC | 0 | 1 | DB initial count：1
+2019.05.12 18:18:12.001 | TRC | 0 | 0 | 學生通訊錄：frmStudentBook_Load
+2019.05.12 18:18:35.937 | TRC | 0 | 3 | 學生通訊錄：frmStudentBook_Load
+2019.05.12 18:21:15.201 | TRC | 0 | 0 | start log
+2019.05.12 18:21:15.374 | TRC | 0 | 1 | DB initial count：1
+2019.05.12 18:21:20.104 | TRC | 0 | 0 | 學生通訊錄：frmStudentBook_Load
+2019.05.12 18:22:15.769 | TRC | 0 | 0 | 學生通訊錄：frmStudentBook_Load
+2019.05.12 18:23:43.808 | TRC | 0 | 0 | start log
+2019.05.12 18:23:43.958 | TRC | 0 | 1 | DB initial count：1
+2019.05.12 18:23:48.551 | TRC | 0 | 0 | 學生通訊錄：frmStudentBook_Load
+2019.05.12 18:33:45.650 | TRC | 0 | 0 | start log
+2019.05.12 18:33:45.891 | TRC | 0 | 1 | DB initial count：1
+2019.05.12 18:33:49.047 | TRC | 0 | 0 | 學生通訊錄：frmStudentBook_Load
+2019.05.12 18:34:01.479 | TRC | 0 | 0 | 學生通訊錄：btn_clearText
+2019.05.12 18:34:43.056 | TRC | 0 | 0 | 學生通訊錄：btn_clearText

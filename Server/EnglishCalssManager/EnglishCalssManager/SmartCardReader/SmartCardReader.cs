@@ -131,8 +131,8 @@ namespace SmartCardSystem
                 string TwName = "";
                 string CommandStr = string.Format("Select EnglishClassDBtest.dbo.Table_StudentBasic.TwName from EnglishClassDBtest.dbo.Table_StudentBasic where EnglishClassDBtest.dbo.Table_StudentBasic.StudentID='{0}'", studentID);
                 TwName = DatabaseManager._databaseCore.strExecuteScalar(CommandStr);
-                string msg = CardNotice.SendNotificationFromFirebaseCloud("點名通知", TwName + "第" + getCount + "次點名成功！").ToString();
-                MessageBox.Show(TwName + "第" + getCount + "次點名成功！", "點名通知");
+                string msg = CardNotice.SendNotificationFromFirebaseCloud("讀卡機點名通知", TwName + "第" + getCount + "次點名成功！--讀卡機點名通知").ToString();
+                MessageBox.Show(TwName + "第" + getCount + "次點名成功！--讀卡機點名通知", "讀卡機點名通知");
                 _boolAutoCard = true;
             }
             catch (Exception ex)
@@ -282,6 +282,86 @@ namespace SmartCardSystem
                 {
                 }
              // }
+            }
+            catch (PCSCException ex)
+            {
+                Console.WriteLine("Ouch: "
+                    + ex.Message
+                    + " (" + ex.SCardError.ToString() + ")");
+                Log.Trace("SmartCardReader：" + "Ouch: "
+                    + ex.Message
+                    + " (" + ex.SCardError.ToString() + ")");
+            }
+            return CardNumber;
+        }
+
+
+        public static string funSmartCardReader_Regist()
+        {
+            string CardNumber = "";
+            try
+            {
+                // Establish SCard context
+                SCardContext hContext = new SCardContext();
+                hContext.Establish(SCardScope.System);
+
+                // Retrieve the list of Smartcard readers
+                string[] szReaders = hContext.GetReaders();
+                if (szReaders.Length <= 0)
+                    throw new PCSCException(SCardError.NoReadersAvailable,
+                        "Could not find any Smartcard reader.");
+
+                Console.WriteLine("reader name: " + szReaders[0]);
+
+                // Create a reader object using the existing context
+                SCardReader reader = new SCardReader(hContext);
+                //while (true) { 
+                // Connect to the card
+                try
+                {
+                    SCardError err = reader.Connect(szReaders[0],
+                    SCardShareMode.Shared,
+                    SCardProtocol.T0 | SCardProtocol.T1);
+                    CheckErr(err);
+
+                    long pioSendPci;
+                    switch (reader.ActiveProtocol)
+                    {
+                        case SCardProtocol.T0:
+                            pioSendPci = (long)SCardPCI.T0;
+                            break;
+                        case SCardProtocol.T1:
+                            pioSendPci = (long)SCardPCI.T1;
+                            break;
+                        default:
+                            throw new PCSCException(SCardError.ProtocolMismatch,
+                                "Protocol not supported: "
+                                + reader.ActiveProtocol.ToString());
+                    }
+
+
+                    byte[] pbRecvBuffer = new byte[256];
+
+                    byte[] get_id = new byte[] { 0xFF, 0xCA, 0x00, 0x00, 0x00 };
+                    err = reader.Transmit((IntPtr)pioSendPci, get_id, ref pbRecvBuffer);
+                    CheckErr(err);
+
+                    //Console.Write("uid: ");
+
+                    string uid = BitConverter.ToString(pbRecvBuffer).Substring(0, 11);
+                    uid = uid.Replace("-", "");
+                    Console.WriteLine("UID: " + uid);
+                    //for (int i = 0; i < pbRecvBuffer.Length-2; i++)
+                    //    Console.Write("{0:X2} ", pbRecvBuffer[i]);
+                    CardNumber = uid;
+                    string studentID = AuthUUID(functionStudentRollcall.getDate, uid);
+
+                    Console.WriteLine("studentID: " + studentID);
+                }
+                catch (Exception e)
+                {
+                }
+                // }
             }
             catch (PCSCException ex)
             {

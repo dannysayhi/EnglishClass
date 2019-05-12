@@ -107,8 +107,8 @@ namespace EnglishClassManager.Rollcall.StudentRollcall
                         );
                         dbcR.ExecuteNonQuery(CommandStr);
                         functionStudentRollcall.studRCstart(date, dataGridView1.Rows[oneCell.RowIndex].Cells["StudentID"].Value.ToString(), "1", "M");
-                        string msg = CardNotice.SendNotificationFromFirebaseCloud("點名通知", dataGridView1.Rows[oneCell.RowIndex].Cells["TwName"].Value.ToString() + "第1次點名成功！").ToString();
-                        MessageBox.Show(dataGridView1.Rows[oneCell.RowIndex].Cells["TwName"].Value.ToString() + "第1次點名成功！", "點名通知");
+                        string msg = CardNotice.SendNotificationFromFirebaseCloud("人工點名通知", dataGridView1.Rows[oneCell.RowIndex].Cells["TwName"].Value.ToString() + "第1次點名成功！--人工點名通知").ToString();
+                        MessageBox.Show(dataGridView1.Rows[oneCell.RowIndex].Cells["TwName"].Value.ToString() + "第1次點名成功！--人工點名通知", "人工點名通知");
                      }
                             else
                     {
@@ -127,8 +127,8 @@ namespace EnglishClassManager.Rollcall.StudentRollcall
                         {
                             _getCount = (Convert.ToInt16(_getCount) + 1).ToString();
                             functionStudentRollcall.studRCstart(date, dataGridView1.Rows[oneCell.RowIndex].Cells["StudentID"].Value.ToString(), _getCount, "M");
-                            string msg = CardNotice.SendNotificationFromFirebaseCloud("點名通知", dataGridView1.Rows[oneCell.RowIndex].Cells["TwName"].Value.ToString() + "第" + _getCount + "次點名成功！").ToString();
-                            MessageBox.Show(dataGridView1.Rows[oneCell.RowIndex].Cells["TwName"].Value.ToString() + "第" + _getCount + "次點名成功！" , "點名通知");
+                            string msg = CardNotice.SendNotificationFromFirebaseCloud("人工點名通知", dataGridView1.Rows[oneCell.RowIndex].Cells["TwName"].Value.ToString() + "第" + _getCount + "次點名成功！--人工點名通知").ToString();
+                            MessageBox.Show(dataGridView1.Rows[oneCell.RowIndex].Cells["TwName"].Value.ToString() + "第" + _getCount + "次點名成功--人工點名通知！" , "人工點名通知");
                                 }
                             }
                 }

@@ -89,7 +89,7 @@ namespace EnglishClassManager
             //宣告timer要做什麼事.要做什麼事呢?要做_do的事
             TimerCallback callbackSmartCardReader = new TimerCallback(_doSmartCardReader);
             //1.function 2.開關  3.等多久再開始  4.隔多久反覆執行
-            timer_smartCardReader = new System.Threading.Timer(callbackSmartCardReader, null, 0, 500);
+            timer_smartCardReader = new System.Threading.Timer(callbackSmartCardReader, null, 0, 2500);
 
 
             //ControlsVisible(false, false, false, false, false, false);

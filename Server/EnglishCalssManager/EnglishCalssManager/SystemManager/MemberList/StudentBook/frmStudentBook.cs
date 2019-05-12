@@ -131,7 +131,13 @@ namespace EnglishClassManager.SystemManager.MemberList.StudentBook
 
         private void btn_ReadCard_Click(object sender, EventArgs e)
         {
-            txt_CardNumber.Text = SmartCardReader.funSmartCardReader();
+            string tempText = txt_CardNumber.Text;
+            txt_CardNumber.Text = SmartCardReader.funSmartCardReader_Regist();
+            if(tempText==txt_CardNumber.Text)
+            {
+                txt_CardNumber.Text = SmartCardReader.funSmartCardReader_Regist();
+            }
+
         }
 
         public void initialfrmValue()
