@@ -4254,3 +4254,504 @@
 2019.05.12 16:11:53.438 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
 2019.05.12 16:11:53.948 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
 2019.05.12 16:11:54.449 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:01.809 | TRC | 0 | 0 | start log
+2019.05.12 16:20:02.027 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:02.120 | TRC | 0 | 1 | DB initial count：1
+2019.05.12 16:20:02.337 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:02.837 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:03.339 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:03.841 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:04.343 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:04.850 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:05.344 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:05.849 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:06.358 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:06.847 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:07.351 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:07.852 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:08.351 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:08.852 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:09.354 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:09.858 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:10.358 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:10.862 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:11.360 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:11.864 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:12.364 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:12.872 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:13.367 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:13.867 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:14.384 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:14.874 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:15.382 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:15.877 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:16.377 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:16.876 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:17.379 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:17.877 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:18.378 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:18.879 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:19.401 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:19.884 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:20.388 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:20.884 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:21.388 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:21.885 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:22.387 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:22.892 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:23.390 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:23.891 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:24.392 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:24.891 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:25.394 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:25.896 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:26.396 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:26.895 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:27.395 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:27.897 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:28.402 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:28.899 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:29.399 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:29.903 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:30.401 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:30.903 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:31.402 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:31.904 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:32.429 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:32.943 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:33.409 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:33.911 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:34.410 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:34.913 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:35.416 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:35.922 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:36.427 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:36.917 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:37.415 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:37.917 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:38.417 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:38.920 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:39.420 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:39.932 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:40.422 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:40.922 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:41.424 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:41.946 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:42.452 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:42.936 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:43.432 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:43.931 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:44.433 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:44.938 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:45.437 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:45.945 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:46.439 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:46.946 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:47.447 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:47.950 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:48.455 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:48.951 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:49.452 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:49.958 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:50.453 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:50.957 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:51.456 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:51.960 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:52.456 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:52.959 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:53.460 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:53.960 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:54.462 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:54.964 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:55.464 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:55.963 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:56.464 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:56.966 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:57.465 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:57.969 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:58.474 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:58.973 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:59.470 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:20:59.970 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:00.474 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:00.974 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:01.475 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:01.975 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:02.480 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:02.978 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:03.477 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:03.979 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:04.481 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:04.980 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:05.481 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:05.980 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:06.482 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:06.983 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:07.484 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:07.986 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:08.489 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:08.988 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:09.490 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:09.992 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:10.491 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:10.992 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:11.492 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:11.995 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:12.497 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:12.997 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:13.497 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:14.001 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:14.499 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:15.000 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:15.502 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:16.004 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:16.502 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:17.005 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:17.507 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:18.007 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:18.508 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:19.007 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:19.510 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:20.012 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:20.512 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:21.019 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:21.518 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:22.016 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:22.523 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:23.019 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:23.519 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:24.019 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:24.549 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:25.022 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:25.523 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:26.025 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:26.526 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:27.051 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:27.531 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:28.030 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:28.530 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:29.031 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:29.530 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:30.035 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:30.535 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:31.036 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:31.539 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:32.039 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:32.539 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:33.040 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:33.540 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:34.046 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:34.542 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:35.045 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:35.548 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:36.047 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:36.547 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:37.070 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:37.550 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:38.050 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:38.554 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:39.055 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:39.556 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:40.054 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:40.558 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:41.057 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:41.561 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:42.058 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:42.562 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:43.092 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:43.562 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:44.064 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:44.563 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:45.063 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:45.566 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:46.065 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:46.564 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:47.072 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:47.565 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:48.068 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:48.569 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:49.072 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:49.574 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.05.12 16:21:56.029 | TRC | 0 | 0 | start log
+2019.05.12 16:21:56.233 | TRC | 0 | 1 | DB initial count：1
+2019.05.12 16:22:10.413 | TRC | 0 | 0 | start log
+2019.05.12 16:22:10.689 | TRC | 0 | 2 | DB initial count：1
+2019.05.12 16:22:30.447 | TRC | 0 | 7 | 學生通訊錄：frmStudentBook_Load
+2019.05.12 16:23:07.679 | TRC | 0 | 0 | start log
+2019.05.12 16:23:07.950 | TRC | 0 | 1 | DB initial count：1
+2019.05.12 16:36:25.110 | TRC | 0 | 0 | start log
+2019.05.12 16:36:25.819 | TRC | 0 | 1 | DB initial count：1
+2019.05.12 16:36:33.341 | TRC | 0 | 0 | 學生通訊錄：frmStudentBook_Load
+2019.05.12 16:36:54.848 | TRC | 0 | 0 | 學生通訊錄：btnUpdate
+2019.05.12 16:36:58.288 | TRC | 0 | 0 | 學生通訊錄：btn_clearText
+2019.05.12 16:37:21.620 | TRC | 0 | 1 | DatabaseCore：strExecuteScalar：select Max( EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512.RollcallCount)  from EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512 where EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512.StudentID = 'AC119D97'
+2019.05.12 16:37:21.636 | TRC | 0 | 1 | System.Data.SqlClient.SqlException (0x80131904): 將 varchar 值 'AC119D97' 轉換成資料類型 int 時，轉換失敗。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   於 System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   於 System.Data.SqlClient.SqlDataReader.Read()
+   於 System.Data.SqlClient.SqlCommand.CompleteExecuteScalar(SqlDataReader ds, Boolean returnSqlValue)
+   於 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   於 EnglishClassManager.Utility.Database.DatabaseCore.strExecuteScalar(String CommandStr) 於 C:\Users\user\ocaip-devenv\demo_new_repo\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCore.cs: 行 187
+ClientConnectionId:eddfe82e-aeb0-4e76-ae59-24a421d6380f
+Error Number:245,State:1,Class:16
+2019.05.12 16:37:22.106 | TRC | 0 | 2 | DatabaseCore：strExecuteScalar：select Max( EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512.RollcallCount)  from EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512 where EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512.StudentID = 'AC119D97'
+2019.05.12 16:37:22.106 | TRC | 0 | 2 | System.Data.SqlClient.SqlException (0x80131904): 將 varchar 值 'AC119D97' 轉換成資料類型 int 時，轉換失敗。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   於 System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   於 System.Data.SqlClient.SqlDataReader.Read()
+   於 System.Data.SqlClient.SqlCommand.CompleteExecuteScalar(SqlDataReader ds, Boolean returnSqlValue)
+   於 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   於 EnglishClassManager.Utility.Database.DatabaseCore.strExecuteScalar(String CommandStr) 於 C:\Users\user\ocaip-devenv\demo_new_repo\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCore.cs: 行 187
+ClientConnectionId:a3de8086-18b2-4c36-8833-0f5d513d98b5
+Error Number:245,State:1,Class:16
+2019.05.12 16:37:22.607 | TRC | 0 | 3 | DatabaseCore：strExecuteScalar：select Max( EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512.RollcallCount)  from EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512 where EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512.StudentID = 'AC119D97'
+2019.05.12 16:37:22.607 | TRC | 0 | 3 | System.Data.SqlClient.SqlException (0x80131904): 將 varchar 值 'AC119D97' 轉換成資料類型 int 時，轉換失敗。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   於 System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   於 System.Data.SqlClient.SqlDataReader.Read()
+   於 System.Data.SqlClient.SqlCommand.CompleteExecuteScalar(SqlDataReader ds, Boolean returnSqlValue)
+   於 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   於 EnglishClassManager.Utility.Database.DatabaseCore.strExecuteScalar(String CommandStr) 於 C:\Users\user\ocaip-devenv\demo_new_repo\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCore.cs: 行 187
+ClientConnectionId:10a01b71-291c-4d1f-885b-23b5fbc70913
+Error Number:245,State:1,Class:16
+2019.05.12 16:37:23.108 | TRC | 0 | 4 | DatabaseCore：strExecuteScalar：select Max( EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512.RollcallCount)  from EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512 where EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512.StudentID = 'AC119D97'
+2019.05.12 16:37:23.108 | TRC | 0 | 4 | System.Data.SqlClient.SqlException (0x80131904): 將 varchar 值 'AC119D97' 轉換成資料類型 int 時，轉換失敗。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   於 System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   於 System.Data.SqlClient.SqlDataReader.Read()
+   於 System.Data.SqlClient.SqlCommand.CompleteExecuteScalar(SqlDataReader ds, Boolean returnSqlValue)
+   於 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   於 EnglishClassManager.Utility.Database.DatabaseCore.strExecuteScalar(String CommandStr) 於 C:\Users\user\ocaip-devenv\demo_new_repo\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCore.cs: 行 187
+ClientConnectionId:07693ef8-2cb2-496b-982a-eeef5dd5ee24
+Error Number:245,State:1,Class:16
+2019.05.12 16:37:23.609 | TRC | 0 | 5 | DatabaseCore：strExecuteScalar：select Max( EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512.RollcallCount)  from EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512 where EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512.StudentID = 'AC119D97'
+2019.05.12 16:37:23.609 | TRC | 0 | 5 | System.Data.SqlClient.SqlException (0x80131904): 將 varchar 值 'AC119D97' 轉換成資料類型 int 時，轉換失敗。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   於 System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   於 System.Data.SqlClient.SqlDataReader.Read()
+   於 System.Data.SqlClient.SqlCommand.CompleteExecuteScalar(SqlDataReader ds, Boolean returnSqlValue)
+   於 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   於 EnglishClassManager.Utility.Database.DatabaseCore.strExecuteScalar(String CommandStr) 於 C:\Users\user\ocaip-devenv\demo_new_repo\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCore.cs: 行 187
+ClientConnectionId:0dcd1e6e-ac87-41b6-9484-984dfc5b718f
+Error Number:245,State:1,Class:16
+2019.05.12 16:37:40.224 | TRC | 0 | 5 | DatabaseCore：strExecuteScalar：select Max( EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512.RollcallCount)  from EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512 where EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512.StudentID = '018D6518'
+2019.05.12 16:37:40.224 | TRC | 0 | 5 | System.Data.SqlClient.SqlException (0x80131904): 將 varchar 值 '018D6518' 轉換成資料類型 int 時，轉換失敗。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   於 System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   於 System.Data.SqlClient.SqlDataReader.Read()
+   於 System.Data.SqlClient.SqlCommand.CompleteExecuteScalar(SqlDataReader ds, Boolean returnSqlValue)
+   於 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   於 EnglishClassManager.Utility.Database.DatabaseCore.strExecuteScalar(String CommandStr) 於 C:\Users\user\ocaip-devenv\demo_new_repo\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCore.cs: 行 187
+ClientConnectionId:c290f6e5-8652-48c3-a6ee-ce24e43d006a
+Error Number:245,State:1,Class:16
+2019.05.12 16:37:50.299 | TRC | 0 | 1 | DatabaseCore：strExecuteScalar：select Max( EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512.RollcallCount)  from EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512 where EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512.StudentID = '018D6518'
+2019.05.12 16:37:50.299 | TRC | 0 | 1 | System.Data.SqlClient.SqlException (0x80131904): 將 varchar 值 '018D6518' 轉換成資料類型 int 時，轉換失敗。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   於 System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   於 System.Data.SqlClient.SqlDataReader.Read()
+   於 System.Data.SqlClient.SqlCommand.CompleteExecuteScalar(SqlDataReader ds, Boolean returnSqlValue)
+   於 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   於 EnglishClassManager.Utility.Database.DatabaseCore.strExecuteScalar(String CommandStr) 於 C:\Users\user\ocaip-devenv\demo_new_repo\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCore.cs: 行 187
+ClientConnectionId:3fa1ccac-2870-4660-9b53-93014cf2e958
+Error Number:245,State:1,Class:16
+2019.05.12 16:37:50.800 | TRC | 0 | 2 | DatabaseCore：strExecuteScalar：select Max( EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512.RollcallCount)  from EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512 where EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512.StudentID = '018D6518'
+2019.05.12 16:37:50.800 | TRC | 0 | 2 | System.Data.SqlClient.SqlException (0x80131904): 將 varchar 值 '018D6518' 轉換成資料類型 int 時，轉換失敗。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   於 System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   於 System.Data.SqlClient.SqlDataReader.Read()
+   於 System.Data.SqlClient.SqlCommand.CompleteExecuteScalar(SqlDataReader ds, Boolean returnSqlValue)
+   於 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   於 EnglishClassManager.Utility.Database.DatabaseCore.strExecuteScalar(String CommandStr) 於 C:\Users\user\ocaip-devenv\demo_new_repo\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCore.cs: 行 187
+ClientConnectionId:8e225bd6-b0e8-455f-9ff1-bb53df941142
+Error Number:245,State:1,Class:16
+2019.05.12 16:37:56.893 | TRC | 0 | 1 | DatabaseCore：strExecuteScalar：select Max( EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512.RollcallCount)  from EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512 where EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512.StudentID = '018D6518'
+2019.05.12 16:37:56.893 | TRC | 0 | 1 | System.Data.SqlClient.SqlException (0x80131904): 將 varchar 值 '018D6518' 轉換成資料類型 int 時，轉換失敗。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   於 System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   於 System.Data.SqlClient.SqlDataReader.Read()
+   於 System.Data.SqlClient.SqlCommand.CompleteExecuteScalar(SqlDataReader ds, Boolean returnSqlValue)
+   於 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   於 EnglishClassManager.Utility.Database.DatabaseCore.strExecuteScalar(String CommandStr) 於 C:\Users\user\ocaip-devenv\demo_new_repo\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCore.cs: 行 187
+ClientConnectionId:172c0cb1-a859-44ad-812f-6996930ecab3
+Error Number:245,State:1,Class:16
+2019.05.12 16:37:57.409 | TRC | 0 | 2 | DatabaseCore：strExecuteScalar：select Max( EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512.RollcallCount)  from EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512 where EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512.StudentID = '018D6518'
+2019.05.12 16:37:57.409 | TRC | 0 | 2 | System.Data.SqlClient.SqlException (0x80131904): 將 varchar 值 '018D6518' 轉換成資料類型 int 時，轉換失敗。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   於 System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   於 System.Data.SqlClient.SqlDataReader.Read()
+   於 System.Data.SqlClient.SqlCommand.CompleteExecuteScalar(SqlDataReader ds, Boolean returnSqlValue)
+   於 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   於 EnglishClassManager.Utility.Database.DatabaseCore.strExecuteScalar(String CommandStr) 於 C:\Users\user\ocaip-devenv\demo_new_repo\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCore.cs: 行 187
+ClientConnectionId:05f31585-fa2a-4569-b425-46bbf319c7c8
+Error Number:245,State:1,Class:16
+2019.05.12 16:37:57.910 | TRC | 0 | 3 | DatabaseCore：strExecuteScalar：select Max( EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512.RollcallCount)  from EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512 where EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512.StudentID = '018D6518'
+2019.05.12 16:37:57.910 | TRC | 0 | 3 | System.Data.SqlClient.SqlException (0x80131904): 將 varchar 值 '018D6518' 轉換成資料類型 int 時，轉換失敗。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   於 System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   於 System.Data.SqlClient.SqlDataReader.Read()
+   於 System.Data.SqlClient.SqlCommand.CompleteExecuteScalar(SqlDataReader ds, Boolean returnSqlValue)
+   於 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   於 EnglishClassManager.Utility.Database.DatabaseCore.strExecuteScalar(String CommandStr) 於 C:\Users\user\ocaip-devenv\demo_new_repo\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCore.cs: 行 187
+ClientConnectionId:316bf56f-668e-4fb0-9f12-dbdc954cfb4c
+Error Number:245,State:1,Class:16
+2019.05.12 16:38:02.974 | TRC | 0 | 1 | DatabaseCore：strExecuteScalar：select Max( EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512.RollcallCount)  from EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512 where EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512.StudentID = '018D6518'
+2019.05.12 16:38:02.974 | TRC | 0 | 1 | System.Data.SqlClient.SqlException (0x80131904): 將 varchar 值 '018D6518' 轉換成資料類型 int 時，轉換失敗。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   於 System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   於 System.Data.SqlClient.SqlDataReader.Read()
+   於 System.Data.SqlClient.SqlCommand.CompleteExecuteScalar(SqlDataReader ds, Boolean returnSqlValue)
+   於 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   於 EnglishClassManager.Utility.Database.DatabaseCore.strExecuteScalar(String CommandStr) 於 C:\Users\user\ocaip-devenv\demo_new_repo\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCore.cs: 行 187
+ClientConnectionId:12e9d979-6b4b-4304-898e-f1be066d6a4b
+Error Number:245,State:1,Class:16
+2019.05.12 16:38:03.430 | TRC | 0 | 2 | DatabaseCore：strExecuteScalar：select Max( EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512.RollcallCount)  from EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512 where EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512.StudentID = '018D6518'
+2019.05.12 16:38:03.430 | TRC | 0 | 2 | System.Data.SqlClient.SqlException (0x80131904): 將 varchar 值 '018D6518' 轉換成資料類型 int 時，轉換失敗。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   於 System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   於 System.Data.SqlClient.SqlDataReader.Read()
+   於 System.Data.SqlClient.SqlCommand.CompleteExecuteScalar(SqlDataReader ds, Boolean returnSqlValue)
+   於 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   於 EnglishClassManager.Utility.Database.DatabaseCore.strExecuteScalar(String CommandStr) 於 C:\Users\user\ocaip-devenv\demo_new_repo\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCore.cs: 行 187
+ClientConnectionId:c9b91bc0-ec70-4a44-af51-fbc2feab6421
+Error Number:245,State:1,Class:16
+2019.05.12 16:38:03.946 | TRC | 0 | 3 | DatabaseCore：strExecuteScalar：select Max( EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512.RollcallCount)  from EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512 where EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512.StudentID = '018D6518'
+2019.05.12 16:38:03.946 | TRC | 0 | 3 | System.Data.SqlClient.SqlException (0x80131904): 將 varchar 值 '018D6518' 轉換成資料類型 int 時，轉換失敗。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   於 System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   於 System.Data.SqlClient.SqlDataReader.Read()
+   於 System.Data.SqlClient.SqlCommand.CompleteExecuteScalar(SqlDataReader ds, Boolean returnSqlValue)
+   於 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   於 EnglishClassManager.Utility.Database.DatabaseCore.strExecuteScalar(String CommandStr) 於 C:\Users\user\ocaip-devenv\demo_new_repo\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCore.cs: 行 187
+ClientConnectionId:6af72de1-6a61-4aa8-9a2b-e3aa34c5014f
+Error Number:245,State:1,Class:16
+2019.05.12 16:38:15.007 | TRC | 0 | 1 | DatabaseCore：strExecuteScalar：select Max( EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512.RollcallCount)  from EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512 where EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512.StudentID = '018D6518'
+2019.05.12 16:38:15.007 | TRC | 0 | 1 | System.Data.SqlClient.SqlException (0x80131904): 將 varchar 值 '018D6518' 轉換成資料類型 int 時，轉換失敗。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   於 System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   於 System.Data.SqlClient.SqlDataReader.Read()
+   於 System.Data.SqlClient.SqlCommand.CompleteExecuteScalar(SqlDataReader ds, Boolean returnSqlValue)
+   於 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   於 EnglishClassManager.Utility.Database.DatabaseCore.strExecuteScalar(String CommandStr) 於 C:\Users\user\ocaip-devenv\demo_new_repo\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCore.cs: 行 187
+ClientConnectionId:64f05950-1a70-4908-ba46-5f4d51860582
+Error Number:245,State:1,Class:16
+2019.05.12 16:38:42.676 | TRC | 0 | 1 | DatabaseCore：strExecuteScalar：select Max( EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512.RollcallCount)  from EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512 where EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512.StudentID = '018D6518'
+2019.05.12 16:38:42.676 | TRC | 0 | 1 | System.Data.SqlClient.SqlException (0x80131904): 將 varchar 值 '018D6518' 轉換成資料類型 int 時，轉換失敗。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   於 System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   於 System.Data.SqlClient.SqlDataReader.Read()
+   於 System.Data.SqlClient.SqlCommand.CompleteExecuteScalar(SqlDataReader ds, Boolean returnSqlValue)
+   於 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   於 EnglishClassManager.Utility.Database.DatabaseCore.strExecuteScalar(String CommandStr) 於 C:\Users\user\ocaip-devenv\demo_new_repo\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCore.cs: 行 187
+ClientConnectionId:f6bd5a68-0e87-48d5-b898-07f2d4f6b1a9
+Error Number:245,State:1,Class:16
+2019.05.12 16:38:51.218 | TRC | 0 | 0 | 學生通訊錄：frmStudentBook_Load
+2019.05.12 16:38:56.340 | TRC | 0 | 1 | DatabaseCore：strExecuteScalar：select Max( EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512.RollcallCount)  from EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512 where EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512.StudentID = '018D6518'
+2019.05.12 16:38:56.340 | TRC | 0 | 1 | System.Data.SqlClient.SqlException (0x80131904): 將 varchar 值 '018D6518' 轉換成資料類型 int 時，轉換失敗。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   於 System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   於 System.Data.SqlClient.SqlDataReader.Read()
+   於 System.Data.SqlClient.SqlCommand.CompleteExecuteScalar(SqlDataReader ds, Boolean returnSqlValue)
+   於 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   於 EnglishClassManager.Utility.Database.DatabaseCore.strExecuteScalar(String CommandStr) 於 C:\Users\user\ocaip-devenv\demo_new_repo\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCore.cs: 行 187
+ClientConnectionId:64f05950-1a70-4908-ba46-5f4d51860582
+Error Number:245,State:1,Class:16
+2019.05.12 16:38:56.872 | TRC | 0 | 2 | DatabaseCore：strExecuteScalar：select Max( EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512.RollcallCount)  from EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512 where EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512.StudentID = '018D6518'
+2019.05.12 16:38:56.888 | TRC | 0 | 2 | System.Data.SqlClient.SqlException (0x80131904): 將 varchar 值 '018D6518' 轉換成資料類型 int 時，轉換失敗。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   於 System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   於 System.Data.SqlClient.SqlDataReader.Read()
+   於 System.Data.SqlClient.SqlCommand.CompleteExecuteScalar(SqlDataReader ds, Boolean returnSqlValue)
+   於 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   於 EnglishClassManager.Utility.Database.DatabaseCore.strExecuteScalar(String CommandStr) 於 C:\Users\user\ocaip-devenv\demo_new_repo\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCore.cs: 行 187
+ClientConnectionId:6af72de1-6a61-4aa8-9a2b-e3aa34c5014f
+Error Number:245,State:1,Class:16
+2019.05.12 16:39:06.899 | TRC | 0 | 1 | DatabaseCore：strExecuteScalar：select Max( EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512.RollcallCount)  from EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512 where EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_20190512.StudentID = '018D6518'
+2019.05.12 16:39:06.899 | TRC | 0 | 1 | System.Data.SqlClient.SqlException (0x80131904): 將 varchar 值 '018D6518' 轉換成資料類型 int 時，轉換失敗。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   於 System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   於 System.Data.SqlClient.SqlDataReader.Read()
+   於 System.Data.SqlClient.SqlCommand.CompleteExecuteScalar(SqlDataReader ds, Boolean returnSqlValue)
+   於 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   於 EnglishClassManager.Utility.Database.DatabaseCore.strExecuteScalar(String CommandStr) 於 C:\Users\user\ocaip-devenv\demo_new_repo\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCore.cs: 行 187
+ClientConnectionId:c9b91bc0-ec70-4a44-af51-fbc2feab6421
+Error Number:245,State:1,Class:16
+2019.05.12 16:39:09.954 | TRC | 0 | 0 | 學生通訊錄：btnUpdate
+2019.05.12 16:39:12.201 | TRC | 0 | 0 | 學生通訊錄：btn_clearText
+2019.05.12 16:39:19.895 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
+2019.05.12 16:39:30.938 | TRC | 0 | 0 | frmCourseManagerUpdate

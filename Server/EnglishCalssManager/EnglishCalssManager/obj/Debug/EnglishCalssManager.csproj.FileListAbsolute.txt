@@ -2811,3 +2811,6 @@ C:\Users\user\ocaip-devenv\demo_new_repo\EnglishClass\Server\EnglishCalssManager
 C:\Users\user\ocaip-devenv\demo_new_repo\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\obj\Debug\AOISystem.Utility.Logging.uctrlTactTimeTable.resources
 C:\Users\user\ocaip-devenv\demo_new_repo\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\obj\Debug\_4RobotSystem.RecipeTemp.frmRecipe.resources
 C:\Users\user\ocaip-devenv\demo_new_repo\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\obj\Debug\EnglishCalssManager.csproj.GenerateResource.Cache
+C:\Users\user\ocaip-devenv\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\bin\Debug\EnglishCalssManager.exe.config
+C:\Users\user\ocaip-devenv\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\obj\Debug\EnglishCalssManager.exe
+C:\Users\user\ocaip-devenv\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\obj\Debug\EnglishCalssManager.pdb
