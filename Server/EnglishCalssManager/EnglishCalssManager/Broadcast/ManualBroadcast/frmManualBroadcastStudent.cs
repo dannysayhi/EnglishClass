@@ -67,12 +67,13 @@ namespace EnglishCalssManager.Broadcast.ManualBroadcast
         {
             foreach(DataGridViewRow row in dataGridView2.Rows)
             {
-                if (row.Cells[1].Value!=null && (Boolean)row.Cells[0].Value==true)
+                if (row.Cells[1].Value!=null && (Boolean)row.Cells[0].Value == true)
                 {
                     string MsgName = dataGridView1.Rows[_rowIndex].Cells["MsgName"].Value.ToString();
                     string Msg = dataGridView1.Rows[_rowIndex].Cells["Msg"].Value.ToString();
                     Msg = Msg.Replace(@"""", "");
-                    CardNotice.CardNotice.SendNotificationFromFirebaseCloud(MsgName, Msg);
+                    string msg = CardNotice.CardNotice.SendNotificationFromFirebaseCloud(MsgName, Msg);
+                    MessageBox.Show("發送成功!");
                 }
             }
 
@@ -150,7 +151,8 @@ namespace EnglishCalssManager.Broadcast.ManualBroadcast
         protected void btnSendNotification_Click(object sender, int _rowIndex, DataGridViewCellEventArgs e)
         {
             {
-                CardNotice.CardNotice.SendNotificationFromFirebaseCloud("", "123");
+                //MessageBox.Show("43434");
+                string msg = CardNotice.CardNotice.SendNotificationFromFirebaseCloud("222", "123");
                 //SendPushNotification("aa0e8521ac7f3aba7d81a0bbe28007db9ccbbcab8e86deb17434ab4cd2e223e6",
                 //dataGridView1.Rows[_rowIndex].Cells["Msg"].Value.ToString());
             }
@@ -255,5 +257,9 @@ namespace EnglishCalssManager.Broadcast.ManualBroadcast
             }
         }
 
+        private void cbox_ClassID_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

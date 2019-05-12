@@ -1,6 +1,7 @@
 ﻿using AOISystem.Utility.Logging;
 using EnglishCalssManager.Rollcall.StudentRollcall;
 using EnglishClassManager.Utility.Database;
+using EnglishCalssManager.Broadcast.CardNotice;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -106,9 +107,10 @@ namespace EnglishClassManager.Rollcall.StudentRollcall
                         );
                         dbcR.ExecuteNonQuery(CommandStr);
                         functionStudentRollcall.studRCstart(date, dataGridView1.Rows[oneCell.RowIndex].Cells["StudentID"].Value.ToString(), "1", "M");
-                        //MessageBox.Show("請假/未到");
-                    }
-                    else
+                        string msg = CardNotice.SendNotificationFromFirebaseCloud("點名通知", dataGridView1.Rows[oneCell.RowIndex].Cells["TwName"].Value.ToString() + "第1次點名成功！").ToString();
+                        MessageBox.Show(dataGridView1.Rows[oneCell.RowIndex].Cells["TwName"].Value.ToString() + "第1次點名成功！", "點名通知");
+                     }
+                            else
                     {
 
                         //判斷第二次點名以上的時間是否>通知區間
@@ -125,15 +127,17 @@ namespace EnglishClassManager.Rollcall.StudentRollcall
                         {
                             _getCount = (Convert.ToInt16(_getCount) + 1).ToString();
                             functionStudentRollcall.studRCstart(date, dataGridView1.Rows[oneCell.RowIndex].Cells["StudentID"].Value.ToString(), _getCount, "M");
-                        }
-                    }
+                            string msg = CardNotice.SendNotificationFromFirebaseCloud("點名通知", dataGridView1.Rows[oneCell.RowIndex].Cells["TwName"].Value.ToString() + "第" + _getCount + "次點名成功！").ToString();
+                            MessageBox.Show(dataGridView1.Rows[oneCell.RowIndex].Cells["TwName"].Value.ToString() + "第" + _getCount + "次點名成功！" , "點名通知");
+                                }
+                            }
                 }
                 else
                 {
                     _getCount = "0";
                     _getCount = (Convert.ToInt16(_getCount) + 1).ToString();
+           
                     functionStudentRollcall.studRCstart(date, dataGridView1.Rows[oneCell.RowIndex].Cells["StudentID"].Value.ToString(), _getCount, "M");
-
                             //CommandStr = string.Format(
                             //    "insert into EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_{0} values('{1}', '{2}', '{3}', {4})"
                             //    , date
@@ -175,6 +179,8 @@ namespace EnglishClassManager.Rollcall.StudentRollcall
                 if (dbc.strExecuteScalar(CommandStr).ToString() != "")
                 {
                     functionStudentRollcall.studRCstart(date, dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells["StudentID"].Value.ToString(), "未到", "M");
+                    string msg = CardNotice.SendNotificationFromFirebaseCloud("點名通知", dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells["TwName"].Value.ToString() + "未出席！");
+                    MessageBox.Show(dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells["TwName"].Value.ToString() + "未出席！", "點名通知");
                 }
                 else if (dbc.strExecuteScalar(CommandStr).ToString() == "")
                 {
@@ -220,6 +226,8 @@ namespace EnglishClassManager.Rollcall.StudentRollcall
                 if (dbc.strExecuteScalar(CommandStr).ToString() != "")
                 {
                     functionStudentRollcall.studRCstart(date, dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells["StudentID"].Value.ToString(), "請假", "M");
+                    string msg = CardNotice.SendNotificationFromFirebaseCloud("點名通知", dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells["TwName"].Value.ToString() + "請假！");
+                    MessageBox.Show(dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells["TwName"].Value.ToString() + "請假！", "點名通知");
                 }
                 else if (dbc.strExecuteScalar(CommandStr).ToString() == "")
                 {
