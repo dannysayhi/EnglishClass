@@ -15,6 +15,7 @@ namespace EnglishCalssManager.Broadcast.CardNotice
     {
         public static String SendNotificationFromFirebaseCloud(String Title, String Message)
         {
+            //""to"": ""df_YjBowjKU: APA91bHPebenLVN7kVycskhvBNCKf6iGfy_5lReJ5 - ID1I36XUYMe4ELwY9LCqicwpixj60xvwJrFZKVGL7exHrJaXeES_vcalMpxv5KXyVeObY30mI3BpRHfUDq33uhDXiu5YMEV_yA"",
             var result = "-1";
             var webAddr = "https://fcm.googleapis.com/fcm/send";
             var httpWebRequest = (HttpWebRequest)WebRequest.Create(webAddr);
@@ -24,7 +25,8 @@ namespace EnglishCalssManager.Broadcast.CardNotice
             using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
             {
                 string strNJson = @"{
-                    ""to"": ""df_YjBowjKU:APA91bHPebenLVN7kVycskhvBNCKf6iGfy_5lReJ5-ID1I36XUYMe4ELwY9LCqicwpixj60xvwJrFZKVGL7exHrJaXeES_vcalMpxv5KXyVeObY30mI3BpRHfUDq33uhDXiu5YMEV_yA"",
+                    ""project_id"": ""danny9427"",
+                    ""to"": ""/topics/BroadcastTopic"",
                     ""data"": {
                         ""ShortDesc"": ""Some short desc"",
                         ""IncidentNo"": ""any number"",
