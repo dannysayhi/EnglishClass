@@ -34,6 +34,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SmartCardSystem;
+using EnglishCalssManager.Utility.FireBaseSharp;
 
 namespace EnglishClassManager
 {
@@ -45,6 +46,7 @@ namespace EnglishClassManager
         public DatabaseCore dbc;// = DatabaseManager._databaseCore;
         public DatabaseTable dbt;// = DatabaseManager._databaseTable;
         public DatabaseCoreRollcall dbcR;// = DatabaseManager._databaseCoreRollcall;
+        private List<Data> _vehicles_new = new List<Data>();
         //public CardNotice ;
         private bool _isMaintaining = false;       // 現在是否Maintaning
         public System.Windows.Forms.ToolStripMenuItem[] _T = new System.Windows.Forms.ToolStripMenuItem[23];
@@ -56,8 +58,11 @@ namespace EnglishClassManager
          private System.Threading.Timer timer_do;
         //一定要声明成局部变量以保持对Timer的引用，否则会被垃圾收集器回收！
         private System.Threading.Timer timer_smartCardReader;
+        //一定要声明成局部变量以保持对Timer的引用，否则会被垃圾收集器回收！
+        private System.Threading.Timer timer_pickup;
 
         //private string funcStudRCdate = functionStudentRollcall.getDate;
+        funFireBaseSharp _funFireBaseSharp = new funFireBaseSharp();
 
         public frmMain()
         {
@@ -79,6 +84,8 @@ namespace EnglishClassManager
             dbt = DatabaseManager._databaseTable;
             dbcR = DatabaseManager._databaseCoreRollcall;
             initialComp();
+            if (!_funFireBaseSharp.IsConnect()) 
+             _funFireBaseSharp.connection();
 
             //宣告timer要做什麼事.要做什麼事呢?要做_do的事
             TimerCallback callback = new TimerCallback(_do);
@@ -91,11 +98,15 @@ namespace EnglishClassManager
             //1.function 2.開關  3.等多久再開始  4.隔多久反覆執行
             timer_smartCardReader = new System.Threading.Timer(callbackSmartCardReader, null, 0, 2500);
 
+            //宣告timer要做什麼事.要做什麼事呢?要做_do的事
+            TimerCallback callbackpickup = new TimerCallback(_pickupNotice);
+            //1.function 2.開關  3.等多久再開始  4.隔多久反覆執行
+            timer_pickup = new System.Threading.Timer(callbackpickup, null, 0, 2000);
 
             //ControlsVisible(false, false, false, false, false, false);
             ControlsVisible(true, true, true, true, true, true);
         }
-        #region threading DB initail
+        #region threading DB initail 所以資料庫初始化
 
         private void _do(object state)
         {
@@ -109,9 +120,9 @@ namespace EnglishClassManager
             Log.Trace("DB initial count："+ _dbinitialcount.ToString());
             lb_DBinitialCount.Text = lb_DBinitialCount.Text + _dbinitialcount.ToString();
         }
-        #endregion threading DB initail
+        #endregion threading DB initail 所以資料庫初始化
 
-        #region threading SmartCardReader
+        #region threading SmartCardReader 讀卡機讀取
 
         private void _doSmartCardReader(object state)
         {
@@ -125,7 +136,103 @@ namespace EnglishClassManager
             //Log.Trace("DB initial count：" + _dbinitialcount.ToString());
             //lb_DBinitialCount.Text = lb_DBinitialCount.Text + _dbinitialcount.ToString();
         }
-        #endregion threading SmartCardReader
+        #endregion threading SmartCardReader 讀卡機讀取
+
+        #region Parent Pickup 家長接送通知
+        private void _pickupNotice(object state)
+        {
+            this.BeginInvoke(new setPickup(setfunPickup));
+            
+        }
+        delegate void setPickup();
+        private async void setfunPickup()
+        {
+            DataTable dt_temp = new DataTable();
+            DataTable dt = new DataTable();
+            List<Data> _vehicles = new List<Data>();
+            _vehicles_new.Clear();
+            _vehicles = await _funFireBaseSharp.Retrieving();
+            if (_vehicles != null)
+            {
+                foreach (Data d in _vehicles)
+                {
+                    if (d != null && d.ID!=null)
+                    {
+                        d.TwName = "Test";
+                        d.Parent = "Test";
+                        dt_temp = selectPickup(d.phone.ToString(),d.ID.ToString());
+
+                        foreach (DataRow od in dt_temp.Rows)
+                        {
+                            try
+                            {
+                                d.TwName = od[1].ToString();
+                                d.Parent = od[2].ToString();
+                            }
+                            catch(Exception ex)
+                            {
+
+                            }
+                            _vehicles_new.Add(d);
+                        }
+                        //d.TwName = dt_temp.Rows[0][1].ToString();
+                        //d.Parent = dt_temp.Rows[0][2].ToString();
+
+                        //for (int i = 0; i < dt.Rows.Count; i++)
+                        //{
+                        //    if (d.ID.ToString() != dt.Rows[i][0].ToString())
+                        //    {
+                        
+                        //    }
+                        //}
+                       // _funFireBaseSharp.fun_delete(i.ID.ToString());
+                    }
+                }
+                dt = ConvertToDataTable(_vehicles_new);
+            }
+            
+            dataGridView1.DataSource = dt;
+        }
+
+        private DataTable selectPickup(string _phone,string _id)
+        {
+            DataTable _dataTable = new DataTable();
+            string CommandStr = string.Format("select EnglishClassDBtest.dbo.Table_StudentBasic.StudentID, "+
+                " EnglishClassDBtest.dbo.Table_StudentBasic.TwName,"+
+                " EnglishClassDBtest.dbo.Table_StudentBook.Parents1" +
+                " From Table_StudentBasic left join Table_StudentBook On" +
+                " Table_StudentBasic.StudentID =  Table_StudentBook.StudentID" +
+                " where EnglishClassDBtest.dbo.Table_StudentBasic.PhoneNumber='{0}'"+
+                " or EnglishClassDBtest.dbo.Table_StudentBasic.StudentID = '{1}'"
+                , _phone,_id);
+            _dataTable = dbc.CommandFunctionDB("Table_StudentBasic", CommandStr);
+            return _dataTable;
+        }
+
+        /// <summary>
+        /// List to Table 轉換
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="data"></param>
+        /// <returns></returns>
+        public DataTable ConvertToDataTable<T>(IList<T> data)
+        {
+            PropertyDescriptorCollection properties =
+               TypeDescriptor.GetProperties(typeof(T));
+            DataTable table = new DataTable();
+            foreach (PropertyDescriptor prop in properties)
+                table.Columns.Add(prop.Name, Nullable.GetUnderlyingType(prop.PropertyType) ?? prop.PropertyType);
+            foreach (T item in data)
+            {
+                DataRow row = table.NewRow();
+                foreach (PropertyDescriptor prop in properties)
+                    row[prop.Name] = prop.GetValue(item) ?? DBNull.Value;
+                table.Rows.Add(row);
+            }
+            return table;
+
+        }
+        #endregion Parent Pickup 家長接送通知
 
         // 登入觸發
         private void AccountInfoManager_AccountInfoLogInOutCallback(string name, AccountLevel level)
@@ -430,7 +537,11 @@ namespace EnglishClassManager
             frmManualBroadcastEmployee _frmManualemployeeBroadcast = new frmManualBroadcastEmployee();
             _frmManualemployeeBroadcast.ShowDialog();
         }
-
+        private void firebase設定ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmFireBaseSharp _frmFireBaseSharp = new frmFireBaseSharp();
+            _frmFireBaseSharp.Show();
+        }
         #endregion ToolStripMenuItem
 
         private void initialComp()
@@ -457,6 +568,7 @@ namespace EnglishClassManager
             員工出勤紀錄ToolStripMenuItem.Enabled = false;
             推播訊息設定ToolStripMenuItem.Enabled = false;
             刷卡通知設定ToolStripMenuItem.Enabled = false;
+            firebase設定ToolStripMenuItem.Enabled = false;
         }
 
         private void initialTalbe()
@@ -555,6 +667,9 @@ namespace EnglishClassManager
                     this.刷卡通知設定ToolStripMenuItem.Enabled = true;
                     //Application.DoEvents();
                     break;
+                case "Firebase設定":
+                    this.firebase設定ToolStripMenuItem.Enabled = true;
+                    break;
             }
         }
         #endregion Account Method
@@ -567,6 +682,6 @@ namespace EnglishClassManager
             _frmSystemLog.Hide(); //隱藏式窗,下次再show出
         }
 
-       
+
     }
 }

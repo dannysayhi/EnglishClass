@@ -33,13 +33,21 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FireSharp, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FireSharp.1.1.0\lib\net45\FireSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FireSharp.Serialization.JsonNet, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FireSharp.Serialization.JsonNet.1.1.0\lib\net45\FireSharp.Serialization.JsonNet.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
-    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="pcsc-sharp, Version=3.1.0.2, Culture=neutral, processorArchitecture=MSIL">
@@ -74,6 +82,10 @@
       <HintPath>..\packages\PushSharp.4.0.10\lib\net45\PushSharp.Windows.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="RestSharp, Version=104.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.104.4.0\lib\net4\RestSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
@@ -92,7 +104,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CardNotice.cs" />
+    <Compile Include="Broadcast\CardNotice\CardNotice.cs" />
     <Compile Include="Broadcast\CardNotice\frmCardNotice.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,6 +184,7 @@
     <Compile Include="EmployeeAttence\EnglishClassManager\EnglishClassDBtestDataSet2TableAdapters.cs" />
     <Compile Include="Flow\FlowControl.cs" />
     <Compile Include="Flow\Flow_Rollcall _Student.cs" />
+    <Compile Include="IFirebaseConfig.cs" />
     <Compile Include="Rollcall\EmployeeRollcall\baseEmployeeRollcall.cs" />
     <Compile Include="Rollcall\StudentRollcall\baseStudentRollcall.cs" />
     <Compile Include="SmartCardReader\SmartCardReader.cs" />
@@ -295,12 +308,21 @@
       <DependentUpon>LogInForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Utility\Encryption\AESEncryption.cs" />
+    <Compile Include="Utility\FileControl\checkText.cs" />
     <Compile Include="Utility\FileControl\INI.cs" />
     <Compile Include="Utility\FileControl\JsonFileControl.cs" />
     <Compile Include="Utility\FileControl\pageControl.cs" />
     <Compile Include="Utility\FileControl\ParameterBase.cs" />
     <Compile Include="Utility\FileControl\PathSort.cs" />
     <Compile Include="Utility\FileControl\XmlFile.cs" />
+    <Compile Include="Utility\FireBaseSharp\Data.cs" />
+    <Compile Include="Utility\FireBaseSharp\frmFireBaseSharp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utility\FireBaseSharp\frmFireBaseSharp.Designer.cs">
+      <DependentUpon>frmFireBaseSharp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\FireBaseSharp\funFireBaseSharp.cs" />
     <Compile Include="Utility\IO\CSVFile.cs" />
     <Compile Include="Utility\IO\DirectoryEx.cs" />
     <Compile Include="Utility\IO\IniFile.cs" />
@@ -430,6 +452,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Utility\Account\LogInForm.resx">
       <DependentUpon>LogInForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utility\FireBaseSharp\frmFireBaseSharp.resx">
+      <DependentUpon>frmFireBaseSharp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Utility\Logging\Form1.resx" />
     <EmbeddedResource Include="Utility\Logging\frmMessageNotification.resx">

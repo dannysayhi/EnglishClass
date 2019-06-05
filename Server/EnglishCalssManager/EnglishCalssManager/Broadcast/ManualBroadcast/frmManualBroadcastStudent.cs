@@ -23,11 +23,7 @@ namespace EnglishCalssManager.Broadcast.ManualBroadcast
     {
         public DatabaseCore dbc = DatabaseManager._databaseCore;
         public DatabaseTable dbt = DatabaseManager._databaseTable;
-        //private SslStream _apnsStream;
-      
-        //public ApplePushChannelSettings;
-        private X509Certificate _certificate;
-        private X509CertificateCollection _certificates;
+
         public frmManualBroadcastStudent()
         {
             InitializeComponent();
@@ -37,56 +33,36 @@ namespace EnglishCalssManager.Broadcast.ManualBroadcast
         private void _frmManualBroadcast_Load(object sender, EventArgs e)
         {
             refreshTable();
-
-            //this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dataGridView1.RowsDefaultCellStyle.WrapMode = DataGridViewTriState.True;//(資料內容)
-            this.dataGridView1.AutoResizeColumns();
-            //this.dataGridView1.DefaultCellStyle.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            //this.dataGridView1.RowsDefaultCellStyle.WrapMode = System.Windows.Forms.DataGridViewTriState.True;   
-            this.dataGridView1.ColumnHeadersDefaultCellStyle.WrapMode = DataGridViewTriState.True;// (標題列)
-            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCellsExceptHeaders;
-            this.dataGridView1.Columns[3].Width = (dataGridView1.Width) * 65 / 100;
-            this.dataGridView1.Refresh();
-
-            dataGridView1.Refresh();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+      
+        private void dataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            switch (e.ColumnIndex)
+            if (e.ColumnIndex == 0)
             {
-                case 4:
-                    dgSend(e.RowIndex, e.ColumnIndex);
-                    refreshTable();
-                    //MessageBox.Show(e.RowIndex.ToString() + ";;;" + e.ColumnIndex.ToString());
-                    break;
-            }
-        }
-
-        private void dgSend(int _rowIndex, int _columnsIndex)
-        {
-            foreach(DataGridViewRow row in dataGridView2.Rows)
-            {
-                if (row.Cells[1].Value!=null && (Boolean)row.Cells[0].Value == true)
+                foreach (DataGridViewRow row in dataGridView2.Rows)
                 {
-                    string MsgName = dataGridView1.Rows[_rowIndex].Cells["MsgName"].Value.ToString();
-                    string Msg = dataGridView1.Rows[_rowIndex].Cells["Msg"].Value.ToString();
-                    Msg = Msg.Replace(@"""", "");
-                    string msg = CardNotice.CardNotice.SendNotificationFromFirebaseCloud(MsgName, Msg);
-                    MessageBox.Show("發送成功!");
+                    if(row.Cells.Count==0)
+                    {
+                        MessageBox.Show("請選擇群組！");
+                    }
+                    if (row.Cells[1].Value != null && (Boolean)row.Cells[0].Value == true)
+                    {
+                        try
+                        {
+                            string MsgName = dataGridView3.Rows[dataGridView3.CurrentRow.Index].Cells["MsgName"].Value.ToString();
+                            string Msg = dataGridView3.Rows[dataGridView3.CurrentRow.Index].Cells["Msg"].Value.ToString();
+                            Msg = Msg.Replace(@"""", "");
+                            string msg = CardNotice.CardNotice.SendNotificationFromFirebaseCloud(MsgName, Msg);
+                            MessageBox.Show("發送成功!");
+                        }
+                        catch (Exception ex)
+                        { }
+                    }
                 }
             }
-
-            /*  Send online*/
-            //SendPushNotification("aa0e8521ac7f3aba7d81a0bbe28007db9ccbbcab8e86deb17434ab4cd2e223e6",
-            //    Msg);
-
-            //CardNotice.CardNotice.SendNotificationFromFirebaseCloud(MsgName, Msg);
-            //CardNotice.SendNotificationFromFirebaseCloud(MsgName, Msg);
-
-
-            /*           */
         }
+  
 
 
         public void refreshTable()
@@ -96,170 +72,68 @@ namespace EnglishCalssManager.Broadcast.ManualBroadcast
             //列出班別ID
             string CommandStr = "Select * from Table_Message";
             _dataTable = dbc.CommandFunctionDB("Table_Message", CommandStr);
-            dataGridView1.DataSource = _dataTable;
+            int i = 0;
+            foreach (DataRow drw in _dataTable.Rows)
+            {
+                //cbox_CourseID.Items.Add(drw.ItemArray[0].ToString());
+                this.dataGridView3.Rows.Insert(i, false, drw.ItemArray[0].ToString(), drw.ItemArray[1].ToString(), drw.ItemArray[2].ToString(),drw.ItemArray[3].ToString());
+                i++;
+            }
 
-            dgBtn();
+            // dgBtn();
         }
 
         private void initialComp()
         {
             DataTable _dataTable = new DataTable();
-            string CommandStr = "Select ClassID from Table_ClassSchedule";
+            string CommandStr = "Select CourseID,CourseName from Table_Course";
             _dataTable = dbc.CommandFunctionDB("Table_ClassSchedule", CommandStr);
-            cbox_ClassID.Items.Add("*");
             int i = 0;
             foreach (DataRow drw in _dataTable.Rows)
             {
-                cbox_ClassID.Items.Add(drw.ItemArray[0].ToString());
-                this.dataGridView2.Rows.Insert(i, false, drw.ItemArray[0].ToString());
+                this.dataGridView2.Rows.Insert(i, false, drw.ItemArray[0].ToString(), drw.ItemArray[1].ToString());
                 i++;
             }
-            cbox_ClassID.Text = cbox_ClassID.Items[0].ToString();
 
+            dataGridView3.RowsDefaultCellStyle.WrapMode = DataGridViewTriState.True;
+            dataGridView3.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
             //dataGridView2.DataSource = _dataTable;
-           
+
 
         }
 
-        private void dgBtn()
+        private void btn_SelAll_Click(object sender, EventArgs e)
         {
-            if (this.dataGridView1.Columns.Count > 4)
+            foreach (DataGridViewRow row in dataGridView2.Rows)
             {
-                //this.dataGridView1.Columns.RemoveAt(4);
-                //this.dataGridView1.Columns.RemoveAt(4);
-                //this.dataGridView1.Columns.RemoveAt(4);
-                this.dataGridView1.Columns.Remove(this.dgBtnSend);
-            }
-
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { this.dgBtnSend });
-
-            this.dgBtnSend.HeaderText = "發送";
-            this.dgBtnSend.Name = "dgBtnSend";
-            this.dgBtnSend.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgBtnSend.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.dgBtnSend.Text = "發送";
-            this.dgBtnSend.UseColumnTextForButtonValue = true;
-            this.dgBtnSend.Width = 80;
-            this.dgBtnSend.DisplayIndex = 4;
-
-            //this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { this.dgBtnCopy, this.dgBtnEdit, this.dgBtnDel });
-            //this.dataGridView1.Columns.Insert(4, this.dgBtnCopy);
-            //this.dataGridView1.Columns.Insert(5, this.dgBtnEdit);
-            //this.dataGridView1.Columns.Insert(6, this.dgBtnDel);
-
-        }
-        protected void btnSendNotification_Click(object sender, int _rowIndex, DataGridViewCellEventArgs e)
-        {
-            {
-                //MessageBox.Show("43434");
-                string msg = CardNotice.CardNotice.SendNotificationFromFirebaseCloud("222", "123");
-                //SendPushNotification("aa0e8521ac7f3aba7d81a0bbe28007db9ccbbcab8e86deb17434ab4cd2e223e6",
-                //dataGridView1.Rows[_rowIndex].Cells["Msg"].Value.ToString());
+                DataGridViewCheckBoxCell chk = (DataGridViewCheckBoxCell)row.Cells[0];
+                chk.Value = true;
             }
         }
 
-        private void SendPushNotification(string deviceToken, string message)
+        private void btn_CleanAll_Click(object sender, EventArgs e)
         {
-            try
+            foreach (DataGridViewRow row in dataGridView2.Rows)
             {
-                //var certificateFilePath = "D:\\BackEnd\\pc_server\\push_notification\\PushNotification\\PushNotification\\Certificates.p12";
-                var certificateFilePath = "Certificates_v3.p12";
-                
-                //Get Certificate
-                var appleCert = System.IO.File.ReadAllBytes(certificateFilePath);
-                //var appleCert = new X509Certificate2(@"C:\filepath.p12", "", X509KeyStorageFlags.MachineKeySet);
-                //_certificate = string.IsNullOrEmpty("") ? new X509Certificate2(File.ReadAllBytes(certificateFilePath)) : new X509Certificate2(File.ReadAllBytes(certificateFilePath), "", X509KeyStorageFlags.MachineKeySet);
-                //_certificates = new X509CertificateCollection { _certificate };
-                // Configuration (NOTE: .pfx can also be used here)
-                //var config = new ApnsConfiguration(ApnsConfiguration.ApnsServerEnvironment.Production, certificateFilePath, "b22303409");
-                 var config = new ApnsConfiguration(ApnsConfiguration.ApnsServerEnvironment.Production, certificateFilePath, "b22303409");
-                
-                var connection = new ApnsServiceConnection(config);
-                MessageBox.Show(config.Certificate.ToString());
+                DataGridViewCheckBoxCell chk = (DataGridViewCheckBoxCell)row.Cells[0];
+                chk.Value = false;
+            }
+        }
 
-                //config.SkipSsl = true;
-                //MessageBox.Show(config.ValidateServerCertificate.ToString());
-                // Create a new broker
-                var apnsBroker = new ApnsServiceBroker(config);
-                // Wire up events
-                apnsBroker.OnNotificationFailed += (notification, aggregateEx) =>
+        private void btn_Resv_Click(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow row in dataGridView2.Rows)
+            {
+                DataGridViewCheckBoxCell chk = (DataGridViewCheckBoxCell)row.Cells[0];
+                if ((bool)chk.Value == true)
                 {
-
-                    aggregateEx.Handle(ex =>
-                    {
-
-                        // See what kind of exception it was to further diagnose
-                        if (ex is ApnsNotificationException)
-                        {
-                            //MessageBox.Show("kill me");
-
-                            var notificationException = (ApnsNotificationException)ex;
-
-                            // Deal with the failed notification
-                            var apnsNotification = notificationException.Notification;
-                            var statusCode = notificationException.ErrorStatusCode;
-                            string desc = $"Apple Notification Failed: ID={apnsNotification.Identifier}, Code={statusCode}";
-                            Console.WriteLine(desc);
-                            MessageBox.Show(apnsNotification.ToString());
-
-                            //lblStatus.Text = desc;
-                        }
-                        else
-                        {
-                            //MessageBox.Show("help");
-                            string desc = $"Apple Notification Failed for some unknown reason : {ex.InnerException}";
-                            // Inner exception might hold more useful information like an ApnsConnectionException			
-                            Console.WriteLine(desc);
-                            MessageBox.Show(desc);
-
-                            //lblStatus.Text = desc;
-                        }
-
-                        // Mark it as handled
-                        return true;
-                    });
-                };
-
-                apnsBroker.OnNotificationSucceeded += (notification) =>
-                {
-                    MessageBox.Show("Apple Notification Sent successfully!");
-                    //lblStatus.Text = "Apple Notification Sent successfully!";
-                };
-
-                var fbs = new FeedbackService(config);
-                fbs.FeedbackReceived += (string devicToken, DateTime timestamp) =>
-                {
-                    // Remove the deviceToken from your database
-                    // timestamp is the time the token was reported as expired
-                };
-
-                // Start Proccess 
-                apnsBroker.Start();
-                //nsNotification
-                if (deviceToken != "")
-                {
-                    //MessageBox.Show(("{\"aps\":{\"badge\":1,\"sound\":\"default\",\"alert\":\"" + (message + "\"}}")));
-                    apnsBroker.QueueNotification(new ApnsNotification
-                    {
-                        DeviceToken = deviceToken,
-
-                        Payload = JObject.Parse(("{\"aps\":{\"badge\":1,\"sound\":\"default\",\"alert\":\"" + (message + "\"}}")))
-                    });
+                    chk.Value = false;
                 }
-
-                apnsBroker.Stop();
-
+                else
+                {
+                    chk.Value = true;
+                }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-                throw;
-            }
-        }
-
-        private void cbox_ClassID_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -84,7 +84,7 @@ namespace EnglishCalssManager.Rollcall.EmployeeRollcall
         {
             string datelong_del_start = "";
             string CommandStr = "";
-            for (int i = 0; i < 50; i++)
+            for (int i = 0; i < 70; i++)
             {
                 datelong_del_start = DateTime.Now.AddDays(-200 - i).ToString("yyyyMMdd");
                 CommandStr = string.Format(" select count(*) from sysobjects where name='Table_EmployeeRollcall_{0}' "
