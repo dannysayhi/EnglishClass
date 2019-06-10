@@ -134,10 +134,12 @@ namespace EnglishClassManager.Rollcall.StudentRollcall
                 }
                 else
                 {
-                    _getCount = "0";
-                    _getCount = (Convert.ToInt16(_getCount) + 1).ToString();
-           
-                    functionStudentRollcall.studRCstart(date, dataGridView1.Rows[oneCell.RowIndex].Cells["StudentID"].Value.ToString(), _getCount, "M");
+                            _getCount = "0";
+                            _getCount = (Convert.ToInt16(_getCount) + 1).ToString();
+
+                            functionStudentRollcall.studRCstart(date, dataGridView1.Rows[oneCell.RowIndex].Cells["StudentID"].Value.ToString(), _getCount, "M");
+                            string msg = CardNotice.SendNotificationFromFirebaseCloud("人工點名通知", dataGridView1.Rows[oneCell.RowIndex].Cells["TwName"].Value.ToString() + "第" + _getCount + "次點名成功！--人工點名通知").ToString();
+                            MessageBox.Show(dataGridView1.Rows[oneCell.RowIndex].Cells["TwName"].Value.ToString() + "第" + _getCount + "次點名成功--人工點名通知！", "人工點名通知");
                             //CommandStr = string.Format(
                             //    "insert into EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_{0} values('{1}', '{2}', '{3}', {4})"
                             //    , date

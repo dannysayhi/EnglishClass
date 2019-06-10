@@ -70,10 +70,16 @@
             this.btnLogOut = new System.Windows.Forms.Button();
             this.labAccountName = new System.Windows.Forms.Label();
             this.labAccountLevel = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lb_parentNotice = new System.Windows.Forms.Label();
             this.DBinitial = new System.Windows.Forms.Timer(this.components);
             this.lb_DBinitialCount = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.StudentID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TwName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ParentName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Groups = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sendTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -351,7 +357,7 @@
             // 
             // btn_test
             // 
-            this.btn_test.Location = new System.Drawing.Point(952, 30);
+            this.btn_test.Location = new System.Drawing.Point(720, 30);
             this.btn_test.Name = "btn_test";
             this.btn_test.Size = new System.Drawing.Size(75, 23);
             this.btn_test.TabIndex = 2;
@@ -371,14 +377,14 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(791, 30);
+            this.textBox1.Location = new System.Drawing.Point(559, 30);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(155, 22);
             this.textBox1.TabIndex = 4;
             // 
             // btnLogIn
             // 
-            this.btnLogIn.Location = new System.Drawing.Point(791, 114);
+            this.btnLogIn.Location = new System.Drawing.Point(832, 85);
             this.btnLogIn.Name = "btnLogIn";
             this.btnLogIn.Size = new System.Drawing.Size(75, 23);
             this.btnLogIn.TabIndex = 5;
@@ -388,7 +394,7 @@
             // 
             // btnAccountEditor
             // 
-            this.btnAccountEditor.Location = new System.Drawing.Point(791, 180);
+            this.btnAccountEditor.Location = new System.Drawing.Point(832, 114);
             this.btnAccountEditor.Name = "btnAccountEditor";
             this.btnAccountEditor.Size = new System.Drawing.Size(75, 23);
             this.btnAccountEditor.TabIndex = 6;
@@ -398,7 +404,7 @@
             // 
             // btnLogOut
             // 
-            this.btnLogOut.Location = new System.Drawing.Point(791, 151);
+            this.btnLogOut.Location = new System.Drawing.Point(913, 85);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(75, 23);
             this.btnLogOut.TabIndex = 7;
@@ -409,7 +415,7 @@
             // labAccountName
             // 
             this.labAccountName.AutoSize = true;
-            this.labAccountName.Location = new System.Drawing.Point(791, 62);
+            this.labAccountName.Location = new System.Drawing.Point(830, 30);
             this.labAccountName.Name = "labAccountName";
             this.labAccountName.Size = new System.Drawing.Size(137, 12);
             this.labAccountName.TabIndex = 8;
@@ -418,21 +424,21 @@
             // labAccountLevel
             // 
             this.labAccountLevel.AutoSize = true;
-            this.labAccountLevel.Location = new System.Drawing.Point(791, 91);
+            this.labAccountLevel.Location = new System.Drawing.Point(830, 52);
             this.labAccountLevel.Name = "labAccountLevel";
             this.labAccountLevel.Size = new System.Drawing.Size(137, 12);
             this.labAccountLevel.TabIndex = 9;
             this.labAccountLevel.Text = "______________________";
             // 
-            // label2
+            // lb_parentNotice
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("微軟正黑體", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label2.Location = new System.Drawing.Point(11, 86);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(209, 40);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "家長接送通知";
+            this.lb_parentNotice.AutoSize = true;
+            this.lb_parentNotice.Font = new System.Drawing.Font("微軟正黑體", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lb_parentNotice.Location = new System.Drawing.Point(11, 85);
+            this.lb_parentNotice.Name = "lb_parentNotice";
+            this.lb_parentNotice.Size = new System.Drawing.Size(209, 40);
+            this.lb_parentNotice.TabIndex = 11;
+            this.lb_parentNotice.Text = "家長接送通知";
             // 
             // DBinitial
             // 
@@ -443,7 +449,7 @@
             // lb_DBinitialCount
             // 
             this.lb_DBinitialCount.AutoSize = true;
-            this.lb_DBinitialCount.Location = new System.Drawing.Point(262, 108);
+            this.lb_DBinitialCount.Location = new System.Drawing.Point(680, 75);
             this.lb_DBinitialCount.Name = "lb_DBinitialCount";
             this.lb_DBinitialCount.Size = new System.Drawing.Size(94, 12);
             this.lb_DBinitialCount.TabIndex = 12;
@@ -452,11 +458,60 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(18, 151);
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.StudentID,
+            this.TwName,
+            this.ParentName,
+            this.Phone,
+            this.Groups,
+            this.sendTime});
+            this.dataGridView1.Location = new System.Drawing.Point(18, 142);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(743, 391);
             this.dataGridView1.TabIndex = 35;
+            // 
+            // StudentID
+            // 
+            this.StudentID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.StudentID.FillWeight = 5F;
+            this.StudentID.HeaderText = "學生編號";
+            this.StudentID.Name = "StudentID";
+            // 
+            // TwName
+            // 
+            this.TwName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.TwName.FillWeight = 20F;
+            this.TwName.HeaderText = "學生姓名";
+            this.TwName.Name = "TwName";
+            // 
+            // ParentName
+            // 
+            this.ParentName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ParentName.FillWeight = 20F;
+            this.ParentName.HeaderText = "家長姓名";
+            this.ParentName.Name = "ParentName";
+            // 
+            // Phone
+            // 
+            this.Phone.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Phone.FillWeight = 20F;
+            this.Phone.HeaderText = "家長電話";
+            this.Phone.Name = "Phone";
+            // 
+            // Groups
+            // 
+            this.Groups.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Groups.FillWeight = 10F;
+            this.Groups.HeaderText = "群組";
+            this.Groups.Name = "Groups";
+            // 
+            // sendTime
+            // 
+            this.sendTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.sendTime.FillWeight = 25F;
+            this.sendTime.HeaderText = "發送時間";
+            this.sendTime.Name = "sendTime";
             // 
             // frmMain
             // 
@@ -465,7 +520,7 @@
             this.ClientSize = new System.Drawing.Size(1036, 554);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.lb_DBinitialCount);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lb_parentNotice);
             this.Controls.Add(this.labAccountLevel);
             this.Controls.Add(this.labAccountName);
             this.Controls.Add(this.btnLogOut);
@@ -529,7 +584,7 @@
         private System.Windows.Forms.ToolStripMenuItem 系統紀錄ToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem 員工班別管理ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 歷史訊息紀錄ToolStripMenuItem;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lb_parentNotice;
         private System.Windows.Forms.ToolStripMenuItem 資料庫管理ToolStripMenuItem;
         private System.Windows.Forms.Timer DBinitial;
         private System.Windows.Forms.Label lb_DBinitialCount;
@@ -537,6 +592,12 @@
         private System.Windows.Forms.ToolStripMenuItem 員工ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem firebase設定ToolStripMenuItem;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn StudentID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TwName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ParentName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Phone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Groups;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sendTime;
     }
 }
 

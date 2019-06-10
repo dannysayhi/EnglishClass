@@ -1,4 +1,5 @@
-﻿using EnglishClassManager.SystemManager.MemberList.StudentBook;
+﻿using EnglishCalssManager.Utility.FireBaseSharp;
+using EnglishClassManager.SystemManager.MemberList.StudentBook;
 using EnglishClassManager.Utility.Database;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,7 @@ namespace EnglishCalssManager.SystemManager.MemberList.StudentBook
     {
         public static DatabaseCore dbc = DatabaseManager._databaseCore;
         public static DatabaseTable dbt = DatabaseManager._databaseTable;
+        funFireBaseSharp _funFireBaseSharp = new funFireBaseSharp();
 
         public string txt_CardNumber = "";
         public string txt_EnName = "";
@@ -29,7 +31,7 @@ namespace EnglishCalssManager.SystemManager.MemberList.StudentBook
         public string txt_TwName = "";
         public string cbox_Senior = "";
         public string cbox_Onschool = "";
-
+        
         public void NewStudent()
         {
             string CommandStr = string.Format(" INSERT INTO[dbo].[Table_StudentBasic] "
@@ -60,15 +62,28 @@ namespace EnglishCalssManager.SystemManager.MemberList.StudentBook
                + txt_Parents3 + "','"
                + txt_Parents3PhoneNumber + "')";
             dbc.ExecuteNonQuery(CommandStr);
+
+            //存入Firebase 
+
         }
+
+        public void insertFirebaseTable(string _Firetable, Data _data)
+        {
+            _funFireBaseSharp.connection();
+            _funFireBaseSharp.insert(_Firetable, _data);
+            _funFireBaseSharp.disconnection();
+        }
+        public void DelStudent(string _Firetpath)
+        {
+            _funFireBaseSharp.connection();
+            _funFireBaseSharp.delete(_Firetpath);
+            _funFireBaseSharp.disconnection();
+        }
+
         public void LeaveStudent()
         {
 
         }
-        public void DelStudent()
-        {
-
-        }
-
+      
     }
 }

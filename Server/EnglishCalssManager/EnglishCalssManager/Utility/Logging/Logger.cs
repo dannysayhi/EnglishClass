@@ -194,7 +194,7 @@ namespace AOISystem.Utility.Logging
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Log檔名稱設定錯誤" + ex.Message);
+                MessageBox.Show("Log檔名稱設定錯誤："+ path + ex.Message);
                 // Exception(ex);
             }
         }

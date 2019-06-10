@@ -73,6 +73,21 @@
             this.lb_pageNum = new System.Windows.Forms.LinkLabel();
             this.lb_startpage = new System.Windows.Forms.LinkLabel();
             this.btn_PwdRegist = new System.Windows.Forms.Button();
+            this.StudentID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CardNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TwName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EnName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Home = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PhoneNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.School = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Senior = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.OnSchool = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Parents1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Parents1PhoneNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Parents2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Parents2PhoneNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Parents3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Parents3PhoneNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -121,6 +136,22 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.StudentID,
+            this.CardNumber,
+            this.TwName,
+            this.EnName,
+            this.Home,
+            this.PhoneNumber,
+            this.School,
+            this.Senior,
+            this.OnSchool,
+            this.Parents1,
+            this.Parents1PhoneNumber,
+            this.Parents2,
+            this.Parents2PhoneNumber,
+            this.Parents3,
+            this.Parents3PhoneNumber});
             this.tableLayoutPanel1.SetColumnSpan(this.dataGridView1, 11);
             this.dataGridView1.Location = new System.Drawing.Point(3, 145);
             this.dataGridView1.Name = "dataGridView1";
@@ -551,6 +582,81 @@
             this.btn_PwdRegist.UseVisualStyleBackColor = true;
             this.btn_PwdRegist.Click += new System.EventHandler(this.btn_PwdRegist_Click);
             // 
+            // StudentID
+            // 
+            this.StudentID.HeaderText = "學生編號";
+            this.StudentID.Name = "StudentID";
+            // 
+            // CardNumber
+            // 
+            this.CardNumber.HeaderText = "卡號";
+            this.CardNumber.Name = "CardNumber";
+            // 
+            // TwName
+            // 
+            this.TwName.HeaderText = "姓名(中)";
+            this.TwName.Name = "TwName";
+            // 
+            // EnName
+            // 
+            this.EnName.HeaderText = "姓名(En)";
+            this.EnName.Name = "EnName";
+            // 
+            // Home
+            // 
+            this.Home.HeaderText = "住址";
+            this.Home.Name = "Home";
+            // 
+            // PhoneNumber
+            // 
+            this.PhoneNumber.HeaderText = "電話號碼(帳號)";
+            this.PhoneNumber.Name = "PhoneNumber";
+            // 
+            // School
+            // 
+            this.School.HeaderText = "學校";
+            this.School.Name = "School";
+            // 
+            // Senior
+            // 
+            this.Senior.HeaderText = "年級";
+            this.Senior.Name = "Senior";
+            // 
+            // OnSchool
+            // 
+            this.OnSchool.HeaderText = "在校";
+            this.OnSchool.Name = "OnSchool";
+            // 
+            // Parents1
+            // 
+            this.Parents1.HeaderText = "家長(1)";
+            this.Parents1.Name = "Parents1";
+            // 
+            // Parents1PhoneNumber
+            // 
+            this.Parents1PhoneNumber.HeaderText = "家長(1)電話";
+            this.Parents1PhoneNumber.Name = "Parents1PhoneNumber";
+            // 
+            // Parents2
+            // 
+            this.Parents2.HeaderText = "家長(2)";
+            this.Parents2.Name = "Parents2";
+            // 
+            // Parents2PhoneNumber
+            // 
+            this.Parents2PhoneNumber.HeaderText = "家長(2)電話";
+            this.Parents2PhoneNumber.Name = "Parents2PhoneNumber";
+            // 
+            // Parents3
+            // 
+            this.Parents3.HeaderText = "家長(3)";
+            this.Parents3.Name = "Parents3";
+            // 
+            // Parents3PhoneNumber
+            // 
+            this.Parents3PhoneNumber.HeaderText = "家長(3)電話";
+            this.Parents3PhoneNumber.Name = "Parents3PhoneNumber";
+            // 
             // frmStudentBook
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -616,5 +722,20 @@
         private System.Windows.Forms.TextBox txt_CHECKIDENT;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btn_PwdRegist;
+        private System.Windows.Forms.DataGridViewTextBoxColumn StudentID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CardNumber;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TwName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn EnName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Home;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PhoneNumber;
+        private System.Windows.Forms.DataGridViewTextBoxColumn School;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Senior;
+        private System.Windows.Forms.DataGridViewTextBoxColumn OnSchool;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Parents1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Parents1PhoneNumber;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Parents2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Parents2PhoneNumber;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Parents3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Parents3PhoneNumber;
     }
 }

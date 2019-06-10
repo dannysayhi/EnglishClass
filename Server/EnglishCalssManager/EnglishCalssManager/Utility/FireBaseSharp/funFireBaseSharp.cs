@@ -15,10 +15,10 @@ namespace EnglishCalssManager.Utility.FireBaseSharp
     {
         IFirebaseConfig config = new FirebaseConfig
         {
-            AuthSecret = "gSLuhjaxGzidY1Q2bpetzHySg7XDockgKX5NXdjU",
-            BasePath = "https://rfid-4b9d3.firebaseio.com/"
-            //AuthSecret = "FAzRi11bjsEuKjNuGIf27gznMamj2mBRLPNFq9YX",
-            //BasePath = "https://myapplicationfirebasetes-7c3dc.firebaseio.com/"
+            //AuthSecret = "gSLuhjaxGzidY1Q2bpetzHySg7XDockgKX5NXdjU",
+            //BasePath = "https://rfid-4b9d3.firebaseio.com/"
+            AuthSecret = "FAzRi11bjsEuKjNuGIf27gznMamj2mBRLPNFq9YX",
+            BasePath = "https://myapplicationfirebasetes-7c3dc.firebaseio.com/"
         };
 
         IFirebaseClient client;
@@ -45,6 +45,21 @@ namespace EnglishCalssManager.Utility.FireBaseSharp
         {
             client.Delete("https://myapplicationfirebasetes-7c3dc.firebaseio.com/");
         }
+
+        public async Task<string> ISresponse()
+        {
+            string Str_response = "null";
+            try
+            {
+                FirebaseResponse response = await client.GetTaskAsync("Pickup/");
+                Str_response = response.Body;
+            }
+            catch (Exception ex)
+            { }
+           
+            return Str_response;
+        }
+
         /// <summary>
         /// Retrieving
         /// </summary>
@@ -76,12 +91,11 @@ namespace EnglishCalssManager.Utility.FireBaseSharp
             return vehicles;
         }
 
-        public async void insert(Data _data)
+        public async void insert(string _path, object _data)
         {
-            SetResponse response = await client.SetTaskAsync("Pickup/" + _data.ID, _data);
+            SetResponse response = await client.SetTaskAsync(_path, _data);
             Data result = response.ResultAs<Data>();
         }
-
 
         /// <summary>
         /// 新增
@@ -94,7 +108,7 @@ namespace EnglishCalssManager.Utility.FireBaseSharp
             var data = new Data
             {
                 ID = _id,
-                phone = _phone,
+                Phone = _phone,
                 Groups = _groups,
             };
 
@@ -148,9 +162,9 @@ namespace EnglishCalssManager.Utility.FireBaseSharp
         /// base fun Delete
         /// </summary>
         /// <param name="_ID"></param>
-        public async void fun_delete(string _ID)
+        public async void delete(string _ID)
         {
-            FirebaseResponse response = await client.DeleteTaskAsync("Pickup/" + _ID);
+            FirebaseResponse response = await client.DeleteTaskAsync(_ID);
            // MessageBox.Show("Data Delete  " + _ID + "  successfully");
         }
 

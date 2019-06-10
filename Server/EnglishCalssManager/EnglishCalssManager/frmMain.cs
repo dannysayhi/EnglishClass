@@ -151,47 +151,61 @@ namespace EnglishClassManager
             DataTable dt = new DataTable();
             List<Data> _vehicles = new List<Data>();
             _vehicles_new.Clear();
-            _vehicles = await _funFireBaseSharp.Retrieving();
-            if (_vehicles != null)
+            if (_funFireBaseSharp.IsConnect())
             {
-                foreach (Data d in _vehicles)
+                if (await _funFireBaseSharp.ISresponse() !="null")
                 {
-                    if (d != null && d.ID!=null)
+                    _vehicles = await _funFireBaseSharp.Retrieving();
+                    if (_vehicles != null)
                     {
-                        d.TwName = "Test";
-                        d.Parent = "Test";
-                        dt_temp = selectPickup(d.phone.ToString(),d.ID.ToString());
-
-                        foreach (DataRow od in dt_temp.Rows)
+                        foreach (Data d in _vehicles)
                         {
-                            try
+                            if (d != null && d.ID != null)
                             {
-                                d.TwName = od[1].ToString();
-                                d.Parent = od[2].ToString();
-                            }
-                            catch(Exception ex)
-                            {
+                                d.TwName = "Test";
+                                d.Parent = "Test";
+                                //d.sendTime = "Text";
+                                dt_temp = selectPickup(d.Phone.ToString(), d.ID.ToString());
 
+                                foreach (DataRow od in dt_temp.Rows)
+                                {
+                                    try
+                                    {
+                                        d.TwName = od[1].ToString();
+                                        d.Parent = od[2].ToString();
+                                    }
+                                    catch (Exception ex)
+                                    {
+
+                                    }
+                                    _vehicles_new.Add(d);
+                                }
                             }
-                            _vehicles_new.Add(d);
                         }
-                        //d.TwName = dt_temp.Rows[0][1].ToString();
-                        //d.Parent = dt_temp.Rows[0][2].ToString();
-
-                        //for (int i = 0; i < dt.Rows.Count; i++)
-                        //{
-                        //    if (d.ID.ToString() != dt.Rows[i][0].ToString())
-                        //    {
-                        
-                        //    }
-                        //}
-                       // _funFireBaseSharp.fun_delete(i.ID.ToString());
+                        dt = ConvertToDataTable(_vehicles_new);
                     }
+                    dataGridView1.Rows.Clear();//清空DG
+                    int i = 0;
+                    foreach (DataRow drw in dt.Rows)
+                    {
+                        this.dataGridView1.Rows.Insert(i, drw.ItemArray[0].ToString(), drw.ItemArray[3].ToString(), drw.ItemArray[4].ToString(), drw.ItemArray[1].ToString(), drw.ItemArray[2].ToString(), drw.ItemArray[5].ToString());
+                        i++;
+                    }
+                    lb_parentNotice.ForeColor = Color.Black;
+                    lb_parentNotice.Text = "家長接送通知---已連線！";
                 }
-                dt = ConvertToDataTable(_vehicles_new);
+                else
+                {
+                    lb_parentNotice.ForeColor = Color.Red;
+                    lb_parentNotice.Text = "家長接送通知---斷線！";
+                }
             }
-            
-            dataGridView1.DataSource = dt;
+            else
+            {
+                lb_parentNotice.ForeColor = Color.Red;
+                lb_parentNotice.Text = "家長接送通知---斷線！";
+            }
+            label1.Text = "現在時間： " + DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss");
         }
 
         private DataTable selectPickup(string _phone,string _id)

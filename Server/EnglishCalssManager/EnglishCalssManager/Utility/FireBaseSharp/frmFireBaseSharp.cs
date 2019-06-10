@@ -63,8 +63,9 @@ namespace EnglishCalssManager.Utility.FireBaseSharp
                 var data = new Data
                 {
                     ID = txt_ID.Text,
-                    phone = txt_phone.Text,
+                    Phone = txt_phone.Text,
                     Groups = txt_Groups.Text,
+                    sendTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")
                 };
                 if (txt_ID.Text == "" || txt_phone.Text == "" || !Regex.IsMatch(txt_ID.Text, RegularExp.NumericOrLetter) || !Regex.IsMatch(txt_ID.Text, RegularExp.NumbericOrLetterOrChinese))
                 {
@@ -72,7 +73,7 @@ namespace EnglishCalssManager.Utility.FireBaseSharp
                 }
                 else
                 {
-                    _funFireBaseSharp.insert(data);
+                    _funFireBaseSharp.insert("Pickup/" + data.ID, data);
                 }
                 RefreshTable();
             }
@@ -103,7 +104,7 @@ namespace EnglishCalssManager.Utility.FireBaseSharp
                     }
                     else
                     {
-                        _funFireBaseSharp.fun_delete(dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[0].Value.ToString());
+                        _funFireBaseSharp.delete("Pickup/" + dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[0].Value.ToString());
                     }
                 }
             }

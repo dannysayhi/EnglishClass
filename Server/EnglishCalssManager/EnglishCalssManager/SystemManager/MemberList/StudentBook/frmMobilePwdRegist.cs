@@ -1,4 +1,5 @@
-﻿using EnglishClassManager.Utility.Database;
+﻿using EnglishCalssManager.Utility.FireBaseSharp;
+using EnglishClassManager.Utility.Database;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,6 +16,8 @@ namespace EnglishCalssManager.SystemManager.MemberList.StudentBook
     {
         public static DatabaseCore dbc = DatabaseManager._databaseCore;
         public static DatabaseTable dbt = DatabaseManager._databaseTable;
+        baseStudentBook _baseStudentBook = new baseStudentBook();
+
         private string _studentID = "";
         private string _twName = "";
         private string _phoneNum = "";
@@ -81,8 +84,22 @@ namespace EnglishCalssManager.SystemManager.MemberList.StudentBook
                 dbc.ExecuteNonQuery(CommandStr);
             }
             //MessageBox.Show(string.Format("寫入密碼：'{0}'",txt_NewPwd.Text));
+            insertFirebase();
             lb_oldPwd.Text = lb_txtOldPwd + txt_NewPwd.Text;
             txt_NewPwd.Text = "";
+
+        }
+        private void insertFirebase()
+        {
+            // Insert to Firebase
+            var data_user = new Data
+            {
+                ID = _studentID,
+                Phone = _phoneNum,
+                Password = txt_NewPwd.Text,
+                sendTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")
+            };
+            _baseStudentBook.insertFirebaseTable("User/" + data_user.Phone, data_user);
         }
     }
 }

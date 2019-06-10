@@ -13,6 +13,7 @@ using EnglishCalssManager.SystemManager.MemberList.StudentBook;
 using AOISystem.Utility.Logging;
 using System.Text.RegularExpressions;
 using SmartCardSystem;
+using EnglishCalssManager.Utility.FireBaseSharp;
 
 namespace EnglishClassManager.SystemManager.MemberList.StudentBook
 {
@@ -63,6 +64,10 @@ namespace EnglishClassManager.SystemManager.MemberList.StudentBook
             string maxStdID = dbc.strExecuteScalar(CommandStr);
             refreshTable(maxStdID);
             }
+
+            //insert Firebase
+            insertFirebase();
+
             //dataGridView1.DataSource = _dataTable;
             //dataGridView1.Update(); dataGridView1.Refresh();
         }
@@ -70,6 +75,7 @@ namespace EnglishClassManager.SystemManager.MemberList.StudentBook
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             Log.Trace(logTitle + btnUpdate.Name.ToString());
+            string oldPhoneNum = dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[5].Value.ToString();
             DataTable _dataTable = new DataTable();
             initialText();
             string CommandStr = string.Format("update Table_StudentBasic set " +
@@ -102,10 +108,44 @@ namespace EnglishClassManager.SystemManager.MemberList.StudentBook
                           txt_StudentID.Text);
             _dataTable = dbc.CommandFunctionDB("Table_StudentBook", CommandStr);
             refreshTable(txt_StudentID.Text);
+
+            //del firebase
+            _baseStudentBook.DelStudent("User/" + oldPhoneNum);
+            //insert Firebase
+            insertFirebase();
+
             //_dataTable = dbc.InsertToDB("Table_StudentBasic", FieldDD, ValueDD, TypeATT);
             //dataGridView1.DataSource = _dataTable;
-           // dataGridView1.Update(); dataGridView1.Refresh();
+            // dataGridView1.Update(); dataGridView1.Refresh();
         }
+
+        /// <summary>
+        /// Insert Firebase member list table "User/"
+        /// </summary>
+        private void insertFirebase()
+        {
+            // Insert to Firebase
+            var data_user = new Data
+            {
+                ID = txt_StudentID.Text,
+                Phone = txt_PhoneNumber.Text,
+                TwName = txt_TwName.Text,
+                Username = txt_Parents1.Text,
+                Permission = "toParent",
+                sendTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")
+            };
+            _baseStudentBook.insertFirebaseTable("User/"+ data_user.Phone, data_user);
+
+            var data_studentID = new Data
+            {
+                ID = txt_StudentID.Text,
+                Phone = txt_PhoneNumber.Text,
+                TwName = txt_TwName.Text,
+                sendTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")
+            };
+            _baseStudentBook.insertFirebaseTable("Student/"+data_studentID.ID , data_studentID);
+        }
+
         private void btnDelete_Click(object sender, EventArgs e)
         {
             Log.Trace(logTitle + btnDelete.Name.ToString());
@@ -124,6 +164,7 @@ namespace EnglishClassManager.SystemManager.MemberList.StudentBook
           , dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[0].Value.ToString());
             _dataTable = dbc.CommandFunctionDB("Table_StudentBasic", CommandStr);
             clearFun();
+            _baseStudentBook.DelStudent("Student/" + txt_PhoneNumber.Text);
             refreshTable(txt_StudentID.Text);
             //dataGridView1.DataSource = _dataTable;
             //dataGridView1.Update(); dataGridView1.Refresh();
@@ -185,7 +226,17 @@ namespace EnglishClassManager.SystemManager.MemberList.StudentBook
                 + " FETCH NEXT " + nextpage + " ROWS ONLY"
                 ;
             _dataTable = dbc.CommandFunctionDB("Table_StudentBasic", CommandStr);
-            dataGridView1.DataSource = _dataTable;
+           // dataGridView1.DataSource = _dataTable;
+            dataGridView1.Rows.Clear();//清空DG
+            int i = 0;
+            foreach (DataRow drw in _dataTable.Rows)
+            {
+                this.dataGridView1.Rows.Insert(i, drw.ItemArray[0].ToString(), drw.ItemArray[1].ToString(), drw.ItemArray[2].ToString(), drw.ItemArray[3].ToString(), drw.ItemArray[4].ToString(), drw.ItemArray[5].ToString(),
+                 drw.ItemArray[6].ToString(), drw.ItemArray[7].ToString(), drw.ItemArray[8].ToString(), drw.ItemArray[9].ToString(), drw.ItemArray[4].ToString(), drw.ItemArray[10].ToString(),
+                 drw.ItemArray[11].ToString(), drw.ItemArray[12].ToString(), drw.ItemArray[13].ToString());
+                i++;
+            }
+
             lb_pageNum.Text = "第- " + ((Convert.ToInt16(startpage) / Convert.ToInt16(nextpage) + 1).ToString()) + " -頁";
 
         }
@@ -340,7 +391,7 @@ namespace EnglishClassManager.SystemManager.MemberList.StudentBook
             txt_Parents2PhoneNumber.Text= dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[12].Value.ToString();
              txt_Parents3.Text = dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[13].Value.ToString();
              txt_Parents3PhoneNumber.Text= dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[14].Value.ToString();
-             txt_PhoneNumber.Text= dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[10].Value.ToString();
+             txt_PhoneNumber.Text= dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[5].Value.ToString();
             txt_School.Text= dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[6].Value.ToString();
              txt_StudentID.Text= dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[0].Value.ToString();
             txt_TwName.Text= dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[2].Value.ToString();
