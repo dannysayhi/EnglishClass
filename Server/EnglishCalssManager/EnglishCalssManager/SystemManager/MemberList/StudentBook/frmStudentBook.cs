@@ -26,6 +26,9 @@ namespace EnglishClassManager.SystemManager.MemberList.StudentBook
         public string startpage = "0";
         public int nextpage = 20;
         private string logTitle = "學生通訊錄：";
+        private string temp_oldphonenum = "";
+        funFireBaseSharp _funFireBaseSharp = new funFireBaseSharp();
+
 
         public frmStudentBook()
         {
@@ -66,7 +69,14 @@ namespace EnglishClassManager.SystemManager.MemberList.StudentBook
             }
 
             //insert Firebase
-            insertFirebase();
+            if (_funFireBaseSharp.IsConnect())
+            {
+                insertFirebase();
+            }
+            else
+            {
+                MessageBox.Show("Firebase 斷線");
+            }
 
             //dataGridView1.DataSource = _dataTable;
             //dataGridView1.Update(); dataGridView1.Refresh();
@@ -108,11 +118,21 @@ namespace EnglishClassManager.SystemManager.MemberList.StudentBook
                           txt_StudentID.Text);
             _dataTable = dbc.CommandFunctionDB("Table_StudentBook", CommandStr);
             refreshTable(txt_StudentID.Text);
-
-            //del firebase
-            _baseStudentBook.DelStudent("User/" + oldPhoneNum);
-            //insert Firebase
-            insertFirebase();
+            _funFireBaseSharp.connection();
+            if (_funFireBaseSharp.IsConnect())
+            {
+                //insert Firebase
+                insertFirebase();
+                //del firebase
+                if (txt_PhoneNumber.Text!= temp_oldphonenum)
+                {
+                    _baseStudentBook.DelStudent("User/" + oldPhoneNum);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Firebase 斷線");
+            }
 
             //_dataTable = dbc.InsertToDB("Table_StudentBasic", FieldDD, ValueDD, TypeATT);
             //dataGridView1.DataSource = _dataTable;
@@ -122,19 +142,23 @@ namespace EnglishClassManager.SystemManager.MemberList.StudentBook
         /// <summary>
         /// Insert Firebase member list table "User/"
         /// </summary>
-        private void insertFirebase()
+        private async void insertFirebase()
         {
-            // Insert to Firebase
-            var data_user = new Data
+            object tempData = new object();
+            Data data_user = new Data();
+            tempData =  await _baseStudentBook.getFirebaseTable("User/" + txt_PhoneNumber.Text);
+            if(tempData!=null)
             {
-                ID = txt_StudentID.Text,
-                Phone = txt_PhoneNumber.Text,
-                TwName = txt_TwName.Text,
-                Username = txt_Parents1.Text,
-                Permission = "toParent",
-                sendTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")
-            };
-            _baseStudentBook.insertFirebaseTable("User/"+ data_user.Phone, data_user);
+                data_user = (Data)tempData;
+            }
+            data_user.ID = txt_StudentID.Text;
+            data_user.Phone = txt_PhoneNumber.Text;
+            data_user.TwName = txt_TwName.Text;
+            data_user.Username = txt_Parents1.Text;
+            data_user.Permission = "toParent";
+            data_user.sendTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+            // Insert to Firebase
+            _baseStudentBook.updateFirebaseTable("User/" + txt_PhoneNumber.Text, data_user);
 
             var data_studentID = new Data
             {
@@ -143,7 +167,7 @@ namespace EnglishClassManager.SystemManager.MemberList.StudentBook
                 TwName = txt_TwName.Text,
                 sendTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")
             };
-            _baseStudentBook.insertFirebaseTable("Student/"+data_studentID.ID , data_studentID);
+            _baseStudentBook.updateFirebaseTable("Student/" + data_studentID.ID, data_studentID);
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -355,6 +379,7 @@ namespace EnglishClassManager.SystemManager.MemberList.StudentBook
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+            temp_oldphonenum = dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[5].Value.ToString();
             string CommandStr = string.Format("update Table_StudentBasic set " +
                          " StudentID='{0}', CardNumber='{1}', TwName='{2}', EnName='{3}' " +
                          ", PhoneNumber='{4}',Home='{5}',School='{6}',Senior='{7}',Onschool='{8}' "

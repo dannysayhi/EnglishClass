@@ -2880,3 +2880,14 @@ D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssMan
 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\bin\Debug\RestSharp.dll
 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\bin\Debug\RestSharp.xml
 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\obj\Debug\EnglishCalssManager.Utility.FireBaseSharp.frmFireBaseSharp.resources
+D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\bin\Debug\Microsoft.Threading.Tasks.dll
+D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\bin\Debug\System.Net.Http.Extensions.dll
+D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\bin\Debug\System.Net.Http.Primitives.dll
+D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\bin\Debug\Microsoft.Threading.Tasks.xml
+D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\bin\Debug\System.Net.Http.Extensions.xml
+D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\bin\Debug\System.Net.Http.Primitives.xml
+D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\obj\Debug\EnglishCalssManager.csproj.App.config

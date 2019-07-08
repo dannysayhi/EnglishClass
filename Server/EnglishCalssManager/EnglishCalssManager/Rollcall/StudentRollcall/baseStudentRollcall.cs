@@ -12,7 +12,7 @@ namespace EnglishCalssManager.Rollcall.StudentRollcall
         public static DatabaseCore dbc = DatabaseManager._databaseCore;
         public static DatabaseTable dbt = DatabaseManager._databaseTable;
         public static DatabaseCoreRollcall dbcR = DatabaseManager._databaseCoreRollcall;
-        private static string date = functionStudentRollcall.getDate;
+        public static string date = functionStudentRollcall.getDate;
 
         public static void CreateTable()
         {

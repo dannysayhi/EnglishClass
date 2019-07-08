@@ -21,6 +21,7 @@ namespace EnglishCalssManager.Broadcast.CardNotice
             var httpWebRequest = (HttpWebRequest)WebRequest.Create(webAddr);
             httpWebRequest.ContentType = "application/json";
             httpWebRequest.Headers.Add(HttpRequestHeader.Authorization, "key=AAAA9W25YKA:APA91bE4aCDtVqe_JIOWt3NFqXsSnERtVHxGXFqId4RRx8jFVaxSLP0MORI5_qLo0qtKTpGV5wyQi4hxdR4Njiwmeuf0vZqKyjVyt8QjRaKEcIvvHRPfDlbj_rbnCt7h_elp2H2HLzuA");
+            //httpWebRequest.Headers.Add(HttpRequestHeader.Authorization, "key=AIzaSyDUmvY7w_y2Yz7m3_tEcgYfUKW9c819To8");
             httpWebRequest.Method = "POST";
             using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
             {

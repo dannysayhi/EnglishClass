@@ -47,6 +47,7 @@ namespace EnglishClassManager
         public DatabaseTable dbt;// = DatabaseManager._databaseTable;
         public DatabaseCoreRollcall dbcR;// = DatabaseManager._databaseCoreRollcall;
         private List<Data> _vehicles_new = new List<Data>();
+        private string _accountPhoneNum;
         //public CardNotice ;
         private bool _isMaintaining = false;       // 現在是否Maintaning
         public System.Windows.Forms.ToolStripMenuItem[] _T = new System.Windows.Forms.ToolStripMenuItem[23];
@@ -84,8 +85,11 @@ namespace EnglishClassManager
             dbt = DatabaseManager._databaseTable;
             dbcR = DatabaseManager._databaseCoreRollcall;
             initialComp();
+            initialTalbe();
             if (!_funFireBaseSharp.IsConnect()) 
              _funFireBaseSharp.connection();
+
+
 
             //宣告timer要做什麼事.要做什麼事呢?要做_do的事
             TimerCallback callback = new TimerCallback(_do);
@@ -149,12 +153,49 @@ namespace EnglishClassManager
         {
             DataTable dt_temp = new DataTable();
             DataTable dt = new DataTable();
+            DataTable dt_history = new DataTable();
             List<Data> _vehicles = new List<Data>();
             _vehicles_new.Clear();
             if (_funFireBaseSharp.IsConnect())
             {
                 if (await _funFireBaseSharp.ISresponse() !="null")
                 {
+                    try//確認Manager是否要讀取刷卡歷史紀錄 1:Y 2:N
+                    {
+                        string _cardMsgHistory = await _funFireBaseSharp.getData("User/" + _accountPhoneNum + "/CardMsgs_history/");
+                        if(_cardMsgHistory=="1")
+                        {
+                            //collect history card message to list
+                            string CommandStr = string.Format("select * from EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_{0} left join EnglishClassDBtest.dbo.Table_StudentBasic on  EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_{0}.StudentID = EnglishClassDBtest.dbo.Table_StudentBasic.StudentID", DateTime.Now.ToString("yyyyMMdd"));
+                            dt_history = dbc.CommandFunctionDB("Table_StudentBasic",CommandStr);
+                            ListCardMsg lcm = new ListCardMsg();
+                            List<CardMsgs> lcm2 = new List<CardMsgs>();
+                            CardMsgs_historyClass hiscd = new CardMsgs_historyClass();
+                            CardMsgs cm = new CardMsgs();
+                            int hi = 0;
+                            foreach (DataRow drw in dt_history.Rows)
+                            {
+                                cm.time = drw.ItemArray[3].ToString();
+                                cm.title = drw.ItemArray[8].ToString() + " " + drw.ItemArray[4].ToString() + drw.ItemArray[5].ToString();
+                                cm.content = drw.ItemArray[8].ToString() + " " + drw.ItemArray[4].ToString() + drw.ItemArray[5].ToString()+"第" + drw.ItemArray[4].ToString() + drw.ItemArray[2].ToString() +"次 刷卡";
+                                cm.student = drw.ItemArray[10].ToString();
+                                lcm2.Add(cm);
+                                hi++;
+                                if(hi>20)
+                                {
+                                    lcm2.RemoveAt(hi-21);
+                                }
+                            }
+                            lcm.CardMsgs = lcm2;
+                            lcm.CardMsgs_history = "0";
+                            //insert firebase
+                            _funFireBaseSharp.connection();
+                            _funFireBaseSharp.update("User/" + _accountPhoneNum ,lcm);//User/0988123123/CardMsgs
+                            _funFireBaseSharp.disconnection();
+                        }
+                    }
+                    catch (Exception ex)
+                    { }
                     _vehicles = await _funFireBaseSharp.Retrieving();
                     if (_vehicles != null)
                     {
@@ -162,23 +203,27 @@ namespace EnglishClassManager
                         {
                             if (d != null && d.ID != null)
                             {
-                                d.TwName = "Test";
-                                d.Parent = "Test";
-                                //d.sendTime = "Text";
-                                dt_temp = selectPickup(d.Phone.ToString(), d.ID.ToString());
-
-                                foreach (DataRow od in dt_temp.Rows)
+                                //確認學生刷卡是否晚於家長Pickup時間，並刪除Firebase
+                                if (!checkStudentRollCallLast(d.ID.ToString(), d.sendTime) && d.sendTime!=null)
                                 {
-                                    try
-                                    {
-                                        d.TwName = od[1].ToString();
-                                        d.Parent = od[2].ToString();
-                                    }
-                                    catch (Exception ex)
-                                    {
+                                    d.TwName = "Test";
+                                    d.Parent = "Test";
+                                    //d.sendTime = "Text";
+                                    dt_temp = selectPickup(d.Phone.ToString(), d.ID.ToString());
 
+                                    foreach (DataRow od in dt_temp.Rows)
+                                    {
+                                        try
+                                        {
+                                            d.TwName = od[1].ToString();
+                                            d.Parent = od[2].ToString();
+                                        }
+                                        catch (Exception ex)
+                                        {
+
+                                        }
+                                        _vehicles_new.Add(d);
                                     }
-                                    _vehicles_new.Add(d);
                                 }
                             }
                         }
@@ -246,6 +291,36 @@ namespace EnglishClassManager
             return table;
 
         }
+
+        private void btn_delet_Click(object sender, EventArgs e)
+        {
+            _funFireBaseSharp.delete("Pickup/" + txt_ID.Text+"ID");
+            txt_ID.Text = "";
+        }
+        /// <summary>
+        /// 比對學生刷卡是否比家長pickup 還晚，若比較晚，則delete firebase上 pickup data
+        /// </summary>
+        /// <param name="_sid"></param>
+        /// <param name="_sendTime"></param>
+        /// <returns></returns>
+        private bool checkStudentRollCallLast(string _sid, string _sendTime)
+        {
+            bool _bPick = false;
+            string Commandstr = string.Format("select MAX( Table_StudentRollcall_{0}.RollcallTimes) from Table_StudentRollcall_{0} where Table_StudentRollcall_{0}.StudentID='{1}'",baseStudentRollcall.date,_sid);
+            string studentRollCallLastTime = dbcR.strExecuteScalar(Commandstr);
+            if (studentRollCallLastTime!="")
+            {
+                //DateTime LastRCDate = DateTime.ParseExact(studentRollCallLastTime, "yyyy-MMdd HH:mm:ss", null, System.Globalization.DateTimeStyles.AllowWhiteSpaces);
+                DateTime LastRCDate = Convert.ToDateTime(studentRollCallLastTime);
+                if(LastRCDate> Convert.ToDateTime(_sendTime))
+                {
+                    _funFireBaseSharp.delete("Pickup/" + _sid+"ID");
+                    _bPick = true;
+                }
+            }
+            return _bPick;
+        }
+
         #endregion Parent Pickup 家長接送通知
 
         // 登入觸發
@@ -253,6 +328,10 @@ namespace EnglishClassManager
         {
             labAccountName.Text = name;
             labAccountLevel.Text = level.ToString();
+            _accountPhoneNum = "";
+            string CommandStr = string.Format("Select PhoneNumber from Table_EmployeeBasic where TwName='{0}'", name);
+            _accountPhoneNum = dbc.strExecuteScalar(CommandStr);
+
             switch (level)
             {
                 case AccountLevel.Intern:
@@ -696,6 +775,6 @@ namespace EnglishClassManager
             _frmSystemLog.Hide(); //隱藏式窗,下次再show出
         }
 
-
+       
     }
 }

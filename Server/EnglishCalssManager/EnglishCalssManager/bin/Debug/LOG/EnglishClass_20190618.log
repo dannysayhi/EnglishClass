@@ -1,0 +1,88 @@
+2019.06.18 18:57:10.180 | TRC | 0 | 0 | start log
+2019.06.18 18:57:11.089 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.18 18:57:11.560 | TRC | 0 | 1 | DB initial count：1
+2019.06.18 18:57:12.857 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.18 18:57:13.036 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無效的物件名稱 'Table_StudentRollcall_20190618'。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   於 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   於 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   於 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.strExecuteScalar(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 103
+ClientConnectionId:e307767c-a0a6-4b2e-862a-497416c49f91
+Error Number:208,State:1,Class:16
+2019.06.18 18:57:13.482 | TRC | 0 | 2 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無效的物件名稱 'Table_StudentRollcall_20190618'。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   於 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   於 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   於 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.strExecuteScalar(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 103
+ClientConnectionId:80a7fba0-a06b-498b-8bce-36d3f6420089
+Error Number:208,State:1,Class:16
+2019.06.18 18:57:15.211 | TRC | 0 | 1 | DatabaseCoreRollcall：System.Data.SqlClient.SqlException (0x80131904): 無效的物件名稱 'Table_StudentRollcall_20190618'。
+   於 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   於 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   於 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   於 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   於 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   於 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   於 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   於 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   於 EnglishClassManager.Utility.Database.DatabaseCoreRollcall.strExecuteScalar(String CommandStr) 於 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\Utility\Database\DatabaseCoreRollcall.cs: 行 103
+ClientConnectionId:f364e245-d8b7-42e5-b17d-ef34f26c6683
+Error Number:208,State:1,Class:16
+2019.06.18 18:57:15.315 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.18 18:57:17.824 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.18 18:57:20.309 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.18 18:57:22.810 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.18 18:57:30.927 | TRC | 0 | 0 | start log
+2019.06.18 18:57:31.421 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.18 18:57:31.759 | TRC | 0 | 1 | DB initial count：1
+2019.06.18 18:57:33.486 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.18 18:57:35.982 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.18 18:57:37.978 | TRC | 0 | 0 | frmStudentRollcall：frmStudentRollcall_Load
+2019.06.18 18:57:38.466 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.18 18:57:40.672 | TRC | 0 | 0 | frmStudentRollcall：btn_ON
+2019.06.18 18:57:40.994 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.18 18:57:43.512 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.18 18:57:46.008 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.18 18:57:48.500 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.18 18:57:51.019 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.18 18:58:27.010 | TRC | 0 | 0 | start log
+2019.06.18 18:58:27.121 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.18 18:58:27.346 | TRC | 0 | 1 | DB initial count：1
+2019.06.18 18:58:29.526 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.18 18:58:32.067 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.18 18:59:58.906 | TRC | 0 | 0 | start log
+2019.06.18 18:59:59.129 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.18 18:59:59.353 | TRC | 0 | 1 | DB initial count：1
+2019.06.18 19:00:01.432 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.18 19:00:03.965 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.18 19:01:31.004 | TRC | 0 | 0 | start log
+2019.06.18 19:01:31.214 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.18 19:01:31.442 | TRC | 0 | 1 | DB initial count：1
+2019.06.18 19:01:33.554 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.18 19:01:36.069 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.18 19:04:35.650 | TRC | 0 | 0 | start log
+2019.06.18 19:04:36.000 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.18 19:04:36.417 | TRC | 0 | 1 | DB initial count：1
+2019.06.18 19:04:38.237 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.18 19:04:40.762 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.18 19:04:43.264 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.18 19:04:45.767 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)

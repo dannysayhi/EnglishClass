@@ -1,0 +1,8 @@
+2019.06.15 21:05:15.392 | TRC | 0 | 0 | start log
+2019.06.15 21:05:15.466 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.15 21:05:15.853 | TRC | 0 | 1 | DB initial count：1
+2019.06.15 21:05:17.934 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.15 21:05:20.437 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.15 21:05:22.961 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.15 21:05:25.479 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.15 21:05:27.954 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)

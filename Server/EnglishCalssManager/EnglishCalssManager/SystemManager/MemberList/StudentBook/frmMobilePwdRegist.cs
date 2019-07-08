@@ -22,6 +22,7 @@ namespace EnglishCalssManager.SystemManager.MemberList.StudentBook
         private string _twName = "";
         private string _phoneNum = "";
         private string lb_txtOldPwd = "舊密碼：";
+        private string _tempPwd = "";
         public frmMobilePwdRegist(string studentID,string twName,string phoneNum)
         {
             InitializeComponent();
@@ -84,22 +85,22 @@ namespace EnglishCalssManager.SystemManager.MemberList.StudentBook
                 dbc.ExecuteNonQuery(CommandStr);
             }
             //MessageBox.Show(string.Format("寫入密碼：'{0}'",txt_NewPwd.Text));
+            _tempPwd = txt_NewPwd.Text;
             insertFirebase();
             lb_oldPwd.Text = lb_txtOldPwd + txt_NewPwd.Text;
             txt_NewPwd.Text = "";
 
         }
-        private void insertFirebase()
+        private async void insertFirebase()
         {
+            object tempData = new object();
+            Data data_user = new Data();
+            tempData = await _baseStudentBook.getFirebaseTable("User/" + _phoneNum);
+            data_user = (Data)tempData;
+            data_user.Password = _tempPwd;
+            data_user.sendTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
             // Insert to Firebase
-            var data_user = new Data
-            {
-                ID = _studentID,
-                Phone = _phoneNum,
-                Password = txt_NewPwd.Text,
-                sendTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")
-            };
-            _baseStudentBook.insertFirebaseTable("User/" + data_user.Phone, data_user);
+            _baseStudentBook.updateFirebaseTable("User/" + _phoneNum, data_user);
         }
     }
 }

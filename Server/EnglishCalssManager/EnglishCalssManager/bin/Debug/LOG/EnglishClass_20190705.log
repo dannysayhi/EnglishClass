@@ -1,0 +1,194 @@
+2019.07.05 00:01:19.362 | TRC | 0 | 0 | start log
+2019.07.05 00:01:23.293 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:01:23.521 | TRC | 0 | 2 | DB initial count：1
+2019.07.05 00:01:25.645 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:01:28.177 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:01:36.658 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:01:38.903 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:01:48.947 | TRC | 0 | 0 | start log
+2019.07.05 00:01:51.081 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:01:51.188 | TRC | 0 | 2 | DB initial count：1
+2019.07.05 00:01:53.582 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:01:56.050 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:02:32.524 | TRC | 0 | 0 | start log
+2019.07.05 00:02:35.282 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:02:35.386 | TRC | 0 | 2 | DB initial count：1
+2019.07.05 00:02:37.751 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:02:40.250 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:02:44.860 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:02:47.587 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:02:59.991 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:03:02.262 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:03:05.467 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:03:08.680 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:03:12.201 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:03:14.009 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:03:33.994 | TRC | 0 | 0 | start log
+2019.07.05 00:03:40.935 | TRC | 0 | 3 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:03:41.108 | TRC | 0 | 2 | DB initial count：1
+2019.07.05 00:03:43.399 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:03:53.265 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:04:00.227 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:04:00.253 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:04:23.777 | TRC | 0 | 0 | start log
+2019.07.05 00:04:25.894 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:04:25.974 | TRC | 0 | 2 | DB initial count：1
+2019.07.05 00:04:28.359 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:04:30.869 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:04:33.359 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:04:41.176 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:04:42.201 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:18:23.808 | TRC | 0 | 0 | start log
+2019.07.05 00:18:27.662 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:18:27.760 | TRC | 0 | 2 | DB initial count：1
+2019.07.05 00:18:30.125 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:18:34.002 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:18:36.338 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:18:48.238 | TRC | 0 | 0 | start log
+2019.07.05 00:18:52.094 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:18:52.179 | TRC | 0 | 3 | DB initial count：1
+2019.07.05 00:18:54.631 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:18:57.079 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:19:32.131 | TRC | 0 | 0 | start log
+2019.07.05 00:19:34.511 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:19:34.650 | TRC | 0 | 2 | DB initial count：1
+2019.07.05 00:19:37.019 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:19:42.193 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:19:57.099 | TRC | 0 | 3 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:19:58.760 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:20:10.302 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:20:10.311 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:20:40.004 | TRC | 0 | 0 | start log
+2019.07.05 00:20:42.518 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:20:42.714 | TRC | 0 | 2 | DB initial count：1
+2019.07.05 00:20:44.861 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:20:47.384 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:20:50.428 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:20:54.540 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:24:02.781 | TRC | 0 | 0 | start log
+2019.07.05 00:24:06.690 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:24:06.817 | TRC | 0 | 2 | DB initial count：1
+2019.07.05 00:24:09.144 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:24:11.642 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:24:14.161 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:24:16.687 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:24:21.513 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:24:24.542 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:24:27.530 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:24:37.032 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:27:06.810 | TRC | 0 | 0 | start log
+2019.07.05 00:27:12.393 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:27:12.473 | TRC | 0 | 2 | DB initial count：1
+2019.07.05 00:27:14.865 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:27:17.391 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:27:19.891 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:27:28.138 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:27:30.762 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:27:33.756 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:28:33.009 | TRC | 0 | 0 | start log
+2019.07.05 00:28:36.253 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:28:36.386 | TRC | 0 | 2 | DB initial count：1
+2019.07.05 00:28:38.745 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:28:41.272 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:28:45.141 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:28:48.643 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:29:17.266 | TRC | 0 | 0 | start log
+2019.07.05 00:29:20.178 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:29:20.263 | TRC | 0 | 2 | DB initial count：1
+2019.07.05 00:29:22.669 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:29:28.774 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:29:52.657 | TRC | 0 | 0 | start log
+2019.07.05 00:29:55.479 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:29:55.573 | TRC | 0 | 2 | DB initial count：1
+2019.07.05 00:29:57.990 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:30:00.471 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:30:04.882 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:30:12.182 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:30:14.712 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:30:17.200 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:30:19.725 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:30:22.228 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:30:24.742 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:30:27.244 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:30:29.755 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:30:32.243 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:30:34.759 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:30:37.274 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:30:39.765 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:30:42.258 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:30:44.750 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:30:47.276 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:30:49.772 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:30:52.289 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:30:54.773 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:30:57.289 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:30:59.781 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:31:02.295 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:31:13.675 | TRC | 0 | 0 | start log
+2019.07.05 00:31:17.458 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:31:17.565 | TRC | 0 | 2 | DB initial count：1
+2019.07.05 00:31:19.909 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:31:22.432 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:31:44.223 | TRC | 0 | 0 | start log
+2019.07.05 00:31:46.645 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:31:46.734 | TRC | 0 | 2 | DB initial count：1
+2019.07.05 00:31:49.092 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:31:51.609 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:31:54.117 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:31:56.666 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:32:20.899 | TRC | 0 | 0 | start log
+2019.07.05 00:32:23.855 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:32:23.938 | TRC | 0 | 2 | DB initial count：1
+2019.07.05 00:32:26.341 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:32:28.848 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:32:35.070 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:32:38.045 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:32:53.461 | TRC | 0 | 0 | start log
+2019.07.05 00:32:55.940 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:32:56.040 | TRC | 0 | 2 | DB initial count：1
+2019.07.05 00:32:58.407 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:33:13.586 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:33:54.139 | TRC | 0 | 3 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:33:54.156 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:34:44.416 | TRC | 0 | 0 | start log
+2019.07.05 00:34:47.614 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:34:47.743 | TRC | 0 | 2 | DB initial count：1
+2019.07.05 00:34:50.077 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:34:53.992 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:36:51.363 | TRC | 0 | 0 | start log
+2019.07.05 00:36:54.526 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:36:54.665 | TRC | 0 | 2 | DB initial count：1
+2019.07.05 00:36:57.010 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:37:00.661 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:37:03.121 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:38:13.136 | TRC | 0 | 0 | start log
+2019.07.05 00:38:16.497 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:38:16.689 | TRC | 0 | 2 | DB initial count：1
+2019.07.05 00:38:18.991 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:38:21.501 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:38:24.384 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:38:26.899 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:38:29.924 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:39:21.576 | TRC | 0 | 0 | start log
+2019.07.05 00:39:24.082 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:39:24.158 | TRC | 0 | 2 | DB initial count：1
+2019.07.05 00:39:26.606 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:39:33.472 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:41:12.548 | TRC | 0 | 0 | start log
+2019.07.05 00:41:15.353 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:41:15.438 | TRC | 0 | 2 | DB initial count：1
+2019.07.05 00:41:17.853 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:41:21.576 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:41:27.769 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:41:27.779 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:46:05.795 | TRC | 0 | 0 | start log
+2019.07.05 00:46:08.896 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:46:09.064 | TRC | 0 | 2 | DB initial count：1
+2019.07.05 00:46:11.314 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:46:16.114 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:47:00.046 | TRC | 0 | 0 | start log
+2019.07.05 00:47:03.127 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:47:03.215 | TRC | 0 | 2 | DB initial count：1
+2019.07.05 00:47:05.614 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:47:08.122 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.07.05 00:47:11.564 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)

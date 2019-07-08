@@ -168,6 +168,28 @@ namespace EnglishCalssManager.Utility.FireBaseSharp
 
         }
 
-      
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_ID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private async void btn_test_Click(object sender, EventArgs e)
+        {
+            funFireBaseSharp _funFireBaseSharp = new funFireBaseSharp();
+            _funFireBaseSharp.connection();
+            //List<CardMsgs> _vehicles = new List<CardMsgs>();
+            //CardMsgs _cardmsg = new CardMsgs();
+            //_vehicles = await _funFireBaseSharp.Retrieving("User/0988123123/CardMsgs");
+            //_cardmsg= await _funFireBaseSharp.Retrieving_unit("User/0988123123/CardMsgs/0");
+            //_vehicles.Count();
+            //_vehicles[4].ToString();
+            string str =  await _funFireBaseSharp.getData("User/0988123123/CardMsgs/CardMsgs_history/");
+            _funFireBaseSharp.disconnection();
+        }
     }
 }

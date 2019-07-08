@@ -43,6 +43,7 @@
             this.txt_Groups = new System.Windows.Forms.TextBox();
             this.txt_ID = new System.Windows.Forms.TextBox();
             this.btn_disconncet = new System.Windows.Forms.Button();
+            this.btn_test = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -152,6 +153,7 @@
             this.label1.Size = new System.Drawing.Size(17, 12);
             this.label1.TabIndex = 38;
             this.label1.Text = "ID";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txt_phone
             // 
@@ -173,6 +175,7 @@
             this.txt_ID.Name = "txt_ID";
             this.txt_ID.Size = new System.Drawing.Size(161, 22);
             this.txt_ID.TabIndex = 35;
+            this.txt_ID.TextChanged += new System.EventHandler(this.txt_ID_TextChanged);
             // 
             // btn_disconncet
             // 
@@ -184,11 +187,22 @@
             this.btn_disconncet.UseVisualStyleBackColor = true;
             this.btn_disconncet.Click += new System.EventHandler(this.btn_disconncet_Click);
             // 
+            // btn_test
+            // 
+            this.btn_test.Location = new System.Drawing.Point(160, 324);
+            this.btn_test.Name = "btn_test";
+            this.btn_test.Size = new System.Drawing.Size(75, 43);
+            this.btn_test.TabIndex = 42;
+            this.btn_test.Text = "TEST";
+            this.btn_test.UseVisualStyleBackColor = true;
+            this.btn_test.Click += new System.EventHandler(this.btn_test_Click);
+            // 
             // frmFireBaseSharp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(782, 605);
+            this.Controls.Add(this.btn_test);
             this.Controls.Add(this.btn_disconncet);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
@@ -230,5 +244,6 @@
         private System.Windows.Forms.TextBox txt_Groups;
         private System.Windows.Forms.TextBox txt_ID;
         private System.Windows.Forms.Button btn_disconncet;
+        private System.Windows.Forms.Button btn_test;
     }
 }

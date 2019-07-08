@@ -1923,3 +1923,63 @@
 2019.06.10 23:23:28.687 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
 2019.06.10 23:23:31.216 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
 2019.06.10 23:23:33.709 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.10 23:35:34.565 | TRC | 0 | 0 | start log
+2019.06.10 23:35:34.766 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.10 23:35:34.991 | TRC | 0 | 1 | DB initial count：1
+2019.06.10 23:35:37.119 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.10 23:35:39.650 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.10 23:35:42.140 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.10 23:35:44.681 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.10 23:35:47.157 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.10 23:35:49.670 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.10 23:35:52.166 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.10 23:35:52.751 | TRC | 0 | 0 | frmCourseManagement群組管理：btn_AddCourse
+2019.06.10 23:35:54.668 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.10 23:35:54.813 | TRC | 0 | 0 | frmCourseManagerUpdate
+2019.06.10 23:35:57.153 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.10 23:35:59.678 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.10 23:36:02.189 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.10 23:36:04.694 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.10 23:36:07.206 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.10 23:36:08.376 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.06.10 23:36:09.718 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.10 23:36:12.204 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.10 23:36:14.707 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.10 23:36:17.219 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.10 23:36:19.759 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.10 23:36:22.260 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.10 23:36:24.762 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.10 23:36:27.262 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.10 23:36:29.800 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.10 23:36:32.276 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.10 23:36:34.798 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.10 23:36:37.290 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.10 23:36:39.795 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.10 23:36:42.291 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.10 23:36:44.814 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.10 23:36:47.319 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.10 23:36:49.828 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.10 23:36:52.312 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.10 23:36:54.844 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.10 23:36:55.880 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.06.10 23:36:57.345 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.10 23:36:57.606 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.06.10 23:36:57.986 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.06.10 23:36:58.233 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.06.10 23:36:58.502 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.06.10 23:36:58.765 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_DeleteStudent
+2019.06.10 23:36:59.865 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.10 23:37:02.019 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.06.10 23:37:02.366 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.10 23:37:02.955 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.06.10 23:37:04.619 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.06.10 23:37:04.899 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.10 23:37:06.840 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.06.10 23:37:07.359 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.10 23:37:08.535 | TRC | 0 | 0 | frmCourseManagerUpdatebtn_AddNewStudent
+2019.06.10 23:37:09.911 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.10 23:37:12.399 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.10 23:37:14.929 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.10 23:37:17.435 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.10 23:37:19.939 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.10 23:37:22.454 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)

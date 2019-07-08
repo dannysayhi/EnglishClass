@@ -80,6 +80,9 @@
             this.Phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Groups = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sendTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txt_ID = new System.Windows.Forms.TextBox();
+            this.btn_delet = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -384,7 +387,7 @@
             // 
             // btnLogIn
             // 
-            this.btnLogIn.Location = new System.Drawing.Point(832, 85);
+            this.btnLogIn.Location = new System.Drawing.Point(783, 85);
             this.btnLogIn.Name = "btnLogIn";
             this.btnLogIn.Size = new System.Drawing.Size(75, 23);
             this.btnLogIn.TabIndex = 5;
@@ -394,7 +397,7 @@
             // 
             // btnAccountEditor
             // 
-            this.btnAccountEditor.Location = new System.Drawing.Point(832, 114);
+            this.btnAccountEditor.Location = new System.Drawing.Point(945, 85);
             this.btnAccountEditor.Name = "btnAccountEditor";
             this.btnAccountEditor.Size = new System.Drawing.Size(75, 23);
             this.btnAccountEditor.TabIndex = 6;
@@ -404,7 +407,7 @@
             // 
             // btnLogOut
             // 
-            this.btnLogOut.Location = new System.Drawing.Point(913, 85);
+            this.btnLogOut.Location = new System.Drawing.Point(864, 85);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(75, 23);
             this.btnLogOut.TabIndex = 7;
@@ -513,11 +516,40 @@
             this.sendTime.HeaderText = "發送時間";
             this.sendTime.Name = "sendTime";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(773, 167);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(53, 12);
+            this.label2.TabIndex = 41;
+            this.label2.Text = "學生ID：";
+            // 
+            // txt_ID
+            // 
+            this.txt_ID.Location = new System.Drawing.Point(833, 161);
+            this.txt_ID.Name = "txt_ID";
+            this.txt_ID.Size = new System.Drawing.Size(108, 22);
+            this.txt_ID.TabIndex = 40;
+            // 
+            // btn_delet
+            // 
+            this.btn_delet.Location = new System.Drawing.Point(947, 158);
+            this.btn_delet.Name = "btn_delet";
+            this.btn_delet.Size = new System.Drawing.Size(75, 25);
+            this.btn_delet.TabIndex = 39;
+            this.btn_delet.Text = "下課";
+            this.btn_delet.UseVisualStyleBackColor = true;
+            this.btn_delet.Click += new System.EventHandler(this.btn_delet_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1036, 554);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txt_ID);
+            this.Controls.Add(this.btn_delet);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.lb_DBinitialCount);
             this.Controls.Add(this.lb_parentNotice);
@@ -598,6 +630,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Phone;
         private System.Windows.Forms.DataGridViewTextBoxColumn Groups;
         private System.Windows.Forms.DataGridViewTextBoxColumn sendTime;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txt_ID;
+        private System.Windows.Forms.Button btn_delet;
     }
 }
 

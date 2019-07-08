@@ -34,7 +34,6 @@
             this.cboAccountLevel = new System.Windows.Forms.ComboBox();
             this.lblAccountLevel = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
-            this.txtAccount = new System.Windows.Forms.TextBox();
             this.lblPassword = new System.Windows.Forms.Label();
             this.lblAccount = new System.Windows.Forms.Label();
             this.lvwAccount = new System.Windows.Forms.ListView();
@@ -44,6 +43,7 @@
             this.btnModify = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnAccountLevel = new System.Windows.Forms.Button();
+            this.cbox_managerName = new System.Windows.Forms.ComboBox();
             this.grpAccountEdit.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,10 +71,10 @@
             // 
             // grpAccountEdit
             // 
+            this.grpAccountEdit.Controls.Add(this.cbox_managerName);
             this.grpAccountEdit.Controls.Add(this.cboAccountLevel);
             this.grpAccountEdit.Controls.Add(this.lblAccountLevel);
             this.grpAccountEdit.Controls.Add(this.txtPassword);
-            this.grpAccountEdit.Controls.Add(this.txtAccount);
             this.grpAccountEdit.Controls.Add(this.lblPassword);
             this.grpAccountEdit.Controls.Add(this.lblAccount);
             this.grpAccountEdit.Location = new System.Drawing.Point(193, 12);
@@ -110,17 +110,10 @@
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(75, 45);
+            this.txtPassword.Location = new System.Drawing.Point(75, 44);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(164, 22);
             this.txtPassword.TabIndex = 5;
-            // 
-            // txtAccount
-            // 
-            this.txtAccount.Location = new System.Drawing.Point(75, 20);
-            this.txtAccount.Name = "txtAccount";
-            this.txtAccount.Size = new System.Drawing.Size(164, 22);
-            this.txtAccount.TabIndex = 4;
             // 
             // lblPassword
             // 
@@ -206,6 +199,15 @@
             this.btnAccountLevel.UseVisualStyleBackColor = true;
             this.btnAccountLevel.Click += new System.EventHandler(this.btnAccountLevel_Click);
             // 
+            // cbox_managerName
+            // 
+            this.cbox_managerName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbox_managerName.FormattingEnabled = true;
+            this.cbox_managerName.Location = new System.Drawing.Point(75, 19);
+            this.cbox_managerName.Name = "cbox_managerName";
+            this.cbox_managerName.Size = new System.Drawing.Size(164, 20);
+            this.cbox_managerName.TabIndex = 8;
+            // 
             // AccountEditorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -222,6 +224,7 @@
             this.Name = "AccountEditorForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "帳號編輯";
+            this.Load += new System.EventHandler(this.AccountEditorForm_Load);
             this.grpAccountEdit.ResumeLayout(false);
             this.grpAccountEdit.PerformLayout();
             this.ResumeLayout(false);
@@ -234,7 +237,6 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.GroupBox grpAccountEdit;
         private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.TextBox txtAccount;
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.Label lblAccount;
         private System.Windows.Forms.ListView lvwAccount;
@@ -246,5 +248,6 @@
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.ComboBox cboAccountLevel;
         private System.Windows.Forms.Button btnAccountLevel;
+        private System.Windows.Forms.ComboBox cbox_managerName;
     }
 }

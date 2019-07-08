@@ -1,6 +1,7 @@
 ﻿using EnglishCalssManager.Utility.FireBaseSharp;
 using EnglishClassManager.SystemManager.MemberList.StudentBook;
 using EnglishClassManager.Utility.Database;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -66,11 +67,32 @@ namespace EnglishCalssManager.SystemManager.MemberList.StudentBook
             //存入Firebase 
 
         }
+        /// <summary>
+        /// Get Data
+        /// </summary>
+        /// <param name="_Firetalbe"></param>
+        /// <param name="_data"></param>
+        public async Task<object> getFirebaseTable(string _Firetalbe)
+        {
+            _funFireBaseSharp.connection();
+            //string resultstr = await _funFireBaseSharp.getData(_Firetalbe);
+            object mList;
+            mList = JsonConvert.DeserializeObject<Data>(await _funFireBaseSharp.getData(_Firetalbe));
+            _funFireBaseSharp.disconnection();
+            return mList;
+        }
+
 
         public void insertFirebaseTable(string _Firetable, Data _data)
         {
             _funFireBaseSharp.connection();
             _funFireBaseSharp.insert(_Firetable, _data);
+            _funFireBaseSharp.disconnection();
+        }
+        public void updateFirebaseTable(string _Firetable, object _data)
+        {
+            _funFireBaseSharp.connection();
+            _funFireBaseSharp.update(_Firetable, _data);
             _funFireBaseSharp.disconnection();
         }
         public void DelStudent(string _Firetpath)

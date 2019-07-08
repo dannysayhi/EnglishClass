@@ -1,0 +1,12 @@
+2019.06.11 12:21:35.287 | TRC | 0 | 0 | start log
+2019.06.11 12:21:35.778 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.11 12:21:36.127 | TRC | 0 | 1 | DB initial count：1
+2019.06.11 12:21:37.875 | TRC | 0 | 2 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.11 12:21:40.378 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.11 12:21:42.531 | TRC | 0 | 0 | 學生通訊錄：frmStudentBook_Load
+2019.06.11 12:21:42.889 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.11 12:21:45.428 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.11 12:21:47.919 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.11 12:21:50.426 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.11 12:21:52.924 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)
+2019.06.11 12:21:55.461 | TRC | 0 | 1 | SmartCardReader：Ouch: Cannot find a smart card reader. (NoReadersAvailable)

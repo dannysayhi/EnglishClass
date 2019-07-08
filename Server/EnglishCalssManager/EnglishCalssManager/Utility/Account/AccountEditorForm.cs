@@ -1,6 +1,9 @@
 ﻿using EnglishCalssManager.Utility.Account;
+using EnglishClassManager.Utility.Database;
+
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Windows.Forms;
 
 namespace AOISystem.Utility.Account
@@ -9,6 +12,8 @@ namespace AOISystem.Utility.Account
     {
         private List<AccountInfo> _accountInfoCollection;
         private AccountInfo _selectedAccountInfo;
+        public DatabaseCore dbc = DatabaseManager._databaseCore;
+        public DatabaseTable dbt = DatabaseManager._databaseTable;
 
         public AccountEditorForm()
         {
@@ -16,6 +21,19 @@ namespace AOISystem.Utility.Account
             Initialize();
         }
 
+        private void AccountEditorForm_Load(object sender, EventArgs e)
+        {
+            //Select EmployeeName add Cbox
+            DataTable _dataTable = new DataTable();
+            string CommandStr = "Select TwName from Table_EmployeeBasic";
+            _dataTable = dbc.CommandFunctionDB("Table_EmployeeBasic", CommandStr);
+            foreach (DataRow drw in _dataTable.Rows)
+            {
+                cbox_managerName.Items.Add(drw.ItemArray[0].ToString());
+            }
+            cbox_managerName.Text = cbox_managerName.Items[0].ToString();
+
+        }
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -37,19 +55,19 @@ namespace AOISystem.Utility.Account
         {
             try
             {
-                if (this.txtAccount.Text == "" || this.txtPassword.Text == "")
+                if (this.cbox_managerName.Text == "" || this.txtPassword.Text == "")
                 {
                     MessageBox.Show("不能有空白!");
                     return;
                 }
-                if (_accountInfoCollection.Find(x => { return x.Name == this.txtAccount.Text; }) != null)
+                if (_accountInfoCollection.Find(x => { return x.Name == this.cbox_managerName.Text; }) != null)
                 {
                     MessageBox.Show("Name 重覆~");
                     return;
                 }
                 _accountInfoCollection.Add(new AccountInfo() 
                 {
-                    Name = this.txtAccount.Text,
+                    Name = this.cbox_managerName.Text,
                     Password = this.txtPassword.Text,
                     Level = (AccountLevel)Enum.Parse(typeof(AccountLevel), this.cboAccountLevel.Text)
                 });
@@ -67,7 +85,7 @@ namespace AOISystem.Utility.Account
             {
                 if (this.lvwAccount.SelectedItems.Count > 0)
                 {
-                    if (this.txtAccount.Text == "" || this.txtPassword.Text == "")
+                    if (this.cbox_managerName.Text == "" || this.txtPassword.Text == "")
                     {
                         MessageBox.Show("不能有空白!");
                         return;
@@ -75,13 +93,13 @@ namespace AOISystem.Utility.Account
                     AccountInfo accountInfo = _accountInfoCollection.Find(x => { return x.Name == _selectedAccountInfo.Name; });
                     if (accountInfo != null)
                     {
-                        accountInfo.Name = this.txtAccount.Text;
+                        accountInfo.Name = this.cbox_managerName.Text;
                         accountInfo.Password = this.txtPassword.Text;
                         accountInfo.Level = (AccountLevel)Enum.Parse(typeof(AccountLevel), this.cboAccountLevel.Text);
                     }
                     else
                     {
-                        MessageBox.Show(string.Format("不存在該帳號[{0}]", this.txtAccount.Text));
+                        MessageBox.Show(string.Format("不存在該帳號[{0}]", this.cbox_managerName.Text));
                         return;
                     }
                     RefreshData();
@@ -97,22 +115,22 @@ namespace AOISystem.Utility.Account
         {
             if (this.lvwAccount.SelectedItems.Count > 0)
             {
-                this.txtAccount.Text = this.lvwAccount.SelectedItems[0].SubItems[0].Text;
+                this.cbox_managerName.Text = this.lvwAccount.SelectedItems[0].SubItems[0].Text;
                 this.cboAccountLevel.Text = this.lvwAccount.SelectedItems[0].SubItems[1].Text;
-                _selectedAccountInfo = _accountInfoCollection.Find(x => { return x.Name == this.txtAccount.Text; });
+                _selectedAccountInfo = _accountInfoCollection.Find(x => { return x.Name == this.cbox_managerName.Text; });
             }
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            AccountInfo accountInfoFount = _accountInfoCollection.Find(x => { return x.Name == this.txtAccount.Text; });
+            AccountInfo accountInfoFount = _accountInfoCollection.Find(x => { return x.Name == this.cbox_managerName.Text; });
             if (accountInfoFount != null)
             {
                 _accountInfoCollection.Remove(accountInfoFount);
             }
             else
             {
-                MessageBox.Show(string.Format("不存在該帳號[{0}]", this.txtAccount.Text));
+                MessageBox.Show(string.Format("不存在該帳號[{0}]", this.cbox_managerName.Text));
             }
             RefreshData();
         }
@@ -147,7 +165,7 @@ namespace AOISystem.Utility.Account
             }
 
             this.txtPassword.Text = "";
-            this.txtAccount.Text = "";
+            this.cbox_managerName.Text = "";
             this.cboAccountLevel.SelectedIndex = 0;
         }
 

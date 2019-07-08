@@ -11,6 +11,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using EnglishCalssManager.Utility.FireBaseSharp;
+using AOISystem.Utility.Account;
 
 namespace EnglishClassManager.Rollcall.StudentRollcall
 {
@@ -19,6 +21,10 @@ namespace EnglishClassManager.Rollcall.StudentRollcall
         public DatabaseCore dbc = DatabaseManager._databaseCore;
         public DatabaseTable dbt = DatabaseManager._databaseTable;
         public DatabaseCoreRollcall dbcR = DatabaseManager._databaseCoreRollcall;
+        private funFireBaseSharp _funFireBaseSharp = new funFireBaseSharp();
+        private string managerName = AccountInfoManager.ActiveAccountName;
+        private string _senderPhone = "";
+        private List<CardMsgs> cardManager = new List<CardMsgs>();
         private string date = functionStudentRollcall.getDate;
         public string _studentName = "";
         public string _studentID = "";
@@ -34,9 +40,11 @@ namespace EnglishClassManager.Rollcall.StudentRollcall
         private void frmStudentRollcall_Load(object sender, EventArgs e)
         {
             Log.Trace(logTitle + "frmStudentRollcall_Load");
+            string CommandStr = string.Format("Select PhoneNumber from Table_EmployeeBasic where TwName='{0}'", managerName);
+            _senderPhone = dbc.strExecuteScalar(CommandStr);
             CreateTable();
             DataTable _dataTable = new DataTable();
-            string CommandStr = "Select CourseName from Table_Course";
+            CommandStr = "Select CourseName from Table_Course";
             _dataTable = dbc.CommandFunctionDB("Table_Course", CommandStr);
             foreach (DataRow drw in _dataTable.Rows)
             {
@@ -108,37 +116,49 @@ namespace EnglishClassManager.Rollcall.StudentRollcall
                         dbcR.ExecuteNonQuery(CommandStr);
                         functionStudentRollcall.studRCstart(date, dataGridView1.Rows[oneCell.RowIndex].Cells["StudentID"].Value.ToString(), "1", "M");
                         string msg = CardNotice.SendNotificationFromFirebaseCloud("人工點名通知", dataGridView1.Rows[oneCell.RowIndex].Cells["TwName"].Value.ToString() + "第1次點名成功！--人工點名通知").ToString();
-                        MessageBox.Show(dataGridView1.Rows[oneCell.RowIndex].Cells["TwName"].Value.ToString() + "第1次點名成功！--人工點名通知", "人工點名通知");
+
+                                //Firebase Start!
+                                insertFirebase(dataGridView1.Rows[oneCell.RowIndex].Cells["StudentID"].Value.ToString(), "人工點名通知", "第" + _getCount + "次點名成功--人工點名通知！");
+
+                                MessageBox.Show(dataGridView1.Rows[oneCell.RowIndex].Cells["TwName"].Value.ToString() + "第1次點名成功！--人工點名通知", "人工點名通知");
                      }
                             else
                     {
 
-                        //判斷第二次點名以上的時間是否>通知區間
-                        CommandStr = string.Format("select EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_{0}.RollcallTimes "
-    + " from EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_{0}"
-    + " where EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_{0}.StudentID = '{1}'", date
-    , dataGridView1.Rows[oneCell.RowIndex].Cells["StudentID"].Value.ToString());
+                                //判斷第二次點名以上的時間是否>通知區間
+                                CommandStr = string.Format("select EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_{0}.RollcallTimes "
+            + " from EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_{0}"
+            + " where EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_{0}.StudentID = '{1}'", date
+            , dataGridView1.Rows[oneCell.RowIndex].Cells["StudentID"].Value.ToString());
 
-                        string strdt1 = dbcR.strExecuteScalar(CommandStr);
-                        //MessageBox.Show(strdt1);
-                        DateTime dtRollcall = Convert.ToDateTime(strdt1);
-                        // dtRollcall = DateTime.ParseExact(dtRollcall.ToString(), "yyyy-MM-dd HH:mm:ss", null);
-                        if (new TimeSpan(DateTime.Now.Ticks - dtRollcall.Ticks).TotalMinutes >0)
-                        {
-                            _getCount = (Convert.ToInt16(_getCount) + 1).ToString();
-                            functionStudentRollcall.studRCstart(date, dataGridView1.Rows[oneCell.RowIndex].Cells["StudentID"].Value.ToString(), _getCount, "M");
-                            string msg = CardNotice.SendNotificationFromFirebaseCloud("人工點名通知", dataGridView1.Rows[oneCell.RowIndex].Cells["TwName"].Value.ToString() + "第" + _getCount + "次點名成功！--人工點名通知").ToString();
-                            MessageBox.Show(dataGridView1.Rows[oneCell.RowIndex].Cells["TwName"].Value.ToString() + "第" + _getCount + "次點名成功--人工點名通知！" , "人工點名通知");
+                                string strdt1 = dbcR.strExecuteScalar(CommandStr);
+                                //MessageBox.Show(strdt1);
+                                DateTime dtRollcall = Convert.ToDateTime(strdt1);
+                                // dtRollcall = DateTime.ParseExact(dtRollcall.ToString(), "yyyy-MM-dd HH:mm:ss", null);
+                                if (new TimeSpan(DateTime.Now.Ticks - dtRollcall.Ticks).TotalMinutes > 0)
+                                {
+                                    _getCount = (Convert.ToInt16(_getCount) + 1).ToString();
+                                    functionStudentRollcall.studRCstart(date, dataGridView1.Rows[oneCell.RowIndex].Cells["StudentID"].Value.ToString(), _getCount, "M");
+                                    string msg = CardNotice.SendNotificationFromFirebaseCloud("人工點名通知", dataGridView1.Rows[oneCell.RowIndex].Cells["TwName"].Value.ToString() + "第" + _getCount + "次點名成功！--人工點名通知").ToString();
+                                    
+                                    //Firebase Start!
+                                    insertFirebase(dataGridView1.Rows[oneCell.RowIndex].Cells["StudentID"].Value.ToString(), "人工點名通知", "第" + _getCount + "次點名成功--人工點名通知！");
+
+                                    MessageBox.Show(dataGridView1.Rows[oneCell.RowIndex].Cells["TwName"].Value.ToString() + "第" + _getCount + "次點名成功--人工點名通知！", "人工點名通知");
                                 }
                             }
-                }
-                else
+                        }
+                        else
                 {
                             _getCount = "0";
                             _getCount = (Convert.ToInt16(_getCount) + 1).ToString();
 
                             functionStudentRollcall.studRCstart(date, dataGridView1.Rows[oneCell.RowIndex].Cells["StudentID"].Value.ToString(), _getCount, "M");
                             string msg = CardNotice.SendNotificationFromFirebaseCloud("人工點名通知", dataGridView1.Rows[oneCell.RowIndex].Cells["TwName"].Value.ToString() + "第" + _getCount + "次點名成功！--人工點名通知").ToString();
+
+                            //Firebase Start!
+                            insertFirebase(dataGridView1.Rows[oneCell.RowIndex].Cells["StudentID"].Value.ToString(), "人工點名通知", "第" + _getCount + "次點名成功--人工點名通知！");
+
                             MessageBox.Show(dataGridView1.Rows[oneCell.RowIndex].Cells["TwName"].Value.ToString() + "第" + _getCount + "次點名成功--人工點名通知！", "人工點名通知");
                             //CommandStr = string.Format(
                             //    "insert into EnglishClassDBtestRollcall.dbo.Table_StudentRollcall_{0} values('{1}', '{2}', '{3}', {4})"
@@ -347,6 +367,48 @@ namespace EnglishClassManager.Rollcall.StudentRollcall
             //createTempTable();
             closeTempTable();
 
+        }
+
+        private void insertFirebase(string _studentID,string _title,string _content)
+        {
+            string _name = "";
+            string _phoneNum = "";
+
+            //get Student Name、phoneNum
+            string CommandStr = string.Format("Select Table_StudentBasic.TwName,Table_StudentBasic.PhoneNumber from Table_StudentBasic where Table_StudentBasic.StudentID='{0}'", _studentID);
+            DataTable _dataTable = dbc.CommandFunctionDB("Table_CourseManagement", CommandStr);
+            int i = 0;
+            _name = _dataTable.Rows[0].ItemArray[0].ToString();
+            _phoneNum = _dataTable.Rows[0].ItemArray[1].ToString();
+
+            //mapping title、content
+            CardMsgs _CardMsgs = new CardMsgs();
+            _CardMsgs.content = _content;
+            _CardMsgs.student = _name;
+            _CardMsgs.title = _title;
+            _CardMsgs.time = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+            var data_user_parents = new ListCardMsg
+            {
+                CardMsgs = new List<CardMsgs> { _CardMsgs }
+            };
+
+
+            insertFirebaseTable("User/" + _phoneNum, data_user_parents);//insert parents
+        }
+
+        public void insertFirebaseTable(string _Firetable, object _data)
+        {
+            _funFireBaseSharp.connection();
+            _funFireBaseSharp.update(_Firetable, _data);
+            _funFireBaseSharp.disconnection();
+        }
+
+        public void insertFirebaseTable_push(string _Firetable, object _data)
+        {
+            _funFireBaseSharp.connection();
+            //_funFireBaseSharp.insert(_Firetable, _data);
+            _funFireBaseSharp.push(_Firetable,_data);
+            _funFireBaseSharp.disconnection();
         }
 
         public void CreateTable()
