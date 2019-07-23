@@ -2891,3 +2891,4 @@ D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssMan
 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\bin\Debug\System.Net.Http.Extensions.xml
 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\bin\Debug\System.Net.Http.Primitives.xml
 D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\obj\Debug\EnglishCalssManager.csproj.App.config
+D:\FreshStore58\Development\58鮮舖\Program\EnglishClass\Server\EnglishCalssManager\EnglishCalssManager\obj\Debug\EnglishCalssManager.SystemManager.MemberList.EmployeeBook.frmEmployeeMobilePwdRegist.resources

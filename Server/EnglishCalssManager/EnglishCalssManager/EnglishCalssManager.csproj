@@ -223,6 +223,12 @@
       <DependentUpon>frmEmployeeCourseManager.cs</DependentUpon>
     </Compile>
     <Compile Include="SystemManager\MemberList\EmployeeBook\baseEmployeeBook.cs" />
+    <Compile Include="SystemManager\MemberList\EmployeeBook\frmEmployeeMobilePwdRegist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemManager\MemberList\EmployeeBook\frmEmployeeMobilePwdRegist.Designer.cs">
+      <DependentUpon>frmEmployeeMobilePwdRegist.cs</DependentUpon>
+    </Compile>
     <Compile Include="SystemManager\MemberList\StudentBook\baseStudentBook.cs" />
     <Compile Include="SystemManager\MemberList\StudentBook\frmMobilePwdRegist.cs">
       <SubType>Form</SubType>
@@ -420,6 +426,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SystemManager\CourseManagement\frmEmployeeCourseManager.resx">
       <DependentUpon>frmEmployeeCourseManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManager\MemberList\EmployeeBook\frmEmployeeMobilePwdRegist.resx">
+      <DependentUpon>frmEmployeeMobilePwdRegist.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SystemManager\MemberList\StudentBook\frmMobilePwdRegist.resx">
       <DependentUpon>frmMobilePwdRegist.cs</DependentUpon>

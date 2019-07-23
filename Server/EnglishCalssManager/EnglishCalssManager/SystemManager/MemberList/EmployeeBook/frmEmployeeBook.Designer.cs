@@ -60,6 +60,7 @@
             this.lb_startpage = new System.Windows.Forms.LinkLabel();
             this.btn_clearText = new System.Windows.Forms.Button();
             this.btn_ReadCard = new System.Windows.Forms.Button();
+            this.btn_PwdRegist = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
@@ -195,6 +196,7 @@
             // groupBox2
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.groupBox2, 10);
+            this.groupBox2.Controls.Add(this.btn_PwdRegist);
             this.groupBox2.Controls.Add(this.btn_DepPosEdit);
             this.groupBox2.Controls.Add(this.cbox_Pos);
             this.groupBox2.Controls.Add(this.label2);
@@ -216,7 +218,7 @@
             this.groupBox2.Controls.Add(this.txt_EmployeeID);
             this.groupBox2.Location = new System.Drawing.Point(3, 3);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1335, 104);
+            this.groupBox2.Size = new System.Drawing.Size(1318, 104);
             this.groupBox2.TabIndex = 34;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "員工資料";
@@ -337,7 +339,6 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.Controls.Add(this.btnDelete, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.btnUpdate, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.groupBox2, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.dataGridView1, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.btnAdd, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.btnSelect, 0, 1);
@@ -347,6 +348,7 @@
             this.tableLayoutPanel1.Controls.Add(this.btn_clearText, 6, 1);
             this.tableLayoutPanel1.Controls.Add(this.btn_CourseManager, 5, 1);
             this.tableLayoutPanel1.Controls.Add(this.btn_ReadCard, 4, 1);
+            this.tableLayoutPanel1.Controls.Add(this.groupBox2, 0, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 12);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
@@ -418,6 +420,16 @@
             this.btn_ReadCard.UseVisualStyleBackColor = true;
             this.btn_ReadCard.Click += new System.EventHandler(this.btn_ReadCard_Click);
             // 
+            // btn_PwdRegist
+            // 
+            this.btn_PwdRegist.Location = new System.Drawing.Point(422, 78);
+            this.btn_PwdRegist.Name = "btn_PwdRegist";
+            this.btn_PwdRegist.Size = new System.Drawing.Size(75, 23);
+            this.btn_PwdRegist.TabIndex = 58;
+            this.btn_PwdRegist.Text = "APP密碼修改";
+            this.btn_PwdRegist.UseVisualStyleBackColor = true;
+            this.btn_PwdRegist.Click += new System.EventHandler(this.btn_PwdRegist_Click);
+            // 
             // frmEmployeeBook
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -471,5 +483,6 @@
         private System.Windows.Forms.Button btn_clearText;
         private System.Windows.Forms.Button btn_DepPosEdit;
         private System.Windows.Forms.Button btn_ReadCard;
+        private System.Windows.Forms.Button btn_PwdRegist;
     }
 }

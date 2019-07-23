@@ -1,8 +1,11 @@
-﻿using AOISystem.Utility.Logging;
+﻿using AOISystem.Utility.Account;
+using AOISystem.Utility.Logging;
 using EnglishCalssManager.EmployeeAttence.ClassScheduleManager;
 using EnglishCalssManager.SystemManager.MemberList.EmployeeBook;
+using EnglishCalssManager.Utility.FireBaseSharp;
 using EnglishClassManager.SystemManager.CourseManagement;
 using EnglishClassManager.Utility.Database;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,6 +23,8 @@ namespace EnglishClassManager.SystemManager.MemberList.EmployeeBook
         public DatabaseCore dbc = DatabaseManager._databaseCore;
         public DatabaseTable dbt = DatabaseManager._databaseTable;
         public baseEmployeeBook _baseEmployeeBook = new baseEmployeeBook();
+        funFireBaseSharp _funFireBaseSharp = new funFireBaseSharp();
+
         public static List<string> _employeeID = new List<string>();
         public string selectTwName = "";
         public string selectCardNumbere = "";
@@ -34,10 +39,26 @@ namespace EnglishClassManager.SystemManager.MemberList.EmployeeBook
         private string startpage = "0";
         private int nextpage = 20;
         private string logTitle = "frmEmployeeBook：";
+        private string temp_oldphonenum = "";
 
         public frmEmployeeBook()
         {
             InitializeComponent();
+            btn_PwdRegist.Visible = false;
+            switch (AccountInfoManager.ActiveAccountLevel)
+            {
+                case AccountLevel.Manager:
+                    btn_PwdRegist.Visible = true;
+                    break;
+                case AccountLevel.Administrator:
+                    btn_PwdRegist.Visible = true;
+                    break;
+                case AccountLevel.Developer:
+                    btn_PwdRegist.Visible = true;
+                    break;
+                default:
+                    break;
+            }
             dataGridView1.ReadOnly = true;
         }
         private void frmEmployeeBook_Load(object sender, EventArgs e)
@@ -86,6 +107,7 @@ namespace EnglishClassManager.SystemManager.MemberList.EmployeeBook
             {
                 insertData();
                 refreshTable();
+                toFirebase("update");
             }
         }
 
@@ -96,6 +118,7 @@ namespace EnglishClassManager.SystemManager.MemberList.EmployeeBook
             {
                 updateData();
                 refreshTable();
+                toFirebase("update");
             }
         }
 
@@ -182,12 +205,88 @@ namespace EnglishClassManager.SystemManager.MemberList.EmployeeBook
           , dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[0].Value.ToString());
             _dataTable = dbc.CommandFunctionDB("Table_EmployeeBook", CommandStr);
             refreshTable();
+            toFirebase("del");
         }
 
         private void btn_CourseManager_Click(object sender, EventArgs e)
         {
             frmCourseManagement _frmCourseManagement = new frmCourseManagement();
             _frmCourseManagement.ShowDialog();
+        }
+
+        private void toFirebase(string mode)
+        {
+            //insert Firebase
+            _funFireBaseSharp.connection();
+            if (_funFireBaseSharp.IsConnect())
+            {
+                switch( mode)
+                {
+                    case "update":
+                        if (txt_PhoneNumber.Text != temp_oldphonenum)
+                        {
+                            DelEmployee("User/" + temp_oldphonenum);
+                        }
+                        insertFirebase();
+                        break;
+                    case "del":
+                        DelEmployee("User/" + temp_oldphonenum);
+                        break;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Firebase 斷線");
+            }
+        }
+
+        /// <summary>
+        /// Insert Firebase member list table "User/"
+        /// </summary>
+        private async void insertFirebase()
+        {
+            object tempData = new object();
+            Data data_user = new Data();
+            tempData = await getFirebaseTable("User/" + txt_PhoneNumber.Text);
+            if (tempData != null)
+            {
+                data_user = (Data)tempData;
+            }
+            data_user.ID = txt_EmployeeID.Text;
+            data_user.Phone = txt_PhoneNumber.Text;
+            //data_user.TwName = txt_TwName.Text;
+            data_user.Username = txt_TwName.Text;
+            data_user.Permission = "toHome";
+            data_user.sendTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+            // Insert to Firebase
+            updateFirebaseTable("User/" + txt_PhoneNumber.Text, data_user);
+        }
+
+        /// <summary>
+        /// Get Data
+        /// </summary>
+        /// <param name="_Firetalbe"></param>
+        /// <param name="_data"></param>
+        public async Task<object> getFirebaseTable(string _Firetalbe)
+        {
+           // _funFireBaseSharp.connection();
+            //string resultstr = await _funFireBaseSharp.getData(_Firetalbe);
+            object mList;
+            mList = JsonConvert.DeserializeObject<Data>(await _funFireBaseSharp.getData(_Firetalbe));
+            _funFireBaseSharp.disconnection();
+            return mList;
+        }
+        public void updateFirebaseTable(string _Firetable, object _data)
+        {
+            //_funFireBaseSharp.connection();
+            _funFireBaseSharp.update(_Firetable, _data);
+            _funFireBaseSharp.disconnection();
+        }
+        public void DelEmployee(string _Firetpath)
+        {
+            //_funFireBaseSharp.connection();
+            _funFireBaseSharp.delete(_Firetpath);
+            _funFireBaseSharp.disconnection();
         }
 
         private void btn_clearText_Click(object sender, EventArgs e)
@@ -315,6 +414,8 @@ namespace EnglishClassManager.SystemManager.MemberList.EmployeeBook
             cbox_Onjob.Text = dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[6].Value.ToString();
             cbox_Dep.Text = dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells["Dept"].Value.ToString();
             cbox_Pos.Text = dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells["Position"].Value.ToString();
+            temp_oldphonenum = txt_PhoneNumber.Text;
+
         }
 
         public void initialText()
@@ -354,6 +455,12 @@ namespace EnglishClassManager.SystemManager.MemberList.EmployeeBook
         private void btn_ReadCard_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_PwdRegist_Click(object sender, EventArgs e)
+        {
+            frmEmployeeMobilePwdRegist _frmEmployeeMobilePwdRegist = new frmEmployeeMobilePwdRegist(txt_EmployeeID.Text,txt_TwName.Text,txt_PhoneNumber.Text);
+            _frmEmployeeMobilePwdRegist.Show();
         }
     }
 }

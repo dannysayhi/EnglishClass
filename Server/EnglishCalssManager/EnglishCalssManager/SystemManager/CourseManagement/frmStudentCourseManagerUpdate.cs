@@ -164,7 +164,7 @@ namespace EnglishClassManager.SystemManager.CourseManagement
 
              //delete Firebase
             _funFireBaseSharp.connection();
-            _funFireBaseSharp.delete("Topic/Course_" + cbox_CourseID.Text);
+            //_funFireBaseSharp.delete("Topic/Course_" + cbox_CourseID.Text);
             var data_TopicCourseID = new Course
             {
                 subscribers = studentCourse,
@@ -215,7 +215,7 @@ namespace EnglishClassManager.SystemManager.CourseManagement
 
                 //delete Firebase
                 _funFireBaseSharp.connection();
-                _funFireBaseSharp.delete("Topic/Course_" + cbox_CourseID.Text);
+                //_funFireBaseSharp.delete("Topic/Course_" + cbox_CourseID.Text);
                 var data_TopicCourseID = new Course
                 {
                     subscribers = studentCourse,
