@@ -1,0 +1,6 @@
+framework module Pods_RFID {
+  umbrella header "Pods-RFID-umbrella.h"
+
+  export *
+  module * { export * }
+}
